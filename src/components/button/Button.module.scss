@@ -1,0 +1,50 @@
+.appButton {
+  width: 10rem;
+  height: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: .2em;
+  background-color: #75FBCD;
+  border: black 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow:
+    3.6px 5px 10.6px -10px rgba(0, 0, 0, 0.071),
+    8.6px 12px 25.4px -10px rgba(0, 0, 0, 0.108),
+    16.3px 22.7px 47.8px -10px rgba(0, 0, 0, 0.139),
+    29px 40.4px 85.3px -10px rgba(0, 0, 0, 0.171),
+    54.3px 75.6px 159.6px -10px rgba(0, 0, 0, 0.212),
+    130px 181px 382px -10px rgba(0, 0, 0, 0.3)
+  ;
+  transition: all .3s ease;
+
+  &:hover {
+    width: 12rem;
+    background-color: transparent;
+    border: #75FBCD 1px solid;
+    color: #75FBCD;
+    p {
+      margin: 0;
+      font-size: 1.7rem;
+      transition: all .5s ease;
+    }
+  }
+}
+
+  .appButton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    z-index: -1;
+    background-color: transparent;
+    transition: all 0.5s ease;
+  }
+  
+  .appButton:hover::before {
+    background-color: #B554E0;
+    width: 12rem;
+  }

@@ -1,0 +1,33 @@
+.checkboxContainer {
+  cursor: pointer;
+  .labelText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #75FBCD;
+    margin-left: 1rem;
+  }
+  label > svg {
+    overflow: visible;
+    height: 1em;
+    width: 1em;
+
+    > path {
+      fill: none;
+      stroke: #75FBCD;
+      stroke-width: 6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+      stroke-dasharray: 241 9999999;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  > input[type='checkbox'] {
+    display: none;
+  }
+  > input[type='checkbox']:checked + label > svg > path {
+      stroke-dasharray: 70.5096664428711 9999999;
+      stroke-dashoffset: -262.2723388671875;
+  }  
+}

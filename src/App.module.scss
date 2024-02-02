@@ -1,0 +1,114 @@
+.appContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .appDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+  }
+
+  .appLogo {
+    width: 70%;
+  }
+
+  .optionsContainer {
+    color: #75FBCD;
+    padding: 1rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    h3 {
+    color: #B554E0;
+    }
+  }
+
+  .appButtons {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+  }
+
+  .appQuestion {
+    color: white;
+    padding: 2rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  .appAnswerContainer {
+    width: 60%;
+    overflow: auto;
+    margin: 2rem;
+    padding: 2rem;
+    color: white;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    .appAnswer {
+      -webkit-animation: flip-in-ver-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: flip-in-ver-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  }
+
+  .appCode {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+    display: flex;
+    align-content: start;
+    margin: auto;
+    text-align: left;
+    width: fit-content;
+    background-color: rgb(60, 84, 117);
+    color: whitesmoke;
+    padding: 5px;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+}
+
+ @-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+            transform: rotateY(-80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    opacity: 1;
+  }
+}

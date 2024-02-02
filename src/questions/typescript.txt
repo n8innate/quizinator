@@ -1,0 +1,799 @@
+TypeScript supports optional parameters in function, can you explain how?
+
+Hide Answer
+In the TypeScript compiler, an error is thrown if the function is invoked without giving the exact number and types of parameters as are given in the function signature. To declare an optional parameter, use the ? symbol after the parameter name in the function signature.
+
+Example:
+
+Image 15-06-23 at 1.43 AM.webp
+
+8.
+Explain the Scope variable?
+
+Hide Answer
+In TypeScript, the scope of a variable refers to the context or region of code in which the variable is accessible and can be used. Proper scoping is essential for managing variables effectively, preventing naming conflicts and keeping code maintainable.
+
+TypeScript has three types of variable scopes:
+
+Global scope: Variables declared outside any function, class, or module are considered global. They can be accessed from any part of the code in the same script file or other script files included in the same application. Global variables should be used sparingly, as they can lead to naming conflicts and difficulty in managing code.
+
+Image 15-06-23 at 1.45 AM.webp
+
+Local scope: Variables declared within a function are limited to the function's scope, meaning they can only be accessed within the function in which they are declared. These scopes are also known as local scopes.
+
+Image 15-06-23 at 1.45 AM (1).webp
+
+Block scope: Variables declared with let and const keywords are bound to the block in which they are declared (within curly braces {}). These variables are only accessible within the block and any nested blocks enclosed by that block.
+
+Image 15-06-23 at 1.45 AM (2).webp
+
+9.
+Explain to me the debugging process for a TypeScript file.
+
+Hide Answer
+First of all, for the debugging process, you will need .js source map file. Then you compile the .ts file with the – sourcemap flag to generate a source map file.
+
+$ tsc -sourcemap file 11.ts
+
+After this we get file11.js and file11.js.map. And the last line of file11.js would be a reference of the source map file.
+
+//# sourceMappingURL=file1.js.map
+
+10.
+Explain TypeScript Definition Manager and its use.
+
+Hide Answer
+In the TypeScript ecosystem, the TypeScript Definition Manager (TSD) was a popular command-line tool used to manage TypeScript declaration files (.d.ts) which contain type definitions for external JavaScript libraries and frameworks. Providing accurate type information for external libraries allows TypeScript developers to leverage the advantages of static typing and catch potential type-related errors during compilation.
+
+However, TypeScript Definition Manager (TSD) has been deprecated, and it is now replaced by DefinitelyTyped and @types scoped packages alongside the npm package manager.
+
+DefinitelyTyped is a large repository containing high-quality TypeScript declaration files for numerous JavaScript libraries and frameworks. The @types scoped packages refer to individual type declaration packages generated from DefinitelyTyped, which can be easily installed using the regular npm package manager.
+
+11.
+Tell me the steps to include a Type Definition File.
+
+Hide Answer
+First, install TSD
+
+$ npm install tsd -g
+
+Go to TypeScript directory and launch new TypeScript project
+
+$ tsd init
+
+Now install the definition file for jquery
+
+tsd query jquery --action install
+
+Now, update the TypeScript file to include the definition file to point to the jQuery definition.
+
+Image 15-06-23 at 1.51 AM.webp
+
+Now, compile again.
+
+12.
+Explain TypeScript Declare Keyword?
+
+Hide Answer
+The declare keyword in TypeScript is used to inform the TypeScript compiler about the existence of a variable, function, class, or module that is defined externally, usually in some external JavaScript code or a library. This allows TypeScript to provide type checking and intellisense for those elements without actually implementing their behavior within your TypeScript code.
+
+When defining TypeScript declaration files (commonly with the .d.ts extension), the declare keyword is often used to provide type information about external JavaScript code, allowing you to use it safely and efficiently in your TypeScript projects. These declaration files act as a bridge between the external JavaScript library and TypeScript, enabling proper type checking and code completion.
+
+13.
+Explain tsconfig.json file?
+
+Hide Answer
+The tsconfig.json file is a configuration file used in TypeScript projects to specify various compiler options and settings. It enables developers to control options like specifying the output folder for the generated JavaScript code, module resolution strategy, strict type checking, source mapping, and features specific to various ECMAScript versions. The TypeScript compiler uses this configuration file to understand how to compile and transpile TypeScript code into JavaScript.
+
+14.
+Tell me about Generics in TypeScript?
+
+Hide Answer
+Generics is a tool that provides a way of creating reusable components. It provides components that can work with varied data types instead of a single data type. Besides all this, Generics also provides type safety without affecting performance or productivity. Generics also allow the creation of generic classes, generic functions, generic methods, and generic interfaces.
+
+15.
+Differentiate between interface and type statements?
+
+Hide Answer
+In TypeScript, both interface and type statements can be used to define custom types, and sometimes their use can overlap. However, there are key differences between the two, which make them suitable for different situations.
+
+Image 15-06-23 at 1.54 AM.webp
+
+16.
+Tell me about JSX in TypeScript.
+
+Hide Answer
+JSX (JavaScript XML) is a syntax extension for JavaScript, primarily used with React, that allows you to write HTML-like code within your JavaScript or TypeScript code. TypeScript supports JSX and provides a seamless way to use JSX syntax alongside TypeScript's type checking and other features.
+
+To use JSX in TypeScript, you need to configure your tsconfig.json file to specify some options, like:
+
+Image 15-06-23 at 1.57 AM.webp
+
+Here, the "jsx" option is set to "react", which transpiles JSX content into React.createElement() calls, compatible with the React library.
+
+TypeScript also allows you to leverage its type system in your JSX code to ensure type safety when using React components:
+
+Image 15-06-23 at 1.57 AM (1).webp
+
+In this example, we define a Greeting functional component with a strongly-typed prop using the GreetingProps interface. The FC (Functional Component) generic type is imported from the react library and used to specify the type of our components.
+
+Using TypeScript with JSX ensures safer, maintainable, and more efficient React code, since the TypeScript compiler checks for correct component usage, valid properties, and accurate types during development.
+
+17.
+List some JSX modes in TypeScript?
+
+Hide Answer
+In TypeScript, JSX is a syntax extension for JavaScript that resembles XML, commonly used in UI frameworks like React. TypeScript supports various JSX modes, which determine how JSX expressions are compiled and emitted, as specified by the jsx option in the tsconfig.json file or as a command-line flag.
+
+Below are some of the supported JSX modes in TypeScript:
+
+preserve: Keeps the JSX syntax intact in the output files, with the file extension changed to .jsx or .tsx. Mostly used with tools like Babel for further transpilation.
+
+react: Transforms JSX syntax into JavaScript calls, specifically to React.createElement(). This is the commonly used mode for React applications.
+
+react-jsx: Convert JSX syntax to JavaScript calls using the jsx imported-from or local factory function with the React version 17 or higher. Creates more optimized and compact code.
+
+react-jsxdev: Similar to react-jsx, but with additional checks to enable React development mode features during development. Should only be used in development builds.
+
+react-native: Identical to the preserve mode, but does not change the file extension, leaving it as .js. Used for building React Native applications.
+
+When using TypeScript with JSX, make sure to set the specific JSX mode you're using in the tsconfig.json file based on the target platform/framework.
+
+18.
+Explain Ambients in TypeScripts and their use?
+
+Hide Answer
+These declarations inform the compiler about the actual source code that exists elsewhere. If these codes do not exist at runtime and one tries to use them, it will break and not give a warning either.
+
+These declaration files are similar to doc files.here if the source changes, the docs need to keep updated. However, if the ambient declaration file is not updated, you get a compilation error.
+
+19.
+Explain Type assertions in TypeScript?
+
+Hide Answer
+Type assertions in TypeScript are a way to explicitly inform the compiler that you, as a developer, are certain about the type of a specific variable or expression. By asserting the type, you essentially override TypeScript's inferred type, giving you more control over how the compiler treats that variable or expression. Type assertions do not change the value or runtime behavior of the variable, but they can affect the type information during compile-time, allowing additional functionality or avoiding compile-time errors
+
+20.
+Explain Rest parameters?
+
+Hide Answer
+In TypeScript, Rest parameters provide a clean and concise way to handle an indefinite number of function arguments as an array. By using the rest parameter syntax, denoted by three dots ... preceding the parameter name, you can represent any remaining arguments in a function as an array of elements. Rest parameters offer an alternative to the arguments object in JavaScript, allowing you to capture all extra arguments while maintaining type safety and providing better code readability.
+
+Here's an example of Rest parameters in TypeScript:
+
+Image 15-06-23 at 2.02 AM.webp
+
+In this example, the ...names rest parameter captures the remaining arguments and treats them as an array of strings (string[]). The displayGreeting function outputs a greeting message and a list of names separated by a comma.
+
+It's important to note that rest parameters should always be defined at the end of the parameters list, and only one rest parameter is allowed per function.
+
+21.
+List the rules to follow for declaring Rest parameters? Give an example
+
+Hide Answer
+Here are some rules to be followed for declaring Rest parameters
+
+In a function, only 1 rest parameter is allowed.
+Its type should be an array.
+Should be the last parameter in the parameter list.
+Image 15-06-23 at 2.05 AM.webp
+
+22.
+Explain “as” syntax in TypeScript.
+
+Hide Answer
+The "as" syntax in TypeScript is used to create a type assertion, which is a way to explicitly inform the compiler that you know the actual type of a value and want to treat it as a specific type. This can be useful when the TypeScript compiler cannot automatically infer the correct type or when you need to perform a type conversion during development. Type assertions with as syntax do not change the runtime behavior of the underlying value, but they provide compile-time type information that can help catch type-related errors.
+
+Here's an example of using the as syntax for a type assertion:
+
+Image 15-06-23 at 2.07 AM.webp
+
+In this example, someValue has an unknown type, which means the type of the value is unknown during development but can be any type during runtime. We use the as syntax to cast someValue to a string and then access the length property.
+
+23.
+What do you know about Enum in TypeScript?
+
+Hide Answer
+In TypeScript, an Enum (short for enumeration) is a custom data type that allows you to define a set of named numeric constants, making your code more self-explanatory and easier to maintain. Enums provide a robust and expressive way to handle sets of values that represent specific categories, states, or options in your program.
+
+Here's an example of an Enum in TypeScript:
+
+Image 15-06-23 at 2.08 AM.webp
+
+24.
+Differentiate between Relative and Non-relative module imports.
+
+Hide Answer
+In TypeScript, module imports can be either relative or non-relative, based on how the import path is specified. Here's a comparison between the two:
+
+Image 15-06-23 at 2.09 AM.webp
+
+25.
+Explain the anonymous function?
+
+Hide Answer
+An anonymous function is a function without a name, typically defined using a lightweight syntax and commonly used as a one-time-use function or for passing as an argument to other functions. In JavaScript and TypeScript, anonymous functions can be used as callback functions, event listeners, or in scenarios where a simple function is required with no need to declare or reference it afterwards.
+
+26.
+Explain the method overriding in TypeScript?
+
+Hide Answer
+Method overriding in TypeScript is an object-oriented programming concept that allows a derived (subclass) to provide a new implementation for a method inherited from its base class (superclass), effectively replacing or customizing the behavior of the inherited method. This is useful when a derived class needs to maintain the same method signature as its base class but requires different logic or functionality.
+
+Some rules for method overriding are as follows:
+
+Method must have the same name as the parent class
+Also, it must have the same parameter as in the parent class
+IS-A relationship or inheritance should be present.
+27.
+Explain Lambda/Arrow function?
+
+Hide Answer
+Lambda, or arrow functions, are a more concise way to define functions in JavaScript and TypeScript. Introduced in ECMAScript 6 (ES2015), arrow functions simplify function expressions and provide a more compact syntax by using the fat arrow => to define the function. Arrow functions have two key features:
+
+Concise Syntax: Arrow functions are shorter and more elegant compared to traditional function expressions.
+
+Lexical this: Arrow functions do not have their own this binding, which means they inherit the this value from their enclosing scope. This behavior is particularly useful when dealing with callback functions or event listeners.
+
+28.
+Explain conditional types in TypeScript.
+
+Hide Answer
+Conditional types in TypeScript are a powerful feature introduced in TypeScript 2.8 to help model complex logic for the type system. They enable developers to define a type based on a condition, usually expressed using generic type parameters. A conditional type takes the form T extends U ? X : Y, where T and U are type variables, and X and Y represent the types that will be used depending on whether the condition is true or false, respectively.
+
+Syntax:
+
+Image 15-06-23 at 2.14 AM.webp
+
+Here if T is a subtype of U, the conditional evaluates to X , else to Y.
+
+29.
+How can you make read-only Arrays in TypeScript?
+
+Hide Answer
+Using ReadonlyArray type, we can define Arrays to be read only. Thus any variable with reference to ReadonlyArray won't alter any element of the array.
+
+Image 15-06-23 at 2.16 AM.webp
+
+30.
+Explain Nullish Coalescing operator?
+
+Hide Answer
+The nullish coalescing operator (introduced in TypeScript 3.7) is a logical operator that returns the right-hand side operand when the left-hand side operand is either null or undefined. Otherwise, it returns the left-hand side operand. In TypeScript and JavaScript, it is denoted by ‘??’. The nullish coalescing operator is useful for providing default values for variables or expressions that might be null or undefined, making your code more robust and less prone to errors.
+
+Here's a simple example illustrating the use of the nullish coalescing operator:
+
+Image 15-06-23 at 2.17 AM.webp
+
+In this example, the result will be assigned the value of y (42) because x is null. If x had a non-null value, the result would be assigned the value of x.
+
+31.
+Explain assertion functions?
+
+Hide Answer
+In TypeScript, assertion functions are user-defined type guards that perform runtime checks and assertions to narrow down the types of variables further. They help ensure the correctness of data by checking the values' constraints and throwing errors when those constraints are not met. Assertion functions can help detect and prevent unexpected behavior or bugs early during runtime.
+
+Here's an example of an assertion function:
+
+Image 15-06-23 at 2.18 AM.webp
+
+In this example, the assertIsString function takes two arguments: value, which is the variable to check, and errorMessage, which is the message to include in the error thrown if the provided value is not a string. The function uses the asserts keyword with the is keyword to specify the type that the value will be narrowed down to if the assertion succeeds.
+
+32.
+Explain Triple-Slash Directives. List some of the triple-slash directives.
+
+Hide Answer
+They are single line comments containing an XML tag to serve as compiler directives. Every directive indicates what to load at the time of the compilation process.
+
+Image 15-06-23 at 2.21 AM.webp
+
+33.
+Explain the Omit type ?
+
+Hide Answer
+In TypeScript, the Omit utility type is used to create a new type from an existing type by excluding specific properties from it. It takes two type arguments: the first is the type you want to modify, and the second is a union of properties you want to omit from the original type. The Omit type helps create more specific types based on existing data structures without manually changing their properties.
+
+Image 15-06-23 at 2.22 AM.webp
+
+In this example, we have an User interface with three properties. By using the Omit type, we create a new UserWithoutEmail type that excludes the 'email' property from the original User interface. Now when you create the user object using the UserWithoutEmail type, you cannot include the 'email' property; doing so will cause a TypeScript error.
+
+34.
+How can you compile TypeScript through Visual Studio Code?
+
+Hide Answer
+In Visual Studio Code, you will find the TypeScript language support but not the TypeScript compiler.
+For that, you need to install the TypeScript compiler to transpile the TypeScript source code to JavaScript.
+You can install this through npm, the Node.js Package Manager
+Further you can test your installation through version or help. Image 15-06-23 at 2.24 AM.webp
+35.
+Can TypeScript files be supported from Node Modules? If yes, then how?
+
+Hide Answer
+Yes, TypeScript files can be supported from Node Modules. To achieve this, you should follow these steps:
+
+Step 1: Install TypeScript and the necessary declarations: You need to have TypeScript installed in your project. You can install it using npm or yarn:
+
+npm install --save typescript
+
+If you're using packages with TypeScript definitions in your project, add their respective '@types/' declarations using npm or yarn. For example, to add declarations for Node.js and Express:
+
+npm install --save @types/node @types/express
+
+Step 2: Configure your tsconfig.json: Create a tsconfig.json file in your project's root directory or modify an existing one, and set up the necessary configurations for your project.
+
+Here's an example of a typical tsconfig.json configuration:
+
+Image 15-06-23 at 2.27 AM.webp
+
+This configuration sets the target ECMAScript version, module system, output directory for compiled files, and more.
+
+Step 3: Run TypeScript with Node.js: To execute TypeScript files with Node.js, you need to compile them to JavaScript first. You can use the tsc command to do this:
+
+tsc
+
+This command will generate JavaScript files from your TypeScript files as specified in the tsconfig.json.
+
+To automatically compile and run TypeScript files when changes are made, you can use tools like ts-node or nodemon with ts-node. First, install them in your project:
+
+npm install --save ts-node nodemon
+
+Next, modify your package.json file to add scripts for running your app with ts-node and nodemon:
+
+Image 15-06-23 at 2.30 AM.webp
+
+Now you can run your TypeScript Node.js app using npm start or npm run dev for auto-compilation and restart during development.
+
+36.
+Explain Recursive Type Aliases?
+
+Hide Answer
+Recursive type aliases are a feature in TypeScript that allows creating a type alias that refers to itself in its definition. This can be particularly useful when working with complex, hierarchical, or nested structures, which often arise when dealing with JSON data, tree-like structures or linked lists.
+
+37.
+Explain “any” in TypeScript?
+
+Hide Answer
+In TypeScript, any is a special type that represents any possible JavaScript value without constraints. It is used when you either don't know the type of a value, or you want to explicitly bypass the type-checking system.
+
+When a variable is assigned the any type, TypeScript disables certain type-checking and allows the variable to store a value of any type. This means that you can assign, access, or use its properties and methods without TypeScript raising any type-related errors or warnings. However, this flexibility comes with a loss of type safety, making it easier to introduce runtime errors.
+
+Here's an example using the any type in TypeScript:
+
+Image 15-06-23 at 2.33 AM.webp
+
+It's generally recommended to use the any type sparingly, and only when absolutely necessary, to maintain the benefits of TypeScript's type-checking system.
+
+38.
+How are ‘let’, ‘var’, and ‘const’ different?
+
+Hide Answer
+In TypeScript and JavaScript, let, var, and const are used to declare variables, but they have different scoping rules and behaviors:
+
+var: Variables declared with var are function-scoped, meaning they are accessible throughout the entire function in which they are declared. If declared outside any function, they become globally-scoped. var also suffers from hoisting, which means that the variable declaration is moved to the top of the containing scope, causing uninitialized variables to be accessible (with the value undefined) before their actual declaration. This can lead to unexpected bugs and errors.
+
+let: In contrast, let creates block-scoped variables, limiting their accessibility to the block, statement, or expression in which they are declared. This helps prevent unintentional access to variables outside their relevant scope. Variables declared with let are not hoisted, so you must declare them before trying to access them. Attempting to access a let-declared variable before its declaration results in a ReferenceError.
+
+const: Similar to let, const is also block-scoped and isn't hoisted. However, variables declared using const must be assigned a value during their declaration and cannot be reassigned afterward. This makes const suitable for declaring constants or values that shouldn't be changed during program execution. Note that declaring an object with const does not make its properties immutable - only the reference to the object itself is constant.
+
+To sum up, let and const are generally preferred over var due to their clearer, more predictable scoping and behavior. Use let for variables that may change over time and const for values that must remain constant throughout the program's execution.
+
+Tired of interviewing candidates to find the best developers?
+Hire top vetted developers within 4 days.
+
+Hire Now
+ADVANCED TYPESCRIPT INTERVIEW QUESTIONS AND ANSWERS
+1.
+Tell me about the ‘tsconfig.json’ file?
+
+Hide Answer
+The tsconfig.json file is a configuration file used by TypeScript to control various aspects of the TypeScript compiler behavior when building (transpiling) TypeScript files into JavaScript. This file provides a way to define the options and settings that the TypeScript compiler (typically tsc CLI) should use during the compilation process.
+
+Some of the settings you can configure in tsconfig.json are:
+
+compilerOptions: This property is an object containing the configuration options for the TypeScript compiler, such as:
+
+target: Specifies the output language level, e.g., ES5, ES6, or a higher ECMAScript version.
+module: Sets the module system used in the output, e.g., CommonJS, AMD, UMD, or ES2015.
+outDir: Indicates the output directory for the compiled JavaScript files.
+sourceMap: Generates source map files for debugging purposes.
+strict: Enables stricter type checking and other compiler checks to ensure more robust code.
+watch: Enables watch mode, where the compiler will automatically recompile when there are changes in the TypeScript files.
+exclude: An array that lists file patterns to be excluded from the compilation, usually for files that are dependencies or not required for the build process.
+
+extends: Allows you to inherit settings from another configuration file, which promotes reuse and decreases duplication in multi-project scenarios.
+
+files: An array that explicitly lists TypeScript files to be included in the compilation, typically used in smaller projects that have few source files.
+
+These settings help to customize the TypeScript build process based on your project's requirements and conventions, resulting in consistent and maintainable code output. By configuring tsconfig.json, you can tailor the compilation process to cater to multiple environments, outputs, and module systems.
+
+2.
+Tell me about “never” in TypeScript?
+
+Hide Answer
+The never type in TypeScript represents a value that should never occur or be reached within the code. It is often used to narrow down the types of variables in specific control flow paths or to indicate that a function should always throw an error and never return a value. The never type is different from void, which represents the absence of a type, typically used for functions that do not explicitly return a value.
+
+Here are a few use cases for the never type in TypeScript:
+
+Function return type: When a function should always throw an exception and never return a value, you can use the never type as its return type.
+
+Image 15-06-23 at 2.39 AM.webp
+
+Unreachable states: In a control flow path where it is never possible to reach a certain state, the never type can be used for better type safety.
+
+Image 15-06-23 at 2.39 AM (1).webp
+
+In this example, exhaustiveCheck function expects the value parameter to be of type never. If we add more cases to the Fruit type but forget to handle one of them within the getFruitInfo function, TypeScript will raise a type error for incorrect handling of an unhandled case.
+
+3.
+What are design patterns?
+
+Hide Answer
+Design patterns are reusable, general-purpose solutions to common problems that arise during software design and development. They represent best practices formulated by experienced software developers to guide the software design process. Design patterns improve code structure, enhance maintainability, and ensure reliable functionality. They also help facilitate communication among developers by providing a shared vocabulary for discussing coding challenges and solutions.
+
+Design patterns are categorized into three groups:
+
+Creational Patterns: These patterns deal with the process of object creation, abstracting the object instantiation process and ensuring a more efficient and maintainable way to create objects. Examples include Singleton, Factory Method, Abstract Factory, Builder, and Prototype.
+
+Structural Patterns: These patterns focus on building a flexible and efficient structure for combining objects or classes to form larger systems or subsystems while maintaining the ability to change or extend the composition. Examples include Proxy, Bridge, Decorator, Flyweight, among others.
+
+Behavioral Patterns: These patterns define the ways in which objects interact and communicate, guiding how responsibilities are distributed among objects and ensuring flexibility and extensibility in the communication process. Examples include Interpreter, Iterator, Command, Observer, State, Mediator, Template Method, among others.
+
+4.
+What is the Singleton Design Pattern?
+
+Hide Answer
+The Singleton Design Pattern is a creational design pattern that ensures a class has only one instance throughout the lifetime of a program, and provides a global point of access to that instance. Singleton is particularly useful when a class must coordinate its behavior across multiple parts of an application, and it's essential to have a single, shared instance to maintain a centralized state or control resources.
+
+The main principle behind the Singleton pattern is to make the constructor of the class private to restrict instantiation by external code, and instead provide a static method or property that manages the unique instance creation internally.
+
+5.
+Explain Facade Design Pattern?
+
+Hide Answer
+The Facade Design Pattern is a structural design pattern that provides a simplified interface for a complex subsystem or group of interfaces, making it easier for clients to interact with the subsystem. It involves creating a higher-level class (facade) that encapsulates the complexity and exposes simpler methods to the clients. The objective is to improve the usability of a system by masking internal complexities, reducing dependencies, and enhancing modularity.
+
+A common analogy for the Facade Pattern is the use of a home theater system, which typically includes several components such as a TV, audio system, media player, and game console. Instead of manually configuring and managing each component independently, a user can use a remote control (facade) that provides a straightforward interface for controlling the entire system.
+
+6.
+Explain “promise” in TypeScript.
+
+Hide Answer
+A Promise in TypeScript represents an asynchronous operation that eventually produces a value. It is an ES6 feature which TypeScript fully supports, allowing developers to write concise and easily maintainable code when dealing with asynchronous processes like network requests, timers, or file operations.
+
+A Promise can have three states:
+
+pending: The initial state, where the promise neither has a resulting value nor represents a reason for rejection.
+
+fulfilled: The successful completion state, where the promise has resulted in a value.
+
+rejected: The failure state, where the promise has a reason for not completing successfully.
+
+7.
+Explain how you can manage default parameters in a function in TypeScript?
+
+Hide Answer
+In TypeScript, you can manage default parameters in a function by assigning a default value in the function signature. When a parameter is not provided explicitly by the caller, the default value will be used instead. Default parameters help improve the function's flexibility and ensure that it behaves predictably even when some parameters are not supplied by the caller. Here's a simple example to illustrate the concept:
+
+Image 15-06-23 at 2.44 AM.webp
+
+In this example, the greeting parameter has a default value set to "Hello". When the greet function is called without a second argument, the default value of "Hello" is used for the greeting parameter.
+
+8.
+Explain the distributive conditional type in TypeScript and its usage?
+
+Hide Answer
+In TypeScript, Distributive Conditional Types are a powerful feature that allows you to conditionally apply different types based on the input type. They work by applying conditionals at the individual union member level, effectively distributing the conditional across the input union type members. The syntax used for creating a distributive conditional type is:
+
+T extends U ? X : Y
+
+Here, if T extends U (i.e., T is a subtype of U), the type of expression is X; otherwise, it's Y. Now let's dive into an example to better understand distributive conditional types:
+
+Image 15-06-23 at 2.47 AM.webp
+
+In this example, we define a Flatten type, which takes an input type T. If T is an array type, it evaluates to the element type of the array; otherwise, it returns the original type T. When we use Flatten<string[]>, it matches the condition T extends any[], and TypeScript determines the type of ArrayType to be string, since string[] is an array type.
+
+Distributive conditional types are commonly used for type manipulation, tailor-made typings for specific data structures, and to create more precise types in various scenarios, improving type safety, maintainability, and the overall quality of the code.
+
+9.
+Explain the "type" keyword in TypeScript and its usage?
+
+Hide Answer
+In TypeScript, the type keyword is used to define custom, reusable type aliases that can represent complex types or provide a more meaningful name for an existing type. A type alias can refer to primitive types, union types, intersection types, object types, function types, arrays, or any other valid TypeScript type. Type aliases improve code readability, maintainability, and allow developers to create more expressive type annotations over time.
+
+Here's an example illustrating how to use the type keyword:
+
+Image 15-06-23 at 2.49 AM.webp
+
+In this example, we define three type aliases (Point, Coordinate, and LineSegment) to represent the structure and required data for geometric shapes. We then use these aliases to create a function that calculates the length of a given line segment. The type keyword enhances the readability of our code, making it easier to understand and maintain.
+
+10.
+Explain the "import type" statement in TypeScript?
+
+Hide Answer
+In TypeScript, the import type statement is used to import only the type information from a module, without importing the actual values or side-effects associated with the module. This feature is beneficial when working with type-only imports, as it helps clarify the intent of the import, prevents accidental value imports, and can have some performance improvements in certain bundlers.
+
+When using import type, the imported types will be erased during the compilation process, as TypeScript only uses them for checking types and does not include them in the emitted JavaScript code. This ensures that no runtime overhead is introduced as a result of importing types.
+
+11.
+List some disadvantages of TypeScript.
+
+Hide Answer
+While TypeScript offers many advantages, such as improved scalability, better code organization, and strong typing, there are some disadvantages to consider:
+
+Learning curve: Developers familiar with JavaScript may need to invest time in learning TypeScript's concepts, syntax, and tools before becoming proficient. This learning curve might feel more significant for those who are new to typed languages in general.
+
+Compilation step: TypeScript needs to be compiled to JavaScript before running in a browser or other JavaScript environments. This additional step can add time to the development process, impact build times, and introduce the need for build automation tools like Grunt or Gulp.
+
+Potential inconsistencies: When using third-party JavaScript libraries, TypeScript relies on accurate typing declaration files (.d.ts) to infer the types and properties correctly. Not all libraries have these files or keep them up to date, which can lead to inconsistencies and potential type errors. Developers may need to create or update the typings manually to fix discrepancies.
+
+Limited backward compatibility: TypeScript usually attempts to align with the latest ECMAScript features. However, some advanced TypeScript features may not have equivalent support in older browsers or JavaScript engines. Transpilers like Babel can help mitigate this by compiling TypeScript code into a compatible JavaScript version, but this adds an extra layer of complexity to the process.
+
+Verbosity: Writing TypeScript code can become verbose due to the necessity of type annotations and interfaces. This extra typing might be considered as additional boilerplate code by some developers, but it's essential to achieve the benefits of static typing.
+
+Not applicable everywhere: TypeScript mainly targets the JavaScript ecosystem, making it less suitable for contexts where JavaScript itself is unsuitable. For example, it might not be the ideal choice for low-level or performance-critical projects where languages like Rust, C++, or WebAssembly are better options.
+
+Despite these downsides, TypeScript's benefits often outweigh the drawbacks, especially in large-scale projects that demand robust, maintainable, and scalable codebases.
+
+12.
+What rules to follow when declaring a variable in TypeScript?
+
+Hide Answer
+When declaring a variable in TypeScript, you should follow these rules and best practices:
+
+Use keywords: Declare variables using the const, let, or var keywords. Prefer const for immutable values and let for mutable values; avoid using var as it has less predictable scoping rules.
+
+const PI = 3.14159;
+
+let counter = 0;
+
+Type annotation: Provide type information for variables by adding a type annotation to ensure type safety and catch potential errors during compile-time.
+
+let message: string = "Hello, TypeScript!";
+
+Initialize: Always initialize variables during declaration to avoid issues with uninitialized or undefined variables.
+
+let userName: string = "John"; // Initialization with value
+
+Use descriptive names: Choose meaningful and descriptive variable names that indicate the purpose or value they hold.
+
+let userName: string = "Alice";
+
+Follow naming conventions: Stick with common naming conventions, like camelCase for variable names and PascalCase for types and interfaces.
+
+const defaultGreeting: string = "Hello";
+
+type UserProfile = { name: string; age: number };
+
+Use union types: For a variable that should accept multiple types, use union types.
+
+let id: number | string = 42;
+
+id = "abc123";
+
+By adhering to these rules and best practices, you can create robust, type-safe, and maintainable TypeScript code.
+
+13.
+When is an unknown type used?
+
+Hide Answer
+In TypeScript, the unknown type is used when a value can potentially have any type but still requires type-checking before performing any operations on it. It is a safer alternative to the any type, which disables type-checking completely. By using the unknown type, you are signaling that a value's type is not predetermined, yet you still want to enforce type-checking before using it.
+
+Using unknown is particularly useful when dealing with user input, values from external libraries or APIs, deserialized data, or any situation where the exact type of a value cannot be determined beforehand. When a value is of type unknown, TypeScript enforces a type guard or a type assertion to narrow down its type before using it in the code, making it a more type-safe approach.
+
+Here's an example:
+
+Image 15-06-23 at 2.57 AM.webp
+
+In this example, the processInput function accepts a parameter of type unknown, and it uses a type check (typeof input === "string") to narrow down the type to string before operating on it. This ensures that the code is type-safe and any potential issues are caught during compile time.
+
+14.
+Explain noImplicitAny?
+
+Hide Answer
+noImplicitAny is a property available with the TypeScript project configuration file ( tsconfig.json). This file alters how the compiler manages the project’s implicit “any” types. One can also set the noImplicitAny flag for either true or false. While deciding on the flag value, it is necessary to see the changes when it is turned on or off.
+
+When set to false, noImplicitAny, the compiler defaults the type to “any”. However, when the noImplicitAny flag is true, the compiler tries to decipher the type giving a compile-time error if it isn't able to infer the type.
+
+15.
+Differentiate union and intersection types?
+
+Hide Answer
+Union types and intersection types in TypeScript are used to combine multiple types; however, they serve different purposes and represent different relationships.
+
+Union Types (A | B): Union types represent a type that can be any one of several types. If a value is a union type, it means that the value can be of any type included in the union. When using a union type, you can only access members common to all types in the union.
+
+Example:
+
+Image 15-06-23 at 3.00 AM.webp
+
+Intersection Types (A & B): Intersection types represent a type that combines multiple types into one. If a value is an intersection type, it means that the value must have properties and behaviors consistent with all types included in the intersection. In other words, a value of an intersection type must satisfy all the types combined.
+
+Example:
+
+Image 15-06-23 at 3.01 AM.webp
+
+16.
+Differentiate between extends and implements in TypeScript?
+
+Hide Answer
+In TypeScript, extends and implements are used to establish relationships between classes and interfaces. They serve different purposes in terms of inheritance and structural contract enforcement:
+
+extends: The extends keyword is used to establish a subclass relationship between classes and also between interfaces. When a class or interface extends another class or interface, it inherits all properties and methods from the parent entity.
+
+Class extending a class: Child class inherits properties and methods from the parent class. A class can only extend one class (single inheritance).
+
+Image 15-06-23 at 2.38 PM.webp
+
+Interface extending an interface: Child interface inherits properties and methods from the parent interface. An interface can extend multiple interfaces.
+
+Image 15-06-23 at 2.38 PM (1).webp
+
+implements: The implements keyword is used to enforce that a class adheres to the structural contract defined by one or more interfaces. When a class implements an interface, it must provide definitions for all properties and methods declared in the implemented interface(s). A class can implement multiple interfaces.
+
+Image 15-06-23 at 2.39 PM.webp
+
+In summary, extends is used for inheritance between classes and interfaces. A class or interface can extend another class or interface, respectively, to inherit properties and methods. On the other hand, implements is used by a class to ensure it adheres to the contract(s) defined by one or more interfaces. A class must provide definitions for all properties and methods declared in the implemented interface(s).
+
+17.
+Explain how optional chaining works in TypeScript.
+
+Hide Answer
+It allows access to properties and methods within an object without the need to check the validity of every reference in the chain. It uses the question mark with a period as follows (?.). It analyzes each reference in the chain and does a null or undefined check before making an access to its children.
+
+18.
+What are abstract classes?
+
+Hide Answer
+Abstract classes in TypeScript are specialized classes that cannot be instantiated directly but serve as a base for other classes to extend. They are used to define common properties, methods, or a basic structure that must be shared among child classes.
+
+Abstract classes can include a mix of fully implemented methods, empty methods (without any implementation), and properties. Methods and properties marked as abstract in an abstract class must be implemented by the child classes that extend the abstract class.
+
+Here's an example to illustrate the concept of abstract classes in TypeScript:
+
+Image 15-06-23 at 2.47 PM.webp
+
+In this example, Animal is an abstract class with an abstract species property and an abstract makeSound() method. It also includes a non-abstract move() method. The Dog and Cat classes extend Animal and provide implementations for the abstract members (property species and method makeSound).
+
+19.
+What are the two syntaxes for type assertions in TypeScript?
+
+Hide Answer
+In TypeScript, type assertions are used to inform the compiler of the intended type when the inferred type might be too general, or when converting a more general type to a more specific one. It's important to note that type assertions do not perform type conversion or runtime checks; they act as a hint to the compiler during static type checking. There are two syntaxes for type assertions:
+
+Angle-bracket syntax:
+
+Image 15-06-23 at 2.49 PM.webp
+
+as syntax:
+
+Image 15-06-23 at 2.49 PM (1).webp
+
+Both syntaxes have the same effect from a type-checking perspective, but certain environments, like in JSX code in React projects, only support the as syntax due to the conflict of angle brackets with JSX elements. It's recommended to be consistent with your choice across a project to maintain code readability.
+
+20.
+Differentiate between type inference and contextual typing?
+
+Hide Answer
+In TypeScript, both type inference and contextual typing are mechanisms used to determine the types of variables or expressions without explicit type annotations. While they share a common purpose, they are used in different scenarios:
+
+Type Inference is the process by which TypeScript automatically deduces the type of a variable or expression based on the value it is assigned or initialized with. If you don't provide an explicit type annotation, TypeScript attempts to infer the type from the context. Type inference usually occurs when you declare and initialize a variable, assign a value to a variable, or set a function's return value.
+
+Contextual Typing is the mechanism by which TypeScript deduces the type of an expression based on its location in the code or the context in which it is used. Contextual typing occurs when an expression is part of a larger expression, and the type can be inferred by analyzing the surrounding code. TypeScript uses contextual typing in situations like event handlers, function parameter types, or type guards.
+
+21.
+Tell me about the process to declare a constant in TypeScript?
+
+Hide Answer
+In TypeScript, declaring a constant is similar to declaring variables, but with a crucial difference: the value of a constant can't change once it's initialized. This immutable nature ensures that the value remains consistent throughout the application, increasing code safety and enabling easy reasoning about the behavior.
+
+To declare a constant in TypeScript, use the const keyword followed by an identifier, an optional type annotation, an equal sign, and the constant's initial value. Here's an example:
+
+const PI: number = 3.14159;
+
+const WELCOME_MESSAGE: string = "Hello, World!";
+
+In this example, two constants are declared: PI and WELCOME_MESSAGE. The PI constant is declared with a type annotation indicating it's a number, while WELCOME_MESSAGE is declared as a string. Note that the type annotations are optional, as TypeScript can often infer the correct type based on the initial value. However, providing an explicit type annotation can improve code readability and catch potential errors during compilation.
+
+Remember that once a constant has been initialized, its value cannot be changed:
+
+PI = 3.14; // Compilation error: Cannot assign to 'PI' because it is a constant.
+
+22.
+How do you implement Mixins in TypeScript?
+
+Hide Answer
+Mixins are a way of combining multiple classes or interfaces into a single class. TypeScript supports mixing classes through function-based implementation.
+
+Example:
+
+Image 15-06-23 at 2.53 PM.webp
+
+23.
+How can you implement async/await in TypeScript?
+
+Hide Answer
+The async/await feature can be used to simplify handling asynchronous operations in TypeScript. Functions with the async keyword return a Promise that can be awaited.
+
+Example:
+
+Image 15-06-23 at 2.55 PM.webp
+
+24.
+How can you use mapped types in TypeScript?
+
+Hide Answer
+Mapped Types allow you to create new types based on existing ones by iterating over their properties and modifying them.
+
+Example:
+
+Image 15-06-23 at 2.56 PM.webp
+
+25.
+What is the keyof type operator in TypeScript?
+
+Hide Answer
+The keyof type operator is used to create a new type that contains a set of keys of the provided type.
+
+Example:
+
+Image 15-06-23 at 2.58 PM.webp
+
+26.
+How to use accessors (getters and setters) in TypeScript?
+
+Hide Answer
+TypeScript allows the creation of getter and setter methods using get and set keywords.
+
+Example:
+
+Image 15-06-23 at 2.59 PM.webp
+
+27.
+How can you create a custom decorator in TypeScript?
+
+Hide Answer
+Decorator is a special type of declaration that can be attached to a class, method, or property to extend or modify its behavior. To create a custom decorator, define a function with the corresponding parameters.
+
+Example:
+
+Image 15-06-23 at 3.02 PM.webp
+
+28.
+How can you handle enums in TypeScript?
+
+Hide Answer
+Conditional types enable you to create types that are based on other types and can be refined based on some condition.
+
+Example:
+
+Image 15-06-23 at 3.04 PM.webp
+
+29.
+How can you use mapped types with conditional types in TypeScript?
+
+Hide Answer
+You can combine mapped and conditional types by using a mapped type as the extends clause of a conditional type.
+
+Example:
+
+Image 15-06-23 at 3.05 PM.webp
+
+Tired of interviewing candidates to find the best developers?
+Hire top vetted developers within 4 days.
+
+Hire Now
+WRAPPING UP
+In conclusion, the above 100 advanced TypeScript questions and answers provide an in-depth insight into various TypeScript features, concepts, and patterns. Familiarity with these topics will not only help developers enhance their programming skills and build maintainable, robust, and scalable applications but also equip them to tackle challenging interview questions with confidence. For hiring managers, these questions can serve as a reference to assess the proficiency of prospective TypeScript developers. By leveraging these questions, hiring managers can effectively gauge the candidate's ability to handle advanced TypeScript concepts and ensure they are well-suited for the role.
+
+Hire Silicon Valley-caliber remote Typescript developers at half the cost
+Turing helps companies match with top-quality remote Typescript developers from across the world in a matter of days. Scale your engineering team with pre-vetted remote Typescript developers at the push of a button.
+
+
+Dell logo
+
+Pepsi logo
+
+
+
+Reddit Logo
+Hire developers
