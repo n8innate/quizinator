@@ -700,21 +700,808 @@ xhttp.onreadystatechange = function() {
   {
     rating: 0,
     subject: 'frontend',
-    topic: 'Basic Frontend',
-    level: 0,
-    question: '',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'Explain the concept of server-side rendering vs. client-side rendering.',
     answer: 
       <>
+        <p>Server-side rendering and client-side rendering are two different approaches to rendering web content in web applications:</p>
+        <ul>
+          <li><strong>Server-side rendering:</strong> In server-side rendering, the web server generates the HTML content for the web page and sends it to the client's browser. This approach is typically used for traditional web applications and websites, and it provides a way to deliver content that is accessible and indexable by search engines.</li>
+          <li><strong>Client-side rendering:</strong> In client-side rendering, the web server sends a minimal HTML page to the client's browser, and the client's browser uses JavaScript to render the content dynamically. This approach is typically used for single-page applications (SPAs) and web applications that require a high degree of interactivity and responsiveness.</li>
+        </ul>
+        <p>Both server-side rendering and client-side rendering have their advantages and disadvantages, and the choice between the two approaches depends on the specific requirements and goals of the web project.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you manage state in complex web applications?',
+    answer: 
+      <>
+        <p>Managing state in complex web applications involves a variety of techniques and best practices, such as:</p>
+        <ul>
+          <li>Using state management libraries and frameworks, such as Redux, MobX, or Vuex, to manage and synchronize state across different components</li>
+          <li>Using context and hooks in React to manage and share state across different components without prop drilling</li>
+          <li>Using local and session storage to persist state across page reloads and browser sessions</li>
+          <li>Using cookies and tokens to manage user authentication and session state</li>
+          <li>Using server-side state management techniques, such as sessions and caching, to manage and synchronize state across different users and devices</li>
+        </ul>
+        <p>By using these techniques, developers can create web applications that manage and synchronize state effectively, providing a seamless and reliable user experience for all users.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are the advantages/disadvantages of Single Page Applications (SPAs)?',
+    answer: 
+      <>
+        <p>Single Page Applications (SPAs) have several advantages and disadvantages:</p>
+        <p><strong>Advantages:</strong></p>
+        <ul>          
+          <li><strong>Improved user experience:</strong> SPAs provide a more app-like experience for users, with faster navigation and seamless interactions.</li>
+          <li><strong>Reduced server load:</strong> SPAs only load the necessary content, reducing server requests and improving performance.</li>
+          <li><strong>Improved performance:</strong> SPAs use client-side rendering and caching to provide faster load times and responsiveness.</li>
+          <li><strong>Enhanced interactivity:</strong> SPAs use JavaScript to provide dynamic and interactive user experiences, improving engagement and usability.</li>
+        </ul>
+        <p><strong>Disadvantages:</strong></p>
+        <ul>  
+          <li><strong>SEO challenges:</strong> SPAs can present challenges for search engine optimization, as content may not be easily indexable by search engines.</li>
+          <li><strong>Initial load time:</strong> SPAs may have longer initial load times, as they require the entire application to be loaded upfront.</li>
+          <li><strong>Complexity:</strong> SPAs can be more complex to develop and maintain, requiring additional client-side logic and state management.</li>
+          <li><strong>Accessibility:</strong> SPAs may present challenges for users with disabilities or assistive technologies, as they rely heavily on JavaScript for rendering and interactivity.</li>
+        </ul>
+        <p>By considering these advantages and disadvantages, developers can make informed decisions about when to use SPAs and how to mitigate their limitations in web projects.</p>
       </>
   },
   {
     rating: 0,
     subject: 'frontend',
     topic: 'Basic Frontend',
-    level: 0,
-    question: '',
+    level: 2,
+    question: 'Describe the process of integrating third-party APIs into a web application.',
     answer: 
       <>
+        <p>Integrating third-party APIs into a web application involves several steps:</p>
+        <ul>
+          <li><strong>Research and documentation:</strong> Identify the third-party API that provides the desired functionality and review its documentation to understand the available endpoints, parameters, and authentication requirements.</li>
+          <li><strong>Authentication:</strong> Obtain the necessary API keys, tokens, or credentials to authenticate and access the third-party API.</li>
+          <li><strong>API request:</strong> Use JavaScript or a server-side language to make HTTP requests to the third-party API, passing the required parameters and handling the response data.</li>
+          <li><strong>Data parsing and manipulation:</strong> Parse and manipulate the response data from the third-party API to extract the relevant information and integrate it into the web application.</li>
+          <li><strong>Error handling:</strong> Implement error handling and fallback mechanisms to manage issues such as network problems or incorrect responses from the third-party API.</li>
+          <li><strong>Testing and optimization:</strong> Test the integration of the third-party API in different environments and optimize the performance and reliability of the integration.</li>
+        </ul>
+        <p>By following these steps, developers can integrate third-party APIs into web applications, providing a wide range of functionality and features to enhance the overall user experience.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you handle security concerns in frontend development?',
+    answer: 
+      <>
+        <p>Handling security concerns in frontend development involves a variety of techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Secure coding practices:</strong> Following best practices for writing secure and robust code, such as input validation, output encoding, and secure authentication and authorization mechanisms.</li>
+          <li><strong>Secure communication:</strong> Using HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and data tampering.</li>
+          <li><strong>Authentication and authorization:</strong> Implementing secure user authentication and authorization mechanisms, such as multi-factor authentication and role-based access control.</li>
+          <li><strong>Content security policy:</strong> Using content security policies to prevent cross-site scripting (XSS) attacks and other security vulnerabilities.</li>
+          <li><strong>Security testing:</strong> Performing security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations, such as GDPR and CCPA, to protect user data and privacy.</li>
+        </ul>
+        <p>By using these techniques, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are Progressive Web Apps (PWAs), and how do they work?',
+    answer: 
+      <>
+        <p>Progressive Web Apps (PWAs) are web applications that provide a native app-like experience for users, with features such as offline access, push notifications, and device hardware access. They work by using modern web technologies, such as service workers and web app manifests, to provide a reliable and engaging user experience, regardless of the user's network connection or device capabilities.</p>
+        <p>PWAs use service workers to cache content and provide offline access to web applications, allowing users to access and interact with the content even when they are offline or have a poor network connection. They also use web app manifests to provide a way to install the web application to the user's device, providing a more app-like experience and improving discoverability and engagement.</p>
+        <p>By using these features, PWAs provide a way to create web applications that are reliable, fast, and engaging, improving the overall user experience and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 2,
+    question: 'Explain the concept of data binding in frontend frameworks.',
+    answer: 
+      <>
+        <p>Data binding is a technique used in frontend frameworks to establish a connection between the model (data) and the view (UI), allowing changes in one to be reflected in the other. There are two main types of data binding:</p>
+        <ul>
+          <li><strong>One-way data binding:</strong> In one-way data binding, changes in the model are reflected in the view, but changes in the view do not affect the model. This is commonly used for displaying data in the UI.</li>
+          <li><strong>Two-way data binding:</strong> In two-way data binding, changes in the model are reflected in the view, and changes in the view are also reflected in the model. This is commonly used for forms and interactive UI elements.</li>
+        </ul>
+        <p>Data binding simplifies the process of updating the UI in response to changes in the underlying data, providing a way to create dynamic and responsive web applications with minimal manual manipulation of the DOM.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'How do you implement internationalization in web applications?',
+    answer: 
+      <>
+        <p>Implementing internationalization in web applications involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Using language tags:</strong> Identifying and tagging content with language codes to indicate the language of the content.</li>
+          <li><strong>Using localization libraries:</strong> Using libraries and frameworks to manage and translate content for different languages and locales.</li>
+          <li><strong>Using translation files:</strong> Storing translations in separate files or databases to manage and maintain localized content.</li>
+          <li><strong>Using language negotiation:</strong> Automatically detecting the user's preferred language and serving the appropriate content based on their preferences.</li>
+          <li><strong>Using language-specific formatting:</strong> Adapting date, time, and number formats to match the conventions of different languages and locales.</li>
+          <li><strong>Testing and validation:</strong> Testing and validating the internationalization features of web applications to ensure that content is accurately translated and localized for different languages and locales.</li>
+        </ul>
+        <p>By using these techniques, developers can create web applications that are accessible and usable for users from different language backgrounds and locales, improving the overall inclusivity and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are web components, and how are they used?',
+    answer: 
+      <>    
+        <p>Web components are a set of web platform APIs that allow developers to create reusable and encapsulated custom elements for web applications. They consist of several key features:</p>
+        <ul>
+          <li><strong>Custom elements:</strong> Define new HTML elements that encapsulate their functionality and styling.</li>
+          <li><strong>Shadow DOM:</strong> Encapsulate the styling and behavior of custom elements, preventing style and DOM conflicts with the rest of the document.</li>
+          <li><strong>HTML templates:</strong> Define reusable templates for custom elements, allowing developers to define and reuse complex HTML structures.</li>
+          <li><strong>HTML imports:</strong> Import and reuse custom elements and templates from other documents and components.</li>
+        </ul>
+        <p>Web components provide a way to create modular, reusable, and encapsulated components for web applications, improving the maintainability and reusability of the content.</p>  
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'Describe the process of optimizing frontend assets.',
+    answer: 
+      <>
+        <p>Optimizing frontend assets involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Minification:</strong> Removing unnecessary characters from CSS, JavaScript, and HTML files to reduce file size and improve load times.</li>
+          <li><strong>Concatenation:</strong> Combining multiple CSS and JavaScript files into a single file to reduce the number of server requests and improve performance.</li>
+          <li><strong>Compression:</strong> Compressing images, videos, and other media assets to reduce file size and improve load times.</li>
+          <li><strong>Caching:</strong> Using browser caching and server-side caching to store and reuse static assets, reducing server requests and improving performance.</li>
+          <li><strong>Lazy loading:</strong> Deferring the loading of non-essential content until it is needed, improving initial load times and performance.</li>
+          <li><strong>Dependencies:</strong> Using tools and build processes to manage and optimize dependencies, such as tree shaking and code splitting, to reduce file size and improve performance.
+            <ul>
+              <li><strong>Tree shaking:</strong> Removing unused code and dependencies from JavaScript bundles to reduce file size and improve performance.</li>
+              <li><strong>Code splitting:</strong> Splitting large JavaScript bundles into smaller chunks to reduce initial load times and improve performance.</li> 
+              <li><strong>Auditing:</strong> Regularly audit and remove unnecessary dependencies. </li>
+            </ul>
+          </li>
+          <li><strong>Performance monitoring:</strong> Monitoring and testing the performance of frontend assets to identify and fix performance issues.</li>
+          <li><strong>Responsive design:</strong> Using responsive design techniques to optimize the layout and presentation of web content for different devices and screen sizes, improving the overall user experience and usability of the content.</li>
+          <li><strong>User engagement:</strong> Continuously test and refine frontend optimizations for optimal user engagement.</li>
+        </ul>
+        <p>By using these techniques, developers can create web applications that load quickly and provide a seamless user experience, improving engagement and usability for all users.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 1,
+    question: 'What are websockets?',
+    answer: 
+      <>
+        <p>Websockets are a communication protocol that provides full-duplex communication channels over a single TCP connection. They are used in web development to enable real-time, bidirectional communication between clients and servers, allowing data to be transmitted between the two parties without the need for continuous polling or long-lived connections.</p>
+        <p>Websockets are particularly useful for creating real-time web applications, such as chat applications, multiplayer games, and collaborative editing tools, as they provide a way to transmit data between clients and servers in real time, improving the overall responsiveness and interactivity of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'When should you use client-side routing in web applications?',
+    answer: 
+      <>
+        <p>Client-side routing is a technique used in web applications to manage and update the URL and content of the web page without requiring a full page reload. It is typically used in single-page applications (SPAs) and web applications that require a high degree of interactivity and responsiveness.</p>
+        <p>Client-side routing is particularly useful for creating web applications with complex user interfaces, such as dashboards, data visualization tools, and interactive forms, as it provides a way to update the content and state of the application in response to user interactions, without requiring a full page reload.</p>
+        <p>By using client-side routing, developers can create web applications that provide a seamless and responsive user experience, improving engagement and usability for all users.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'When should you use server-side rendering in web applications?',
+    answer: 
+      <>
+        <p>Server-side rendering is a technique used in web applications to generate the HTML content of the web page on the server and send it to the client's browser. It is typically used in traditional web applications and websites that require search engine optimization, accessibility, and initial load time performance.</p>
+        <p>Server-side rendering is particularly useful for creating web applications with content that needs to be indexed by search engines, such as blogs, news websites, and e-commerce platforms, as it provides a way to deliver content that is accessible and indexable by search engines, improving the overall discoverability and visibility of the content.</p>
+        <p>By using server-side rendering, developers can create web applications that are accessible, indexable, and performant, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'When should you use RESTful APIs, when should you use websockets and when should you use GraphQL?',
+    answer: 
+      <>
+        <p>The choice between RESTful APIs, websockets, and GraphQL depends on the specific requirements and goals of the web application:</p>
+        <ul>
+          <li><strong>RESTful APIs:</strong> Use RESTful APIs for creating web applications that require a stateless, scalable, and interoperable way to access and integrate external data and services. RESTful APIs are particularly useful for creating web applications that need to perform CRUD operations on resources and access external data sources and services.</li>
+          <li><strong>Websockets:</strong> Use websockets for creating real-time web applications that require bidirectional, full-duplex communication between clients and servers. Websockets are particularly useful for creating web applications that need to transmit data in real time, such as chat applications, multiplayer games, and collaborative editing tools.</li>
+          <li><strong>GraphQL:</strong> Use GraphQL for creating web applications that require a flexible and efficient way to access and manipulate data. GraphQL is particularly useful for creating web applications that need to perform complex queries and mutations on data, providing a way to access and integrate data from multiple sources and services.</li>
+        </ul>
+        <p>By considering these factors, developers can make informed decisions about when to use RESTful APIs, websockets, and GraphQL in web projects, and how to leverage their strengths to create reliable and responsive web applications.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'How do you handle error logging and reporting in frontend applications?',
+    answer: 
+      <>
+        <p>Handling error logging and reporting in frontend applications involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Client-side error handling:</strong> Implementing error handling and validation in client-side code to prevent and manage errors and exceptions.</li>
+          <li><strong>Error boundaries:</strong>
+            <ul>
+              <li>Using error boundaries in React to catch and handle errors that occur in the component tree.</li>
+              <li>Using try-catch blocks in JavaScript to catch and handle errors in client-side code.</li>
+            </ul>
+          </li>
+          <li><strong>Error logging:</strong> Logging errors and exceptions in client-side code to track and monitor issues that occur in the application.</li>
+          <li><strong>Error reporting:</strong> Reporting errors and exceptions to a server-side logging service or monitoring tool to track and manage issues that occur in the application.</li>
+          <li><strong>Error tracking:</strong> Tracking and monitoring errors and exceptions in the application to identify and fix issues that affect the user experience and usability of the content.</li>
+          <li><strong>Performance monitoring:</strong> Monitoring and testing the performance of frontend applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations, such as GDPR and CCPA, to protect user data and privacy.</li>
+        </ul>
+        <p>By using these techniques, developers can create frontend applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are the best practices for responsive design and implementation?',
+    answer: 
+      <>
+        <p>Responsive design is a design technique used in web development to create web applications that adapt and respond to different devices and screen sizes. It involves several best practices, such as:</p>
+        <ul>
+          <li><strong>Using media queries:</strong> Defining breakpoints and responsive styles using CSS media queries to adapt the layout and presentation of web content for different devices and screen sizes.</li>
+          <li><strong>Using fluid layouts:</strong> Creating flexible and fluid layouts that adapt to the user's viewport, providing a consistent and user-friendly reading experience across different devices and screen sizes.</li>
+          <li><strong>Using responsive images:</strong> Optimizing and resizing images for different devices and screen sizes, providing a way to deliver visually appealing and performant images to users.</li>
+          <li><strong>Using viewport units:</strong> Using viewport units, such as vw and vh, to define font sizes and lengths relative to the user's viewport, providing a way to create scalable and responsive typography and layout.</li>
+          <li><strong>Using responsive typography:</strong> Using responsive typography techniques, such as fluid typography and viewport units, to create readable and visually appealing text content that adjusts to different screen sizes and resolutions.</li>
+          <li><strong>Testing and validation:</strong> Testing and validating the responsive design of web applications to ensure that content is accessible and usable for users from different devices and screen sizes.</li>
+        </ul>
+        <p>By using these best practices, developers can create web applications that provide a consistent and visually appealing user experience across a wide range of devices and screen sizes, improving the overall accessibility and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'Describe frontend testing and what tools to use?',
+    answer: 
+      <>
+        <p>Frontend testing involves several techniques and tools to ensure the quality and reliability of web applications, such as:</p>
+        <ul>
+          <li><strong>Unit testing:</strong> Testing individual components and functions in isolation to ensure that they work as expected.</li>
+          <li><strong>Integration testing:</strong> Testing the interaction and behavior of multiple components and modules to ensure that they work together as expected.</li>
+          <li><strong>End-to-end testing:</strong> Testing the entire application from the user's perspective to ensure that it works as expected in a real-world scenario.</li>
+          <li><strong>Snapshot testing:</strong> Testing the visual appearance and behavior of components to ensure that they render and behave consistently across different devices and screen sizes.</li>
+          <li><strong>Performance testing:</strong> Testing the performance and responsiveness of web applications to ensure that they load quickly and provide a seamless user experience.</li>
+          <li><strong>Accessibility testing:</strong> Testing the accessibility and usability of web applications to ensure that they are accessible and usable for users with disabilities and assistive technologies.</li>
+          <li><strong>Security testing:</strong> Testing the security and reliability of web applications to ensure that they protect user data and privacy and are resilient to security threats and vulnerabilities.</li>
+          <li><strong>Tools:</strong> There are several tools and frameworks available for frontend testing, such as Jest, Mocha, Jasmine, and Selenium, providing a way to create and run tests for web applications and ensure their quality and reliability.</li>
+        </ul>
+        <p>By using these techniques and tools, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'Describe the importance of clean and maintainable code in frontend development.',
+    answer: 
+      <>
+        <p>Clean and maintainable code is important in frontend development for several reasons:</p>
+        <ul>
+          <li><strong>Readability:</strong> Clean code is easier to read and understand, improving the overall maintainability and reusability of the code.</li>
+          <li><strong>Maintainability:</strong> Clean code is easier to maintain and update, reducing the time and effort required to make changes and improvements to the codebase.</li>
+          <li><strong>Scalability:</strong> Clean code is easier to scale and extend, providing a way to create and maintain large and complex web applications with minimal complexity and technical debt.</li>
+          <li><strong>Collaboration:</strong> Clean code promotes collaboration and teamwork, allowing developers to work together effectively and efficiently on web projects.</li>
+          <li><strong>Performance:</strong> Clean code can improve the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Quality:</strong> Clean code improves the overall quality and reliability of web applications, providing a way to create and maintain content that is accessible, usable, and reliable for all users.</li>
+        </ul>
+        <p>By writing clean and maintainable code, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is dependency management in frontend development, and why is it important?',
+    answer: 
+      <>
+        <p>Dependency management in frontend development involves managing and organizing the external libraries, frameworks, and modules used in web applications. It ensures that these dependencies are correctly integrated, updated, and compatible with each other.  It is important for several reasons:</p>
+        <ul>
+          <li><strong>Code organization:</strong> Dependency management provides a way to organize and manage the external dependencies used in web applications, reducing complexity and improving maintainability.</li>
+          <li><strong>Version control:</strong> Dependency management ensures that the correct versions of external dependencies are used in web applications, reducing the risk of compatibility issues and security vulnerabilities.</li>
+          <li><strong>Performance:</strong> Dependency management can improve the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Security:</strong> Dependency management ensures that external dependencies are secure and reliable, reducing the risk of security threats and vulnerabilities that affect the overall quality and reliability of the content.</li>
+          <li><strong>Compliance:</strong> Dependency management ensures that external dependencies comply with data protection regulations and industry standards, protecting user data and privacy and improving the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using dependency management, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you ensure the scalability of a frontend application?',
+    answer: 
+      <>
+        <p>Ensuring the scalability of a frontend application involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Modular architecture:</strong> Using a modular architecture to organize and structure the codebase, reducing complexity and improving maintainability.</li>
+          <li><strong>Code splitting:</strong> Splitting large JavaScript bundles into smaller chunks to reduce initial load times and improve performance.</li>
+          <li><strong>Tree shaking:</strong> Removing unused code and dependencies from JavaScript bundles to reduce file size and improve performance.</li>
+          <li><strong>Performance monitoring:</strong> Monitoring and testing the performance of frontend applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
+          <li><strong>Scalable design patterns:</strong> Using scalable design patterns, such as component-based architecture and state management, to create and maintain large and complex web applications with minimal complexity and technical debt.</li>
+          <li><strong>Performance optimization:</strong> Optimizing the performance and reliability of frontend applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is tree shaking, and how is it used in frontend development?',
+    answer: 
+      <>
+        <p>Tree shaking is a technique used in frontend development to remove unused code and dependencies from JavaScript bundles, reducing file size and improving performance. It is typically used in web applications that use modular architecture and dependency management to create and maintain large and complex codebases with minimal complexity and technical debt.</p>
+        <p>Tree shaking works by analyzing the codebase and identifying the parts of the code that are not used, such as unused functions, variables, and modules. It then removes these unused parts from the JavaScript bundles, reducing file size and improving performance.</p>
+        <p>By using tree shaking, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are some challenges with working with legacy code in frontend development?',
+    answer: 
+      <>
+        <p>Working with legacy code in frontend development presents several challenges, such as:</p>
+        <ul>
+          <li><strong>Outdated technologies:</strong> Legacy code may be built with outdated technologies and practices, making it difficult to maintain and update.</li>
+          <li><strong>Complexity:</strong> Legacy code may be complex and difficult to understand, requiring additional time and effort to make changes and improvements.</li>
+          <li><strong>Technical debt:</strong> Legacy code may have accumulated technical debt, such as outdated dependencies and poor architecture, making it difficult to scale and extend.</li>
+          <li><strong>Compatibility:</strong> Legacy code may have compatibility issues with modern browsers and devices, requiring additional testing and validation to ensure that it works as expected.</li>
+          <li><strong>Security vulnerabilities:</strong> Legacy code may have security vulnerabilities and issues, such as outdated libraries and dependencies, making it susceptible to security threats and attacks.</li>
+          <li><strong>Performance issues:</strong> Legacy code may have performance issues and bottlenecks, such as slow load times and unresponsive interactions, affecting the user experience and usability of the content.</li>
+          <li><strong>Poor documentation:</strong> Legacy code may have poor or outdated documentation, making it difficult to understand and maintain.</li>
+          <li><strong>Inadequate testing:</strong> Legacy code may have poor or outdated tests, making it difficult to validate and ensure its quality and reliability.</li>
+        </ul>
+        <p>By addressing these challenges and using modern techniques and best practices, developers can maintain and update legacy code in frontend applications, improving the overall quality and usability of the content.  Overall, navigating and maintaining legacy frontend code demands patience, reverse engineering skills, and a strategic approach to ensure successful updates and enhancements.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you handle user authentication and authorization in web applications?',
+    answer: 
+      <>
+        <p>Handling user authentication and authorization in web applications involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>User authentication:</strong> Implementing secure user authentication mechanisms, such as password hashing, multi-factor authentication, and OAuth, to verify the identity of users and protect their accounts from unauthorized access.</li>
+          <li><strong>User authorization:</strong> Implementing secure user authorization mechanisms, such as role-based access control and token-based authentication, to manage and control the access and permissions of users within the application.</li>
+          <li><strong>Secure communication:</strong> Using HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and data tampering.</li>
+          <li><strong>Content security policy:</strong> Using content security policies to prevent cross-site scripting (XSS) attacks and other security vulnerabilities.</li>
+          <li><strong>Security testing:</strong> Performing security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations, such as GDPR and CCPA, to protect user data and privacy.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are CSS preprocessors, and how do they enhance styling?',
+    answer: 
+      <>
+        <p>CSS preprocessors are tools that extend the functionality of standard CSS by providing additional features and capabilities, such as variables, mixins, and nesting. They enhance styling by providing a way to create and maintain complex and reusable stylesheets with minimal repetition and redundancy.</p>
+        <p>CSS preprocessors work by processing and compiling the preprocessed code into standard CSS, which is then used to style web applications. They provide several key features:</p>
+        <ul>
+          <li><strong>Variables:</strong> Define and reuse values, such as colors, fonts, and dimensions, to create consistent and maintainable stylesheets.</li>
+          <li><strong>Mixins:</strong> Define and reuse sets of CSS properties and values, such as vendor prefixes and browser-specific styles, to create consistent and cross-browser compatible stylesheets.</li>
+          <li><strong>Nesting:</strong> Nest CSS rules and selectors to create a more organized and maintainable stylesheet structure, reducing complexity and improving readability.</li>
+          <li><strong>Functions:</strong> Define and reuse complex calculations and operations, such as color manipulation and layout calculations, to create dynamic and responsive stylesheets.</li>
+          <li><strong>Modularity:</strong> Organize and structure stylesheets into modular and reusable components, reducing repetition and redundancy and improving maintainability and scalability.</li>
+        </ul>
+        <p>By using CSS preprocessors, developers can create and maintain stylesheets that are consistent, maintainable, and reusable, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'Explain the concept of Continuous Integration/Continuous Deployment (CI/CD).',
+    answer: 
+      <>
+        <p>Continuous Integration/Continuous Deployment (CI/CD) is a set of practices and techniques used to automate and streamline the process of building, testing, and deploying applications. It involves several key concepts:</p>
+        <ul>
+          <li><strong>Continuous Integration:</strong> Automate the process of integrating and testing code changes from multiple developers into a shared codebase, ensuring that the changes are compatible and functional.</li>
+          <li><strong>Continuous Deployment:</strong> Automate the process of deploying code changes to production environments, ensuring that the changes are reliable and resilient to errors and issues.</li>
+          <li><strong>Automated testing:</strong> Automate the process of testing code changes to identify and fix errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Automated deployment:</strong> Automate the process of deploying code changes to production environments, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Continuous monitoring:</strong> Monitor and test the performance and reliability of web applications to identify and fix issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using CI/CD practices and techniques, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>  
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you handle large datasets and optimize performance in web applications?',
+    answer: 
+      <>
+        <p>Handling large datasets and optimizing performance in web applications involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Data pagination:</strong> Paginate and load large datasets in smaller chunks to reduce initial load times and improve performance.</li>
+          <li><strong>Data filtering:</strong> Filter and query large datasets to retrieve and display only the relevant information, reducing the amount of data transferred and improving performance.</li>
+          <li><strong>Data caching:</strong> Cache and store frequently accessed data to reduce server requests and improve performance.</li>
+          <li><strong>Data compression:</strong> Compress and optimize large datasets to reduce file size and improve load times.</li>
+          <li><strong>Performance monitoring:</strong> Monitor and test the performance of web applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
+          <li><strong>Server-side processsing:</strong> Offload processing to the server to reduce client-side processing and improve performance. You can also use server-side rendering to generate and serve content to the client, reducing the amount of client-side processing and improving performance.</li>
+          <li><strong>Content Delivery Networks (CDNs):</strong> Use CDNs to cache and deliver large datasets to users, reducing server requests and improving performance.</li>
+          <li><strong>Reduce blocking:</strong> Employ asynchronous requests and minimize synchronous operations to prevent blocking.</li>
+          <li><strong>Algorithms and data structures:</strong> Emplement efficient algorithms and data structures for data manipulation and processing.</li>
+          
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are micro-frontends, and what advantages do they offer?',
+    answer: 
+      <>
+        <p>Micro-frontends are a design pattern used in frontend development to create and maintain web applications as a collection of small, self-contained, and independent frontend modules. They offer several advantages, such as:</p>
+        <ul>
+          <li><strong>Modularity:</strong> Create and maintain web applications as a collection of small, self-contained, and independent frontend modules, reducing complexity and improving maintainability.</li>
+          <li><strong>Scalability:</strong> Scale and extend web applications with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
+          <li><strong>Reusability:</strong> Reuse and share frontend modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
+          <li><strong>Autonomy:</strong> Develop and deploy frontend modules independently, reducing dependencies and improving maintainability and reliability.</li>
+          <li><strong>Performance:</strong> Optimize the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using micro-frontends, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is GraphQL, and how is it used in frontend development?',
+    answer: 
+      <>
+        <p>GraphQL is a query language and runtime for APIs that provides a way to define and query the data requirements of web applications. It is used in frontend development to create and maintain web applications that require flexible and efficient data retrieval and manipulation.</p>
+        <p>GraphQL works by defining a schema that describes the data requirements of the application, including the types of data and the relationships between them. It then provides a way to query this schema using a flexible and expressive syntax, allowing clients to request only the data they need, reducing the amount of data transferred and improving performance.</p>
+        <p>By using GraphQL, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are the latest trends in frontend development technologies?',
+    answer: 
+      <>
+        <p>Some of the latest trends in frontend development technologies include:</p>
+        <ul>
+          <li><strong>Serverless architecture:</strong> Use serverless architecture to create and maintain web applications without managing servers and infrastructure, reducing complexity and improving scalability and reliability.</li>
+          <li><strong>Progressive Web Apps (PWAs):</strong> Create web applications that provide a native app-like experience, such as offline support, push notifications, and home screen installation, improving the overall user experience and usability of the content.</li>
+          <li><strong>WebAssembly:</strong> Use WebAssembly to run high-performance, low-level code in web applications, improving the performance and reliability of the content.</li>
+          <li><strong>Headless CMS:</strong> Use headless CMS to create and maintain web applications with decoupled content management and presentation layers, improving the maintainability and scalability of the content.</li>
+          <li><strong>Static site generators:</strong> Use static site generators to create and maintain web applications with pre-built static pages, improving the performance and reliability of the content.</li>
+          <li><strong>Low-code and no-code platforms:</strong> Use low-code and no-code platforms to create and maintain web applications with minimal coding and development effort, improving the accessibility and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these technologies and trends, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the importance of a frontend framework, and how do you choose one?',
+    answer: 
+      <>
+        <p>Frontend frameworks are important in web development for several reasons:</p>
+        <ul>
+          <li><strong>Modularity:</strong> Use frontend frameworks to organize and structure the codebase, reducing complexity and improving maintainability.</li>
+          <li><strong>Scalability:</strong> Use frontend frameworks to scale and extend web applications with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
+          <li><strong>Reusability:</strong> Reuse and share frontend components and modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
+          <li><strong>Performance:</strong> Optimize the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>When choosing a frontend framework, consider factors such as:</p>
+        <ul>
+          <li><strong>Community support:</strong> Choose a framework with a strong and active community, providing a way to access and share resources, such as documentation, tutorials, and libraries.</li>
+          <li><strong>Performance:</strong> Choose a framework with good performance and reliability, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Scalability:</strong> Choose a framework with good scalability and extensibility, providing a way to create and maintain large and complex codebases with minimal complexity and technical debt.</li>
+          <li><strong>Compatibility:</strong> Choose a framework with good compatibility and interoperability, ensuring that it works well with other technologies and tools used in web development.</li>
+          <li><strong>Security:</strong> Choose a framework with good security and reliability, reducing the risk of security threats and vulnerabilities that affect the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using frontend frameworks and considering these factors, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you protect an application from cross-site scripting (XSS) attacks?',
+    answer: 
+      <>
+        <p>Protecting an application from cross-site scripting (XSS) attacks involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Content security policy:</strong> Use content security policies to prevent cross-site scripting (XSS) attacks and other security vulnerabilities.</li>
+          <li><strong>Input validation:</strong> Validate and sanitize user input to prevent malicious code from being executed in the application.</li>
+          <li><strong>Output encoding:</strong> Encode and escape user input to prevent malicious code from being executed in the application.</li>
+          <li><strong>Secure communication:</strong> Use HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and data tampering.</li>
+          <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are common security threats in frontend development, and how do you protect against them?',
+    answer: 
+      <>
+        <p>Common security threats in frontend development include:</p>
+        <ul>
+          <li><strong>Cross-site scripting (XSS):</strong> Prevent XSS attacks by using content security policies, input validation, and output encoding to protect against malicious code execution.</li>
+          <li><strong>Cross-site request forgery (CSRF):</strong> Prevent CSRF attacks by using anti-CSRF tokens and secure cookies to protect against unauthorized requests.</li>
+          <li><strong>Clickjacking:</strong> Prevent clickjacking attacks by using frame-busting scripts and X-Frame-Options headers to protect against unauthorized framing of web content.</li>
+          <li><strong>Security misconfigurations:</strong> Prevent security misconfigurations by using secure defaults and best practices to protect against unauthorized access and exposure of sensitive information.</li>
+          <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you protect an application from cross-site forgery (CSRF) attacks?',
+    answer: 
+      <>
+        <p>Protecting an application from cross-site request forgery (CSRF) attacks involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Anti-CSRF tokens:</strong> Use anti-CSRF tokens to protect against unauthorized requests and ensure that requests originate from trusted sources.</li>
+          <li><strong>Secure cookies:</strong> Use secure cookies to protect against unauthorized access and exposure of sensitive information.</li>
+          <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you ensure positive user experience in situations of slow network connections?',
+    answer: 
+      <>
+        <p>Ensuring a positive user experience in situations of slow network connections involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Progressive enhancement:</strong> Use progressive enhancement to provide a baseline experience for all users and enhance the experience for users with modern browsers and devices.</li>
+          <li><strong>Offline support:</strong> Provide offline support for web applications, allowing users to access and interact with content even when they are offline or have a slow network connection.</li>
+          <li><strong>Performance monitoring:</strong> Monitor and test the performance of web applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is device fragmentation?',
+    answer: 
+      <>
+        <p>Device fragmentation is the phenomenon of having a wide variety of devices with different screen sizes, resolutions, and capabilities, making it difficult to create and maintain web applications that work well across all devices and screen sizes. It is important to consider device fragmentation when designing and developing web applications to ensure that they provide a consistent and visually appealing user experience across a wide range of devices and screen sizes.</p>
+        <p>By considering device fragmentation, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are some strategies for maintaining a consistent user experience across different devices and screen sizes?',
+    answer: 
+      <>
+        <p>Maintaining a consistent user experience across different devices and screen sizes involves several strategies and best practices, such as:</p>
+        <ul>
+          <li><strong>Responsive design:</strong> Use responsive design techniques to create web applications that adapt and respond to different devices and screen sizes, providing a consistent and visually appealing user experience.</li>
+          <li><strong>Progressive enhancement:</strong> Use progressive enhancement to provide a baseline experience for all users and enhance the experience for users with modern browsers and devices.</li>
+          <li><strong>Device testing:</strong> Test and validate web applications on a wide range of devices and screen sizes to ensure that they work well and provide a consistent user experience.</li>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these strategies and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you ensure your web application does not increase battery consumption on mobile devices?',
+    answer: 
+      <>
+        <p>Ensuring that a web application does not increase battery consumption on mobile devices involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Resource management:</strong> Manage and optimize the use of resources, such as CPU, memory, and network, to reduce battery consumption and improve the overall performance and reliability of the content.</li>
+          <li><strong>Performance monitoring:</strong> Monitor and test the performance of web applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content while minimizing the impact on battery consumption of mobile devices.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are feature flags, and how are they used in frontend development?',
+    answer: 
+      <>
+        <p>Feature flags are a technique used in frontend development to enable and disable features in web applications based on different conditions, such as user roles, environments, and A/B testing. They are used to control the visibility and behavior of features, providing a way to create and maintain web applications with minimal complexity and technical debt.</p>
+        <p>Feature flags work by defining and managing feature flags in the codebase, allowing developers to enable and disable features based on different conditions. They provide several key features:</p>
+        <ul>
+          <li><strong>Conditional rendering:</strong> Render and display features based on different conditions, such as user roles, environments, and A/B testing.</li>
+          <li><strong>Dynamic configuration:</strong> Configure and manage feature flags at runtime, allowing developers to enable and disable features without deploying new code.</li>
+          <li><strong>Testing and validation:</strong> Test and validate features in different environments and conditions, ensuring that they work as expected and provide a consistent user experience.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using feature flags, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are the best practices for form design and validation in web applications?',
+    answer: 
+      <>
+        <p>Best practices for form design and validation in web applications include:</p>
+        <ul>
+          <li><strong>Clear and consistent design:</strong> Use clear and consistent design patterns to create and maintain forms, reducing complexity and improving usability.</li>
+          <li><strong>Progressive disclosure:</strong> Use progressive disclosure to provide a clear and concise form layout, reducing complexity and improving usability.</li>
+          <li><strong>Input validation:</strong> Validate and sanitize user input to prevent errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Feedback and error messages:</strong> Provide feedback and error messages to guide users through the form submission process, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of form submissions to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the role of A/B testing in frontend development?',
+    answer: 
+      <>
+        <p>A/B testing is a technique used in frontend development to compare and evaluate the performance and usability of different versions of web applications. It is used to identify and fix issues that affect the user experience and usability of the content, providing a way to create and maintain web applications with minimal complexity and technical debt.</p>
+        <p>A/B testing works by defining and managing different versions of web applications, allowing developers to compare and evaluate their performance and usability. It provides several key features:</p>
+        <ul>
+          <li><strong>Comparative analysis:</strong> Compare and evaluate the performance and usability of different versions of web applications, identifying and fixing issues that affect the user experience and usability of the content.</li>
+          <li><strong>Dynamic configuration:</strong> Configure and manage different versions of web applications at runtime, allowing developers to compare and evaluate their performance and usability without deploying new code.</li>
+          <li><strong>Testing and validation:</strong> Test and validate different versions of web applications in different environments and conditions, ensuring that they work as expected and provide a consistent user experience.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using A/B testing, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are the challenges in implementing real-time features in web applications?',
+    answer: 
+      <>
+        <p>Implementing real-time features in web applications presents several challenges, such as:</p>
+        <ul>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of real-time features to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Scalability:</strong> Scale and extend real-time features with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
+          <li><strong>Reliability:</strong> Ensure the reliability and resilience of real-time features, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Security:</strong> Ensure the security and privacy of real-time features, reducing the risk of security threats and vulnerabilities that affect the overall quality and reliability of the content.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By addressing these challenges and using modern techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you balance innovation with maintaining a stable codebase?',
+    answer: 
+      <>
+        <p>Balancing innovation with maintaining a stable codebase involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Modularity:</strong> Use modular architecture and dependency management to create and maintain large and complex codebases with minimal complexity and technical debt.</li>
+          <li><strong>Scalability:</strong> Scale and extend web applications with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
+          <li><strong>Reusability:</strong> Reuse and share frontend components and modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
+          <li><strong>Autonomy:</strong> Develop and deploy frontend modules independently, reducing dependencies and improving maintainability and reliability.</li>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+
+          <li><strong>Culture of continuous improvement:</strong> Foster a culture of continuous improvement and learning to encourage innovation and creativity while maintaining a stable codebase.</li>
+          <li><strong>Agile Methodologies:</strong> Embrace agile methodologies to adapt quickly to emerging technologies while upholding a robust foundation.</li>
+          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content while balancing innovation with maintaining a stable codebase.</p>
       </>
   },
   {
