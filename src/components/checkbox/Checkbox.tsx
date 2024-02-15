@@ -18,9 +18,8 @@ export const Checkbox = (props: PropsWithChildren<ICheckboxProps>) => {
     </>
   
   const onCheckboxChange = () => {
-    console.log('onCheckboxChange')
+    updateQuestions(labelText, !checked)
     setChecked(!checked)
-    updateQuestions(labelText)
   }
 
   return (

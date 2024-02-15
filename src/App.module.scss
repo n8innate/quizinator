@@ -38,18 +38,28 @@
     width: 90%;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   .appQuestion {
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    .appTopic {
+      color: #B554E0;
+    }
+
+    .appCode {
+      max-height: 15vh;
+      overflow: auto;
+      font-size: small;
+    }
   }
 
   .appAnswerContainer {
@@ -85,6 +95,37 @@
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+  table {
+    // font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    //   monospace;
+    // display: flex;
+    // align-content: start;
+    margin: auto;
+    text-align: left;
+    width: fit-content;
+    background-color: rgb(60, 84, 117);
+    color: whitesmoke;
+    padding: 5px;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    tr:nth-child(even) {
+      background-color: #576A86;
+    }
+    th {
+      background-color: #B554E0;
+      color: #75FBCD;
+      font-size: large;
+    }
+    td {
+      padding: 5px;
+    }
+  }
+  tr {
+    border-bottom: 1px solid whitesmoke;
   }
 }
 

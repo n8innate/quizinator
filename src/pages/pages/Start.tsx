@@ -1,28 +1,29 @@
 import { useState } from 'react';
 
-import { reactQuestions, typescriptQuestions } from '../../questions';
 import Logo from '../../images/quizinator-logo.svg';
-import { Button, Checkbox, Loader, Rater } from '../../components';
+import { Button, Checkbox } from '../../components';
+import { IStartProps, Subject } from '../../types/types';
 import styles from '../../App.module.scss';
 
-export const Start = () => {
-  const [startNum, setStartNum] = useState(30);
-  const [questions, setQuestions] = useState(typescriptQuestions);
-  const [showAnswer, setShowAnswer] = useState(false);
-  const [numberOfQuestions, setNumberOfQuestions] = useState(10);
-  const [showQuiz, setShowQuiz] = useState(false);
-  
-  const updateQuestions = (questions: string) => { 
-    const questionTopic = {
-      React: reactQuestions,
-      Typescript: typescriptQuestions
-    }
-    setQuestions(questionTopic[questions as keyof typeof questionTopic])
-  }
 
-  const startNewQuiz = () => {
-    setStartNum(0)
-    setShowAnswer(false)
+
+export const Start = (props: IStartProps) => {
+  const { startNewQuiz } = props;
+  const [subject, setSubject] = useState<Subject>(
+    {
+      Frontend: false,
+      JavaScript: false,
+      React: false,
+      "REST API": false,
+      Typescript: false,
+    }
+  );
+  const [numberOfQuestions, setNumberOfQuestions] = useState(10);
+  
+  const updateQuestions = (newSubject: string, checked: boolean) => { 
+    console.log('new Subject: ', newSubject)
+    console.log('checked: ', checked)
+    setSubject({...subject, [newSubject]: checked})
   }
   
   return (
@@ -30,9 +31,15 @@ export const Start = () => {
       <div className={styles.appDashboard} >
         <img className={styles.appLogo} src={Logo} alt='quizinator logo' />
           <div className={styles.optionsContainer}>
-            <h3>Choose a topic</h3>
+            <h3>Choose a Subject</h3>
+            <Checkbox
+              labelText="JavaScript" updateQuestions={updateQuestions}
+            />
             <Checkbox
               labelText="React" updateQuestions={updateQuestions}
+            />
+            <Checkbox
+              labelText="REST API" updateQuestions={updateQuestions}
             />
             <Checkbox
               labelText="Typescript" updateQuestions={updateQuestions}
@@ -42,14 +49,17 @@ export const Start = () => {
               <input
                 type="range"            
                 min='0'
-                max={questions.length}
+                max={50}
                 onChange={(e) => setNumberOfQuestions(parseInt(e.target.value))}
                 value={numberOfQuestions}
               />
               {numberOfQuestions}
             </div>
 
-            <Button displayText='quiz me!' onClick={() => setShowQuiz(true)} />
+          <Button displayText='quiz me!' onClick={() => {
+            console.log('start page: ',subject, numberOfQuestions)
+            startNewQuiz(subject, numberOfQuestions)
+          }} />
         </div>
       </div>
     </div>
