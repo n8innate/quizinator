@@ -3321,9 +3321,60 @@ for (let i = 0; i < 5; i++) {
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
-		question: '',
+		question: 'What is polymorphism?',
 		answer:
 			<>
+				<p>Polymorphism is a concept in object-oriented programming that allows objects of different types to be treated as objects of a common type. It allows you to create code that can work with objects of different types, and it allows you to create code that can be reused with different types of objects.</p>
+				<p>Polymorphism is often used to create more flexible and maintainable code, and it is often used to create code that can work with different types of objects. It can be used to create more expressive and dynamic code, and it can be used to create a more organized and maintainable codebase.</p>
+				<p>Polymorphism is a key concept in object-oriented programming, and it is often used to create more flexible and maintainable code in JavaScript.</p>
+			</>
+	},
+	{
+		rating: 0,
+	subject: 'javascript', 
+	topic: 'Basic JavaScript',
+		level: 0,
+		question: 'What’s the difference between Function Declaration and Function Expression?',
+		answer:
+			<>
+				<p>A <strong>function declaration</strong> is a way to define a function in JavaScript. It is a statement that starts with the keyword function, followed by the name of the function, a list of parameters, and the body of the function. It can be used to define a function that can be called anywhere in the code, and it can be used to create a reusable and maintainable codebase.</p>
+				<pre><div className={styles.appCode} >{`
+function greet(name) {
+	console.log("Hello, " + name + "!");
+}
+greet("John");
+// Output: Hello, John!
+				`}</div></pre>
+				<p>A <strong>function expression</strong> is a way to define a function in JavaScript. It is an expression that starts with the keyword function, followed by an optional name, a list of parameters, and the body of the function. It can be used to define a function that can be assigned to a variable, and it can be used to create a more flexible and dynamic codebase.</p>
+				<pre><div className={styles.appCode} >{`
+let greet = function(name) {
+	console.log("Hello, " + name + "!");
+}
+greet("John");
+// Output: Hello, John!
+				`}</div></pre>
+				<p>While function declarations and function expressions are similar in functionality, they have some key differences. Function declarations are hoisted to the top of the scope, and they can be called anywhere in the code. Function expressions are not hoisted, and they can only be called after they have been defined.</p>
+			</>
+	},
+	{
+		rating: 0,
+	subject: 'javascript', 
+	topic: 'Intermediate JavaScript',
+		level: 0,
+		question: 'How do you remove Duplicates from a JavaScript Array?',
+		answer:
+			<>
+				<p>You can remove duplicates from a JavaScript array using the filter() method and the indexOf() method. The filter() method allows you to create a new array that contains only the unique elements of the original array, and the indexOf() method allows you to check if an element is already present in the new array.</p>
+				<pre><div className={styles.appCode} >{`
+let arr = [1, 2, 3, 4, 3, 2, 1];
+let uniqueArr = arr.filter((value, index, self) => {
+	return self.indexOf(value) === index;
+}
+console.log(uniqueArr);
+// Output: [1, 2, 3, 4]
+				`}</div></pre>
+				<p>This code creates a new array that contains only the unique elements of the original array, and it removes any duplicates from the array.</p>
+				
 			</>
 	},
 ];
