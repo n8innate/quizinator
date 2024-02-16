@@ -1051,7 +1051,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Version control:</strong> Dependency management ensures that the correct versions of external dependencies are used in web applications, reducing the risk of compatibility issues and security vulnerabilities.</li>
           <li><strong>Performance:</strong> Dependency management can improve the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Security:</strong> Dependency management ensures that external dependencies are secure and reliable, reducing the risk of security threats and vulnerabilities that affect the overall quality and reliability of the content.</li>
-          <li><strong>Compliance:</strong> Dependency management ensures that external dependencies comply with data protection regulations and industry standards, protecting user data and privacy and improving the overall quality and reliability of the content.</li>
         </ul>
         <p>By using dependency management, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1072,7 +1071,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Performance monitoring:</strong> Monitoring and testing the performance of frontend applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
           <li><strong>Scalable design patterns:</strong> Using scalable design patterns, such as component-based architecture and state management, to create and maintain large and complex web applications with minimal complexity and technical debt.</li>
           <li><strong>Performance optimization:</strong> Optimizing the performance and reliability of frontend applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1167,7 +1165,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Automated testing:</strong> Automate the process of testing code changes to identify and fix errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Automated deployment:</strong> Automate the process of deploying code changes to production environments, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Continuous monitoring:</strong> Monitor and test the performance and reliability of web applications to identify and fix issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using CI/CD practices and techniques, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>  
       </>
@@ -1191,8 +1188,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Content Delivery Networks (CDNs):</strong> Use CDNs to cache and deliver large datasets to users, reducing server requests and improving performance.</li>
           <li><strong>Reduce blocking:</strong> Employ asynchronous requests and minimize synchronous operations to prevent blocking.</li>
           <li><strong>Algorithms and data structures:</strong> Emplement efficient algorithms and data structures for data manipulation and processing.</li>
-          
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1212,7 +1207,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Reusability:</strong> Reuse and share frontend modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
           <li><strong>Autonomy:</strong> Develop and deploy frontend modules independently, reducing dependencies and improving maintainability and reliability.</li>
           <li><strong>Performance:</strong> Optimize the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using micro-frontends, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1246,7 +1240,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Headless CMS:</strong> Use headless CMS to create and maintain web applications with decoupled content management and presentation layers, improving the maintainability and scalability of the content.</li>
           <li><strong>Static site generators:</strong> Use static site generators to create and maintain web applications with pre-built static pages, improving the performance and reliability of the content.</li>
           <li><strong>Low-code and no-code platforms:</strong> Use low-code and no-code platforms to create and maintain web applications with minimal coding and development effort, improving the accessibility and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these technologies and trends, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1265,7 +1258,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Scalability:</strong> Use frontend frameworks to scale and extend web applications with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
           <li><strong>Reusability:</strong> Reuse and share frontend components and modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
           <li><strong>Performance:</strong> Optimize the performance and reliability of web applications, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>When choosing a frontend framework, consider factors such as:</p>
         <ul>
@@ -1293,7 +1285,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Output encoding:</strong> Encode and escape user input to prevent malicious code from being executed in the application.</li>
           <li><strong>Secure communication:</strong> Use HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and data tampering.</li>
           <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
       </>
@@ -1313,7 +1304,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Clickjacking:</strong> Prevent clickjacking attacks by using frame-busting scripts and X-Frame-Options headers to protect against unauthorized framing of web content.</li>
           <li><strong>Security misconfigurations:</strong> Prevent security misconfigurations by using secure defaults and best practices to protect against unauthorized access and exposure of sensitive information.</li>
           <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
       </>
@@ -1331,7 +1321,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Anti-CSRF tokens:</strong> Use anti-CSRF tokens to protect against unauthorized requests and ensure that requests originate from trusted sources.</li>
           <li><strong>Secure cookies:</strong> Use secure cookies to protect against unauthorized access and exposure of sensitive information.</li>
           <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
       </>
@@ -1350,7 +1339,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Progressive enhancement:</strong> Use progressive enhancement to provide a baseline experience for all users and enhance the experience for users with modern browsers and devices.</li>
           <li><strong>Offline support:</strong> Provide offline support for web applications, allowing users to access and interact with content even when they are offline or have a slow network connection.</li>
           <li><strong>Performance monitoring:</strong> Monitor and test the performance of web applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1381,7 +1369,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Progressive enhancement:</strong> Use progressive enhancement to provide a baseline experience for all users and enhance the experience for users with modern browsers and devices.</li>
           <li><strong>Device testing:</strong> Test and validate web applications on a wide range of devices and screen sizes to ensure that they work well and provide a consistent user experience.</li>
           <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these strategies and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1399,7 +1386,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Resource management:</strong> Manage and optimize the use of resources, such as CPU, memory, and network, to reduce battery consumption and improve the overall performance and reliability of the content.</li>
           <li><strong>Performance monitoring:</strong> Monitor and test the performance of web applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content while minimizing the impact on battery consumption of mobile devices.</p>
       </>
@@ -1418,7 +1404,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Conditional rendering:</strong> Render and display features based on different conditions, such as user roles, environments, and A/B testing.</li>
           <li><strong>Dynamic configuration:</strong> Configure and manage feature flags at runtime, allowing developers to enable and disable features without deploying new code.</li>
           <li><strong>Testing and validation:</strong> Test and validate features in different environments and conditions, ensuring that they work as expected and provide a consistent user experience.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using feature flags, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1438,7 +1423,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Input validation:</strong> Validate and sanitize user input to prevent errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Feedback and error messages:</strong> Provide feedback and error messages to guide users through the form submission process, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Performance optimization:</strong> Optimize the performance and reliability of form submissions to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1457,7 +1441,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Comparative analysis:</strong> Compare and evaluate the performance and usability of different versions of web applications, identifying and fixing issues that affect the user experience and usability of the content.</li>
           <li><strong>Dynamic configuration:</strong> Configure and manage different versions of web applications at runtime, allowing developers to compare and evaluate their performance and usability without deploying new code.</li>
           <li><strong>Testing and validation:</strong> Test and validate different versions of web applications in different environments and conditions, ensuring that they work as expected and provide a consistent user experience.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using A/B testing, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1476,7 +1459,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Scalability:</strong> Scale and extend real-time features with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
           <li><strong>Reliability:</strong> Ensure the reliability and resilience of real-time features, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
           <li><strong>Security:</strong> Ensure the security and privacy of real-time features, reducing the risk of security threats and vulnerabilities that affect the overall quality and reliability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By addressing these challenges and using modern techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
@@ -1499,7 +1481,6 @@ xhttp.onreadystatechange = function() {
 
           <li><strong>Culture of continuous improvement:</strong> Foster a culture of continuous improvement and learning to encourage innovation and creativity while maintaining a stable codebase.</li>
           <li><strong>Agile Methodologies:</strong> Embrace agile methodologies to adapt quickly to emerging technologies while upholding a robust foundation.</li>
-          <li><strong>Compliance with regulations:</strong> Ensure compliance with data protection regulations and industry standards to protect user data and privacy and improve the overall quality and reliability of the content.</li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content while balancing innovation with maintaining a stable codebase.</p>
       </>
@@ -1507,11 +1488,19 @@ xhttp.onreadystatechange = function() {
   {
     rating: 0,
     subject: 'frontend',
-    topic: 'Basic Frontend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'Explain the cookie attribute: “SameSite”',
     answer: 
       <>
+        <p>The "SameSite" attribute is used in HTTP cookies to control whether cookies are sent with cross-site requests. It provides a way to prevent cross-site request forgery (CSRF) attacks and protect user privacy and security.</p>
+        <p>The "SameSite" attribute has three possible values:</p>
+        <ul>
+          <li><strong>Strict:</strong> Cookies are only sent in first-party contexts, such as when the website is loaded in the address bar.</li>
+          <li><strong>Lax:</strong> Cookies are sent in first-party contexts and top-level navigations, such as when the website is loaded in the address bar or through a link click.</li>
+          <li><strong>None:</strong> Cookies are sent in all contexts, including cross-site requests, such as when the website is loaded in an iframe or through a cross-site request.</li>
+        </ul>
+        <p>By using the "SameSite" attribute, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>  
       </>
   },
   {
@@ -1519,9 +1508,695 @@ xhttp.onreadystatechange = function() {
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
-    question: '',
+    question: 'What distinguishes margin from padding in CSS?',
     answer: 
       <>
+        <p>Margin and padding are two fundamental concepts in CSS that are used to create space around and within elements, respectively. They are used to control the layout and spacing of elements in web applications, providing a way to create and maintain visually appealing and consistent designs.</p>
+        <p>Margin is used to create space around an element, pushing adjacent elements away from the element. It provides a way to control the spacing between elements and create visually appealing and consistent layouts.</p>
+        <p>Padding is used to create space within an element, pushing the content of the element away from its edges. It provides a way to control the spacing between the content and the edges of the element and create visually appealing and consistent designs.</p>
+        <p>By using margin and padding, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'Using CSS, how do you center an element both horizontally and vertically?',
+    answer: 
+      <>
+        <p>To center an element both horizontally and vertically using CSS, you can use the following techniques:</p>
+        <ul>
+          <li><strong>Text-align:</strong>  The text-align property may be used to center the text within the element, and subsequently, the margin: auto attribute can be used to center the element itself. You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+{`.centeredElement {
+  text-align: center;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Flexbox:</strong> The flex attribute may also be used to center an element both horizontally and vertically. This turns the element into a flex container, which implies that its children are automatically centered. The justify-content property determines how the flex container’s children are aligned horizontally, while the align-items property determines how the flex container’s children are positioned vertically.  You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+{`.centeredElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+            `}</div></pre>
+          </li>
+          <li><strong>Grid:</strong> Use the CSS grid layout model to center an element both horizontally and vertically.  The CSS place-items shorthand property allows you to align items along both the block and inline directions at once (i.e. the align-items and justify-items properties). Set the margin property of the child element to auto. This will center the child element both horizontally and vertically within the parent container.You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+{`.container {
+  display: grid;
+  place-items: center;
+}
+
+.centeredElement {
+  margin: auto;
+}
+            `}</div></pre>
+          </li>
+          <li><strong>Positioning and transform:</strong> The absolute property will position the element relative to its parent element, and then you can use the top and left properties to specify the exact position of the element. The top property specifies the top position of the element, and the left property specifies the left position of the element.  The transform property is used to apply a transformation to the element, and in this case, we are using it to translate the element by half its width and half its height. You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+{`.container {
+  position: relative;
+}
+.centeredElement {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+`}</div></pre>
+          </li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What is the box model in CSS, and how does it work?',
+    answer: 
+      <>
+        <p>The box model is a fundamental concept in CSS that describes the layout and spacing of elements in web applications. It consists of four parts: content, padding, border, and margin. Each part of the box model provides a way to control the layout and spacing of elements, creating visually appealing and consistent designs.</p>
+        <p>The content area is the actual content of the element, such as text, images, or other media. It is surrounded by the padding area, which provides space between the content and the border. The border area is a visible or invisible border around the padding, and it separates the padding from the margin. The margin area is the space outside the border, providing space between the element and adjacent elements.</p>
+        <p>By using the box model, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What is the process for debugging code?',
+    answer: 
+      <>
+        <p>The process for debugging code involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Identify the problem:</strong> Identify and understand the problem by reproducing the issue and gathering information about its symptoms and causes.</li>
+          <li><strong>Review the requirements/specifications:</strong> Review the Requirements or Specifications: Review the requirements or specifications and ensure that you know what the expected behavior of your code should be.</li>
+          <li><strong>Reproduce the issue:</strong> Try to reproduce the problem consistently. Identify the specific inputs or conditions that trigger the bug. Reproducing the issue reliably is crucial for understanding and fixing the problem.</li>
+          <li><strong>Isolate the problem:</strong> Isolate the problem by narrowing down the scope and identifying the root cause of the issue using debugging tools, print statements, or divide-and-conquer techniques.</li>
+          <li><strong>Fix the problem:</strong> Fix the problem by implementing a solution and testing it to ensure that it resolves the issue.</li>
+          <li><strong>Test the solution:</strong> Test the solution by validating that it resolves the issue and does not introduce new issues or regressions.</li>
+          <li><strong>Document the solution:</strong> Document the solution by recording the problem, the root cause, and the solution, providing a way to share and access information about the issue and its resolution.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the purpose of the viewport meta tag in HTML, and how is it used?',
+    answer: 
+      <>
+        <p>The viewport meta tag is used in HTML to control the layout and scaling of web pages on different devices and screen sizes. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</p>
+        <p>The viewport meta tag has several key attributes:</p>
+        <ul>
+          <li><strong>Width:</strong> Set the width of the viewport to control the layout and scaling of web pages on different devices and screen sizes.</li>
+          <li><strong>Initial-scale:</strong> Set the initial scale of the viewport to control the zoom level of web pages on different devices and screen sizes.</li>
+          <li><strong>User-scalable:</strong> Control whether users can zoom in and out of web pages on different devices and screen sizes.</li>
+          <li><strong>Minimum-scale:</strong> Set the minimum scale of the viewport to control the minimum zoom level of web pages on different devices and screen sizes.</li>
+          <li><strong>Maximum-scale:</strong> Set the maximum scale of the viewport to control the maximum zoom level of web pages on different devices and screen sizes.</li>
+        </ul>
+        <p>By using the viewport meta tag, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are some common SEO best practices for front-end developers to keep in mind?',
+    answer: 
+      <>
+        <p>Some common SEO best practices for front-end developers to keep in mind include:</p>
+        <ul>
+          <li><strong>Optimize page titles and meta descriptions:</strong> Use relevant and descriptive page titles and meta descriptions to improve the visibility and ranking of web pages in search engine results.</li>
+          <li><strong>Use semantic HTML:</strong> Use semantic HTML elements to provide clear and meaningful structure to web pages, improving the accessibility and usability of the content.</li>
+          <li><strong>Optimize images:</strong> Use descriptive file names and alt attributes for images to improve the visibility and ranking of web pages in search engine results.</li>
+          <li><strong>Use descriptive URLs:</strong> Use descriptive and keyword-rich URLs to improve the visibility and ranking of web pages in search engine results.</li>
+          <li><strong>Improve page load speed:</strong> Optimize the performance and reliability of web pages to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>JSON-LD:</strong> Use JSON-LD to provide structured data to search engines, improving the visibility and ranking of web pages in search engine results.
+          </li>
+        </ul>
+        <p>By using these best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content while optimizing the visibility and ranking of web pages in search engine results.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are the advantages and disadvantages of using a CSS preprocessor like Sass or Less?',
+    answer: 
+      <>
+        <p>Using a CSS preprocessor like Sass or Less has several advantages and disadvantages:</p>
+        <ul>
+          <li><strong>Advantages:</strong>
+            <ul>
+              <li><strong>Modularity:</strong> Use modular architecture and dependency management to create and maintain large and complex codebases with minimal complexity and technical debt.</li>
+              <li><strong>Scalability:</strong> Scale and extend web applications with minimal complexity and technical debt, providing a way to create and maintain large and complex codebases.</li>
+              <li><strong>Reusability:</strong> Reuse and share frontend components and modules across different web applications and projects, reducing repetition and redundancy and improving maintainability and scalability.</li>
+              <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+            </ul>
+          </li>
+          <li><strong>Disadvantages:</strong>
+            <ul>
+              <li><strong>Learning curve:</strong> There is a learning curve associated with using a CSS preprocessor, which may require time and effort to become proficient in using the tool effectively.</li>
+              <li><strong>Complexity:</strong> Using a CSS preprocessor may introduce additional complexity and technical debt to the codebase, requiring careful management and maintenance to avoid issues and errors.</li>
+              <li><strong>Performance overhead:</strong> Using a CSS preprocessor may introduce performance overhead, requiring careful optimization and testing to ensure that it does not affect the user experience and usability of the content.</li>
+            </ul>
+          </li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'How do you implement animations and transitions in CSS?',
+    answer: 
+      <>
+        <p>Implementing animations and transitions in CSS involves several techniques and best practices, such as:</p>
+        <ul>
+          <li><strong>Transitions:</strong> Use the transition property to create smooth and gradual changes in the style of an element, such as its color, size, or position. You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  transition: property duration timing-function delay;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Keyframes:</strong> Use the @keyframes rule to define the animation sequence, specifying the style changes that occur at different points during the animation. You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+              {`@keyframes animation-name {
+  0% { property: value; }
+  100% { property: value; }
+}
+
+.element {
+  animation: animation-name duration timing-function delay iteration-count direction fill-mode play-state;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Animation shorthand:</strong> Use the animation shorthand property to specify all the animation properties in a single declaration. You can use the following CSS properties:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of animations and transitions to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the difference between responsive and adaptive design?',
+    answer: 
+      <>
+        <p>The difference between responsive and adaptive design is:</p>
+        <ul>
+          <li><strong>Responsive design:</strong> Responsive design uses a fluid grid system and flexible layouts to adapt to different screen sizes and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>Adaptive design:</strong> Adaptive design uses predefined layouts and breakpoints to adapt to different screen sizes and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+        </ul>
+        <p>By using responsive and adaptive design, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are the differences between CSS grid layout and CSS flexbox? How do you decide which one to use?',
+    answer: 
+      <>
+        <p>The differences between CSS grid layout and CSS flexbox are:</p>
+        <ul>
+          <li><strong>CSS grid layout:</strong> CSS grid layout is a two-dimensional layout system that allows you to create complex grid-based layouts with rows and columns. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>CSS flexbox:</strong> CSS flexbox is a one-dimensional layout system that allows you to create flexible and responsive layouts with rows or columns. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+        </ul>
+        <p>When deciding which one to use, consider the following:</p>
+        <ul>
+          <li><strong>Complexity:</strong> Use CSS grid layout for complex grid-based layouts with rows and columns, and use CSS flexbox for flexible and responsive layouts with rows or columns.</li>
+          <li><strong>Compatibility:</strong> Use CSS grid layout for modern browsers and devices, and use CSS flexbox for older browsers and devices that do not support CSS grid layout.</li>
+          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+        </ul>
+        <p>By using these techniques and best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What is the difference between HTML and XHTML?',
+    answer: 
+      <>
+        <p>The difference between HTML and XHTML is:</p>
+        <ul>
+          <li><strong>HTML:</strong> HTML is a markup language that is used to create and maintain web pages and web applications. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>XHTML:</strong> XHTML is a stricter and more structured version of HTML that is based on XML. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+        </ul>  
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'In CSS, what is a reset?',
+    answer: 
+      <>
+        <p>In CSS, a reset is a set of styles that are used to reset the default styles of HTML elements to create a consistent and visually appealing baseline for web applications. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.  For example:</p>
+        <pre><div className={styles.appCode}>
+          {`/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}`}
+        </div></pre>
+        <p>In the above example: 
+          <ul>
+            <li><strong>margin: 0;</strong> removes the default margin of all HTML elements.</li>
+            <li><strong>padding: 0;</strong> removes the default padding of all HTML elements.</li>
+            <li><strong>box-sizing: border-box;</strong> sets the box-sizing property of all HTML elements to border-box, which includes the padding and border in the element's total width and height.</li>
+          </ul>
+        </p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is a task runner?',
+    answer: 
+      <>
+        <p>A task runner is a tool used in frontend development to automate repetitive tasks, such as compiling, minifying, and optimizing code, to improve the overall quality and usability of web applications. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`// Example using Gulp
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const minify = require('gulp-minify');
+
+gulp.task('styles', () => {
+  return gulp.src('src/styles/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('dist/styles'));
+}
+
+gulp.task('scripts', () => {
+  return gulp.src('src/scripts/**/*.js')
+    .pipe(minify())
+    .pipe(gulp.dest('dist/scripts'));
+}
+
+gulp.task('default', gulp.parallel('styles', 'scripts'));
+`}
+        </div></pre>
+        <p>In the above example, Gulp is used as a task runner to automate the compilation and minification of Sass and JavaScript files, improving the overall quality and usability of the content.</p>
+        <p>Task runners can reduce the amount of time spent on repetitive tasks, automate tedious and error-prone tasks, and make it easier to manage the development process.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are the differences between inline, embedded, and external stylesheets?',
+    answer: 
+      <>
+        <p>The differences between inline, embedded, and external stylesheets are:</p>
+        <ul>
+          <li><strong>Inline styles:</strong> Inline styles are applied directly to individual HTML elements using the style attribute. They provide a way to create and maintain web applications with minimal complexity and technical debt. For example:
+            <pre><div className={styles.appCode}>
+              {`<div style="color: red;">This is a red text.</div>`}
+            </div></pre>
+          </li>
+          <li><strong>Embedded styles:</strong> Embedded styles are defined within the {`<style>`} element in the {`<head>`} section of an HTML document. They provide a way to create and maintain web applications with minimal complexity and technical debt. For example:
+            <pre><div className={styles.appCode}>
+              {`<style>
+  div {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* ... */
+</style>`}
+            </div></pre>
+          </li>
+          <li><strong>External stylesheets:</strong> External stylesheets are defined in separate CSS files and linked to HTML documents using the {`<link>`} element. They provide a way to create and maintain web applications with minimal complexity and technical debt. For example:
+            <pre><div className={styles.appCode}>
+              {`<link rel="stylesheet" href="styles.css">`}
+            </div></pre>
+          </li>
+        </ul>
+        <p>By using inline, embedded, and external stylesheets, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are the critical rendering paths in a web browser?',
+    answer: 
+      <>
+        <p>The critical rendering paths in a web browser are:</p>
+        <ul>
+          <li><strong>HTML parsing:</strong> The web browser parses the HTML document to create the Document Object Model (DOM), which represents the structure and content of the web page.</li>
+          <li><strong>CSS parsing and style computation:</strong> The web browser parses the CSS files to create the CSS Object Model (CSSOM), which represents the styles and layout of the web page. It then computes the styles and layout of the web page based on the DOM and CSSOM, creating the render tree.</li>
+          <li><strong>Layout and painting:</strong> The web browser calculates the layout and paints the web page based on the render tree, creating the visual representation of the web page that is displayed to the user.</li>
+        </ul>
+        <p>Understanding the critical rendering paths is essential for creating performant websites. It involves understanding how HTML, CSS, and JavaScript load and interact to render a page efficiently.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are service workers and how can you leverage them in a web application?',
+    answer: 
+      <>
+        <p>Service workers act as proxy servers that sit between web applications, the browser, and the network (when available). They are capable of caching or retrieving resource requests, handling push notifications and synchronizing data in the background. You can leverage service workers to create offline-first experiences, cache critical resources to improve performance, and enable the installation of web apps on the home screen. They can be used to:</p>
+        <ul>
+          <li><strong>Cache assets:</strong> Cache assets such as HTML, CSS, JavaScript, and images to improve the performance and reliability of web applications.</li>
+          <li><strong>Handle network requests:</strong> Intercept and handle network requests to provide offline support and improve the reliability of web applications.</li>
+          <li><strong>Push notifications:</strong> Send push notifications to users to improve the responsiveness and usability of web applications.</li>
+          <li><strong>Background sync:</strong> Perform background sync operations to improve the reliability and resilience of web applications.</li>
+        </ul>
+        <p>By using service workers, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'How would you debug JavaScript code in the browser?',
+    answer: 
+      <>
+        <p>To debug JavaScript code in the browser, you can use the following techniques:</p>
+        <ul>
+          <li><strong>Console.log:</strong> Use the console.log method to log messages, variables, and objects to the console to inspect and debug JavaScript code.</li>
+          <li><strong>Debugger statement:</strong> Use the debugger statement to set breakpoints in JavaScript code and inspect and debug the code using the browser's developer tools.</li>
+          <li><strong>Developer tools:</strong> Use the browser's developer tools to inspect and debug JavaScript code, including the console, sources, network, performance, and memory tabs.</li>
+          <li><strong>Source maps:</strong> Use source maps to map minified or transpiled JavaScript code back to its original source code, making it easier to inspect and debug the code using the browser's developer tools.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the difference between progressive enhancement and graceful degradation?',
+    answer: 
+      <>
+        <p>The difference between progressive enhancement and graceful degradation is:</p>
+        <ul>
+          <li><strong>Progressive enhancement:</strong> Progressive enhancement is a web design strategy that starts with a basic, functional web page and then adds advanced features and functionality for users with modern browsers and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>Graceful degradation:</strong> Graceful degradation is a web design strategy that starts with a fully-featured, advanced web page and then removes features and functionality for users with older browsers and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is the difference between HTTP/1.1, HTTP/2 and HTTP/3?',
+    answer: 
+      <>
+        <p>The difference between HTTP/1.1, HTTP/2, and HTTP/3 is:</p>
+        <ul>
+          <li><strong>HTTP/1.1:</strong> HTTP/1.1 is the first version of the Hypertext Transfer Protocol (HTTP) introduced in 1997 and is based on a request-response model. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>HTTP/2:</strong> HTTP/2 is the second version of the Hypertext Transfer Protocol (HTTP) introduced in 2015 and is based on a binary framing layer. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>HTTP/3:</strong> HTTP/3 is the third version of the Hypertext Transfer Protocol (HTTP) introduced in 2022 and is based on the QUIC protocol. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What does SOLID stand for?',
+    answer: 
+      <>
+        <p>SOLID is an acronym of object-oriented design principles that stands for:</p>
+        <ul>
+          <li><strong>Single Responsibility Principle (SRP):</strong> A class should have
+            only one reason to change, meaning that it should only have one job or responsibility.</li>
+          <li><strong>Open/Closed Principle (OCP):</strong> Software entities should be open for extension but closed for modification, meaning that they should be easily extendable without modifying their source code.</li>
+          <li><strong>Liskov Substitution Principle (LSP):</strong> Objects in a program should be replaceable with instances of their subtypes without altering the correctness of the program.</li>
+          <li><strong>Interface Segregation Principle (ISP):</strong> A client should never be forced to implement an interface that it doesn't use, meaning that interfaces should be specific to the needs of the client.</li>
+          <li><strong>Dependency Inversion Principle (DIP):</strong> High-level modules should not depend on low-level modules, but both should depend on abstractions, meaning that the dependency should be on abstractions, not concretions.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is clickjacking and how can it be prevented?',
+    answer: 
+      <>
+        <p>Clickjacking is a malicious technique used by attackers to trick users into clicking on a disguised or invisible element on a web page. It can be prevented by:</p>
+        <ul>
+          <li><strong>Frame busting:</strong> Use the X-Frame-Options header to prevent a web page from being embedded in a frame or iframe, reducing the risk of clickjacking attacks.</li>
+          <li><strong>Content Security Policy (CSP):</strong> Use the Content Security Policy (CSP) header to control the sources of content that can be loaded on a web page, reducing the risk of clickjacking attacks.</li>
+          <li><strong>Frame-ancestors directive:</strong> Use the frame-ancestors directive in the Content Security Policy (CSP) header to control the origins that can embed a web page in a frame or iframe, reducing the risk of clickjacking attacks.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What is srcset and how is it used in HTML?',
+    answer: 
+      <>
+        <p>The srcset attribute in HTML is used to specify a set of image sources and their corresponding sizes for responsive images. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`<img src="image.jpg" srcset="image-2x.jpg 2x, image-3x.jpg 3x" alt="Image description">`}
+        </div></pre>
+        <p>In the above example, the srcset attribute specifies a set of image sources and their corresponding sizes for the image element, allowing the browser to choose the most appropriate image source based on the device's pixel density.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'What is a marquee in HTML?',
+    answer: 
+      <>
+        <p>A marquee in HTML is an element that creates a scrolling effect for text or images. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`<marquee behavior="scroll" direction="left">This is a scrolling text.</marquee>`}
+        </div></pre>
+        <p>In the above example, the marquee element creates a scrolling effect for the text, moving it from right to left across the screen.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 1,
+    question: 'What is the box sizing property in CSS?',
+    answer: 
+      <>
+        <p>The box-sizing property in CSS is used to control the content-box or border-box model for an element. It provides a way to create and maintain web applications with minimal complexity and technical debt.</p>
+        <ul>
+          <li><strong>Content-box:</strong> The width and height of the element are calculated based on the content, padding, and border of the element. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  box-sizing: content-box;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Border-box:</strong> The width and height of the element are calculated based on the content and padding of the element, and the border is included in the width and height of the element. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  box-sizing: border-box;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Padding-box:</strong> The width and height of the element are calculated based on the content and border of the element, and the padding is included in the width and height of the element. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  box-sizing: padding-box;
+}`}
+            </div></pre>
+          </li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are the different ways to hide an Element using CSS?',
+    answer: 
+      <>
+        <p>There are several ways to hide an element using CSS:</p>
+        <ul>
+          <li><strong>Display property:</strong> Use the display property to hide an element by setting its value to none. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  display: none;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Visibility property:</strong> Use the visibility property to hide an element by setting its value to hidden. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  visibility: hidden;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Opacity property:</strong> Use the opacity property to hide an element by setting its value to 0. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  opacity: 0;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Height and width properties:</strong> Use the height and width properties to hide an element by setting their values to 0. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  height: 0;
+  width: 0;
+}`}
+            </div></pre>
+          </li>
+          <li><strong>Position property:</strong> Use the position property to hide an element by setting its value to absolute or fixed and moving it off-screen. For example:
+            <pre><div className={styles.appCode}>
+              {`.element {
+  position: absolute;
+  left: -9999px;
+}`}
+            </div></pre>
+          </li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'What does !important in CSS mean?',
+    answer: 
+      <>
+        <p>The !important rule in CSS is used to give a style precedence over other styles. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`.element {
+  color: red !important;
+}`}
+        </div></pre>
+        <p>In the above example, the color property is given precedence over other styles by using the !important rule, ensuring that the text color of the element is red.</p>
+        <p>It is important to use the !important rule sparingly, as it can make it difficult to override styles and maintain the codebase.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What are CSS sprites?',
+    answer: 
+      <>
+        <p>CSS sprites are a technique used to combine multiple images into a single image and use CSS to display only the part of the image that is needed. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`.icon {
+  background-image: url('sprites.png');
+  background-position: -20px -40px;
+  width: 20px;
+  height: 20px;
+}`}
+        </div></pre>
+        <p>In the above example, the background-position property is used to display only the part of the sprites.png image that is needed for the icon element, reducing the number of HTTP requests and improving the performance and reliability of web applications.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'Which Property is used to Underline, Strikethrough, and Overline Text?',
+    answer: 
+      <>
+        <p>The text-decoration property in CSS is used to underline, strikethrough, and overline text. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`.underline {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.overline {
+  text-decoration: overline;
+}`}
+        </div></pre>
+        <p>In the above example, the text-decoration property is used to underline, strikethrough, and overline the text of the elements, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'Define HTML meta tags.',
+    answer: 
+      <>
+        <p>HTML meta tags are used to provide metadata about an HTML document. They provide a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <pre><div className={styles.appCode}>
+          {`<meta charset="UTF-8">
+<meta name="description" content="Description of the web page">
+<meta name="keywords" content="keyword1, keyword2, keyword3">
+<meta name="author" content="Author Name">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">`}
+        </div></pre>
+        <p>In the above example, the meta tags are used to provide metadata about the HTML document, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'What is the difference between a div and a span?',
+    answer: 
+      <>
+        <p>The difference between a div and a span is:</p>
+        <ul>
+          <li><strong>Div:</strong> A div is a block-level element that is used to group and style content. It provides a way to create and maintain web applications with minimal complexity and technical debt.</li>
+          <li><strong>Span:</strong> A span is an inline element that is used to style content within a block-level element. It provides a way to create and maintain web applications with minimal complexity and technical debt.</li>
+        </ul>
+        <p>By using div and span, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
   },
 ]
