@@ -29,33 +29,10 @@ export const reactQuestions: IQuestions[] = [
 		answer: (
 			<>
 				<p>
-					{" "}
-					The history of ReactJS started in 2010 with the creation of{" "}
-					<strong>XHP</strong>. XHP is a PHP extension which improved the syntax
-					of the language such that XML document fragments become valid PHP
-					expressions and the primary purpose was used to create custom and
-					reusable HTML elements.{" "}
-				</p>
-				<p>
-					{" "}
-					The main principle of this extension was to make front-end code easier
-					to understand and to help avoid cross-site scripting attacks. The
-					project was successful to prevent the malicious content submitted by
-					the scrubbing user.
-				</p>
-				<p>
-					{" "}
-					But there was a different problem with XHP in which dynamic web
-					applications require many roundtrips to the server, and XHP did not
-					solve this problem. Also, the whole UI was re-rendered for small
-					change in the application. Later, the initial prototype of React is
-					created with the name <strong>FaxJ</strong> by Jordan inspired from
-					XHP. Finally after sometime React has been introduced as a new library
-					into JavaScript world.
-				</p>
-				<p>
-					{" "}
-					<strong>Note:</strong> JSX comes from the idea of XHP
+					React was created by Jordan Walke, a software engineer at Facebook.
+					He was influenced by XHP, an HTML component framework for PHP. It was
+					first deployed on Facebook's newsfeed in 2011 and later on Instagram
+					in 2012. It was open-sourced at JSConf US in May 2013.
 				</p>
 			</>
 		),
@@ -149,72 +126,37 @@ export default function App() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is the difference between an Element and a Component?",
 		answer: (
 			<>
 				<p>
-					An <em>Element</em> is a plain object describing what you want to
-					appear on the screen in terms of the DOM nodes or other components.{" "}
-					<em>Elements</em> can contain other <em>Elements</em> in their props.
-					Creating a React element is cheap. Once an element is created, it
-					cannot be mutated.
+				In React, both elements and components are fundamental concepts, but they serve different purposes:
 				</p>
-				<p>
-					The JavaScript representation(Without JSX) of React Element would be
-					as follows:
-				</p>
-				<div className={styles.appCode}>{`
-            const element = React.createElement("div", { id: "login-btn" }, "Login");
-          `}</div>
-				<p>and this element can be simiplified using JSX</p>
-				<div className={styles.appCode}>{`
-            const element = <div id="login-btn">Login</div>;
-          `}</div>
-				<p>
-					The above <strong>React.createElement()</strong> function returns an
-					object as below:
-				</p>
-				<pre>
+				<ul>
+					<li>
+							<strong>Element:</strong> An element is the smallest building block in a React application. It describes what you want to see on the screen. Elements are typically created using JSX syntax, which looks like HTML but is actually a syntactic sugar for calling React.createElement(). Elements are plain objects that represent the DOM nodes that make up the UI. For example:
+							<div className={styles.appCode}>{`
+           			const element = <div>Hello, World!</div>;
+          		`}</div>
+					</li>
+					<li>
+						<strong>Component:</strong> A component is a reusable piece of UI that can contain one or more elements. Components are typically written as JavaScript classes or functions. They encapsulate logic and behavior related to a specific part of the UI. Components can accept inputs called props and can maintain their own internal state. They can also be composed of other components. For example:
+						<pre>
 					<div className={styles.appCode}>{`
-{
-  type: 'div',
-  props: {
-    children: 'Login',
-    id: 'login-btn'
-  }
+const Greeting = (props) => {
+    return <div>Hello, {this.props.name}!</div>;
 }
+
+// Usage of Greeting component
+const element = <Greeting name="John" />;
+
           `}</div>
 				</pre>
-				<p>Finally, this element renders to the DOM using ReactDOM.render().</p>
-				<p>
-					Whereas a <strong>component</strong> can be declared in several
-					different ways. It can be a class with a render() method or it can be
-					defined as a function. In either case, it takes props as an input, and
-					returns a JSX tree as the output:
-				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-const Button = ({ onLogin }) => (
-  <div id="login-btn" onClick={onLogin}>Login</div>
-);
-          `}</div>
-				</pre>
-				<p>
-					Then JSX gets transpiled to a <strong>React.createElement()</strong>{" "}
-					function tree:
-				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-const Button = ({ handleLogin }) =>
-React.createElement(
-  "div",
-  { id: "login-btn", onClick: handleLogin },
-  "Login"
-);
-          `}</div>
-				</pre>
+					</li>
+				</ul>	
+				<p>In summary, elements are what components are composed of. Components are reusable, self-contained units that encapsulate a piece of UI logic and can be composed together to build complex UIs. Elements, on the other hand, are plain objects representing the UI nodes rendered to the DOM.</p>
 			</>
 		),
 	},
@@ -275,86 +217,29 @@ class Welcome extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are Pure Components?",
 		answer: (
 			<>
-				<p>
-					Pure components are the class components which skip rerenders for the
-					same state and props.{" "}
-					<strong>
-						Since use of class components is discouraged in favor of functional
-						components, pure components are no longer recommended for new code.
-					</strong>{" "}
-					In function components, you can achieve these pure components through
-					memoized <strong>React.memo()</strong> API wrapping around the
-					component. This API prevents unnecessary re-renders by comparing the
-					previous props and new props using shallow comparison. So it will be
-					helpful for performance optimizations.{" "}
+				<p><strong>Note: Functional components are recommended over classes, so this is considered legacy.</strong></p>
+				<p>					
+				In React, a pure component is a type of component that is optimized for performance. It's a class component that extends React.PureComponent instead of React.Component. The key feature of pure components is that they implement a shouldComponentUpdate() method with a shallow comparison of props and state. This method helps prevent unnecessary re-renders of the component when its props and state haven't changed.					
 				</p>
-				<p>
-					But at the same time, it won&#39;t compare the previous state with the
-					current state because function component itself prevents the
-					unnecessary rendering by default when you set the same state again.
-				</p>
-				<p>
-					The syntactic representation of memoized components looks like below,
-				</p>
-				<div className={styles.appCode}>{`
-            const MemoizedComponent = memo(SomeComponent, arePropsEqual?);
-          `}</div>
-				<p>
-					Below is the example of how child component(i.e., EmployeeProfile)
-					prevents re-renders for the same props passed by parent
-					component(i.e.,EmployeeRegForm).
-				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-import { memo, useState } from 'react';
-
-const EmployeeProfile = memo(function EmployeeProfile({ name, email }) {
-  return (<>
-        <p>Name:{name}</p>
-        <p>Email: {email}</p>
-        </>);
-});
-export default function EmployeeRegForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  return (
-    <>
-      <label>
-        Name: <input value={name} onChange={e => setName(e.target.value)} />
-      </label>
-      <label>
-        Email: <input value={email} onChange={e => setEmail(e.target.value)} />
-      </label>
-      <hr/>
-      <EmployeeProfile name={name}/>
-    </>
-  );
-}
-          `}</div>
-				</pre>
-				<p>
-					In the above code, the email prop has not been passed to child
-					component. So there won&#39;t be any re-renders for email prop change.
-				</p>
-				<p>
-					In class components, the components extending{" "}
-					<em>
-						<strong>React.PureComponent</strong>
-					</em>{" "}
-					instead of{" "}
-					<em>
-						<strong>React.Component</strong>
-					</em>{" "}
-					become the pure components. When props or state changes,{" "}
-					<em>PureComponent</em> will do a shallow comparison on both props and
-					state by invoking <strong>shouldComponentUpdate()</strong> lifecycle
-					method.{" "}
-				</p>
+				<p>The shouldComponentUpdate() method in a pure component performs a shallow comparison of props and state between the current and next render. If it detects that neither the props nor the state have changed, it prevents the component from re-rendering, thus optimizing performance by avoiding unnecessary rendering cycles.  Here's an example of a pure component:</p>
+				<pre><div className={styles.appCode} >{`
+class MyPureComponent extends React.PureComponent {
+	render() {
+		return <div>{this.props.value}</div>;
+	}
+}				
+				`}</div></pre>
+				<p>Some important considerations include:</p>
+				<ul>
+					<li><strong>Shallow Comparison Limitations:</strong> Pure components use a shallow comparison to determine whether to re-render. If your props or state contain nested objects or arrays, you need to ensure that changes within those nested structures are properly handled to trigger re-renders when necessary.</li>
+					<li><strong>Performance Trade-offs:</strong> While pure components can improve performance by reducing unnecessary re-renders, they also introduce some overhead due to the shallow comparison process. In some cases, the performance gains may not be significant, especially for smaller applications or components with simple rendering logic.</li>
+					<li><strong>Functional Components and React.memo():</strong> With the introduction of hooks in React, functional components became more prevalent. You can achieve similar optimization with functional components using React.memo() to memoize the rendering of a functional component based on its props.</li>
+				</ul>
 			</>
 		),
 	},
@@ -368,8 +253,7 @@ export default function EmployeeRegForm() {
 			<>
 				<p>
 					<em>State</em> of a component is an object that holds some information
-					that may change over the lifetime of the component. The important
-					point is whenever the state object changes, the component re-renders.
+					that may change over the lifetime of the component. In React, it is important to remember that whenever the state object changes, the component re-renders.
 					It is always recommended to make our state as simple as possible and
 					minimize the number of stateful components.
 				</p>
@@ -396,8 +280,7 @@ export default function EmployeeRegForm() {
 					from a parent component to a child component.
 				</p>
 				<p>
-					The primary purpose of props in React is to provide following
-					component functionality:
+					Props in React the following:
 				</p>
 				<ol>
 					<li>Pass custom data to your component.</li>
@@ -408,16 +291,16 @@ export default function EmployeeRegForm() {
 					property:
 				</p>
 				<div className={styles.appCode}>{`
-            <Element reactProp={"1"} />
+            <Element someProp={"1"} />
           `}</div>
 				<p>
-					This reactProp (or whatever you came up with) attribute name then
+					The 'someProp' attribute name then
 					becomes a property attached to React's native props object which
-					originally already exists on all components created using React
+					exists on all components created using React
 					library.
 				</p>
 				<div className={styles.appCode}>{`
-            props.reactProp
+            props.someProp
           `}</div>
 				<p>
 					For example, the usage of props in function component looks like
@@ -450,8 +333,7 @@ const ParentComponent = () => {
 				</pre>
 				<p>
 					The properties from props object can be accessed directly using
-					destructing feature from ES6 (ECMAScript 2015). The above child
-					component can be simplified like below.
+					destructing. The above child component can be simplified like so:
 				</p>
 
 				<pre>
@@ -481,55 +363,58 @@ const ChildComponent = ({name, age}) => {
 					In React, both <strong>state</strong> and <strong>props</strong> are
 					plain JavaScript objects and used to manage the data of a component,
 					but they are used in different ways and have different
-					characteristics.
-					<strong>state</strong> is managed by the component itself and can be
-					updated using the <strong>setState()</strong> function. Unlike props,
-					state can be modified by the component and is used to manage the
-					internal state of the component. Changes in the state trigger a
-					re-render of the component and its children.
-					<strong>props</strong> (short for &quot;properties&quot;) are passed
-					to a component by its parent component and are{" "}
-					<strong>read-only</strong>, meaning that they cannot be modified by
-					the component itself. props can be used to configure the behavior of a
-					component and to pass data between components.
-				</p>
+					characteristics.</p>
+				<p><strong>State</strong></p>
+				<ul>
+					<li>Managed by the component itself and can be
+					updated using the <strong>useState</strong> hook or the <strong>setState()</strong> function (legacy class component approach).</li>
+					<li>Can be modified by the component and is used to manage the
+					internal state of the component.</li>
+					<li>Changes in the state trigger a
+					re-render of the component and its children.</li>
+				</ul>
+				<p><strong>Props (short for properties)</strong></p>
+				<ul>
+					<li>Passed to a component by its parent component. </li>
+					<li>Are <strong>read-only</strong>, meaning  that they cannot be modified by the component itself</li>
+					<li>Can be used to configure the behavior of a component and to pass data between components.</li>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Why should we not update the state directly?",
 		answer: (
 			<>
 				<p>
-					If you try to update the state directly then it won&#39;t re-render
-					the component.
+				React will ignore your update if the next state is equal to the previous state, as determined by an Object.is comparison. This usually happens when you change an object or an array in state directly:
 				</p>
-
 				<pre>
 					<div className={styles.appCode}>{`
 //Wrong
-this.state.message = "Hello world";
+obj.x = 10;  // Wrong: mutating existing object
+setObj(obj); // Doesn't update because obj is the same object (even if it has different properties)
           `}</div>
 				</pre>
 				<p>
-					Instead use <strong>setState()</strong> method. It schedules an update
-					to a component&#39;s state object. When state changes, the component
-					responds by re-rendering.
+					Instead, you should create a new object or array and set the state with that:
 				</p>
 				<pre>
 					<div className={styles.appCode}>{`
 //Correct
-this.setState({ message: "Hello World" });
-          `}</div>
+setObj({ ...obj, x: 10 }); // Correct: creating a new object
+					`}</div>
 				</pre>
 				<p>
-					<strong>Note:</strong> You can directly assign to the state object
-					either in <em>constructor</em> or using latest javascript&#39;s class
-					field declaration syntax.
+					When you update the state directly, you are bypassing React's state
+					management, which can lead to unexpected behavior and bugs. By
+					creating a new object or array and setting the state with that, you
+					ensure that React's state management is used correctly and that the
+					component will re-render as expected.
 				</p>
 			</>
 		),
@@ -537,7 +422,7 @@ this.setState({ message: "Hello World" });
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is the difference between HTML and React event handling?",
 		answer: (
@@ -546,21 +431,11 @@ this.setState({ message: "Hello World" });
 					Below are some of the main differences between HTML and React event
 					handling,
 				</p>
-				<ol>
-					<li>
-						<p>
-							In HTML, the event name usually represents in <em>lowercase</em>{" "}
-							as a convention:
-						</p>
-						<div className={styles.appCode}>{`
-              <button onclick="activateLasers()"></button>
-            `}</div>
-						<p>
-							Whereas in React it follows <em>camelCase</em> convention:
-						</p>
-						<div className={styles.appCode}>{`
-              <button onClick={activateLasers}>
-            `}</div>
+				<ul>
+					<li>In HTML, the event name follows the lowercase naming convention as in: 
+						<div className={styles.appCode}>{`<button onclick="handleClick()"></button>`}</div>
+						While in React it follows camelCase naming convention: 
+						<div className={styles.appCode}>{` <button onClick={handleClick}>`}</div>
 					</li>
 					<li>
 						<p>
@@ -593,18 +468,19 @@ this.setState({ message: "Hello World" });
 							In HTML, you need to invoke the function by appending{" "}
 							<strong>()</strong>. Whereas in React you should not append{" "}
 							<strong>()</strong> with the function name. (refer
-							&quot;activateLasers&quot; function in the first point for
+							&quot;handleClick&quot; function in the first point for
 							example)
 						</p>
 					</li>
-				</ol>
+					<li>In React.js, because of JSX, a function is passed as an event handler, instead of the string in HTML</li>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are synthetic events in React?",
 		answer: (
@@ -640,7 +516,7 @@ this.setState({ message: "Hello World" });
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are inline conditional expressions?",
 		answer: (
@@ -671,7 +547,7 @@ this.setState({ message: "Hello World" });
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question:
 			'What is "key" prop and what is the benefit of using it in arrays of elements?',
@@ -691,16 +567,9 @@ this.setState({ message: "Hello World" });
             const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
           `}</div>
 				<p>
-					When you don't have stable IDs for rendered items, you may use the
-					item index as a key as a last resort:
+					When you don't have stable IDs for rendered items, using the
+					item index as a key as a last resort, but is considered an anti-pattern.  A better alternative would be to use a third-party library for generating unique IDs.
 				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-const todoItems = todos.map((todo, index) => (
-  <li key={index}>{todo.text}</li>
-));
-          `}</div>
-				</pre>
 				<p>
 					<strong>Note:</strong>
 				</p>
@@ -709,7 +578,7 @@ const todoItems = todos.map((todo, index) => (
 						Using <em>indexes</em> for <em>keys</em> is{" "}
 						<strong>not recommended</strong> if the order of items may change.
 						This can negatively impact performance and may cause issues with
-						component state.
+						component state.  For this reason, using indexes as keys should be avoided altogether, because a given use case may change as the application grows.
 					</li>
 					<li>
 						If you extract list item as separate component then apply{" "}
@@ -730,18 +599,35 @@ const todoItems = todos.map((todo, index) => (
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are refs?",
 		answer: (
 			<>
 				<p>
-					The <em>ref</em> is used to return a reference to the element and are
-					used when you want a component to “remember” some information, but you
-					do not want that information to trigger new renders. They{" "}
-					<em>should be avoided</em> in most cases, however, they can be useful
-					when you need an "escape hatch" that gives direct access to the DOM
-					element or an instance of a component.
+					<strong>Refs</strong> provide a way to access DOM nodes or React elements
+					created in the render method. They are used to interact with the DOM
+					and React components in several ways, such as focusing on an input
+					field, triggering imperative animations, or integrating with third-party
+					DOM libraries.
+				</p>
+				<p>
+					There are two types of refs: <strong>string refs</strong> and <strong>callback refs</strong>.
+				</p>
+				<p>
+					<strong>String Refs:</strong> (legacy) This is the older way of
+					creating refs. It is not recommended because string refs have problems
+					and are considered legacy. String refs were <strong>removed in React
+					v16</strong>.
+				</p>
+				<p>
+					<strong>Callback Refs:</strong> This is the modern way of creating
+					refs. It is recommended because it is more flexible and has fewer
+					issues than string refs.
+				</p>
+				<p><strong>Note:</strong>  Refs should be avoided because they escape React’s state management and can lead to hard-to-understand
+					code and bugs. In most cases, you should use state and props to manage
+					your application’s state and data flow.
 				</p>
 			</>
 		),
@@ -749,7 +635,7 @@ const todoItems = todos.map((todo, index) => (
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How are refs and state different? (4)",
 		answer: (
@@ -809,7 +695,7 @@ const todoItems = todos.map((todo, index) => (
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How do you create refs?",
 		answer: (
@@ -838,94 +724,78 @@ export const myApp = () => {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are forward refs?",
 		answer: (
 			<>
-				<p>In React forward refs, allow the component to pass down a ref to a child component. This feature allows the parent component to access the child component’s DOM node or React component instance.</p>
+				<p>
+					<strong>Forwarding refs</strong> is a technique that allows a parent
+					component to pass its ref to a child component. This is useful when
+					you want to access a child component’s DOM node or React element from a
+					parent component.
+				</p>
+				<p>
+					To create a forward ref, you can use the <strong>React.forwardRef</strong>{" "}
+					function. This function takes a render function as its argument and
+					returns a new component that forwards the ref to the child component.
+				</p>
+				<p>
+					Here’s an example of a forward ref:
+				</p>
 				<pre>
 					<div className={styles.appCode}>{`
-const ButtonElement = React.forwardRef((props, ref) => (
-  <button ref={ref} className="CustomButton">
-    {props.children}
-  </button>
-));
+import React, { forwardRef, useRef } from 'react';
 
-// Create ref to the DOM button:
-const ref = React.createRef();
-<ButtonElement ref={ref}>{"Forward Ref"}</ButtonElement>;
-          `}</div>
+const MyComponent = forwardRef((props, ref) => {
+	return <input ref={ref} />;
+}
+
+const App = () => {
+	const inputRef = useRef();
+	return <MyComponent ref={inputRef} />;
+}
+					`}</div>
 				</pre>
+				<p>
+					In this example, the <strong>inputRef</strong> ref is passed to the{" "}
+					<strong>MyComponent</strong> component using the <strong>ref</strong>{" "}
+					attribute. The <strong>forwardRef</strong> function then forwards the
+					ref to the <strong>input</strong> element inside the{" "}
+					<strong>MyComponent</strong> component.
+				</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Why are String Refs legacy?",
 		answer: (
 			<>
 				<p>
-					String refs are not recommended because{" "}
-					<em>string refs have below issues</em>, and are considered legacy.
-					String refs were <strong>removed in React v16</strong>.
+					String refs are not recommended and are considered legacy. String refs were <strong>removed in React v16</strong> because of the following issues.
 				</p>
-				<ol>
+				<ul>
 					<li>
-						They{" "}
-						<em>force React to keep track of currently executing component</em>.
-						This is problematic because it makes react module stateful, and thus
-						causes weird errors when react module is duplicated in the bundle.
+						<strong>They are not composable:</strong> String refs are not composable, meaning that you cannot pass them as props to other components. This makes them less flexible and harder to work with in larger applications.
 					</li>
 					<li>
-						They are <em>not composable</em> — if a library puts a ref on the
-						passed child, the user can&#39;t put another ref on it. Callback
-						refs are perfectly composable.
+						<strong>They are not type-safe:</strong> String refs are not type-safe, meaning that they do not provide any type checking or validation. This can lead to runtime errors and bugs that are difficult to track down.
 					</li>
 					<li>
-						They <em>don&#39;t work with static analysis</em> like Flow. Flow
-						can&#39;t guess the magic that framework does to make the string ref
-						appear on <strong>this.refs</strong>, as well as its type (which
-						could be different). Callback refs are friendlier to static
-						analysis.
+						<strong>They are not consistent:</strong> String refs are not consistent with the rest of the React API, which uses a more functional and declarative approach. This makes them harder to reason about and understand for developers who are new to React.
 					</li>
-					<li>
-						<p>
-							It doesn&#39;t work as most people would expect with the
-							&quot;render callback&quot; pattern (e.g.
-							<strong>{` <DataGrid renderRow={this.renderRow} />`}</strong>)
-						</p>
-						<pre>
-							<div className={styles.appCode}>{`
-class MyComponent extends Component {
-  renderRow = (index) => {
-    // This won't work. Ref will get attached to DataTable rather than MyComponent:
-    return <input ref={"input-" + index} />;
-
-    // This would work though! Callback refs are awesome.
-    return <input ref={(input) => (this["input-" + index] = input)} />;
-  };
-
-  render() {
-    return (
-      <DataTable data={this.props.data} renderRow={this.renderRow} />
-    );
-  }
-}
-            `}</div>
-						</pre>
-					</li>
-				</ol>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is Virtual DOM?",
 		answer: (
@@ -946,7 +816,7 @@ class MyComponent extends Component {
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
-		question: "How does the Virtual DOM?",
+		question: "How does the Virtual DOM work?",
 		answer: (
 			<>
 				<p>
@@ -978,7 +848,7 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: " What is the difference between Shadow DOM and Virtual DOM?",
 		answer: (
@@ -995,26 +865,62 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
+		topic: "Advanced React",
+		level: 2,
 		question: "What is React Fiber?",
 		answer: (
 			<>
 				<p>
-					Fiber is the <em>reconciliation</em> engine or reimplementation of
-					core algorithm released in React v16. The goal of React Fiber is to
-					increase its suitability for areas like animation, layout, gestures,
-					ability to pause, abort, or reuse work and assign priority to
-					different types of updates; and new concurrency primitives.
+					<em>React Fiber</em> is a complete reimplementation of the React
+					reconciliation algorithm, intended to increase its suitability for
+					areas like animation, layout, and gestures. Its headline feature is{" "}
+					<strong>incremental rendering</strong>: the ability to split rendering
+					work into chunks and spread it out over multiple frames.
 				</p>
+				<p>
+					Its main goals are:
+				</p>
+				<ol>
+					<li>
+						<strong>Improved performance:</strong> React Fiber is aimed at
+						improving the perceived performance for complex React applications.
+						It does so by allowing React to break the limits of the call stack.
+						This lets it pause or start rendering work whenever required
+					</li>
+					<li>
+						<strong>Better suitability for advanced UI:</strong> React Fiber also
+						increases the suitability of the React library to create animations,
+						layouts, and gestures.
+					</li>
+					<li>
+						<strong>Control over the "priority" of work:</strong> Through its
+						feature of incremental rendering, React Fiber lets developers split
+						rendering work into smaller chunks and distribute it over multiple
+						frames. This allows users to essentially control the "priority" of
+						work. For example, React Fiber could help you prioritise functions
+						that originate from user actions while delaying logic of
+						less-important background or offscreen functions to avoid frame rate
+						drops.
+					</li>
+					<li>
+						<strong>More fluid experience:</strong> By breaking up the work into
+						smaller chunks that can be paused, resumed, or aborted based on a set
+						priority order, React Fiber helps apps deliver a more fluid
+						experience. Fiber lets React fine-tune the rendering to ensure that
+						the most common use-cases (or) the most important updates are
+						computed at the earliest. Specifically, it helps improve the speed of
+						rendering components at start-up, as they could be made available to
+						the browser before the entire bundle finishes downloading.
+					</li>
+				</ol>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
+		topic: "Advanced React",
+		level: 2,
 		question: "What is the main goal of React Fiber?",
 		answer: (
 			<>
@@ -1064,7 +970,7 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question:
 			"What is the difference between a controlled and uncontrolled component in React?",
@@ -1103,18 +1009,42 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is the difference between createElement and cloneElement?",
 		answer: (
 			<>
 				<p>
-					JSX elements will be transpiled to{" "}
-					<strong>React.createElement()</strong> functions to create React
-					elements which are going to be used for the object representation of
-					UI. Whereas <strong>cloneElement</strong> is used to clone an element
-					and pass it new props.
+					<strong>createElement</strong> is used to create a new React element
+					from the given component and props, and can be used as an alternative to writing JSX.  Here is an example:
 				</p>
+				<pre>
+					<div className={styles.appCode}>{`
+import React from 'react';
+
+const element = React.createElement('div', { className: 'container' }, 'Hello, world!');
+					`}</div>
+				</pre>
+				<p>
+				<strong>cloneElement</strong> is used to clone and return a new React
+					element using the given element and new props. It is used to modify the
+					props of an existing element and return a new element with the updated
+					props.  Here is an example:
+				</p>
+				<pre>
+					<div className={styles.appCode}>{`
+import React from 'react';
+
+const element = <div>Hello, world!</div>;
+const newElement = React.cloneElement(element, { className: 'container' });
+					`}</div>
+				</pre>
+				<p>
+					In this example, <strong>newElement</strong> is a clone of{" "}
+					<strong>element</strong> with the updated <strong>className</strong>{" "}
+					prop.
+				</p>		
+				<p><strong>Note:</strong> Using cloneElement is uncommon and can lead to fragile code.  Cloning children makes it hard to tell how the data flows through your app.</p>
 			</>
 		),
 	},
@@ -1139,14 +1069,14 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
-		question: "What are the differnces between component vs effect lifecycles?",
+		question: "What are the differences between component vs effect lifecycles?",
 		answer: (
 			<>
+				<p><strong>Note:</strong>  It is recommended to define components as functions instead of classes.</p>
 				<p>
-					The <strong>component</strong> lifecycle has three distinct lifecycle
-					phases:
+					The <strong>component</strong> lifecycle has three distinct phases:
 				</p>
 				<li>
 					A component <strong>mounts</strong> when it’s added to the screen.
@@ -1159,24 +1089,9 @@ class MyComponent extends Component {
 					A component <strong>unmounts</strong> when it’s removed from the
 					screen.
 				</li>
-
+				<p>Component lifecycle events are strongly associated with the class component paradigm.  For functional components (the recommended pattern), effect events are more relavent.</p>
 				<p>
-					Think about each <strong>Effect</strong> independently from your{" "}
-					<strong>component's</strong> lifecycle. An <strong>Effect</strong>{" "}
-					describes how to synchronize an external system to the current props
-					and state. As your code changes, synchronization will need to happen
-					more or less often.
-				</p>
-				<p>
-					Each <strong>Effect</strong> describes a separate synchronization
-					process that can start and stop.
-				</p>
-				<p>
-					When you write and read <strong>Effects</strong>, think from each
-					individual <strong>Effect's</strong> perspective (how to start and
-					stop synchronization) rather than from the{" "}
-					<strong>component's</strong> perspective (how it mounts, updates, or
-					unmounts).
+				Effects have a different lifecycle from components. Components may mount, update, or unmount. An Effect can only do two things: to <strong>start</strong> synchronizing something, and later to <strong>stop</strong> synchronizing it. This cycle can happen multiple times if your Effect depends on props and state that change over time. React provides a linter rule to check that you’ve specified your Effect’s dependencies correctly. This keeps your Effect synchronized to the latest props and state.
 				</p>
 			</>
 		),
@@ -1184,37 +1099,40 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "How should you think of effect lifecycles? (7)",
+		topic: "Advanced React",
+		level: 2,
+		question: "How should you think of effect lifecycles?",
 		answer: (
 			<>
+				<p>n React, effect lifecycles are a crucial concept for managing side effects within functional components. They allow you to perform tasks such as data fetching, subscriptions, or DOM manipulation in response to component lifecycle events. Effect lifecycles replace the lifecycle methods (e.g., componentDidMount, componentDidUpdate, componentWillUnmount) used in class components.</p>
+				<p>Effect lifecycles can be thought of as a series of phases that occur during the lifecycle of a component:</p>
 				<ul>
 					<li>
-						Each Effect has a separate lifecycle from the surrounding component.
+						<strong>Mounting Phase:</strong> 
+						<ul>
+							<li>useEffect with an empty dependency array ([]) simulates componentDidMount. It runs once after the initial render and is used for tasks that should only happen once when the component mounts.</li>
+							<li>useEffect without a dependency array runs after every render. It's equivalent to componentDidMount and componentDidUpdate combined. It's used for tasks that need to run after the initial render and after subsequent updates.</li>
+						</ul>
 					</li>
 					<li>
-						Each Effect describes a separate synchronization process that can
-						start and stop.
+						<strong>Updating Phase:</strong> 
+						<ul>
+							<li>useEffect with dependencies (e.g., [props, state]) runs after every render where the dependencies have changed. It's used for tasks that depend on specific props or state values and should only run when those values change.</li>
+							<li>Returning a cleanup function from useEffect simulates componentWillUnmount. It's used for cleaning up any resources (e.g., subscriptions, event listeners) created in the effect.</li>
+						</ul>
 					</li>
 					<li>
-						When you write and read Effects, think from each individual Effect’s
-						perspective (how to start and stop synchronization) rather than from
-						the component’s perspective (how it mounts, updates, or unmounts).
+						<strong>Unmounting Phase:</strong>   
+						<ul>
+							<li>The cleanup function returned from the last render's effect runs before the component is unmounted from the DOM. It's used for cleaning up any resources to prevent memory leaks or stale data.</li>
+						</ul>
 					</li>
-					<li>Values declared inside the component body are “reactive”.</li>
-					<li>
-						Reactive values should re-synchronize the Effect because they can
-						change over time.
-					</li>
-					<li>
-						The linter verifies that all reactive values used inside the Effect
-						are specified as dependencies.
-					</li>
-					<li>
-						All errors flagged by the linter are legitimate. There’s always a
-						way to fix the code to not break the rules.
-					</li>
+				</ul>
+				<p>Here's a summary of how to think about effect lifecycles:</p>
+				<ul>
+					<li><strong>Declare Effects:</strong> Use the useEffect hook to declare side effects within functional components.</li>
+					<li><strong>Specify Dependencies:</strong> Use dependency arrays to control when effects run and prevent unnecessary re-renders.</li>
+					<li><strong>Clean Up:</strong> Return a cleanup function from effects to perform cleanup tasks when the component unmounts or when dependencies change.</li>
 				</ul>
 			</>
 		),
@@ -1222,7 +1140,7 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are Higher-Order Components?",
 		answer: (
@@ -1255,6 +1173,7 @@ class MyComponent extends Component {
 					<li>State abstraction and manipulation.</li>
 					<li>Props manipulation.</li>
 				</ol>
+				<p>Though the current best-practice is to use functional over class components, some argue that Higher Order Component design is a more effective approach for functional programming patterns because they embrace composition.</p>
 			</>
 		),
 	},
@@ -1297,44 +1216,49 @@ class MyComponent extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is a children prop?",
 		answer: (
 			<>
 				<p>
-					<em>Children</em> is a prop (<strong>this.props.children</strong>)
-					that allows you to pass components as data to other components, just
-					like any other prop you use. A component tree put between
-					component&#39;s opening and closing tag will be passed to that
-					component as <strong>children</strong> prop.
+					The <strong>children</strong> prop is a special prop that is passed to
+					components automatically. It is used to render the content that is
+					passed between the opening and closing tags of a component. This
+					allows you to create components that wrap other components and render
+					the content inside them.
 				</p>
 				<p>
-					There are several methods available in the React API to work with this
-					prop. These include <strong>React.Children.map</strong>,{" "}
-					<strong>React.Children.forEach</strong>,{" "}
-					<strong>React.Children.count</strong>,{" "}
-					<strong>React.Children.only</strong>,{" "}
-					<strong>React.Children.toArray</strong>.
+					For example, you can create a <strong>Card</strong> component that
+					wraps other components and renders them inside a card layout:
 				</p>
-				<p>A simple usage of children prop looks as below,</p>
 				<pre>
 					<div className={styles.appCode}>{`
-const MyDiv = React.createClass({
-  render: function () {
-    return <div>{this.props.children}</div>;
-  },
-});
-
-ReactDOM.render(
-  <MyDiv>
-    <span>{"Hello"}</span>
-    <span>{"World"}</span>
-  </MyDiv>,
-  node
-);
-          `}</div>
+const Card = ({ children }) => {
+	return (
+		<div className="card">
+			{children}
+		</div>
+	);
+}
+					`}</div>
 				</pre>
+				<p>
+					Then you can use the <strong>Card</strong> component to wrap other
+					components and render them inside a card layout:
+				</p>
+				<pre>
+					<div className={styles.appCode}>{`
+<Card>
+	<h1>Hello, world!</h1>
+	<p>This is a card component.</p>
+</Card>
+					`}</div>
+				</pre>
+				<p>
+					In this example, the <strong>children</strong> prop is used to render
+					the content inside the <strong>Card</strong> component.
+				</p>
 			</>
 		),
 	},
@@ -1343,7 +1267,7 @@ ReactDOM.render(
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
-		question: "How comments written in React?",
+		question: "How are comments written in React?",
 		answer: (
 			<>
 				<p>
@@ -1372,7 +1296,7 @@ render() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is reconciliation?",
 		answer: (
@@ -1395,79 +1319,106 @@ render() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
-		question: "How to set state with a dynamic key/property name?",
+		question: "How do you set state with a dynamic key/property name?",
 		answer: (
 			<>
 				<p>
-					To use computed values for property names, you use square brackets and
-					pass the expression. Here is a generic example:
+					To set state with a dynamic key/property name, you can use the ES6
+					computed property name syntax. This allows you to compute the property
+					name of the state object with an expression. Here’s an example:
 				</p>
 				<pre>
 					<div className={styles.appCode}>{`
-const object = {
-[expression]: value
-}
-        `}</div>
-				</pre>
-				<p>Here, dynamic naming is applied:</p>
-				<pre>
-					<div className={styles.appCode}>{`
-const key1 = "language"
-const key2 = "isStudent"
+import React, { useState } from 'react';
 
-const obj = {
-  name: "dillion",
-  age: 1000,
-  [key1]: "javascript",
-  [key2]: true
+const MyComponent = () => {
+	const [state, setState] = useState({});
+	const key = 'name';
+	const value = 'John Doe';
+	setState({ ...state, [key]: value });
+	return (
+		<div>
+			{state.name}
+		</div>
+	);
 }
-
-          `}</div>
+					`}</div>
 				</pre>
+				<p>
+					In this example, the <strong>key</strong> variable is used to compute
+					the property name of the state object. The computed property name is
+					then used to set the state with the <strong>value</strong> variable. 
+				</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question:
-			"What would be the common mistake of a function being called every time the component renders?",
+			"How do you pass a function as a parameter?",
 		answer: (
 			<>
+				<p>Simply pass the function itself without parenthesis as in this example:</p>
+				<pre>
+					<div className={styles.appCode}>
+{`// Correct: handleClick is declared as a function, then passed as a reference!
+const handleClick = () => {
+	console.log('Button clicked');
+}
+
+<button onClick={handleClick}>{'Click Me'}</button>`}
+          </div>
+				</pre>
+				<pre>
+					<div className={styles.appCode}>
+					{`// Correct: event handler defined inline, then passed as a reference!
+const handleClick = () => {
+	console.log('Button clicked');
+}
+
+<button onClick={() => {
+	console.log('Button clicked');
+})}>{'Click Me'}</button>`}
+          </div>
+				</pre>
 				<p>
-					You need to make sure that function is not being called while passing
-					the function as a parameter.
+					If you pass the function with open/close parenthesis, it will call the function when the element is rendered as seen here:
 				</p>
 				<pre>
-					<div className={styles.appCode}>{`
-  // Wrong: handleClick is called instead of passed as a reference!
-  <button onClick={this.handleClick()}>{'Click Me'}</button>
-          `}</div>
+					<div className={styles.appCode}>
+{`// Wrong: handleClick is called instead of being passed as a reference!
+const handleClick = () => {
+	console.log('Button clicked');
+}
+
+<button onClick={handleClick}>{'Click Me'}</button>`}
+          </div>
 				</pre>
-				<p>Instead, pass the function itself without parenthesis:</p>
 				<pre>
-					<div className={styles.appCode}>{`
-  // Correct: handleClick is passed as a reference!
-  <button onClick={this.handleClick}>{'Click Me'}</button>
-          `}</div>
+					<div className={styles.appCode}>
+{`// Wrong: event handler defined inline, then is called instead of being passed as a reference!
+<button onClick={console.log('Button clicked')}>{'Click Me'}</button>`}
+          </div>
 				</pre>
+				<p>In the first example, the function is past as an object and can be called when the button is clicked.  In the second example, the function is called with each render.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
-		question: "Does the React.lazy() function support named exports?",
+		question: "How do you get a React.lazy() function to import a named export?",
 		answer: (
 			<>
 				<p>
-					No, currently <strong>React.lazy</strong> function supports default
+					Currently <strong>React.lazy</strong> function supports default
 					exports only. If you would like to import modules which are named
 					exports, you can create an intermediate module that reexports it as
 					the default. It also ensures that tree shaking keeps working and does
@@ -1504,20 +1455,28 @@ const SomeComponent = lazy(() => import("./IntermediateComponent.js"));
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: 'Why does React use "className" over "class" attribute?',
 		answer: (
 			<>
 				<p>
-					The attribute <strong>class</strong> is a keyword in JavaScript, and
-					JSX is an extension of JavaScript. Pass a string as the{" "}
-					<strong>className</strong> prop.
+				React uses the <strong>className</strong> attribute instead of the <strong>class</strong> attribute for styling HTML elements in JSX to avoid conflicts with the class JavaScript keyword.
 				</p>
+				<ul>
+					<li><strong>Avoiding Confusion with JavaScript class Keyword:</strong> In JavaScript, class is a reserved keyword used to define a class for object-oriented programming. When writing JSX, using the class attribute could lead to confusion because it might be mistaken for the JavaScript class keyword. To prevent this confusion, React opts to use className instead of class for specifying CSS classes in JSX.</li>
+					<li><strong>Consistency with HTML:</strong> While class is the attribute name used in HTML to specify CSS classes, JSX is a syntax extension for JavaScript, and React aims to keep its syntax consistent with JavaScript conventions. By using className, React maintains consistency with JavaScript while still achieving the same functionality as the HTML class attribute for styling elements.</li>
+				</ul>
 				<pre>
 					<div className={styles.appCode}>{`
-render() {
-  return <span className={'menu navigation-menu'}>{'Menu'}</span>
+import React from 'react';
+
+function MyComponent() {
+  return (
+    <div className="container">
+      <p className="text">Hello, World!</p>
+    </div>
+  );
 }
           `}</div>
 				</pre>
@@ -1527,78 +1486,39 @@ render() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are fragments?",
 		answer: (
 			<>
-				<p>
-					It&#39;s a common pattern or practice in React for a component to
-					return multiple elements. <em>Fragments</em> let you group a list of
-					children without adding extra nodes to the DOM. You need to use either{" "}
-					<strong>{`<Fragment>`}</strong> or a shorter syntax having empty tag (
-					<strong>{`<></>`}</strong>).
-				</p>
-				<p>
-					Below is the example of how to use fragment inside <em>Story</em>{" "}
-					component.
-				</p>
+				<p>In React, fragments are a feature that allows you to group multiple children elements without adding extra nodes to the DOM. Fragments were introduced in React 16.2 as a way to address the limitation of returning only a single element from a component's render method.</p>
+				<p>Before fragments, if you wanted to return multiple adjacent JSX elements from a component, you had to wrap them in a parent element, like a {`<div>`}, which could sometimes lead to unnecessary DOM elements.</p>
+				<p>With fragments, you can group elements without adding extra nodes to the DOM. Fragments look like empty JSX tags (<>...</> or {`<React.Fragment>...</React.Fragment>`}) and allow you to return multiple elements without a wrapping parent element.</p>
 				<pre>
 					<div className={styles.appCode}>{`
-function Story({title, description, date}) {
-  return (
-      <Fragment>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>{date}</p>
-      </Fragment>
-    );
-}
-          `}</div>
-				</pre>
-				<p>
-					It is also possible to render list of fragments inside a loop with the
-					mandatory <strong>key</strong> attribute supplied.
-				</p>
+import React from 'react';
 
-				<pre>
-					<div className={styles.appCode}>{`
-function StoryBook() {
-  return stories.map(story =>
-    <Fragment key={ story.id}>
-      <h2>{story.title}</h2>
-      <p>{story.description}</p>
-      <p>{story.date}</p>
-    </Fragment>
-    );
-}
-          `}</div>
-				</pre>
-				<p>
-					Ususally you don&#39;t need to use <strong>{`<Fragment>`}</strong>{" "}
-					until unless there is a need of <em>key</em> attribute. The usage of
-					shorter syntax looks like below.
-				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-function Story({title, description, date}) {
+function MyComponent() {
   return (
-      <>
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>{date}</p>
-      </>
-    );
+    <>
+      <h1>Hello</h1>
+      <p>React Fragments</p>
+    </>
+  );
 }
+
           `}</div>
 				</pre>
+				<p>In this example, {`<></>`} is a fragment shorthand, and it allows you to return both the {`<h1>`} and {`<p>`} elements without wrapping them in a parent {`<div>`}. </p>
+				<p>Alternatively, you can use {`<React.Fragment>...</React.Fragment>`} syntax if you need to include keys or other attributes on the fragment.</p>
+				<p>Fragments are particularly useful in scenarios where you need to return multiple elements from a component's render method, such as when mapping over an array to render a list of items or when rendering adjacent elements without a common parent.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Why fragments are better than container divs? (3)",
 		answer: (
@@ -1626,83 +1546,83 @@ function Story({title, description, date}) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are portals in React?",
 		answer: (
 			<>
-				<p>
-					A React component can be rendered outside of the DOM hierarchy of its
-					parent component using React Portals. As an example, you could render
-					components in a modal dialogue box, hover card, loader, or popup
-					message, which would be in a “different place” than their parent
-					component. The ReactDOM.createPortal() method, which accepts a React
-					element (child) and a DOM element as inputs, is used to create React
-					portals (container). The container is the DOM element that the child
-					component should be rendered into, and the child component is any
-					renderable React child, such as an element, string, or fragment. For
-					items that must appear above all other elements, such as profile
-					hovercards, modal dialogue boxes, and tooltips, portals are frequently
-					utilised.
-				</p>
+				<p>In React, portals provide a way to render children components into a DOM node that exists outside of the parent hierarchy. This allows you to render components at any location in the DOM tree, even if they are not direct children of the root React component.</p>
+				<p>Portals are useful for scenarios such as modals, tooltips, and popovers, where you need to render content that overlays other parts of the UI without affecting the layout or styles of the parent components</p>
+				<p>To create a portal in React, you use the ReactDOM.createPortal() method. This method takes two arguments: the first argument is the JSX content you want to render, and the second argument is the DOM node where you want to render the content.  For example:</p>
 				<pre>
 					<div className={styles.appCode}>{`
-import { createPortal } from 'react-dom';
+import React, { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
 
-// ...
+function Modal({ isOpen, onClose, children }) {
+  const [modalRoot, setModalRoot] = useState(null);
 
-<div>
-  <p>This child is placed in the parent div.</p>
-  {createPortal(
-    <p>This child is placed in the document body.</p>,
-    document.body
-  )}
-</div>
+  useEffect(() => {
+    // Create a new div element as the portal container
+    const modalContainer = document.createElement('div');
+    document.body.appendChild(modalContainer);
+    setModalRoot(modalContainer);
+
+    // Cleanup function to remove the portal container when component unmounts
+    return () => {
+      document.body.removeChild(modalContainer);
+    };
+  }, []);
+
+  if (!isOpen || !modalRoot) {
+    return null; // Don't render anything if modal is closed or portal container is not available
+  }
+
+  // Use ReactDOM.createPortal() to render the children into the portal container
+  return ReactDOM.createPortal(
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        {children}
+        <button onClick={onClose}>Close</button>
+      </div>
+    </div>,
+    modalRoot
+  );
+}
+
+function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setIsOpen(true)}>Open Modal</button>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <h2>Hello, I'm a modal!</h2>
+        <p>This content is rendered outside the root component's DOM hierarchy.</p>
+      </Modal>
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
         `}</div>
 				</pre>
-				<p>
-					The first argument is any render-able React child, such as an element,
-					string, or fragment. The second argument is a DOM element.
-				</p>
-				<div
-					className={styles.appCode}
-				>{`createPortal(children, domNode, key?) `}</div>
-				<p>
-					<strong>Parameters</strong>
-				</p>
+				<p>In this example:</p>
 				<ul>
-					<li>
-						<strong>children:</strong> Anything that can be rendered with React,
-						such as a piece of JSX (e.g. <div /> or {`<SomeComponent />`}), a
-						Fragment ({`<>...</>`}), a string or a number, or an array of these.
-					</li>
-					<li>
-						<strong>domNode:</strong> Some DOM node, such as those returned by
-						document.getElementById(). The node must already exist. Passing a
-						different DOM node during an update will cause the portal content to
-						be recreated.
-					</li>
-					<li>
-						<strong>optional key:</strong> A unique string or number to be used
-						as the portal’s key.
-					</li>
+					<li>The Modal component is a functional component that takes props isOpen and onClose to control its visibility and define the close action. It renders a modal overlay and content, and it utilizes ReactDOM.createPortal() to render the content into a portal container.</li>
+					<li>The App component renders a button to toggle the modal's visibility and includes the Modal component with the desired content.</li>
+					<li>Inside the Modal component, a portal container is created using the useState hook. The useEffect hook is used to create the portal container when the component mounts and to remove it when the component unmounts.</li>
+					<li>The content of the modal is rendered inside the portal container using ReactDOM.createPortal().</li>
+					<li>Clicking outside the modal content (on the overlay) or clicking the close button triggers the onClose function, which closes the modal by updating the isOpen state.</li>
 				</ul>
-				<p>
-					<strong>Returns</strong>
-				</p>
-				<p>
-					createPortal returns a React node that can be included into JSX or
-					returned from a React component. If React encounters it in the render
-					output, it will place the provided children inside the provided
-					domNode.
-				</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are stateless components?",
 		answer: (
@@ -1716,6 +1636,37 @@ import { createPortal } from 'react-dom';
 					don’t need to handle any complex logic or internal state updates. They
 					are simple functions that take props and return JSX.
 				</p>
+				<pre><div className={styles.appCode} >{`
+import React from 'react';
+
+// Stateless functional component
+const Greeting = ({ name }) => {
+	return (
+		<div>
+			<h1>Hello, {name}!</h1>
+			<p>Welcome to our website.</p>
+		</div>
+	);
+};
+
+export default Greeting;				
+				`}</div></pre>
+				<p>You can then use this component in other parts of your application like so:</p>
+				<pre><div className={styles.appCode} >{`
+import React from 'react';
+import Greeting from './Greeting';
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Alice" />
+      <Greeting name="Bob" />
+    </div>
+  );
+}
+
+export default App;			
+				`}</div></pre>
 				<p>
 					In general, it is recommended to use stateless components as much as
 					possible to keep the application simple and easy to understand.
@@ -1728,7 +1679,7 @@ import { createPortal } from 'react-dom';
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are stateful components?",
 		answer: (
@@ -1773,7 +1724,7 @@ return (
 				</pre>
 				<p>
 					The equivalent class stateful component with a state that gets
-					initialized in the <strong>constructor</strong>.
+					initialized in the <strong>constructor</strong>.  This is a legacy pattern no longer recommended, but you may encounter in legacy code.
 				</p>
 				<pre>
 					<div className={styles.appCode}>{`
@@ -1802,7 +1753,7 @@ class App extends Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How to apply type validation on props in React?",
 		answer: (
@@ -1883,7 +1834,7 @@ User.propTypes = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are the advantages of React?",
 		answer: (
@@ -1912,7 +1863,7 @@ User.propTypes = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are the limitations of React?",
 		answer: (
@@ -1940,224 +1891,182 @@ User.propTypes = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are error boundaries?",
 		answer: (
 			<>
-				<p>
-					By default, if your application throws an error during rendering,
-					React will remove its UI from the screen. To prevent this, you can
-					wrap a part of your UI into an error boundary. An error boundary is a
-					special component that lets you display some fallback UI instead of
-					the part that crashed—for example, an error message.
-				</p>
-				<p>
-					To implement an error boundary component, you need to provide static
-					getDerivedStateFromError which lets you update state in response to an
-					error and display an error message to the user. You can also
-					optionally implement componentDidCatch to add some extra logic, for
-					example, to log the error to an analytics service.
-				</p>
+				<p>In React, an error boundary is a component that catches JavaScript errors anywhere in its child component tree, logs those errors, and displays a fallback UI instead of crashing the entire application. Error boundaries are useful for handling errors that occur during rendering, in lifecycle methods, and in constructors of the components they wrap.  For example:</p>
 				<pre>
 					<div className={styles.appCode}>{`
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
+import React, { useState } from 'react';
+
+// Error boundary component
+function ErrorBoundary({ children }) {
+  const [hasError, setHasError] = useState(false);
+  const [error, setError] = useState(null);
+
+  const componentDidCatch = (error, errorInfo) => {
+    // Catch error and update state
+    setHasError(true);
+    setError(error);
+    // You can also log the error to an error reporting service here
+    console.error('Error caught by ErrorBoundary:', error, errorInfo);
+  };
+
+  // Render fallback UI if error is caught
+  if (hasError) {
+    return (
+      <div>
+        <h2>Something went wrong.</h2>
+        <p>{error && error.toString()}</p>
+      </div>
+    );
   }
 
-  componentDidCatch(error, info) {
-    // You can also log the error to an error reporting service
-    logErrorToMyService(error, info);
-  }
-
-  static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI.
-    return { hasError: true };
-  }
-
-  render() {
-    if (this.state.hasError) {
-      // You can render any custom fallback UI
-      return <h1>{"Something went wrong."}</h1>;
-    }
-    return this.props.children;
-  }
+  // Render children if no error
+  return children;
 }
+
+// Component that may throw an error
+function ChildComponent() {
+  const [count, setCount] = useState(0);
+
+  // Simulate an error by dividing by zero when count equals 5
+  if (count === 5) {
+    throw new Error('Error: Count cannot be 5.');
+  }
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment Count</button>
+    </div>
+  );
+}
+
+// App component that uses the error boundary
+function App() {
+  return (
+    <div>
+      <h1>Error Boundary Example</h1>
+      <ErrorBoundary>
+        <ChildComponent />
+      </ErrorBoundary>
+    </div>
+  );
+}
+
+export default App;
             `}</div>
 				</pre>
-				<p>After that use it as a regular component:</p>
-				<pre>
-					<div className={styles.appCode}>{`
-<ErrorBoundary>
-  <MyWidget />
-</ErrorBoundary>
-            `}</div>
-				</pre>
-				<p>
-					If Profile or its child component throws an error, ErrorBoundary will
-					“catch” that error, display a fallback UI with the error message
-					you’ve provided, and send a production error report to your error
-					reporting service.
-				</p>
-				<p>
-					You don’t need to wrap every component into a separate error boundary.
-					When you think about the granularity of error boundaries, consider
-					where it makes sense to display an error message. For example, in a
-					messaging app, it makes sense to place an error boundary around the
-					list of conversations. It also makes sense to place one around every
-					individual message. However, it wouldn’t make sense to place a
-					boundary around every avatar.
-				</p>
-				<p>
-					There is currently no way to write an error boundary as a function
-					component. However, you don’t have to write the error boundary class
-					yourself. For example, you can use the react-error-boundary component
-					NPM package instead.
-				</p>
+				<p>In this example:</p>
+				<ul>
+					<li>ErrorBoundary is a functional component that wraps its children. It uses the useState hook to manage the error state.</li>
+					<li>The componentDidCatch function is a lifecycle method (although it's written as a regular function here) that catches errors thrown by its children components. It updates the state with the error information.</li>
+					<li>Inside ChildComponent, an error is intentionally thrown when the count state reaches 5.</li>
+					<li>App component renders ChildComponent wrapped in ErrorBoundary. If an error occurs inside ChildComponent, it is caught by ErrorBoundary, which then renders a fallback UI instead of crashing the entire application.</li>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What does the react-dom package do?",
 		answer: (
 			<>
-				<p>
-					The <strong>react-dom</strong> package provides{" "}
-					<em>DOM-specific methods</em> that can be used at the top level of
-					your app. Most of the components are not required to use this module.
-					Some of the methods of this package are:
-				</p>
+				<p>The <strong>'react-dom'</strong> package is a package in React ecosystem that provides DOM-specific methods that are not present in the core React library (<strong>'react'</strong>). It serves as the entry point to the DOM and is responsible for rendering React components into the browser DOM.</p>
+				<p>Here are some of the key functionalities provided by the <strong>react-dom</strong> package:</p>
 				<ol>
 					<li>
-						<strong>render()</strong>
+						<strong>ReactDOM.render():</strong>  This method is used to render React elements into the DOM. It takes two arguments: the React element to render and the DOM container where the element should be rendered.
 					</li>
 					<li>
-						<strong>hydrate()</strong>
+						<strong>ReactDOM.hydrate():</strong>  Similar to ReactDOM.render(), but it is used for hydrating a container that already contains HTML content generated by the server. It enables React to attach event listeners to the existing markup, making it interactive.
 					</li>
 					<li>
-						<strong>unmountComponentAtNode()</strong>
+						<strong>ReactDOM.unmountComponentAtNode():</strong>  This method is used to unmount and remove a React component from the DOM. It takes a DOM container as an argument.
 					</li>
 					<li>
-						<strong>findDOMNode()</strong>
+						<strong>ReactDOM.findDOMNode():</strong>  This method is used to get the DOM node associated with a React component instance. Note that this method should be used with caution as it may cause issues with performance and refactoring.
 					</li>
 					<li>
-						<strong>createPortal()</strong>
+						<strong>ReactDOM.createPortal():</strong>  This method is used to render children components into a DOM node that exists outside of the parent hierarchy. It's commonly used for creating modals, tooltips, and popovers.
 					</li>
 				</ol>
+				<p>Overall, the react-dom package bridges the gap between React's virtual DOM and the browser's actual DOM, providing methods for rendering and interacting with React components in web applications. It's an essential part of building React applications for the web.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 2,
-		question: "What is the purpose of render method of react-dom?",
-		answer: (
-			<>
-				<p>
-					This method is used to render a React element into the DOM in the
-					supplied container and return a reference to the component. If the
-					React element was previously rendered into container, it will perform
-					an update on it and only mutate the DOM as necessary to reflect the
-					latest changes.
-				</p>
-				<div className={styles.appCode}>{`
-          ReactDOM.render(element, container, [callback])
-        `}</div>
-				<p>
-					If the optional callback is provided, it will be executed after the
-					component is rendered or updated.
-				</p>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is react-dom/server?",
 		answer: (
 			<>
 				<p>
-					The <strong>react-dom/server</strong> object enables you to render
-					components to static markup (typically used on node server). This
-					object is mainly used for <em>server-side rendering</em> (SSR). The
-					following methods can be used in both the server and browser
-					environments:
-				</p>
+					The <strong>react-dom/server</strong> package is a part of the React ecosystem that allows you to render React components on the server side. It provides methods for rendering React components to static markup or streaming HTML on the server, which can then be sent to the client as part of an initial HTML response.  Here are some of the key functionalities it provides:</p>
 				<ol>
 					<li>
-						<strong>renderToString()</strong>
-					</li>
+						<strong>ReactDOMServer.renderToString():</strong>  This method takes a React element and returns its HTML markup as a string. It's commonly used to render React components on the server and include them in the initial HTML response sent to the client.</li>
 					<li>
-						<strong>renderToStaticMarkup()</strong>
-					</li>
+						<strong>ReactDOMServer.renderToStaticMarkup():</strong>  Similar to ReactDOMServer.renderToString(), but it renders the component to static markup, which does not include React-specific attributes such as data-react-id. It's useful for scenarios where you need clean HTML markup without React-specific attributes.</li>
+					<li>
+						<strong>ReactDOMServer.renderToNodeStream() and ReactDOMServer.renderToStaticNodeStream():</strong>  These methods are used to render React components to a readable stream of HTML nodes. They are useful for streaming large amounts of HTML content to the client, improving performance by reducing time to first byte.</li>
 				</ol>
-				<p>
-					For example, you generally run a Node-based web server like Express,
-					Hapi, or Koa, and you call <strong>renderToString</strong> to render
-					your root component to a string, which you then send as response.
-				</p>
+				<p>Here's a basic example of how react-dom/server can be used:</p>
 				<pre>
 					<div className={styles.appCode}>{`
-// using Express
-import { renderToString } from "react-dom/server";
-import MyPage from "./MyPage";
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import App from './App'; // Your React component
 
-app.get("/", (req, res) =&gt; {
-  res.write(
-    "<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>"
-  );
-  res.write('<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>&gt;</span>');
-  res.write(renderToString(<span class="hljs-tag">&lt;<span class="hljs-name">MyPage</span> /&gt;</span>));
-  res.write("<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>");
-  res.end();
-});
+// Render the App component to HTML string
+const htmlString = ReactDOMServer.renderToString(<App />);
+
+// Now you can send htmlString as part of the initial HTML response to the client
         `}</div>
 				</pre>
+				<p>In this example, ReactDOMServer.renderToString() is used to render the App component to a string of HTML markup, which can then be included in the initial HTML response sent to the client. This allows the client to receive pre-rendered HTML content, improving perceived performance and search engine optimization (SEO) for React applications.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
-		question: "How to use innerHTML in React?",
+		question: "How do you use dangerouslySetInnerHTML in React?",
 		answer: (
 			<>
-				<p>
-					The <strong>dangerouslySetInnerHTML</strong> attribute is React&#39;s
-					replacement for using <strong>innerHTML</strong> in the browser DOM.
-					Just like <strong>innerHTML</strong>, it is risky to use this
-					attribute considering cross-site scripting (XSS) attacks. You just
-					need to pass a <strong>__html</strong> object as key and HTML text as
-					value.
-				</p>
-				<p>
-					In this example MyComponent uses{" "}
-					<strong>dangerouslySetInnerHTML</strong> attribute for setting HTML
-					markup:
-				</p>
+				<p>There are legitimate use cases for using dangerouslySetInnerHTML in React, but it should be used with caution due to the security risks associated with it. This prop allows you to set the inner HTML of a DOM element directly from React, bypassing React's built-in XSS protection mechanisms. As the name suggests, it's considered "dangerous" because it exposes your application to potential security vulnerabilities if not used carefully.</p>
+				<p>Here are some use cases where dangerouslySetInnerHTML might be appropriate:</p>
+				<ul>
+					<li><strong>Integrating with Third-Party Libraries:</strong> If you need to integrate with a third-party library or service that requires HTML markup, such as rendering rich text from a content management system (CMS) or displaying user-generated content with HTML formatting, dangerouslySetInnerHTML can be used to render that HTML content.</li>
+					<li><strong>Embedding External Widgets or Components:</strong> When integrating with external widgets or components that provide HTML markup, such as embedded maps, social media posts, or chat widgets, dangerouslySetInnerHTML can be used to render the widget's HTML code.</li>
+					<li><strong>Rendering Pre-rendered HTML:</strong> In server-side rendering (SSR) scenarios, you may need to render pre-rendered HTML content generated by the server. dangerouslySetInnerHTML can be used to render this content on the client side without re-rendering it.</li>
+				</ul>
 				<pre>
 					<div className={styles.appCode}>{`
-function createMarkup() {
-  return { __html: "First &middot; Second" };
-}
+import React from 'react';
 
 function MyComponent() {
-  return <div dangerouslySetInnerHTML={createMarkup()} />;
+  const htmlContent = '<p>This is <strong>HTML</strong> content.</p>';
+
+  return (
+    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+  );
 }
+
+export default MyComponent;
           `}</div>
 				</pre>
+				<p>In this example, the htmlContent variable contains a string of HTML markup. By passing it to the dangerouslySetInnerHTML prop with the __html key, React renders the HTML content inside the {`<div>`}. However, be aware that using dangerouslySetInnerHTML circumvents React's virtual DOM reconciliation mechanism and opens your application to potential security vulnerabilities if the HTML content is not trusted or sanitized. Always ensure that the content you're rendering with dangerouslySetInnerHTML is safe and trusted.</p>
 			</>
 		),
 	},
@@ -2198,29 +2107,7 @@ function HelloWorldComponent() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "How events are different between React and HTML?",
-		answer: (
-			<>
-				<p>There are some simple syntactic differences:</p>
-				<ul>
-					<li>
-						In React.js, we use camelCase to name events, instead of the
-						lowercase in HTML
-					</li>
-					<li>
-						In React.js, because of JSX, a function is passed as an event
-						handler, instead of the string in HTML
-					</li>
-				</ul>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Why not use indexes as keys?",
 		answer: (
@@ -2251,7 +2138,7 @@ function HelloWorldComponent() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What will happen if you use props in initial state?",
 		answer: (
@@ -2327,7 +2214,7 @@ const MyComponent = ({ name, address }) => (
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Why we need to be careful when spreading props on DOM elements?",
 		answer: (
@@ -2356,56 +2243,54 @@ const ComponentB = ({ isDisplay, ...domProps }) => (
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How do you memoize a component?",
 		answer: (
 			<>
-				<p>
-					Since React v16.6.0, we have a React.memo. It provides a higher order
-					component which memoizes component unless the props change. To use it,
-					simply wrap the component using React.memo before you use it.
-				</p>
+				<p>You can use the React.memo, a higher-order component(HOC) provided by React. React.memo is similar to React.PureComponent for class components, but it also works with functional components. It memoizes the result of the component's render function based on its props, preventing unnecessary re-renders if the props haven't changed.  Here's how you can memoize a functional component using React.memo:</p>
 				<pre>
 					<div className={styles.appCode}>{`
-const MemoComponent = React.memo(function MemoComponent(props) {
-  /* render using props */
+import React from 'react';
+
+const MyComponent = React.memo(function MyComponent(props) {
+  // Component logic
 });
-OR;
-export default React.memo(MyFunctionComponent);
           `}</div>
 				</pre>
+				<p>You can also define the component seperately and then memoize it:</p>
+				<pre>
+					<div className={styles.appCode}>{`
+import React from 'react';
+
+function MyComponent(props) {
+  // Component logic using props
+}
+
+export default React.memo(MyComponent);
+          `}</div>
+				</pre>
+				<p>React.memo is used to memoize entire functional components based on their props.  Also, useMemo is used to memoize specific values or computations within a functional component based on dependencies. They are both useful for optimizing performance in React applications but are applied in different scenarios.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is CRA and its benefits?",
 		answer: (
 			<>
-				<p>
-					The <strong>create-react-app</strong> CLI tool allows you to quickly
-					create &amp; run React applications with no configuration step.
-				</p>
-				<p>It includes everything we need to build a React app:</p>
+				<p>CRA stands for Create React App. It's a popular and officially supported toolchain provided by the React team for quickly setting up and bootstrapping new React applications with minimal configuration. Create React App abstracts away the build configuration and provides a pre-configured environment, allowing developers to focus on writing React code without worrying about the setup and configuration details.  Here are some of the benefits of using Create React App:</p>
 				<ol>
-					<li>React, JSX, ES6, and Flow syntax support.</li>
-					<li>Language extras beyond ES6 like the object spread operator.</li>
-					<li>
-						Autoprefixed CSS, so you don’t need -webkit- or other prefixes.
-					</li>
-					<li>
-						A fast interactive unit test runner with built-in support for
-						coverage reporting.
-					</li>
-					<li>A live development server that warns about common mistakes.</li>
-					<li>
-						A build script to bundle JS, CSS, and images for production, with
-						hashes and sourcemaps.
-					</li>
+					<li><strong>Quick Setup:</strong> Create React App provides a single command (npx create-react-app my-app or yarn create react-app my-app) to set up a new React project. This command creates a new directory with a pre-configured project structure, including all the necessary build tools and dependencies.</li>
+					<li><strong>Zero Configuration:</strong> Create React App abstracts away the build configuration, so you don't have to deal with complex webpack or Babel configurations. It provides sensible defaults and handles the configuration internally, allowing you to start coding right away.</li>
+					<li><strong>Built-in Development Server:</strong> Create React App includes a built-in development server with hot reloading, which automatically refreshes the browser whenever you make changes to your code. This speeds up the development process and improves developer productivity.</li>
+					<li><strong>Optimized Production Builds:</strong> Create React App automatically optimizes your production build for performance by minifying and bundling your code, removing unused dependencies, and generating source maps for debugging.</li>
+					<li><strong>Support for Modern JavaScript Features:</strong> Create React App comes pre-configured with support for modern JavaScript features, including ES6 syntax, JSX, and TypeScript.</li>
+					<li><strong>Easy Deployment:</strong> Create React App generates static assets that can be easily deployed to various hosting platforms, such as Netlify, Vercel, AWS Amplify, GitHub Pages, and more.</li>
+					<li><strong>Community Support and Maintenance:</strong> Create React App is maintained by the React team and has a large community of developers contributing to its improvement and maintenance. It receives regular updates, bug fixes, and new features to stay up-to-date with the latest trends and best practices in the React ecosystem.</li>
 				</ol>
 			</>
 		),
@@ -2413,7 +2298,7 @@ export default React.memo(MyFunctionComponent);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question:
 			"What is the purpose of getSnapshotBeforeUpdate() lifecycle method?",
@@ -2448,7 +2333,7 @@ class MyComponent extends React.Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are React Mixins?",
 		answer: (
@@ -2466,7 +2351,7 @@ class MyComponent extends React.Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are Pointer Events supported in React? (10)",
 		answer: (
@@ -2512,7 +2397,7 @@ class MyComponent extends React.Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Why should component names start with capital letter?",
 		answer: (
@@ -2530,116 +2415,81 @@ class MyComponent extends React.Component {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Are custom HTML attributes supported in React?",
 		answer: (
 			<>
 				<p>
-					If you render a tag with a dash, like {`<my-element>`}, React will
-					assume you want to render a custom HTML element. In React, rendering
-					custom elements works differently from rendering built-in browser
-					tags:
+				Custom HTML attributes are attributes added to HTML elements that are not part of the standard HTML specification. These attributes are typically used to store additional information or metadata about an element that is not represented by standard HTML attributes.
 				</p>
-				<ul>
-					<li>
-						All custom element props are serialized to strings and are always
-						set using attributes.
-					</li>
-					<li>
-						Custom elements accept class rather than className, and for rather
-						than htmlFor.
-					</li>
-				</ul>
-				<p>
-					If you render a built-in browser HTML element with an is attribute, it
-					will also be treated as a custom element.
-				</p>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
-		level: 2,
-		question: "What is the difference between constructor and getInitialState?",
-		answer: (
-			<>
-				<p>
-					You should initialize state in the constructor when using ES6 classes,
-					and <strong>getInitialState()</strong> method when using{" "}
-					<strong>React.createClass()</strong>.
-				</p>
-				<p>
-					<strong>Using ES6 classes:</strong>
-				</p>
+				<p>In traditional HTML, custom attributes are technically allowed, but they are not considered valid HTML and may cause issues with validation and compatibility with certain browsers. However, they are commonly used in web development for various purposes, such as storing data for JavaScript manipulation, styling, or as hooks for CSS or JavaScript frameworks.  An example of a custom HTML attribute:</p>				
+				<pre>
+					<div className={styles.appCode}>{`<div id="myDiv" data-custom="value">...</div>`}</div>
+				</pre>
+				<p>In the example above, data-custom is a custom attribute used to store custom data associated with the div element.</p>
+				<p>In React, custom HTML attributes are fully supported, and they are typically prefixed with data- to adhere to the HTML5 specification and to avoid conflicts with future standard attributes. React treats custom attributes as regular DOM properties, allowing you to access and manipulate them using JavaScript.  Here's an example of using custom attributes in React:</p>				
 				<pre>
 					<div className={styles.appCode}>{`
-class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      /* initial state */
-    };
-  }
+import React from 'react';
+
+function MyComponent() {
+  return (
+    <div data-custom="value">...</div>
+  );
 }
-          `}</div>
+					`}</div>
 				</pre>
-				<p>
-					Using <strong>React.createClass()</strong>:
-				</p>
-				<pre>
-					<div className={styles.appCode}>{`
-const MyComponent = React.createClass({
-  getInitialState() {
-    return {
-      /* initial state */
-    };
-  },
-});
-          `}</div>
-				</pre>
-				<p>
-					Note:<strong>React.createClass()</strong> was deprecated and removed
-					in React v16. Use plain JavaScript classes instead.
-				</p>
+				<p>In this example, data-custom is a custom attribute added to the div element in JSX. React will render this attribute as-is in the resulting HTML output, and you can access it using JavaScript for various purposes, such as styling, event handling, or data manipulation.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Can you force a component to re-render without updating state?",
 		answer: (
 			<>
 				<p>
-					By default, when your component&#39;s state or props change, your
-					component will re-render. You can tell React that the component needs
-					re-rendering by calling <strong>forceUpdate()</strong>.
-				</p>
-				<div className={styles.appCode}>{`
-        component.forceUpdate(callback);
-        `}</div>
-				<p>
-					It is recommended to avoid all uses of <strong>forceUpdate()</strong>{" "}
-					and only use <strong>props</strong> and <strong>state</strong> in for
-					rerendering.
-				</p>
-				<p>
-					Note: Reading an external data source and forcing class components to
-					re-render in response to its changes with forceUpdate has been
-					superseded by useSyncExternalStore in function components.
-				</p>
+					By default, when your component's state or props change, your
+					component will re-render. In class components, you can tell React that the component needs
+					re-rendering by calling <strong>forceUpdate()</strong>.  But since fuctional components are recommended over class components, and in functional components, you cannot directly call forceUpdate() like you can in class components, you can achieve a re-render without updating state by using a workaround involving a key prop. By changing the value of the key prop, React will treat the component as a completely new instance, triggering a re-render.  Here's an example using a functional component:</p>
+				
+				<pre><div className={styles.appCode}>{`
+import React, { useState } from 'react';
+
+function MyComponent() {
+	const [key, setKey] = useState(0);
+
+	const handleClick = () => {
+		// Increment the key value to force re-render
+		setKey(prevKey => prevKey + 1);
+	};
+
+	return (
+		<div key={key}>
+			<button onClick={handleClick}>Force Update</button>
+			<p>Last updated: {new Date().toLocaleTimeString()}</p>
+		</div>
+	);
+}				
+        `}</div></pre>
+				<p>In this example:</p>
+				<ul>
+					<li>We use the useState hook to manage the key state. The initial value is set to 0.</li>
+					<li>The component is re-rendered every time the key state changes.</li>
+					<li>When the button is clicked, the handleClick function is called, which updates the key state by incrementing its value. This triggers a re-render of the component with a new key value, effectively forcing the re-render without updating state or props.</li>
+				</ul>
+				<p>This approach is useful for cases where you need to force a re-render in a functional component without changing its state or props, but it should be used sparingly as changing the key prop may have unintended consequences, such as unmounting and remounting child components.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How do you access props in attribute quotes?",
 		answer: (
@@ -2677,7 +2527,7 @@ const MyComponent = React.createClass({
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What is Redux in React?",
 		answer: (
@@ -2693,37 +2543,36 @@ const MyComponent = React.createClass({
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "In Redux, what is an action?",
 		answer: (
 			<>
-				<p>
-					In Redux, an action is an object that contains information about an
-					event that has occurred in an application
-				</p>
+				<p>In Redux, an action is a plain JavaScript object that represents an intention to change the state of the application. Actions are the only source of information for the Redux store, and they are dispatched to the store using the store.dispatch() method. Actions typically have a type property that describes the type of action being performed and may also contain additional data payload that is necessary for updating the state.  Here's an example of an action:</p>
+				<pre><div className={styles.appCode}>{`
+const incrementCounter = () => ({
+	type: 'INCREMENT_COUNTER'
+});
+        `}</div></pre>
+				<p>In this example:</p>
+				<ul>
+					<li>incrementCounter is an action creator, which is a function that returns an action object.</li>
+					<li>The action object returned by incrementCounter has a type property set to 'INCREMENT_COUNTER'.</li>
+					<li>The type property describes the intention to increment the counter in the Redux store.</li>
+				</ul>
+				<p>Actions are usually dispatched to the Redux store using the store.dispatch() method:</p>
+				<pre><div className={styles.appCode}>{`
+store.dispatch(incrementCounter());
+        `}</div></pre>
+				<p>When an action is dispatched, Redux passes the action object to the store's reducer function. The reducer function then uses the action type to determine how to update the state of the application.</p>
+				<p>Actions are central to the Redux pattern and serve as a clear and predictable way to describe state changes in an application. They enable a separation of concerns between different parts of the application and facilitate easier testing and debugging.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "What is the Presentational segment?",
-		answer: (
-			<>
-				<p>
-					It is a component in React that just renders HTML and its only
-					function is presentation markup.
-				</p>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is yield operator in JavaScript?",
 		answer: (
@@ -2755,7 +2604,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "React - Testing",
+		topic: "Intermediate - Testing",
 		level: 1,
 		question: "What is Jest?",
 		answer: (
@@ -2770,22 +2619,28 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "What is the dispatcher?",
+		topic: "Advanced React",
+		level: 2,
+		question: "What is the Flux dispatcher?",
 		answer: (
 			<>
-				<p>
-					It is the central hub of data flow in a Flux application that acts as
-					a directory of callbacks.
-				</p>
+				<p>The Flux Dispatcher is a central hub in the Flux architecture pattern, which is a unidirectional data flow pattern used in building client-side web applications. The Dispatcher acts as a mediator between the actions (events) triggered by the application and the stores (data) that manage the application state.</p>
+				<p>Here's a simplified overview of how the Flux Dispatcher works:</p>
+				<ol>
+					<li><strong>Dispatching Actions:</strong> Components or other parts of the application trigger actions to describe events that occur within the application. For example, a user clicks a button, which triggers an action to update the application state.</li>
+					<li><strong>Dispatcher Registration:</strong> Stores (or sometimes other components) register callback functions with the Dispatcher. These callback functions are responsible for updating the state in response to specific actions.</li>
+					<li><strong>Action Handling:</strong> When an action is dispatched, the Dispatcher receives the action object and forwards it to all registered callback functions (stores). Each store checks whether it needs to respond to the action based on its type. If the store decides to respond, it updates its state accordingly.</li>
+					<li><strong></strong>Unidirectional Data Flow: After the stores update their state in response to the action, they emit change events to notify the views (components) that the state has been updated. Views then retrieve the updated state from the stores and re-render themselves accordingly.</li>
+				</ol>
+				<p>The Flux Dispatcher ensures that actions are processed in a predictable order and that changes to the application state are propagated in a consistent manner. It helps to enforce the unidirectional data flow, making it easier to reason about how data flows through the application and how changes are propagated.</p>
+				<p>While the Flux pattern originated with Facebook's Flux architecture, it has influenced many state management solutions in the React ecosystem, such as Redux and Flux implementations provided by libraries like Fluxxor and Alt. However, not all state management solutions in the React ecosystem strictly adhere to the Flux pattern or use a Dispatcher, as Flux is just one of many architectural patterns used in React applications.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "Name two differences between Redux and Flux",
 		answer: (
@@ -2821,10 +2676,7 @@ console.log(iterator.next().value);
 						readable and easier to debug.
 					</li>
 					<li>
-						Arrow functions have no binding of the keyword <strong>this</strong>{" "}
-						meaning that <strong>this</strong> inside an arrow function will
-						refer to the one where it was created rather than where it was
-						called from.
+						Arrow functions have no binding of the keyword <strong>this</strong>.  Arrow functions in JavaScript (and by extension, React) capture the <strong>this</strong> value lexically from the surrounding code. In other words, the <strong>this</strong> value inside an arrow function is determined by the surrounding scope where the arrow function is defined, rather than how it is called.
 					</li>
 					<li>
 						Arrow functions do not create a new scope, so they can be used in
@@ -2841,14 +2693,14 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is Webpack?",
 		answer: (
 			<>
 				<p>
 					Webpack is a command line tool used to bundle different code files and
-					assets into single large file. It helps minimize Javascript, CSS
+					assets into single large file. It helps minimize JavaScript, CSS
 					files, images, etc.
 				</p>
 			</>
@@ -2857,7 +2709,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is Babel?",
 		answer: (
@@ -2872,9 +2724,9 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
-		question: "How are ReactJS and React Native different? (2)",
+		question: "How are ReactJS and React Native different? (9)",
 		answer: (
 			<>
 				<ul>
@@ -2882,7 +2734,6 @@ console.log(iterator.next().value);
 					<li><strong>Language:</strong> React uses JavaScript, while React Native uses a combination of JavaScript and a subset of CSS called Flexbox for styling.</li>
 					<li><strong>Components:</strong> Both React and React Native use components as the building blocks of user interfaces, but the components in React are designed for web browsers, while the components in React Native are designed for mobile devices and can include native UI elements such as View, Text, Image, etc.</li>
 					<li><strong>Styling:</strong> React uses CSS for styling, while React Native uses a subset of CSS called Flexbox for styling, along with some additional styling options specific to mobile applications.</li>
-					<li><strong>UI/UX:</strong> React is designed to create web-based user interfaces, while React Native is designed to create mobile user interfaces that look and feel like native applications, providing a more native-like user experience.</li>
 					<li><strong>Performance:</strong> React Native uses native UI components, which are rendered directly by the device's GPU. This makes it more efficient in terms of performance compared to React, which relies on a virtual DOM to update the UI.</li>
 					<li><strong>Platform-specific APIs:</strong> React Native provides access to native APIs of the underlying mobile platform, such as the camera, geolocation, etc., allowing developers to create more sophisticated and feature-rich mobile applications compared to React, which primarily focuses on web-based UI.</li>
 					<li><strong>Development workflow:</strong> React Native requires a different development setup compared to React, as it involves building, compiling, and running native code on mobile devices, whereas React can be developed and run in a web browser.</li>
@@ -2895,7 +2746,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How are ReactJS and React Native similar? (8)",
 		answer: (
@@ -2930,14 +2781,14 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Can browsers understand JSX code? Explain.",
 		answer: (
 			<>
 				<p>
 					{" "}
-					No. JSX is a combination of HTML and JavaScript, and browsers are unable to read it. A transpiler is needed to convert JSX to JavaScript. Web browsers are built to understand and read original JavaScript or JS objects. Since JSX is not a regular JS object, web browsers are unable to read it. For web browsers to read JSX, it must be made compatible by first converting it into regular JS objects. This is achieved by using a transcompiler, such as Babel. While this may seem like a simple ReactJS interview question, knowing answers to such questions can be critical.
+					No. JSX is a combination of HTML and JavaScript, and browsers are unable to read it because they are built to understand and read original JavaScript or JS objects. Since JSX is not a regular JS object, web browsers are unable to read it. For web browsers to read JSX, it must be made compatible by first converting it into regular JS objects using a transcompiler, such as Babel.
 				</p>
 			</>
 		),
@@ -2945,14 +2796,25 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is strict mode?",
 		answer: (
 			<>
 				<p>
-				StrictMode is a tool added in version 16.3 of React to highlight potential problems in an application. It performs additional checks on the application.It highlights any potential problems in the application. It achieves this by encapsulating a section of your application as a component. While it does not show any visible element in the development mode (does not impact the performance in the production mode as well), it does give warnings.  Brings attention to any suspicious code which might have been accidentally added to the application. The StrictMode can be applied to any section of the application, not necessarily to the entire application
+				StrictMode is a React tool that performs additional checks on the application to highlight any potential problems in an application. It achieves this by encapsulating a section of your application as a component. 
 				</p>
+				<p>It highlights potential problems in an application such as:</p>
+				<ul>
+					<li>Deprecated lifecycle methods</li>
+					<li>Unsafe lifecycle methods</li>
+					<li>Legacy string ref API usage</li>
+					<li>Legacy context API usage</li>
+					<li>Unexpected side effects</li>
+					<li>Legacy context API usage</li>
+					<li>Legacy context API usage</li>
+				</ul>
+				<p>While it does not show any visible element in the development mode, nor does it impact the performance in the production mode, it does give warnings.  The StrictMode can be applied to any section of the application, not necessarily to the entire application</p>
 			</>
 		),
 	},
@@ -2974,15 +2836,15 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Can I use web components in React application?",
 		answer: (
 			<>
 				<p>
-					Web components, encapsulated HTML tags for web development, are
-					versatile, framework-agnostic elements native to HTML, usable
-					seamlessly in various environments like React and Angular.
+					Yes, web components, encapsulated HTML tags for web development, are
+					versatile, framework-agnostic elements native to HTML, can be use
+					seamlessly in React.
 				</p>
 				<p>
 					The web components specification offers a way to create reusable
@@ -2995,7 +2857,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is prop-types library?",
 		answer: (
@@ -3006,6 +2868,10 @@ console.log(iterator.next().value);
 					passed to components. React will check props passed to your components
 					against those definitions, and warn in development if they do not
 					match.
+				</p>
+				<p>
+					Note: It is recommended to manage typing using Typescript instead of
+					checking prop types at runtime.
 				</p>
 			</>
 		),
@@ -3020,10 +2886,7 @@ console.log(iterator.next().value);
 			<>
 				<p>
 					Hooks are features that allow you to “hook into” the features of React
-					state and lifecycle from function components. Hooks do not function
-					inside classes. Without classes, they let you use React. Hooks are a
-					new addition in React 16.8. They let you use state and other React
-					features without writing a class.
+					state and lifecycle from functional components without writing a class.
 				</p>
 			</>
 		),
@@ -3031,7 +2894,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is windowing?",
 		answer: (
@@ -3056,7 +2919,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What are some options for handling asynchronous calls in Redux?",
 		answer: (
@@ -3072,7 +2935,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is one-way data flow in React?",
 		answer: (
@@ -3102,7 +2965,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Are concurrent mode and async mode different?",
 		answer: (
@@ -3121,7 +2984,7 @@ console.log(iterator.next().value);
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
-		question: "What are the components in React?",
+		question: "What are components in React?",
 		answer: (
 			<>
 				<p>
@@ -3135,14 +2998,14 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is MobX?",
 		answer: (
 			<>
 				<p>
 					It is a simple, scalable, and battle-tested state management
-					solution.It is based on Reactive programming principles.
+					solution based on Reactive programming principles.
 				</p>
 			</>
 		),
@@ -3150,14 +3013,13 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What does the eslint plugin for hooks do?",
 		answer: (
 			<>
 				<p>
-					It enforces the Rules of Hooks. Precisely, it is a static code
-					analysis tool for finding out faulty patterns in JavaScript code.
+					It is a static code analysis tool for finding out faulty patterns in JavaScript code in order to enforce the rules of Hooks.
 				</p>
 			</>
 		),
@@ -3165,16 +3027,13 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is render hijacking in React?",
 		answer: (
 			<>
-				<p>
-					It is the ability to control what one component will output from
-					another component. Here you wrap a component with a higher order
-					component.
-				</p>
+				<p>Render hijacking in React refers to the technique of intercepting or modifying the rendering process of a component, typically by wrapping the component with a higher-order component (HOC) or using a render prop. The purpose of render hijacking is to inject additional functionality or modify the behavior of the rendered component without directly modifying its source code.</p>
+				<p><strong>NOTE:</strong>  While render hijacking is still technically possible in modern React applications, it's generally not considered a recommended pattern. Instead, modern React applications tend to prefer more composable and declarative patterns using hooks, context, and composition to achieve similar goals while maintaining simplicity, performance, and maintainability.</p>
 			</>
 		),
 	},
@@ -3199,24 +3058,19 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
-		question: "Explain React memo function.",
+		question: "How do you specify a default prop value?",
 		answer: (
 			<>
-				<p>
-					memo lets you skip re-rendering a component when its props are
-					unchanged.
-				</p>
+				<p>If you want to give a prop a default value to fall back on when no value is specified, you can do it with the destructuring by putting = and the default value right after the parameter:</p>
 				<pre>
 					<div className={styles.appCode}>
 						{`
-import { memo } from 'react';
-
-const SomeComponent = memo(function SomeComponent(props) {
+function Avatar({ person, size = 100 }) {
   // ...
-});
-        `}{" "}
+}
+        `}
 					</div>
 				</pre>
 			</>
@@ -3225,36 +3079,7 @@ const SomeComponent = memo(function SomeComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "What are default props?",
-		answer: (
-			<>
-				<p>
-					It is a React component property to set default values for the props
-					argument. They are used for undefined props only and not for null
-					props.
-				</p>
-				<pre>
-					<div className={styles.appCode}>
-						{`
-const ChildComponent = (props) => {
-  return <p>Hello, {props.name}!</p>;
-};
-
-ChildComponent.defaultProps = {
-  name: "Guest",
-};
-        `}{" "}
-					</div>
-				</pre>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Is it necessary for keys to be globally unique?",
 		answer: (
@@ -3269,7 +3094,7 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What methods are invoked during error handling in React?",
 		answer: (
@@ -3292,30 +3117,9 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
-		question: "How do you use of the unmountComponentAtNode method?",
-		answer: (
-			<>
-				<p>
-					The unmountComponentAtNode method in React is used to unmount a React
-					component from the DOM and clean up its event handlers and state. This
-					method is often used when cleaning up the DOM after a React component
-					has been removed or replaced.
-				</p>
-				<p>
-					Note: In React 18, unmountComponentAtNode was replaced by
-					root.unmount().
-				</p>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Core React",
-		level: 1,
-		question: "When do component props defaults to true?",
+		question: "When do component props default to true?",
 		answer: (
 			<>
 				<p>
@@ -3339,7 +3143,7 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How is React different from Angular? (6)",
 		answer: (
@@ -3403,56 +3207,67 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
-		question: "What were the major problems with MVC framework?",
+		question: "What is the relationship between MVC and React?",
 		answer: (
 			<>
-				<p>Following are some of the major problems with MVC framework:</p>
-				<ul>
-					<li>DOM manipulation was very expensive</li>
-					<li>Applications were slow and inefficient</li>
-					<li>There was huge memory wastage</li>
-					<li>
-						Because of circular dependencies, a complicated model was created
-						around models and views
+				<p>MVC (Model-View-Controller) and React are both approaches to organizing the structure of web applications, but they have different philosophies and architectures. While MVC is a traditional architectural pattern commonly used in server-side web development, React is a JavaScript library for building user interfaces in a declarative and component-based way.</p>
+				<p>Here's the relationship between MVC and React:</p>
+				<ol>
+					<li><strong>Different Architectural Patterns:</strong>
+						<ul>
+							<li>MVC is an architectural pattern that separates an application into three interconnected components: the Model, the View, and the Controller. It is primarily used for server-side web development and has been widely adopted in frameworks like Ruby on Rails, Django, and Laravel.</li>
+							<li>React, on the other hand, is a JavaScript library for building user interfaces. It follows a component-based architecture, where UIs are composed of reusable and composable components. React does not prescribe a specific architecture like MVC but can be used in conjunction with various architectural patterns, including MVC.</li>
+						</ul>
 					</li>
-				</ul>
+					<li><strong>Component-Based Architecture:</strong>
+						<ul>
+							<li>React's component-based architecture aligns well with the View layer of the MVC pattern. React components can be thought of as the "View" in MVC, representing the user interface and encapsulating UI logic.</li>
+							<li>However, unlike traditional MVC Views, React components are more granular and encapsulate both the presentation logic and the rendering logic. They can also manage their own state and lifecycle, making them more self-contained.</li>
+						</ul>
+					</li>
+					<li><strong>Integration with MVC:</strong>
+						<ul>
+							<li>While React can be used independently of MVC frameworks, it can also be integrated into existing MVC applications to manage specific parts of the UI or to build interactive client-side components.</li>
+							<li>For example, in a server-rendered MVC application, React components can be used to enhance certain parts of the UI with interactivity or to handle complex client-side interactions, while the overall application structure remains MVC.</li>
+						</ul>
+					</li>
+					<li><strong>Alternative Architectures:</strong>
+						<ul>
+							<li>React has popularized alternative architectural patterns such as Flux, Redux, and the Component-Based Architecture, which emphasize unidirectional data flow, state management, and composability. These patterns provide alternatives to traditional MVC for building modern web applications.</li>
+						</ul>
+					</li>
+				</ol>
+				<p>In summary, while MVC and React serve different purposes and have different architectural principles, they can be used together in various ways, depending on the requirements and constraints of the application. React's component-based architecture can complement MVC frameworks by providing a more interactive and dynamic user interface layer, while still leveraging the benefits of server-side rendering and MVC's separation of concerns.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "Explain Flux",
 		answer: (
 			<>
+				<p>Flux is an architectural pattern used in React applications for managing the flow of data and state within the application. It was introduced by Facebook as a way to address the challenges of managing data flow in large and complex React applications.</p>
+				<p>The Flux pattern consists of several key components:</p>
 				<ul>
-					<li>
-						Flux is an architectural pattern which enforces the uni-directional
-						data flow.
-					</li>
-					<li>
-						It controls derived data and enables communication between multiple
-						components using a central Store which has authority for all data.
-					</li>
-					<li>
-						Any update in data throughout the application must occur here only.
-					</li>
-					<li>
-						Flux provides stability to the application and reduces run-time
-						errors.
-					</li>
+					<li><strong></strong>Actions: Actions are plain JavaScript objects that represent events or user actions that occur within the application. They are dispatched to the application's dispatcher to trigger updates to the application state.</li>
+					<li><strong></strong>Dispatcher: The Dispatcher is a central hub that receives actions and dispatches them to registered callback functions called stores. It ensures that actions are processed in a predictable order and that updates to the application state are propagated in a consistent manner.</li>
+					<li><strong></strong>Stores: Stores contain the application state and business logic. They register with the Dispatcher to receive actions and update their state in response. Stores emit change events to notify the views (React components) that the state has been updated.</li>
+					<li><strong></strong>Views (React Components): Views represent the user interface of the application. They receive updates from stores and re-render themselves based on changes to the application state. Views may dispatch actions in response to user interactions.</li>
 				</ul>
+				<p>The Flux pattern emphasizes unidirectional data flow, where data flows in a single direction from the actions through the dispatcher to the stores, and then from the stores to the views. This helps to maintain a clear and predictable flow of data within the application and simplifies debugging and reasoning about the application's behavior.</p>
+				<p>While Flux is not a specific library or framework, several implementations and libraries have been developed that adhere to the Flux pattern, such as Redux, Fluxxor, and Alt.js. These libraries provide utilities and abstractions for implementing the Flux pattern in React applications, making it easier to manage application state and data flow in a scalable and maintainable way.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What are the three principles that Redux follows?",
 		answer: (
@@ -3484,7 +3299,7 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What is “Single source of truth”?",
 		answer: (
@@ -3502,37 +3317,7 @@ ChildComponent.defaultProps = {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
-		level: 1,
-		question: "List the components of Redux.",
-		answer: (
-			<>
-				<p>Redux is composed of the following components:</p>
-				<ul>
-					<li>
-						<strong>Action:</strong> It’s an object that describes what
-						happened.
-					</li>
-					<li>
-						<strong>Reducer:</strong> It is a place to determine how the state
-						will change.
-					</li>
-					<li>
-						<strong>Store:</strong> State/ Object tree of the entire application
-						is saved in the Store.
-					</li>
-					<li>
-						<strong>View:</strong> Simply displays the data provided by the
-						Store.
-					</li>
-				</ul>
-			</>
-		),
-	},
-	{
-		rating: 0,
-		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "How are Actions defined in Redux?",
 		answer: (
@@ -3561,7 +3346,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What are Reducers?",
 		answer: (
@@ -3580,7 +3365,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Intermediate",
 		level: 1,
 		question: "What is a Store in Redux?",
 		answer: (
@@ -3601,7 +3386,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "How is Redux different from Flux?",
 		answer: (
@@ -3646,7 +3431,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "What are the advantages of Redux?",
 		answer: (
@@ -3697,7 +3482,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "React Router",
+		topic: "Intermediate Router",
 		level: 1,
 		question: "What is React Router?",
 		answer: (
@@ -3716,7 +3501,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "React Router",
+		topic: "Intermediate Router",
 		level: 1,
 		question: "Why do we need a Router in React?",
 		answer: (
@@ -3734,9 +3519,9 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "React Router",
+		topic: "Advanced Router",
 		level: 2,
-		question: "List down the advantages of React Router.",
+		question: "What are some advantages of React Router. (3)",
 		answer: (
 			<>
 				<p>Some advantages are:</p>
@@ -3763,7 +3548,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "What is the purpose of the mapStateToProps function in Redux?",
 		answer: (
@@ -3785,7 +3570,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question:
 			"Explain the difference between server-side rendering and client-side rendering in React.",
@@ -3842,7 +3627,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle data persistence in a React application?",
 		answer: (
@@ -3887,7 +3672,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are some methods for optimization in an application? (15)",
 		answer: (
@@ -3957,7 +3742,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "What is the combineReducers function in Redux?",
 		answer: (
@@ -3996,7 +3781,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain Render Props",
 		answer: (
@@ -4019,38 +3804,27 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question:
 			"What is the difference between a functional component and a class component? (3)",
 		answer: (
 			<>
-				<p>
-					In React, a functional component is a plain JavaScript function that
+				<ul>
+					<li><strong>JS class vs JS function:</strong> In React, a functional component is a plain JavaScript function that
 					takes in props and returns a React element. A class component is a
 					JavaScript class that extends React.Component and has a render method
-					that returns a React element.
-				</p>
-				<p>
-					One key difference between the two is that a class component can have
-					local state and lifecycle methods, while a functional component
-					cannot. However, starting with React 16.8, functional components can
-					also have state using hooks and useEffect can manage a component's
-					lifecycle.
-				</p>
-				<p>
-					Functional components are considered simpler, easier to understand and
-					test, and have better performance than class components. Class
-					components are no longer considered best practice, but are useful to
-					understand because they show up in so much legacy code.
-				</p>
+					that returns a React element.</li>
+					<li><strong>Built in methods vs hooks:</strong> A class component can have has built-in local state and lifecycle methods, while a functional component has state using the useState hook and manages a component's lifecycle using the useEffect hook</li>
+					<li><strong>Modern vs legacy patterns:</strong> Functional components are considered simpler, easier to understand and test, and have better performance than class components. Class components are no longer considered best practice, but are useful to understand because they show up in so much legacy code.</li>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question:
 			"How do you handle asynchronous data loading in a React application?",
@@ -4125,7 +3899,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle localization in a React application?",
 		answer: (
@@ -4145,7 +3919,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain the concept of a Renderless Component",
 		answer: (
@@ -4168,7 +3942,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question:
 			"What is the difference between a presentational component and a container component in React?",
@@ -4191,6 +3965,46 @@ function addTodo(text) {
 					The separation of concerns between the two types of components allows
 					for better code organization, maintenance, and testing.
 				</p>
+				<p>Example of a presentational component:</p>
+				<pre>
+					<div className={styles.appCode}>{`
+// Presentational Component
+import React from 'react';
+
+const Button = ({ onClick, text }) => {
+  return (
+    <button onClick={onClick}>{text}</button>
+  );
+};
+
+export default Button;
+        `}</div>
+				</pre>
+				<p>Example of a container component:</p>
+				<pre>
+					<div className={styles.appCode}>{`
+// Container Component
+import React, { useState } from 'react';
+import Button from './Button';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <Button onClick={increment} text="Increment" />
+    </div>
+  );
+};
+
+export default Counter;
+        `}</div>
+				</pre>
 			</>
 		),
 	},
@@ -4198,7 +4012,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are custom hooks?",
 		answer: (
@@ -4241,7 +4055,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How is accessibility handled in React? (6)",
 		answer: (
@@ -4296,7 +4110,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question:
 			"What is the difference between a reducer and an action in Redux?",
@@ -4306,22 +4120,24 @@ function addTodo(text) {
 					In Redux, a reducer and an action are two different but related
 					concepts.
 				</p>
-				<p>
-					An action is a plain JavaScript object that describes the change that
+				<ul>
+				<li>
+					An <strong>action</strong> is a plain JavaScript object that describes the change that
 					should be made to the state of the application. It has a type property
 					that defines the type of action being performed, and a payload
 					property that provides any additional data needed to perform the
 					action. Actions are dispatched from the application to the Redux
 					store, which then passes the action to the reducers.
-				</p>
-				<p>
-					A reducer is a pure function that takes the current state of the
+				</li>
+				<li>
+					A <strong>reducer</strong> is a pure function that takes the current state of the
 					application and an action, and returns the next state of the
 					application. The reducer is responsible for handling the actions and
 					updating the state accordingly. It should not perform any
 					side-effects, such as making API calls, but should instead only return
 					the next state.
-				</p>
+				</li>
+				</ul>
 				<p>
 					In summary, actions describe what should change, while reducers define
 					how the state should change in response to the actions.
@@ -4332,7 +4148,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are some ways to validate data? (7)",
 		answer: (
@@ -4382,7 +4198,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle browser compatibility?",
 		answer: (
@@ -4424,31 +4240,30 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "What is Thunk?",
 		answer: (
 			<>
 				<p>
-					A Thunk in Redux is a function that returns another function instead
-					of a plain action object. It’s used to perform asynchronous operations
-					and dispatch multiple actions. Thunks allow you to write action
-					creators that return a function instead of an action. This can be
+					A Thunk in Redux performs asynchronous operations and dispatch multiple actions by allowing you to write action
+					creators that return a function instead of an action. 
+				</p>
+				<p>This can be
 					useful for performing asynchronous operations, such as API calls, and
 					dispatching multiple actions, such as one to indicate that the API
 					call has started and another to indicate that it has finished. The
 					inner function receives the store’s dispatch method as an argument,
 					which can be used to dispatch actions at any point in the future.
 					Thunks are typically implemented using a middleware, such as the
-					redux-thunk middleware.
-				</p>
+					redux-thunk middleware.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle security in a React application?",
 		answer: (
@@ -4498,7 +4313,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "What is a Provider in Redux.",
 		answer: (
@@ -4523,7 +4338,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle code splitting in a React application?",
 		answer: (
@@ -4557,7 +4372,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain the concept of a Sagas in Redux.",
 		answer: (
@@ -4569,19 +4384,24 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "Explain the concept of a Middleware in Redux.",
 		answer: (
 			<>
-				<p>In Redux, a middleware is a software component that sits between the store and the action dispatching process to add additional functionality, such as logging, crash reporting, handling asynchronous actions, etc. It allows you to extend the store’s behavior without modifying the store itself. Middlewares are applied using the applyMiddleware method and can be composed together to achieve a desired behavior. When an action is dispatched, it passes through each middleware in the order they were composed, giving the middleware an opportunity to interact with the action before it reaches the store. This provides a way to manipulate actions and state, and to perform complex actions that can span multiple actions.</p>
+				<p>In Redux, a middleware is a software component that sits between the store and the action dispatching process to add additional functionality, such as logging, crash reporting, handling asynchronous actions, etc. </p>
+				<ul>
+					<li>Allows you to extend the store’s behavior without modifying the store itself.</li>
+					<li>Are applied using the applyMiddleware method and can be composed together to achieve a desired behavior.</li>
+					<li>When an action is dispatched, it passes through each middleware in the order they were composed, giving the middleware an opportunity to interact with the action before it reaches the store. This provides a way to manipulate actions and state, and to perform complex actions that can span multiple actions.</li>
+				</ul>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is the difference between localization and internationalization?",
 		answer: (
@@ -4593,7 +4413,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How do you handle internationalization in a React application?",
 		answer: (
@@ -4613,17 +4433,17 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How do you pass data from child components to parent components using callbacks?",
 		answer: (
 			<>
-				<ul>
+				<ol>
 					<li>Create a callback in the parent component which takes in the data needed as a parameter.</li>
 					<li>Pass this callback as a prop to the child component.</li>
 					<li>Send data from the child component using the callback.</li>
-				</ul>
-				<p>Step1 and Step2: Create a callback in the parent component, pass this callback as a prop.</p>
+				</ol>
+				<p>Steps 1 and 2: Create a callback in the parent component, pass this callback as a prop.</p>
 				<pre><div className={styles.appCode} >{`
 function ParentComponent(props) {
 	let [counter, setCounter] = useState(0);
@@ -4637,7 +4457,7 @@ function ParentComponent(props) {
 }
 				`}</div></pre>
 				<p>As one can see in the code above, we created a function called callback which takes in the data received from the child component as a parameter. Next, we passed the function callback as a prop to the child component.</p>
-				<p>Step3: Pass data from the child to the parent component.</p>
+				<p>Step 3: Pass data from the child to the parent component.</p>
 				<pre><div className={styles.appCode} >{`
 function ChildComponent(props) {
 	let childCounterValue = props.counterValue;
@@ -4658,19 +4478,19 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Compare use of Hooks/Functional Components and Class Components in terms of performance.",
 		answer: (
 			<>
-				<p>React Hooks will avoid a lot of overhead such as the instance creation, binding of events, etc., that are present with classes.  Hooks in React will result in smaller component trees since they will be avoiding the nesting that exists in HOCs (Higher Order Components) and will render props require less of work to be done by React.</p>
+				<p>React Hooks will avoid a lot of overhead such as the instance creation, binding of events, etc., that are present with classes.  Hooks in React will result in smaller component trees since they will be avoiding the nesting that exists in HOCs (Higher Order Components) and will render props requiring less work to be done by React.</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Redux",
+		topic: "Advanced",
 		level: 2,
 		question: "Explain the core components of Redux?(4)",
 		answer: (
@@ -4687,7 +4507,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain CORS in React",
 		answer: (
@@ -4699,7 +4519,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is axios?",
 		answer: (
@@ -4712,19 +4532,19 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Does the useState Hook update state immediately?",
 		answer: (
 			<>
-				<p>React do not update immediately, although it might seem to. React keep track of the states by queuing them in the order they are called. React queues all the changes to be made and update once the component Re-render which is not immediate. This is how React knows which value corresponds to which state. It goes as per the queue every time the component tries to re-render.</p>
+				<p>React state does not update immediately, although it might seem to. React keeps track of the states by queuing them in the order they are called. React queues all the changes to be made and update once the component rerenders, which is not immediate. </p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Describe when to use useCallback, useMemo and useEffect",
 		answer: (
@@ -4740,7 +4560,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain the types of routers in React?",
 		answer: (
@@ -4756,7 +4576,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are the most common approaches for styling a React application?",
 		answer: (
@@ -4773,7 +4593,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are some of the advantages of using create-react-app?",
 		answer: (
@@ -4791,30 +4611,128 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
-		question: "What are the approaches for including polyfills in your create-react-app?",
+		question: "When using Create React App, how do you include polyfills?",
 		answer: (
 			<>
-				<p>One can make use of Polyfill and create-react-app in multiple ways, like:</p>
-				<ul>
-					<li>Import the ‘index.js’ or ‘App.js’ file manually using the import statements.</li>
-					<li>Using the polyfill.io service to automatically include polyfills based on the features of the app.</li>
-					<li>Make use of libraries such as core-js or babel in ‘index.js’.</li>
-				</ul>
+				<p>By including polyfills in your Create React App (CRA) project, you can ensure that your application functions correctly across a wider range of browsers, including older versions that may not support modern JavaScript features.</p>
+				<p>To include polyfills in a CRA project, you can use the react-app-polyfill package, which provides a convenient way to add polyfills for features that are not supported in all browsers.  The package is installed in an existing CRA project as a dev dependency</p>
 			</>
 		),
 	},
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Core React",
+		topic: "Advanced React",
 		level: 2,
 		question: "How can you tell React to build in production mode?",
 		answer: (
 			<>
 				<p>React can be coded to directly build into production by setting the process.env.NODE_ENV variable to production.</p>
 				<p>Note: When React is in production, warnings, and other development features are not shown.</p>
+			</>
+		),
+	},
+	{
+	rating: 0,
+	subject: 'react',
+	topic: 'Intermediate React',
+	level: 1,
+	question: 'What is Reactive Programming?',
+		answer:
+			<>
+				<p>Reactive programming is a programming paradigm that focuses on data flows and the propagation of change. It is based on the idea that the application’s state is constantly changing in response to user actions and other events. In reactive programming, you define the behavior of a system in terms of the relationships between input and output. This allows you to create applications that are more responsive and scalable, and that can handle complex interactions and data flows more easily.</p>
+				<p>Key concepts in reactive programming include:</p>	
+				<ol>
+					<li><strong>Observables:</strong> Observables are representations of streams of data or events that can be observed over time. They allow you to subscribe to changes in the stream and react to those changes by executing callbacks or transformations.</li>
+					<li><strong>Observers:</strong> Observers are functions or callbacks that receive values emitted by observables. They react to changes in the observable stream by executing logic or updating the application state.</li>
+					<li><strong>Operators:</strong> Operators are functions that allow you to transform, filter, combine, or manipulate observable streams. They enable you to compose complex operations on observables to achieve the desired behavior.</li>
+					<li><strong>Subscription:</strong> Subscriptions are connections between observables and observers. They define how observers react to changes in the observable stream and can be used to manage resources or clean up subscriptions when they are no longer needed.</li>
+				</ol>
+				<p>Reactive programming is often used in scenarios where data is asynchronous, such as handling user interactions, network requests, or real-time updates. It provides a powerful and expressive way to handle asynchronous events and manage complex data flows in a reactive and declarative manner.</p>
+				<p>In the context of React, reactive programming principles are applied through libraries like Redux, RxJS, or React's built-in hooks (e.g., useState, useEffect). React itself is not strictly a reactive programming framework, but it embraces reactive principles by providing a declarative and component-based architecture for building user interfaces.</p>
+				<p>React's component-based architecture allows you to build UI components that react to changes in application state and automatically re-render when that state changes. React's useState and useEffect hooks provide a way to manage state and side effects in a reactive and declarative manner, allowing you to model complex data flows and handle asynchronous events in your components.</p>
+				<p>Overall, while React is not a reactive programming framework in the traditional sense, it incorporates reactive principles to provide a powerful and efficient way to build interactive and responsive user interfaces.</p>
+			</>
+	},
+	{
+		rating: 0,
+		subject: 'react',
+		topic: "Intermediate React",
+		level: 1,
+		question: "How do you set object values with a dynamic key/property name?",
+		answer: (
+			<>
+				<p>
+					To use computed values for property names, you use square brackets and
+					pass the expression. Here, dynamic naming is applied using the constants key1 and key2:</p>
+				<pre>
+					<div className={styles.appCode}>{`
+const key1 = "language"
+const key2 = "isStudent"
+
+const obj = {
+  name: "dillion",
+  age: 1000,
+  [key1]: "JavaScript",
+  [key2]: true
+}
+
+          `}</div>
+				</pre>
+			</>
+		),
+	},
+	{
+		rating: 0,
+		subject: 'react',
+		topic: "Intermediate React",
+		level: 1,
+		question: "When would you use a ref instead of state/props?",
+		answer: (
+			<>
+				<p>
+					Refs are used when you need to access a DOM node or an instance of a
+					component that is rendered in the React tree. They are often used to
+					access form elements, trigger imperative animations, or integrate with
+					third-party DOM libraries. Refs should be used sparingly, as they
+					involve directly manipulating the DOM and can lead to hard-to-debug
+					issues if used incorrectly.
+				</p>
+				<p>
+					When you need to access a DOM node or an instance of a component that
+					is rendered in the React tree, you should use a ref instead of
+					state/props.  For example, you might use a ref to access the value of an
+					input field in a form, or to focus an input field when a component
+					mounts.
+				</p>
+			</>
+		),
+	},
+	{
+		rating: 0,
+		subject: 'react',
+		topic: "Intermediate React",
+		level: 1,
+		question: "How do you memoize a specific value or computation?",
+		answer: (
+			<>
+				<p><strong>useMemo</strong> is a hook provided by React that memoizes the result of a function or computation and re-computes it only if the dependencies provided to the hook have changed.  It's used to optimize expensive computations or calculations within functional components by caching the result of the computation.  Unlike React.memo, which memoizes the entire component, useMemo memoizes specific values or computations within a component.  It's typically used to avoid unnecessary re-computation of values or expensive calculations on each render.  Example of using useMemo:</p>
+				<pre>
+					<div className={styles.appCode}>{`
+import React, { useMemo } from 'react';
+
+function MyComponent({ a, b }) {
+  const result = useMemo(() => {
+    // Expensive computation
+    return a + b;
+  }, [a, b]); // Dependency array
+
+  return <div>{result}</div>;
+}
+          `}</div>
+				</pre>
 			</>
 		),
 	},
