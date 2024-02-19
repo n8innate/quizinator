@@ -401,7 +401,7 @@ xhttp.onreadystatechange = function() {
         <ul>
           <li><strong>Required Attribute:</strong> Form input validation in HTML can be achieved using the "required" attribute and various input types. The "required" attribute is used to specify that an input field must be filled out before submitting the form.</li>
           <li><strong>New Input Types:</strong> HTML5 introduced new input types, such as "email", "url", "number", and "date", which provide built-in validation for specific types of input. </li>
-          <li><strong>Javascript:</strong> Developers can also use JavaScript to create custom validation logic, such as checking for specific patterns or lengths in user input.</li>
+          <li><strong>JavaScript:</strong> Developers can also use JavaScript to create custom validation logic, such as checking for specific patterns or lengths in user input.</li>
           <li><strong>Server-Side Validation:</strong> Server-side validation is crucial for robust security, preventing malicious data submission.</li>
         </ul>
       </>

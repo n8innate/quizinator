@@ -8,7 +8,7 @@ export const javascriptQuestions: IQuestions[] = [
 		topic: "Basic JavaScript",
 		level: 0,
 		question:
-			"What are the different data types present in javascript? (Primitive [7] and Non-primitive [9] types)",
+			"What are the different data types present in JavaScript? (Primitive [7] and Non-primitive [9] types)",
 		answer: (
 			<>
 				<p>
@@ -48,7 +48,7 @@ export const javascriptQuestions: IQuestions[] = [
 					</li>
 					<li>
 						<strong>Symbol:</strong> A data type introduced in the ES6 version
-						of javascript. It is used to store an anonymous and unique value.
+						of JavaScript. It is used to store an anonymous and unique value.
 					</li>
 				</ul>
 				<p>
@@ -94,7 +94,7 @@ export const javascriptQuestions: IQuestions[] = [
 				</ul>
 				<p>
 					Note: It is important to remember that any data type that is not a
-					primitive data type, is of Object type in javascript.
+					primitive data type, is of Object type in JavaScript.
 				</p>
 			</>
 		),
@@ -104,11 +104,11 @@ export const javascriptQuestions: IQuestions[] = [
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
-		question: "Explain Hoisting in javascript.",
+		question: "Explain Hoisting in JavaScript.",
 		answer: (
 			<>
 				<p>
-					Hoisting is the default behaviour of javascript where all the variable
+					Hoisting is the default behaviour of JavaScript where all the variable
 					and function declarations are moved on top.
 				</p>
 				<p>
@@ -157,7 +157,7 @@ x = 23;
         `}</div>
 				</pre>
 				<p>
-					Note: To avoid hoisting, you can run javascript in strict mode by
+					Note: To avoid hoisting, you can run JavaScript in strict mode by
 					using “use strict” on top of the code:
 				</p>
 				<pre>
@@ -176,7 +176,7 @@ var x;
 		topic: "Basic JavaScript",
 		level: 0,
 		question:
-			"What is the difference between “==” and “===” operators in javascript?",
+			"What is the difference between “==” and “===” operators in JavaScript?",
 		answer: (
 			<>
 				<p>
@@ -193,7 +193,7 @@ var x;
 		topic: "Basic JavaScript",
 		level: 0,
 		question:
-			"What are some differences between var, let and const keywords in javascript.",
+			"What are some differences between var, let and const keywords in JavaScript.",
 		answer: (
 			<>
 				<table>
@@ -258,11 +258,11 @@ var x;
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
-		question: "Explain Implicit Type Coercion in javascript. (3)",
+		question: "Explain Implicit Type Coercion in JavaScript. (3)",
 		answer: (
 			<>
 				<p>
-					Implicit type coercion in javascript is the automatic conversion of
+					Implicit type coercion in JavaScript is the automatic conversion of
 					value from one data type to another. It takes place when the operands
 					of an expression are of different data types.
 				</p>
@@ -286,7 +286,7 @@ var x;
 						will be converted to false. All values except false, 0, 0n, -0, “”,
 						null, undefined, and NaN are truthy values.
 						<p>
-							Logical operators in javascript, unlike operators in other
+							Logical operators in JavaScript, unlike operators in other
 							programming languages, do not return true or false. They always
 							return one of the operands.
 						</p>
@@ -324,14 +324,14 @@ var x;
 		topic: "Basic JavaScript",
 		level: 0,
 		question:
-			"Is javascript a statically typed or a dynamically typed language?",
+			"Is JavaScript a statically typed or a dynamically typed language?",
 		answer: (
 			<>
 				<p>
 					JavaScript is a dynamically typed language, so the type of a variable
 					is checked during run-time in contrast to a statically typed language,
 					where the type of a variable is checked during compile-time. Since
-					javascript is a loosely(dynamically) typed language, variables in JS
+					JavaScript is a loosely(dynamically) typed language, variables in JS
 					are not associated with any type. A variable can hold the value of any
 					data type.
 				</p>
@@ -451,7 +451,7 @@ var obj2 = obj;
       `}</div>
 				</pre>
 				<p>
-					Note the wrapping parenthesis. While executing javascript code,
+					Note the wrapping parenthesis. While executing JavaScript code,
 					whenever the compiler sees the word “function”, it assumes that we are
 					declaring a function in the code. Therefore, if we do not use the
 					wrapping parentheses, the compiler throws an error because it thinks
@@ -485,7 +485,7 @@ var obj2 = obj;
 					silent errors, will be thrown. As a result, debugging becomes a lot
 					simpler. Thus programmer's chances of making an error are lowered.
 				</p>
-				<p>Some characteristics of strict mode in javascript:</p>
+				<p>Some characteristics of strict mode in JavaScript:</p>
 				<ul>
 					<li>Duplicate arguments are not allowed by developers.</li>
 					<li>
@@ -508,14 +508,14 @@ var obj2 = obj;
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
-		question: "Explain Higher Order Functions in javascript",
+		question: "Explain Higher Order Functions in JavaScript",
 		answer: (
 			<>
 				<p>
 					Functions that operate on other functions, either by taking them as
 					arguments or by returning them, are called higher-order functions.
 					Higher-order functions are a result of functions being first-class
-					citizens in javascript. Examples of higher-order functions:
+					citizens in JavaScript. Examples of higher-order functions:
 				</p>
 				<pre>
 					<div className={styles.appCode}>{`
@@ -635,7 +635,7 @@ obj2.getFoo();
 		answer: (
 			<>
 				<p>
-					It’s a predefined method in javascript that invokes a method
+					It’s a predefined method in JavaScript that invokes a method
 					(function) with a given "this" value and arguments provided
 					individually and allows an object to use the method (function) of
 					another object.
@@ -845,10 +845,10 @@ add(3)(4)
 					External JavaScript is the JavaScript Code (script) written in a
 					separate file with the extension ".js", and then we link that file
 					inside the {`<head>`} or {`<body>`} element of the HTML file where the
-					code is to be placed. Some advantages of external javascript are:
+					code is to be placed. Some advantages of external JavaScript are:
 				</p>
 				<ul>
-					<li>It allows teams to collaborate on HTML and javascript files.</li>
+					<li>It allows teams to collaborate on HTML and JavaScript files.</li>
 					<li>Improves code reusability.</li>
 					<li>Improves code readability</li>
 				</ul>
@@ -860,7 +860,7 @@ add(3)(4)
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
-		question: "Explain scope in javascript.",
+		question: "Explain scope in JavaScript.",
 		answer: (
 			<>
 				<p>
@@ -898,11 +898,11 @@ add(3)(4)
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
-		question: "Explain scope chain in javascript.",
+		question: "Explain scope chain in JavaScript.",
 		answer: (
 			<>
 				<p>
-					JavaScript engine uses Scope to find variables. If the javascript
+					JavaScript engine uses Scope to find variables. If the JavaScript
 					engine does not find the variable in local scope, it tries to check
 					for the variable in the outer scope. If the variable does not exist in
 					the outer scope, it tries to find the variable in the global scope. If
@@ -917,7 +917,7 @@ add(3)(4)
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
-		question: "Explain closures in javascript.",
+		question: "Explain closures in JavaScript.",
 		answer: (
 			<>
 				<p>
@@ -951,7 +951,7 @@ innerFunc(); // Outputs "I am from outer function"
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
-		question: "What are some advantages of javascript?",
+		question: "What are some advantages of JavaScript?",
 		answer: (
 			<>
 				<ul>
@@ -986,7 +986,7 @@ innerFunc(); // Outputs "I am from outer function"
 		answer: (
 			<>
 				<p>
-					All javascript objects inherit properties from a prototype. For
+					All JavaScript objects inherit properties from a prototype. For
 					example:
 				</p>
 				<ul>
@@ -1006,13 +1006,13 @@ innerFunc(); // Outputs "I am from outer function"
 				<p>
 					For example, we do not have to define a property or method called
 					"push" because of prototypes. Array objects inherit properties from
-					the Array prototype. The javascript engine sees that the method push
+					the Array prototype. The JavaScript engine sees that the method push
 					does not exist on the current array object and therefore, looks for
 					the method push inside the Array prototype and it finds the method.
 				</p>
 				<p>
 					Whenever the property or method is not found on the current object,
-					the javascript engine will always try to look in its prototype and if
+					the JavaScript engine will always try to look in its prototype and if
 					it still does not exist, it looks inside the prototype's prototype and
 					so on.
 				</p>
@@ -1029,7 +1029,7 @@ innerFunc(); // Outputs "I am from outer function"
 			<>
 				<p>
 					A callback is a function that will be executed after another function
-					gets executed. In javascript, functions are treated as first-class
+					gets executed. In JavaScript, functions are treated as first-class
 					citizens, they can be used as an argument of another function, can be
 					returned by another function, and can be used as a property of an
 					object. Functions that are used as an argument to another function are
@@ -1044,13 +1044,13 @@ innerFunc(); // Outputs "I am from outer function"
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
-		question: "What are three types of errors in javascript?",
+		question: "What are three types of errors in JavaScript?",
 		answer: (
 			<>
 				<ul>
 					<li>
 						<strong>Syntax errors:</strong> These are errors that occur when the
-						javascript engine encounters incorrect syntax. Syntax errors are
+						JavaScript engine encounters incorrect syntax. Syntax errors are
 						detected during the parsing of the code.
 					</li>
 					<li>
@@ -1061,7 +1061,7 @@ innerFunc(); // Outputs "I am from outer function"
 					<li>
 						<strong>Logical errors:</strong> These are errors that occur when
 						the code does not do what it is intended to do. Logical errors are
-						not detected by the javascript engine, but by the programmer.
+						not detected by the JavaScript engine, but by the programmer.
 					</li>
 				</ul>
 			</>
@@ -1262,7 +1262,7 @@ console.log(person2);
 		answer: (
 			<>
 				<p>
-					Arrow functions were introduced in the ES6 version of javascript and
+					Arrow functions were introduced in the ES6 version of JavaScript and
 					offer shorter syntax for declaring functions. Arrow functions can only
 					be used as a function expression.
 				</p>
@@ -1378,7 +1378,7 @@ console.log(arr3); // Output: [1, 2, 3, 4, 5, 6]
 		topic: "Intermediate JavaScript",
 		level: 1,
 		question:
-			"What are some different ways to create an object in javascript? (4)",
+			"What are some different ways to create an object in JavaScript? (4)",
 		answer: (
 			<>
 				<ul>
@@ -1464,7 +1464,7 @@ promise.then((value) => {
 					hoisted. A class cannot be used before it is declared. A class can
 					inherit properties and methods from other classes by using the extend
 					keyword. All the syntaxes inside the class must follow the strict
-					mode(‘use strict’) of javascript. An error will be thrown if the
+					mode(‘use strict’) of JavaScript. An error will be thrown if the
 					strict mode rules are not followed.
 				</p>
 			</>
@@ -2108,8 +2108,8 @@ person2.sayHello();  // Output: Hello, my name is Susan Jones.
 		question: 'What are the differences between JavaScript and Java?',
 		answer:
 			<>
-				<p>Java is an object-oriented and structured programming language, which helps to run web pages on different platforms. The java code should be compiled on the compiler. JavaScript is an object-oriented scripting language. In which, the scripts are optimized for both server and client-side. Javascript is introduced to perform HTML pages.</p>
-				<p>Are you looking forward to becoming a Javascript Developer? Check out the Javascript Training and get certified.</p>
+				<p>Java is an object-oriented and structured programming language, which helps to run web pages on different platforms. The java code should be compiled on the compiler. JavaScript is an object-oriented scripting language. In which, the scripts are optimized for both server and client-side. JavaScript is introduced to perform HTML pages.</p>
+				<p>Are you looking forward to becoming a JavaScript Developer? Check out the JavaScript Training and get certified.</p>
 			</>
 	},
 	{
@@ -3121,7 +3121,7 @@ console.log(obj);
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
-		question: 'What is a javascript cookie?',
+		question: 'What is a JavaScript cookie?',
 		answer:
 			<>
 				<p>A cookie is a small piece of data that is stored on the client's computer by a web server. It is often used to store user preferences and other information that can be used to personalize the user experience.</p>
