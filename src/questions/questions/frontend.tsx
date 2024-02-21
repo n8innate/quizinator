@@ -43,7 +43,13 @@ export const frontendQuestions: IQuestions[] = [
     question: 'How do HTML, CSS, and JavaScript work together in a website?',
     answer: 
       <>
-        <p>HTML, CSS, and JavaScript work together to create a cohesive and interactive web experience. HTML provides the structure and content of a web page, CSS defines the visual presentation and layout, and JavaScript adds interactivity and dynamic behavior. By combining these three technologies, developers can create visually appealing, responsive, and engaging web pages that provide a seamless user experience.</p>
+        <p>HTML, CSS, and JavaScript work together to create a cohesive and interactive web experience:</p>
+        <ul>
+          <li><strong>HTML:</strong> provides the structure and content of a web page</li>
+          <li><strong>CSS:</strong> defines the visual presentation and layout</li>
+          <li><strong>JavaScript:</strong> adds interactivity and dynamic behavior</li>
+        </ul>
+        <p>By combining these three technologies, developers can create visually appealing, responsive, and engaging web pages that provide a seamless user experience.</p>
       </>
   },
   {
@@ -114,8 +120,7 @@ export const frontendQuestions: IQuestions[] = [
         <p>CSS selectors are patterns used to select and style elements in an HTML document. They allow developers to target specific elements or groups of elements and apply styles to them. Some examples of CSS selectors include:</p>
         <ul>
           <li><strong>Universal selector:</strong> Selects all elements on the page, such as * for all elements</li>
-          <li><strong>Type selector:</strong> Selects all instances of a specific HTML element.</li>
-          <li><strong>Element selector:</strong> Selects all elements of a specific type, such as &lt;p&gt; for paragraphs</li>
+          <li><strong>Type (or Element) selector:</strong>  Selects all elements of a specific type, such as {`<p>`} for paragraphs</li>
           <li><strong>Class selector:</strong> Selects elements with a specific class attribute, such as .highlight for elements with the class "highlight"</li>
           <li><strong>ID selector:</strong> Selects an element with a specific ID attribute, such as #header for an element with the ID "header"</li>
           <li><strong>Descendant selector:</strong> Selects elements that are descendants of another element, such as .container p for paragraphs within an element with the class "container"</li>
@@ -136,7 +141,30 @@ export const frontendQuestions: IQuestions[] = [
     question: 'Describe the difference between an ID and a class in CSS.',
     answer: 
       <>
-        <p>In CSS, an ID is a unique identifier for an element, while a class is a reusable identifier that can be applied to multiple elements. An ID is used to uniquely identify a single element on a web page, and it should only be used once per page. In contrast, a class can be applied to multiple elements, allowing developers to define a set of styles that can be used across different parts of a web page. IDs are typically used for elements that require unique styling or functionality, while classes are used for elements that share common styles or behavior.</p>
+        <table>
+          <thead>
+              <th>ID</th>
+              <th>Class</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unique identifier</td>
+              <td>Reusable identifier</td>
+            </tr>
+            <tr>
+              <td>Should only be used once per page</td>
+              <td>Can be used multiple times per page</td>
+            </tr>
+            <tr>
+              <td>Defined using the # symbol</td>
+              <td>Defined using the . symbol</td>
+            </tr>
+            <tr>
+              <td>Used for unique styling or functionality</td>
+              <td>Used for shared styles or behavior</td>
+            </tr>
+          </tbody>
+        </table>
       </>
   },
   {
@@ -173,10 +201,16 @@ export const frontendQuestions: IQuestions[] = [
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
-    question: 'What is HTML5 and how is it different from previous versions of HTML?',
+    question: 'What is HTML5 and how is it different from previous versions of HTML? (3)',
     answer: 
       <>
-        <p>HTML5 is the latest version of the HTML standard, introducing new features and improvements to the language. It provides more semantic meaning and structure to web pages, making it easier for developers to create accessible and well-organized content. HTML5 also includes new elements and attributes for multimedia, graphics, and interactive content, allowing developers to create richer and more engaging web experiences. Additionally, HTML5 introduces new APIs for handling audio, video, and other media, as well as support for offline web applications and responsive design. These features make HTML5 a more powerful and versatile language for building modern web applications and websites.</p>
+        <p>HTML5 is the latest version of the HTML standard, introducing new features and improvements to the language.</p>
+        <ul>
+          <li><strong>Semantic:</strong> Provides more semantic meaning and structure to web pages, making it easier for developers to create accessible and well-organized content.</li>
+          <li><strong>New Elements/Attributes:</strong> Includes new elements and attributes for multimedia, graphics, and interactive content, allowing developers to create richer and more engaging web experiences.</li>
+          <li><strong>New APIs:</strong> Introduces new APIs for handling audio, video, and other media, as well as support for offline web applications and responsive design.</li>
+          <li></li>
+        </ul>
       </>
   },
   {
@@ -217,7 +251,12 @@ export const frontendQuestions: IQuestions[] = [
     question: 'What is Bootstrap, and why is it used in frontend development?',
     answer: 
       <>
-        <p>Bootstrap is a popular front-end framework for building responsive and mobile-first web projects. It provides a collection of pre-written HTML, CSS, and JavaScript code that developers can use to create responsive, mobile-friendly web pages and applications. Bootstrap offers a set of customizable components and styles that help developers to build consistent and visually appealing user interfaces. It also includes a responsive grid system, CSS classes for typography and forms, and JavaScript plugins for creating interactive components. By using Bootstrap, developers can save time and effort in building web projects, as it provides a solid foundation for creating modern and responsive web designs.</p>
+        <p>Bootstrap is a popular front-end framework for building responsive and mobile-first web projects. By using Bootstrap, developers can save time and effort in building web projects, as it provides a solid foundation for creating modern and responsive web designs.</p>
+        <ul>
+          <li>Provides a collection of pre-written HTML, CSS, and JavaScript code that developers can use to create responsive, mobile-friendly web pages and applications.</li>
+          <li>Offers a set of customizable components and styles that help developers to build consistent and visually appealing user interfaces.</li>
+          <li>Includes a responsive grid system, CSS classes for typography and forms, and JavaScript plugins for creating interactive components.</li>
+        </ul>
       </>
   },
   {
@@ -323,11 +362,17 @@ xhttp.onreadystatechange = function() {
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
-    question: 'How do you use Web APIs in frontend development?',
+    question: 'What are Web APIs and how are they used in frontend development?',
     answer: 
       <>
-        <p>Web APIs, or Application Programming Interfaces, are a set of rules and protocols that allow different software applications to communicate with each other. In frontend development, developers can use Web APIs to access and integrate external services and data into their web applications. This can include APIs for accessing data from social media platforms, weather services, mapping services, and more. By using Web APIs, developers can create web applications that provide a wide range of functionality and features, such as user authentication, data retrieval, and content sharing. Web APIs are typically accessed using HTTP requests, and the data is often returned in JSON or XML format, which can be parsed and used within the web application.</p>
-        <p>Asynchronous nature of API requests ensures non-blocking execution, enabling a smooth user experience. Error handling is crucial, which is done through promise rejections or try-catch blocks to manage issues like network problems or incorrect responses. Cross-Origin Resource Sharing (CORS) may need consideration for security, allowing or restricting access based on the client's origin.</p>
+        <p>Web APIs, or Application Programming Interfaces, are a set of rules and protocols that allow different software applications to communicate with each other. </p>
+        <p>In frontend development, developers can use Web APIs to access and integrate external services and data into their web applications. This can include APIs for accessing data from social media platforms, weather services, mapping services, and more. By using Web APIs, developers can create web applications that provide a wide range of functionality and features, such as user authentication, data retrieval, and content sharing. Web APIs are typically accessed using HTTP requests, and the data is often returned in JSON or XML format, which can be parsed and used within the web application.</p>
+        <p>Things to consider when using Web APIs:</p>
+        <ul>
+          <li>Asynchronous nature of API requests ensures non-blocking execution, enabling a smooth user experience.</li>
+          <li>Error handling is crucial, which is done through promise rejections or try-catch blocks to manage issues like network problems or incorrect responses.</li>
+          <li>Cross-Origin Resource Sharing (CORS) may need consideration for security, allowing or restricting access based on the client's origin.</li>
+        </ul>
       </>
   },
   {
@@ -339,10 +384,30 @@ xhttp.onreadystatechange = function() {
     answer: 
       <>
         <p>The GET and POST methods are two of the most common HTTP methods used to submit form data in HTML. The main differences between the two methods are:</p>
-        <ul>
-          <li><strong>GET:</strong> Submits form data as part of the URL, visible in the address bar. It is used for sending small amounts of data, such as search queries, and is limited by the maximum length of a URL. It is not secure for sensitive information, as the data is visible in the URL.</li>
-          <li><strong>POST:</strong> Submits form data in the body of the HTTP request, not visible in the address bar. It is used for sending large amounts of data, such as file uploads or form submissions, and is more secure for sensitive information, as the data is not visible in the URL.</li>
-        </ul>
+        <table>
+          <thead>
+            <th>GET</th>
+            <th>POST</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Submits form data as part of the URL</td>
+              <td>Submits form data in the body of the HTTP request</td>
+            </tr>
+            <tr>
+              <td>Visible in the address bar</td>
+              <td>Not visible in the address bar</td>
+            </tr>
+            <tr>
+              <td>Used for sending small amounts of data, such as search queries, and is limited by the maximum length of a URL</td>
+              <td>Used for sending large amounts of data, such as file uploads or form submissions</td>
+            </tr>
+            <tr>
+              <td>Not secure for sensitive information, as the data is visible in the URL</td>
+              <td>More secure for sensitive information, as the data is not visible in the URL</td>
+            </tr>
+          </tbody>
+        </table>
         <p>Both methods are used to send form data to a server for processing, but they differ in how the data is transmitted and the types of data they are best suited for.</p>
       </>
   },
