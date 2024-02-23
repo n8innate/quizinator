@@ -430,7 +430,12 @@ xhttp.onreadystatechange = function() {
     question: 'What is jQuery, and how is it used in web development?',
     answer: 
       <>
-        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers. jQuery is used to simplify common tasks in web development, such as event handling, DOM manipulation, and AJAX requests. It provides a set of methods and utilities that make it easier to write JavaScript code, reducing the amount of code needed to achieve common tasks. jQuery is particularly useful for creating interactive and dynamic web pages, as it provides a wide range of plugins and extensions for adding functionality and interactivity to web applications.</p>
+        <p>jQuery is a fast, small, and feature-rich JavaScript library:</p>
+        <ul>
+          <li>Used to simplify common tasks in web development, such as event handling, DOM manipulation, and AJAX requests.</li>
+          <li>Provides a set of methods and utilities that make it easier to write JavaScript code, reducing the amount of code needed to achieve common tasks.</li>
+          <li>Particularly useful for creating interactive and dynamic web pages, as it provides a wide range of plugins and extensions for adding functionality and interactivity to web applications.</li>
+        </ul>
       </>
   },
   {
@@ -490,7 +495,8 @@ xhttp.onreadystatechange = function() {
     question: 'Explain the use of icons and icon fonts in web design.',
     answer: 
       <>
-        <p>Icons are small, visual representations of objects, actions, or concepts, used to enhance the user interface and user experience of a web page. They are used to convey information quickly and effectively, and they are often used to represent common actions, such as navigation, search, and social media links. Icon fonts are a collection of scalable vector icons that can be customized using CSS, making them easy to use and style in web design. They are typically used to provide a consistent and visually appealing set of icons that can be easily integrated into web pages, improving the overall design and usability of the content.</p>
+        <p>Icons are small, visual representations of objects, actions, or concepts, used to enhance the user interface and user experience of a web page. They are used to convey information quickly and effectively, and they are often used to represent common actions, such as navigation, search, and social media links.</p>
+        <p>Icon fonts are a collection of scalable vector icons that can be customized using CSS, making them easy to use and style in web design. They are typically used to provide a consistent and visually appealing set of icons that can be easily integrated into web pages, improving the overall design and usability of the content.</p>
       </>
   },
   {
@@ -533,7 +539,8 @@ xhttp.onreadystatechange = function() {
     question: 'Describe the use of animation in web design.',
     answer: 
       <>
-        <p>Animation is used in web design to create visually engaging and interactive user experiences. It can be used to draw attention to specific elements, provide feedback to user actions, and enhance the overall design and usability of web pages. Animation can be achieved using CSS, JavaScript, and various libraries and frameworks, and it can be used to create effects such as transitions, transformations, and keyframe animations. Animation is particularly useful for creating dynamic and engaging web applications, as it can provide a more app-like experience for users, improving engagement and usability.</p>
+        <p>Animation is used in web design to create visually engaging and interactive user experiences. It can be used to draw attention to specific elements, provide feedback to user actions, and enhance the overall design and usability of web pages. </p>
+        <p>Animation can be achieved using CSS, JavaScript, and various libraries and frameworks, and it can be used to create effects such as transitions, transformations, and keyframe animations. Animation is particularly useful for creating dynamic and engaging web applications, as it can provide a more app-like experience for users, improving engagement and usability.</p>
         <p>Note: It is important to strike a balance, as excessive or unnecessary animations lead to distraction and negatively impact UI performance.</p>
       </>
   },
@@ -545,7 +552,8 @@ xhttp.onreadystatechange = function() {
     question: 'What is the purpose of a wireframe in web design?',
     answer: 
       <>
-        <p>A wireframe is a visual representation of the layout and structure of a web page or application. It provides a basic outline of the content, functionality, and user interface elements, allowing designers and developers to plan and organize the design of a web project. Wireframes are used to define the hierarchy and placement of elements, such as navigation menus, content areas, and interactive components, providing a blueprint for the final design. They are particularly useful for communicating design ideas and concepts, as well as for gathering feedback and making revisions before moving on to the visual design phase of a project.</p>
+        <p>A wireframe is a visual representation of the layout and structure of a web page or application. It provides a basic outline of the content, functionality, and user interface elements, allowing designers and developers to plan and organize the design of a web project.</p>
+        <p>Wireframes are used to define the hierarchy and placement of elements, such as navigation menus, content areas, and interactive components, providing a blueprint for the final design. They are particularly useful for communicating design ideas and concepts, as well as for gathering feedback and making revisions before moving on to the visual design phase of a project.</p>
       </>
   },
   {
@@ -619,7 +627,11 @@ xhttp.onreadystatechange = function() {
     question: 'Why is page load speed important in web development?',
     answer: 
       <>
-        <p>Page load speed is important in web development because it directly impacts the user experience and engagement of web pages and applications. Faster page load times lead to improved user satisfaction, increased user engagement, and higher conversion rates. Additionally, page load speed is a ranking factor for search engines, affecting the visibility and discoverability of web pages in search results. By optimizing page load speed, developers can create web projects that provide a better user experience, improve search engine rankings, and increase overall performance and reliability.</p>
+        <p>Page load speed is important in web development because it directly impacts the user experience and engagement of web pages and applications:</p>
+        <ul>
+          <li>Faster page load times lead to improved user satisfaction, increased user engagement, and higher conversion rates.</li>
+          <li>Page load speed is a ranking factor for search engines, affecting the visibility and discoverability of web pages in search results.</li>
+        </ul>
       </>
   },
   {
@@ -660,7 +672,12 @@ xhttp.onreadystatechange = function() {
     question: 'What are cookies and how are they used in web development?',
     answer: 
       <>
-        <p>Cookies are small pieces of data that are stored on a user's device by a web browser. They are used in web development to store information about the user's browsing activity, such as login credentials, preferences, and shopping cart items. Cookies are typically used to personalize the user experience, track user behavior, and provide targeted advertising, improving the overall usability and engagement of web applications. Cookies are created and accessed using JavaScript or server-side code, and they can be used to store and retrieve data that persists across multiple sessions, providing a way to maintain state and user information in web projects.</p>
+        <p>Cookies are small pieces of data that are stored on a user's device by a web browser.</p>
+        <ul>
+          <li>Used in web development to store information about the user's browsing activity, such as login credentials, preferences, and shopping cart items.</li>
+          <li>Typically used to personalize the user experience, track user behavior, and provide targeted advertising, improving the overall usability and engagement of web applications.</li>
+          <li>Are created and accessed using JavaScript or server-side code, and they can be used to store and retrieve data that persists across multiple sessions, providing a way to maintain state and user information in web projects.</li>
+        </ul>
         <p>It is important to consider privacy and security implications when using cookies, as they can be used to track and store sensitive user information. Compliance with privacy regulations, such as GDPR and CCPA, is crucial for handling user data responsibly.</p>
       </>
   },
@@ -692,10 +709,20 @@ xhttp.onreadystatechange = function() {
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
-    question: 'What are web hosting and domain names?',
+    question: 'What is web hosting?',
     answer: 
       <>
         <p>Web hosting is a service that allows individuals and organizations to make their web pages and applications accessible via the World Wide Web. It involves storing and serving web content on a server, providing a way for users to access and interact with the content. Web hosting services typically include storage space, bandwidth, and other resources needed to host web projects, and they are often provided by web hosting companies or internet service providers.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Basic Frontend',
+    level: 0,
+    question: 'What are domain names?',
+    answer: 
+      <>
         <p>Domain names are human-readable addresses that are used to access web pages and applications on the internet. They provide a way to identify and locate web content, allowing users to access web projects using a memorable and recognizable name. Domain names are typically registered and managed through domain registrars, and they are used to create unique and branded addresses for web projects, improving the accessibility and discoverability of the content.</p>
       </>
   },
@@ -872,7 +899,6 @@ xhttp.onreadystatechange = function() {
     answer: 
       <>
         <p>Progressive Web Apps (PWAs) are web applications that provide a native app-like experience for users, with features such as offline access, push notifications, and device hardware access. They work by using modern web technologies, such as service workers and web app manifests, to provide a reliable and engaging user experience, regardless of the user's network connection or device capabilities.</p>
-        <p>PWAs use service workers to cache content and provide offline access to web applications, allowing users to access and interact with the content even when they are offline or have a poor network connection. They also use web app manifests to provide a way to install the web application to the user's device, providing a more app-like experience and improving discoverability and engagement.</p>
         <p>By using these features, PWAs provide a way to create web applications that are reliable, fast, and engaging, improving the overall user experience and usability of the content.</p>
       </>
   },
@@ -1034,8 +1060,6 @@ xhttp.onreadystatechange = function() {
           <li><strong>Error logging:</strong> Logging errors and exceptions in client-side code to track and monitor issues that occur in the application.</li>
           <li><strong>Error reporting:</strong> Reporting errors and exceptions to a server-side logging service or monitoring tool to track and manage issues that occur in the application.</li>
           <li><strong>Error tracking:</strong> Tracking and monitoring errors and exceptions in the application to identify and fix issues that affect the user experience and usability of the content.</li>
-          <li><strong>Performance monitoring:</strong> Monitoring and testing the performance of frontend applications to identify and fix performance issues that affect the user experience and usability of the content.</li>
-          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations, such as GDPR and CCPA, to protect user data and privacy.</li>
         </ul>
         <p>By using these techniques, developers can create frontend applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
