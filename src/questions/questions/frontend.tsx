@@ -1405,13 +1405,11 @@ xhttp.onreadystatechange = function() {
       <>
         <p>Common security threats in frontend development include:</p>
         <ul>
-          <li><strong>Cross-site scripting (XSS):</strong> Prevent XSS attacks by using content security policies, input validation, and output encoding to protect against malicious code execution.</li>
-          <li><strong>Cross-site request forgery (CSRF):</strong> Prevent CSRF attacks by using anti-CSRF tokens and secure cookies to protect against unauthorized requests.</li>
-          <li><strong>Clickjacking:</strong> Prevent clickjacking attacks by using frame-busting scripts and X-Frame-Options headers to protect against unauthorized framing of web content.</li>
-          <li><strong>Security misconfigurations:</strong> Prevent security misconfigurations by using secure defaults and best practices to protect against unauthorized access and exposure of sensitive information.</li>
-          <li><strong>Security testing:</strong> Perform security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
+          <li><strong>Cross-site scripting (XSS):</strong> This is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can execute in the context of the victim's browser, leading to actions such as session hijacking, data theft, or redirection to malicious websites. XSS attacks commonly exploit vulnerabilities in web applications that fail to properly sanitize user input or output.  Prevent XSS attacks by using content security policies, input validation, and output encoding to protect against malicious code execution.</li>
+          <li><strong>Cross-site request forgery (CSRF):</strong> This is an attack where an attacker tricks a user into unknowingly executing actions on a web application that the user is authenticated to. The attacker crafts malicious requests and lures the victim into visiting a page or clicking on a link that automatically submits those requests, leading to actions like unauthorized transactions, account takeover, or data manipulation. CSRF attacks exploit the trust that a web application has in the user's browser.  Prevent CSRF attacks by using anti-CSRF tokens and secure cookies to protect against unauthorized requests.</li>
+          <li><strong>Clickjacking:</strong> This is a technique where an attacker hides malicious actions behind legitimate-looking elements on a webpage, tricking users into clicking on them without their knowledge. By overlaying transparent or disguised elements over buttons, links, or forms, attackers can hijack user clicks and perform actions such as liking a social media post, sharing content, or initiating downloads. Clickjacking exploits vulnerabilities in the user interface of web applications.  Prevent clickjacking attacks by using frame-busting scripts and X-Frame-Options headers to protect against unauthorized framing of web content.</li>
+          <li><strong>Security misconfigurations:</strong> This refer to mistakes or oversights in the configuration of software components or systems that can lead to security vulnerabilities. This includes leaving default passwords, enabling unnecessary services, improper access controls, or failure to apply security patches and updates. Attackers can exploit misconfigurations to gain unauthorized access, escalate privileges, or compromise the integrity and confidentiality of data. Proper configuration management and regular security audits are essential to mitigate these risks.  Prevent security misconfigurations by using secure defaults and best practices to protect against unauthorized access and exposure of sensitive information.</li>
         </ul>
-        <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -1524,13 +1522,11 @@ xhttp.onreadystatechange = function() {
       <>
         <p>Best practices for form design and validation in web applications include:</p>
         <ul>
-          <li><strong>Clear and consistent design:</strong> Use clear and consistent design patterns to create and maintain forms, reducing complexity and improving usability.</li>
-          <li><strong>Progressive disclosure:</strong> Use progressive disclosure to provide a clear and concise form layout, reducing complexity and improving usability.</li>
-          <li><strong>Input validation:</strong> Validate and sanitize user input to prevent errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Feedback and error messages:</strong> Provide feedback and error messages to guide users through the form submission process, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
-          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of form submissions to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
+          <li><strong>Clear and consistent design:</strong> Reduces complexity and improves usability by reducing conginitive friction for the user.</li>
+          <li><strong>Progressive disclosure:</strong> A strategy where complex or less frequently used form fields are hidden initially, revealing them gradually as users interact with the form. This approach helps streamline the user experience by presenting users with only the most relevant or essential information upfront, reducing cognitive overload and improving usability. As users progress through the form or indicate a need for additional options, more advanced or optional fields are progressively revealed, maintaining a focused and intuitive user interface.</li>
+          <li><strong>Input validation:</strong> Validate and sanitize user input to prevent errors and issues that affect the user experience and usability of the content, as well as supporting security best practices.</li>
+          <li><strong>Feedback and error messages:</strong> These guide users through the form submission process, reducing the risk of errors and issues that affect the user experience and usability of the content.</li>
         </ul>
-        <p>By using these best practices, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -1878,7 +1874,7 @@ xhttp.onreadystatechange = function() {
     question: 'In CSS, what is a reset?',
     answer: 
       <>
-        <p>In CSS, a reset is a set of styles that are used to reset the default styles of HTML elements to create a consistent and visually appealing baseline for web applications. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.  For example:</p>
+        <p>In CSS, a reset refers to a set of CSS rules designed to override the default styles applied by web browsers to HTML elements, ensuring a consistent baseline style across different browsers. A reset typically targets common HTML elements and removes default margins, paddings, font styles, and other browser-specific styles.  For example:</p>
         <pre><div className={styles.appCode}>
           {`/* Reset styles */
 * {
@@ -1887,13 +1883,14 @@ xhttp.onreadystatechange = function() {
   box-sizing: border-box;
 }`}
         </div></pre>
-        <p>In the above example: 
+        <p><strong>In the above example:</strong></p>
           <ul>
             <li><strong>margin: 0;</strong> removes the default margin of all HTML elements.</li>
             <li><strong>padding: 0;</strong> removes the default padding of all HTML elements.</li>
             <li><strong>box-sizing: border-box;</strong> sets the box-sizing property of all HTML elements to border-box, which includes the padding and border in the element's total width and height.</li>
           </ul>
-        </p>
+        <p><strong>Example of when a reset would be used:</strong></p>
+        <p>When building a website or web application, developers may encounter inconsistencies in default styling across different browsers. To ensure a consistent and predictable layout and appearance, they might use a CSS reset at the beginning of their stylesheets. This reset clears out any browser-specific styles, allowing developers to apply their own styles consistently across all browsers. Popular CSS resets include Normalize.css and Reset CSS.</p>
       </>
   },
   {
@@ -1978,10 +1975,21 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       <>
         <p>The critical rendering paths in a web browser are:</p>
         <ul>
-          <li><strong>HTML parsing:</strong> The web browser parses the HTML document to create the Document Object Model (DOM), which represents the structure and content of the web page.</li>
-          <li><strong>CSS parsing and style computation:</strong> The web browser parses the CSS files to create the CSS Object Model (CSSOM), which represents the styles and layout of the web page. It then computes the styles and layout of the web page based on the DOM and CSSOM, creating the render tree.</li>
-          <li><strong>Layout and painting:</strong> The web browser calculates the layout and paints the web page based on the render tree, creating the visual representation of the web page that is displayed to the user.</li>
+          <li><strong>HTML parsing:</strong> The browser parses the HTML document received from the server and constructs the Document Object Model (DOM), which represents the structure of the webpage.</li>
+          <li><strong>CSS parsing and style computation:</strong> The browser parses the CSS stylesheets linked to the HTML document and constructs the CSS Object Model (CSSOM), which defines the styles applied to each element in the DOM.</li>
+          <li><strong>Render Tree Construction:</strong> The browser combines the DOM and CSSOM to create the render tree, a representation of the visual elements on the page that need to be displayed.</li>
+          <li><strong>Layout (Reflow)</strong> The browser calculates the position and size of each element in the render tree and determines their placement on the screen. This process is also known as reflow or layout.</li>
+          <li><strong>Painting:</strong> The browser paints the pixels of the elements onto the screen based on their computed styles and layout information.</li>
         </ul>
+        <p>The order of execution of these steps can vary depending on the browser and the specific optimizations implemented by the browser engine. However, in general, the critical rendering path follows a predictable sequence:</p>
+        <ol>
+          <li><strong>HTML parsing:</strong> The browser starts parsing the HTML document as soon as it receives it from the server. Parsing typically begins from the top of the document and proceeds sequentially until the end.</li>
+          <li><strong>CSS parsing and style computation:</strong> CSS parsing and styling occur in parallel with HTML parsing. As soon as a CSS stylesheet is fetched, the browser begins parsing it and constructing the CSSOM. CSS rules are applied to elements in the DOM as soon as they are encountered during HTML parsing.</li>
+          <li><strong>Render Tree Construction:</strong> Once the DOM and CSSOM are constructed, the browser combines them to create the render tree. This process involves matching CSS rules to DOM elements and determining which elements need to be displayed on the screen.</li>
+          <li><strong>Layout (Reflow)</strong> After the render tree is constructed, the browser performs layout calculations to determine the position and size of each element on the screen. Layout can be triggered by changes to the DOM or CSS that affect the layout of elements.</li>
+          <li><strong>Painting:</strong> Finally, the browser paints the pixels of the elements onto the screen based on their computed styles and layout information. Painting occurs in a sequence determined by the z-index and stacking context of elements.</li>
+        </ol>
+        <p>Optimizations such as incremental rendering and speculative parsing may further alter the order of execution or introduce parallelism to speed up the rendering process.</p>
       </>
   },
   {
@@ -2225,16 +2233,48 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
     question: 'What are CSS sprites?',
     answer: 
       <>
-        <p>CSS sprites are a technique used to combine multiple images into a single image and use CSS to display only the part of the image that is needed. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <p>CSS sprites are a technique used in web development to combine multiple images into a single image file and then use CSS to display specific parts of that image as background images for different elements on a webpage. This approach helps reduce the number of HTTP requests required to load multiple images, thus improving page loading times and performance. For example:</p>
+        <p><strong>HTML</strong></p>
+        <pre><div className={styles.appCode}>
+          {`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Sprites Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="icon icon-facebook"></div>
+  <div class="icon icon-twitter"></div>
+  <div class="icon icon-instagram"></div>
+</body>
+</html>
+`}
+        </div></pre>
+        <p><strong>CSS</strong></p>
         <pre><div className={styles.appCode}>
           {`.icon {
-  background-image: url('sprites.png');
-  background-position: -20px -40px;
-  width: 20px;
-  height: 20px;
-}`}
+  width: 50px;
+  height: 50px;
+  background-image: url('sprites.png'); /* Path to the sprite image */
+  background-repeat: no-repeat;
+}
+
+.icon-facebook {
+  background-position: 0 0; /* Position of the Facebook icon within the sprite */
+}
+
+.icon-twitter {
+  background-position: -50px 0; /* Position of the Twitter icon within the sprite */
+}
+
+.icon-instagram {
+  background-position: -100px 0; /* Position of the Instagram icon within the sprite */
+}
+`}
         </div></pre>
-        <p>In the above example, the background-position property is used to display only the part of the sprites.png image that is needed for the icon element, reducing the number of HTTP requests and improving the performance and reliability of web applications.</p>
+        <p>In this example, we have three {`<div>`} elements with the class icon, each representing a social media icon (Facebook, Twitter, Instagram). We use CSS to set the dimensions of the icons and apply the sprite image (sprites.png) as the background image for each icon. By adjusting the background-position, we display the specific part of the sprite containing the desired icon for each element. This way, we achieve the effect of displaying multiple images using a single sprite image</p>
       </>
   },
   {
@@ -2300,7 +2340,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
-    question: 'What is "runtime" mean?',
+    question: 'What does "runtime" mean?',
     answer: 
       <>
         <p>In software engineering, "runtime" refers to the period during which a program or application is executing or running on a computer or a computing environment. It encompasses the entire duration from when the program starts running to when it terminates or exits.  Here's a breakdown of what "runtime" typically involves:</p>
@@ -2437,9 +2477,21 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
-    question: '',
+    question: 'What are low-code and no-code platforms and when would they be used (give an example)?',
     answer: 
       <>
+        <p>Low-code and no-code platforms are tools and platforms that enable users to build software applications with minimal or no hand-coding required. These platforms typically provide visual development interfaces, drag-and-drop components, and pre-built templates to streamline the application development process.</p>
+        <p><strong>Example:</strong> A small business wants to create a custom web application to manage their inventory and sales tracking.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+          <li><strong>Rapid Application Development:</strong> A low-code or no-code platform would be used in this scenario to quickly build and deploy the required application without extensive coding or development expertise. Business users or citizen developers can use visual interfaces and pre-built components to assemble the application logic, forms, and workflows, significantly reducing the time and effort required to develop the application.</li>
+          <li><strong>Customization and Flexibility:</strong> Low-code and no-code platforms offer a high degree of customization and flexibility, allowing users to tailor the application to their specific business requirements. Users can easily modify existing templates, add new features, or integrate with external systems using built-in connectors and APIs, without the need for deep technical knowledge or coding skills.</li>
+          <li><strong>Cost-Effectiveness:</strong> Building applications with low-code or no-code platforms can be more cost-effective compared to traditional software development approaches. Since these platforms automate many aspects of the development process and require fewer resources, businesses can save on development costs, time-to-market, and ongoing maintenance expenses.</li>
+          <li><strong>Empowering Citizen Developers:</strong> Low-code and no-code platforms empower non-technical users, often referred to as citizen developers, to take an active role in application development. Business users, subject matter experts, and departmental teams can contribute to building and iterating on applications, reducing reliance on IT departments and accelerating innovation within the organization.</li>
+          <li><strong>Iterative Development and Prototyping:</strong> These platforms support iterative development and rapid prototyping, allowing users to quickly create prototypes, gather feedback, and iterate on the application based on user input. This iterative approach enables businesses to adapt to changing requirements, market conditions, and user needs more effectively.</li>
+          <li><strong>Examples of Low-code/No-code Platforms:</strong> Examples of low-code and no-code platforms include Microsoft Power Apps, Salesforce Lightning Platform, Google App Maker, Mendix, OutSystems, and Bubble. These platforms offer a range of features and capabilities for building web and mobile applications, workflow automation, data visualization, and more, catering to different use cases and industries.</li>
+        </ul>
+        <p>Overall, low-code and no-code platforms are used in scenarios where businesses need to quickly build custom software applications, address specific business needs, and empower non-technical users to participate in the development process, all while minimizing costs and technical complexity.</p>
       </>
   },
   {
@@ -2447,9 +2499,11 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
-    question: '',
+    question: 'What is modularity and how is it different from component-based architecture?',
     answer: 
       <>
+        <p><strong>Modularity</strong> in software engineering refers to the practice of breaking down a system into smaller, self-contained units or modules, each responsible for a specific function or feature. These modules encapsulate related functionality, data, and behavior, allowing for easier development, testing, maintenance, and reuse of code. Modularity promotes code organization, scalability, and flexibility, as changes or updates to one module can be made independently without affecting other parts of the system. It also facilitates collaboration among developers, as teams can work on different modules concurrently while maintaining clear interfaces and dependencies between them.</p>
+        <p><strong>Component-based architecture</strong>, on the other hand, involves building software systems using pre-defined, reusable components that can be assembled to create larger applications. While modularity focuses on organizing code into cohesive units, component-based architecture emphasizes the use of pre-built, interchangeable components to construct complex systems.</p>
       </>
   },
   {
@@ -2457,9 +2511,21 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
-    question: '',
+    question: 'What is a cross-site request?',
     answer: 
       <>
+        <p>A cross-site request is a type of HTTP request initiated by a web application from one origin (domain) to another. It occurs when a client-side script running in the context of a web page makes a request to a different domain than the one from which the script originated. Cross-site requests can be either cross-site scripting (XSS) attacks, where malicious scripts execute in the victim's browser, or legitimate requests made by web applications for purposes like accessing resources from external domains or integrating with third-party services.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is XML?',
+    answer: 
+      <>
+        <p>XML (Extensible Markup Language) is a markup language used for storing and transporting data in a structured format. It consists of tags that define the structure and meaning of the data, making it easily readable by both humans and machines. XML is widely used in various applications, including web development, data interchange, configuration files, and document formats, due to its flexibility, extensibility, and platform independence.</p>
       </>
   },
 ]
