@@ -1204,17 +1204,27 @@ xhttp.onreadystatechange = function() {
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
-    question: 'How do you handle user authentication and authorization in web applications?',
+    question: 'What is the difference between user authentication and authorization in web applications?',
     answer: 
       <>
-        <p>Handling user authentication and authorization in web applications involves several techniques and best practices, such as:</p>
+        <p>In front-end engineering, user authentication and authorization are two distinct concepts, but they are often used together to ensure secure access to web applications. In short, while authentication verifies the identity of a user, authorization controls what resources and actions that authenticated user can access and perform within the application. Here's the difference between the two in greater detail:</p>
         <ul>
-          <li><strong>User authentication:</strong> Implementing secure user authentication mechanisms, such as password hashing, multi-factor authentication, and OAuth, to verify the identity of users and protect their accounts from unauthorized access.</li>
-          <li><strong>User authorization:</strong> Implementing secure user authorization mechanisms, such as role-based access control and token-based authentication, to manage and control the access and permissions of users within the application.</li>
-          <li><strong>Secure communication:</strong> Using HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and data tampering.</li>
-          <li><strong>Content security policy:</strong> Using content security policies to prevent cross-site scripting (XSS) attacks and other security vulnerabilities.</li>
-          <li><strong>Security testing:</strong> Performing security testing and code reviews to identify and fix security vulnerabilities in web applications.</li>
-          <li><strong>Compliance with regulations:</strong> Ensuring compliance with data protection regulations, such as GDPR and CCPA, to protect user data and privacy.</li>
+          <li><strong>User authentication:</strong>
+          <ul>
+            <li><strong>Definition:</strong> User authentication is the process of verifying the identity of a user attempting to access a system or application.</li>
+            <li><strong>Purpose:</strong> The primary goal of authentication is to confirm that the user is who they claim to be.</li>
+            <li><strong>Methods:</strong> Authentication can be done through various methods such as passwords, biometric authentication (like fingerprint or facial recognition), one-time codes, or multi-factor authentication (using a combination of two or more authentication factors).</li>
+            <li><strong>Front-end Implementation:</strong> In front-end engineering, authentication mechanisms are implemented through user interfaces such as login forms where users enter their credentials (username/password, or other authentication factors) to prove their identity.</li>
+            <li><strong>Example:</strong> When you log in to your email account, you provide your username and password. If the system verifies that the provided credentials match the stored credentials for that username, you are authenticated and granted access to your email inbox.</li>
+          </ul></li>
+          <li><strong>User authorization:</strong>
+          <ul>
+            <li><strong>Definition:</strong> User authorization is the process of determining whether an authenticated user has the necessary permissions and privileges to access specific resources or perform certain actions within a system or application.</li>
+            <li><strong>Purpose:</strong> The primary goal of authorization is to control access to resources based on the user's identity and role.</li>
+            <li><strong>Methods:</strong> Authorization is typically implemented using access control mechanisms such as role-based access control (RBAC), attribute-based access control (ABAC), or other custom access control lists (ACLs).</li>
+            <li><strong>Front-end Implementation:</strong> In front-end engineering, authorization is enforced by controlling the visibility and functionality of various UI components based on the user's role and permissions. This can include showing/hiding specific sections of a web page or enabling/disabling certain actions (e.g., editing, deleting) based on the user's authorization level.</li>
+            <li><strong>Example:</strong> In a blogging platform, a user who is authenticated (via username/password) may be authorized to create new blog posts and edit their own posts, but not to delete posts created by other users. The authorization mechanism controls what actions each user can perform within the application.</li>
+          </ul></li>
         </ul>
         <p>By using these techniques and best practices, developers can create web applications that are secure, reliable, and resilient to security threats and vulnerabilities, improving the overall quality and usability of the content.</p>
       </>
@@ -1310,7 +1320,14 @@ xhttp.onreadystatechange = function() {
       <>
         <p>GraphQL is a query language and runtime for APIs that provides a way to define and query the data requirements of web applications. It is used in frontend development to create and maintain web applications that require flexible and efficient data retrieval and manipulation.</p>
         <p>GraphQL works by defining a schema that describes the data requirements of the application, including the types of data and the relationships between them. It then provides a way to query this schema using a flexible and expressive syntax, allowing clients to request only the data they need, reducing the amount of data transferred and improving performance.</p>
-        <p>By using GraphQL, developers can create web applications that are reliable, resilient, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+        <ul>
+          <li><strong>Data Fetching:</strong> Allows clients to request exactly the data they need using a single endpoint (/graphql). Clients can specify the structure of the response and request only the fields they require, reducing over-fetching and under-fetching of data.</li>
+          <li><strong>Data Structure:</strong> Uses a type system to define the structure of data. Clients can request nested fields and traverse relationships between entities in a single query, allowing for more flexible data retrieval.</li>
+          <li><strong>Response Format:</strong> Responses are JSON objects that mirror the shape of the query. The server dynamically constructs the response based on the fields requested in the query.</li>
+          <li><strong>Caching:</strong> Responses are often not as cacheable out of the box because the shape of the response can vary based on the query. However, caching strategies can still be implemented at the application level.</li>
+          <li><strong>Versioning:</strong> Allows for seamless evolution of APIs without the need for versioning. Clients can request new fields or changes to existing fields without impacting older clients.</li>
+          <li><strong>Tooling and Ecosystem:</strong> Has a growing ecosystem of tools and libraries, including Apollo Client and Relay for client-side GraphQL querying, and tools like GraphiQL for interactive query exploration</li>
+        </ul>
       </>
   },
   {
@@ -1600,10 +1617,8 @@ xhttp.onreadystatechange = function() {
     question: 'What distinguishes margin from padding in CSS?',
     answer: 
       <>
-        <p>Margin and padding are two fundamental concepts in CSS that are used to create space around and within elements, respectively. They are used to control the layout and spacing of elements in web applications, providing a way to create and maintain visually appealing and consistent designs.</p>
-        <p>Margin is used to create space around an element, pushing adjacent elements away from the element. It provides a way to control the spacing between elements and create visually appealing and consistent layouts.</p>
-        <p>Padding is used to create space within an element, pushing the content of the element away from its edges. It provides a way to control the spacing between the content and the edges of the element and create visually appealing and consistent designs.</p>
-        <p>By using margin and padding, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+        <p><strong>Margin</strong> is used to create space around an element, pushing adjacent elements away from the element. It provides a way to control the spacing between elements.</p>
+        <p><strong>Padding</strong> is used to create space within an element, pushing the content of the element away from its edges. It provides a way to control the spacing between the content and the edges of the element.</p>
       </>
   },
   {
@@ -1658,7 +1673,6 @@ xhttp.onreadystatechange = function() {
 `}</div></pre>
           </li>
         </ul>
-        <p>By using these techniques and best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -1670,8 +1684,7 @@ xhttp.onreadystatechange = function() {
     answer: 
       <>
         <p>The box model is a fundamental concept in CSS that describes the layout and spacing of elements in web applications. It consists of four parts: content, padding, border, and margin. Each part of the box model provides a way to control the layout and spacing of elements, creating visually appealing and consistent designs.</p>
-        <p>The content area is the actual content of the element, such as text, images, or other media. It is surrounded by the padding area, which provides space between the content and the border. The border area is a visible or invisible border around the padding, and it separates the padding from the margin. The margin area is the space outside the border, providing space between the element and adjacent elements.</p>
-        <p>By using the box model, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+        <p>The <strong>content</strong> area is the actual content of the element, such as text, images, or other media. It is surrounded by the <strong>padding</strong> area, which provides space between the content and the border. The <strong>border</strong> area is a visible or invisible border around the padding, and it separates the padding from the margin. The <strong>margin</strong> area is the space outside the border, providing space between the element and adjacent elements.</p>
       </>
   },
   {
@@ -1839,9 +1852,7 @@ xhttp.onreadystatechange = function() {
         <ul>
           <li><strong>Complexity:</strong> Use CSS grid layout for complex grid-based layouts with rows and columns, and use CSS flexbox for flexible and responsive layouts with rows or columns.</li>
           <li><strong>Compatibility:</strong> Use CSS grid layout for modern browsers and devices, and use CSS flexbox for older browsers and devices that do not support CSS grid layout.</li>
-          <li><strong>Performance optimization:</strong> Optimize the performance and reliability of web applications to reduce the risk of errors and issues that affect the user experience and usability of the content.</li>
         </ul>
-        <p>By using these techniques and best practices, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -1955,7 +1966,6 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
             </div></pre>
           </li>
         </ul>
-        <p>By using inline, embedded, and external stylesheets, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -1972,7 +1982,6 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
           <li><strong>CSS parsing and style computation:</strong> The web browser parses the CSS files to create the CSS Object Model (CSSOM), which represents the styles and layout of the web page. It then computes the styles and layout of the web page based on the DOM and CSSOM, creating the render tree.</li>
           <li><strong>Layout and painting:</strong> The web browser calculates the layout and paints the web page based on the render tree, creating the visual representation of the web page that is displayed to the user.</li>
         </ul>
-        <p>Understanding the critical rendering paths is essential for creating performant websites. It involves understanding how HTML, CSS, and JavaScript load and interact to render a page efficiently.</p>
       </>
   },
   {
@@ -2018,10 +2027,10 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
     question: 'What is the difference between progressive enhancement and graceful degradation?',
     answer: 
       <>
-        <p>The difference between progressive enhancement and graceful degradation is:</p>
+        <p>Both provide a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.  The difference between progressive enhancement and graceful degradation is:</p>
         <ul>
-          <li><strong>Progressive enhancement:</strong> Progressive enhancement is a web design strategy that starts with a basic, functional web page and then adds advanced features and functionality for users with modern browsers and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
-          <li><strong>Graceful degradation:</strong> Graceful degradation is a web design strategy that starts with a fully-featured, advanced web page and then removes features and functionality for users with older browsers and devices. It provides a way to create and maintain web applications that work well across a wide range of devices and screen sizes, improving the overall quality and usability of the content.</li>
+          <li><strong>Progressive enhancement:</strong> Progressive enhancement is a web design strategy that starts with a basic, functional web page and then adds advanced features and functionality for users with modern browsers and devices. </li>
+          <li><strong>Graceful degradation:</strong> Graceful degradation is a web design strategy that starts with a fully-featured, advanced web page and then removes features and functionality for users with older browsers and devices.</li>
         </ul>
       </>
   },
@@ -2236,7 +2245,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
     question: 'Which Property is used to Underline, Strikethrough, and Overline Text?',
     answer: 
       <>
-        <p>The text-decoration property in CSS is used to underline, strikethrough, and overline text. It provides a way to create and maintain web applications with minimal complexity and technical debt. For example:</p>
+        <p>The text-decoration property in CSS is used to underline, strikethrough, and overline text. For example:</p>
         <pre><div className={styles.appCode}>
           {`.underline {
   text-decoration: underline;
@@ -2250,7 +2259,6 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
   text-decoration: overline;
 }`}
         </div></pre>
-        <p>In the above example, the text-decoration property is used to underline, strikethrough, and overline the text of the elements, improving the overall quality and usability of the content.</p>
       </>
   },
   {
@@ -2282,10 +2290,176 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       <>
         <p>The difference between a div and a span is:</p>
         <ul>
-          <li><strong>Div:</strong> A div is a block-level element that is used to group and style content. It provides a way to create and maintain web applications with minimal complexity and technical debt.</li>
-          <li><strong>Span:</strong> A span is an inline element that is used to style content within a block-level element. It provides a way to create and maintain web applications with minimal complexity and technical debt.</li>
+          <li><strong>Div:</strong> A div is a block-level element that is used to group and style content.</li>
+          <li><strong>Span:</strong> A span is an inline element that is used to style content within a block-level element.</li>
         </ul>
-        <p>By using div and span, developers can create web applications that are visually appealing, consistent, and responsive to user interactions, improving the overall quality and usability of the content.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Intermediate Frontend',
+    level: 1,
+    question: 'What is "runtime" mean?',
+    answer: 
+      <>
+        <p>In software engineering, "runtime" refers to the period during which a program or application is executing or running on a computer or a computing environment. It encompasses the entire duration from when the program starts running to when it terminates or exits.  Here's a breakdown of what "runtime" typically involves:</p>
+        <ol>
+          <li><strong>Execution Phase:</strong> Runtime encompasses the time when the compiled or interpreted code of a program is being executed by the computer's CPU (Central Processing Unit) or virtual machine. This includes the actual processing of instructions, data manipulation, and interactions with the operating system and other system resources.</li>
+          <li><strong>Dynamic Behavior:</strong> During runtime, the program may exhibit dynamic behavior, meaning it can respond to various inputs, events, and conditions that arise while it's running. This includes handling user interactions, responding to external stimuli (like network requests or file I/O), and adapting to changing runtime conditions.</li>
+          <li><strong>Memory Management:</strong> Runtime also involves memory allocation and deallocation, where the program dynamically allocates memory for variables, data structures, and objects as needed, and releases memory when it's no longer required. This includes managing heap memory (for dynamically allocated memory) and stack memory (for function calls and local variables).</li>
+          <li><strong>Resource Management:</strong> In addition to memory, runtime involves managing other system resources such as file handles, network connections, and input/output streams. Proper resource management is crucial to ensure efficient utilization of system resources and prevent resource leaks or exhaustion.</li>
+          <li><strong>Error Handling and Exception Handling:</strong> During runtime, the program may encounter errors, exceptions, or unexpected conditions. Runtime environments typically provide mechanisms for error detection, handling, and recovery, such as exception handling constructs (try-catch blocks) and runtime error reporting.</li>
+          <li><strong>Runtime Environment:</strong> The runtime environment includes the software infrastructure and services required for executing the program, such as the operating system, runtime libraries, virtual machines (in interpreted or bytecode-based languages), and other runtime components specific to the programming language or framework.</li>
+        </ol>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is an example of serverless architecture and when would be used?',
+    answer: 
+      <>
+        <p>An example of serverless architecture is a serverless function, often implemented using platforms like AWS Lambda, Google Cloud Functions, or Azure Functions. In this architecture, the developer writes functions that are triggered by specific events and are executed in stateless compute containers provided by the cloud provider. These functions are short-lived and are only charged for the actual compute time consumed.  Here's a hypothetical example of a serverless architecture:</p>
+        <p>Let's say you're developing a web application where users can upload images, and you want to automatically generate thumbnails for these images when they are uploaded. You could implement this using a serverless architecture:</p>
+        <ol>
+          <li><strong>Image Upload:</strong> When a user uploads an image to the application, the client sends the image to a serverless function endpoint.</li>
+          <li><strong>Serverless Function Trigger:</strong> The serverless function is triggered by the upload event.</li>
+          <li><strong>Thumbnail Generation:</strong> The serverless function receives the uploaded image, generates a thumbnail using image processing libraries like ImageMagick or Pillow, and stores the thumbnail in a storage service like Amazon S3 or Google Cloud Storage.</li>
+          <li><strong>Response:</strong> Once the thumbnail generation is complete, the serverless function sends a response back to the client, indicating the success of the operation.</li>
+        </ol>
+        <p>When to use serverless architecture:</p>
+        <ul>
+          <li><strong>Event-Driven Workloads:</strong> Serverless architecture is well-suited for event-driven workloads where there are sporadic or unpredictable bursts of activity, such as processing user uploads, handling webhook events, or responding to IoT sensor data.</li>
+          <li><strong>Scalability:</strong> Serverless functions automatically scale based on the incoming workload, allowing you to handle varying levels of traffic without managing server infrastructure.</li>
+          <li><strong>Cost Efficiency:</strong> With serverless architecture, you only pay for the compute time consumed by your functions, making it cost-effective for workloads with irregular or low traffic patterns. There are no upfront costs or charges for idle resources.</li>
+          <li><strong>Simplified Operations:</strong> Serverless architecture abstracts away server management tasks such as provisioning, scaling, and maintenance, allowing developers to focus on writing application logic rather than managing infrastructure.</li>
+          <li><strong>Microservices:</strong> Serverless functions can be used as building blocks for implementing microservices architectures, where each function performs a specific task or operation, leading to modular, loosely coupled systems.</li>
+          <li><strong>Prototyping and Rapid Development:</strong> Serverless architecture enables rapid prototyping and experimentation, as developers can quickly deploy and iterate on functions without worrying about infrastructure setup or management.</li>
+        </ul>
+        <p>Overall, serverless architecture is beneficial for scenarios where you need scalable, cost-effective, and event-driven execution of code, with minimal operational overhead.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is an example of Progressive Web Apps (PWAs) and what are good use cases for this approach?',
+    answer: 
+      <>
+        <p>An example of a Progressive Web App (PWA) could be a news website that offers offline access to articles, push notifications for breaking news, and a fast, app-like user experience on both desktop and mobile devices.  Here's how this example PWA might work and when it would be used:</p>
+        <ul>
+          <li><strong>Offline Access to Content:</strong> Users can browse articles even when they're offline or have a slow or unreliable internet connection. The PWA caches previously visited articles and assets, allowing users to access content offline, which is especially useful for commuters or users in areas with poor network coverage.</li>
+          <li><strong>Responsive Design:</strong> The PWA is designed to be responsive and provide a consistent user experience across different devices and screen sizes, including desktops, smartphones, and tablets.</li>
+          <li><strong>Fast and Smooth Performance:</strong> The PWA leverages modern web technologies like service workers and client-side caching to deliver fast loading times and smooth navigation, giving users an app-like experience without the need to install a native app.</li>
+          <li><strong>Push Notifications:</strong> Users can opt-in to receive push notifications for breaking news or important updates from the news website, even when they're not actively browsing the site. This helps to keep users engaged and informed, similar to how native mobile apps utilize push notifications.</li>
+          <li><strong>Add to Home Screen:</strong> Users have the option to add the PWA to their device's home screen, enabling quick access to the news website without the need to open a browser and type in the URL. This enhances user convenience and encourages regular engagement with the app.</li>
+        </ul>
+        <p>When would a PWA be used?</p>
+        <ul>
+          <li><strong>Low Friction Installation:</strong> PWAs are suitable for scenarios where you want users to access your app quickly and easily without the friction of traditional app store downloads and installations. This is particularly beneficial for content-focused websites, e-commerce platforms, and utility apps.</li>
+          <li><strong>Cross-Platform Compatibility:</strong> PWAs are a cost-effective solution for reaching users across different platforms (desktop, mobile, tablet) with a single codebase, making them ideal for businesses that want to provide a consistent experience across multiple devices.</li>
+          <li><strong>Improved Performance:</strong> If performance and speed are critical for your application, PWAs offer advantages such as faster loading times, smooth navigation, and offline access, making them suitable for use cases where users expect a snappy and responsive experience, such as news websites, social media platforms, and productivity tools.</li>
+          <li><strong>Engagement and Retention:</strong> PWAs can help increase user engagement and retention through features like push notifications, offline access, and add-to-home screen capabilities, making them a compelling choice for businesses looking to enhance user loyalty and drive repeat visits.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is WebAssembly and when would it be used (give an example)?',
+    answer: 
+      <>
+        <p>
+WebAssembly (Wasm) is a binary instruction format that enables execution of code at near-native speed in web browsers. It is designed to be a compilation target for high-level languages like C/C++, Rust, and others, allowing developers to run performance-sensitive code directly in the browser.</p>
+        <p><strong>For example:</strong> A web-based video editing application that requires real-time processing of large video files.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+          <li><strong>Performance:</strong> WebAssembly would be used in this scenario to offload performance-critical tasks, such as video encoding, decoding, or image processing, to the client's browser. These tasks often require significant computational power and can benefit from the speed and efficiency of WebAssembly.</li>
+          <li><strong>Near-Native Performance:</strong> By compiling performance-sensitive parts of the video editing application to WebAssembly, developers can achieve near-native performance, enabling smooth and responsive user experiences, even when working with large video files.</li>
+          <li><strong>Portability:</strong> WebAssembly allows developers to write code in languages like C/C++ or Rust, which are traditionally used for performance-critical applications, and compile it to run in the browser. This enables code reuse and portability across different platforms, as the same WebAssembly module can run in any browser that supports it, regardless of the underlying architecture.</li>
+          <li><strong>Security:</strong> WebAssembly executes in a sandboxed environment within the browser, providing a layer of security by preventing direct access to system resources. This makes it suitable for running untrusted code, such as third-party plugins or extensions, without compromising the security of the user's device.</li>
+          <li><strong>Improved User Experience:</strong> By leveraging WebAssembly for performance-critical tasks, the video editing application can provide a seamless and interactive user experience, with features like real-time video playback, instant previewing of edits, and responsive user interfaces.</li>
+        </ul>
+        <p>Overall, WebAssembly is used in scenarios where performance, portability, and security are important considerations, enabling developers to bring computationally intensive applications, traditionally confined to desktop environments, to the web with near-native performance.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is headless CMS and when would it be used (give an example)?',
+    answer: 
+      <>
+        <p>A headless CMS (Content Management System) is a backend-only content management system that provides content authoring, storage, and delivery via APIs (Application Programming Interfaces). Unlike traditional CMS platforms, which often come with built-in frontend templates and presentation layers, a headless CMS focuses solely on content management, leaving the presentation layer entirely up to the developers.</p>
+        <p><strong>Example:</strong> A company wants to build a multi-channel content platform where content can be managed centrally and delivered to various platforms such as websites, mobile apps, IoT devices, and digital signage.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+          <li><strong>Multi-Channel Content Delivery:</strong> A headless CMS would be used in this scenario to manage content centrally, allowing content editors to create, update, and organize content in a single interface. The content can then be delivered dynamically to different channels and devices via APIs.</li>
+          <li><strong>Flexibility and Customization:</strong> With a headless CMS, developers have the flexibility to build custom frontend experiences tailored to each platform or channel. They can use their preferred frontend frameworks (such as React, Vue.js, or Angular) to consume content from the CMS and design unique user interfaces optimized for specific devices or use cases.</li>
+          <li><strong>Scalability:</strong> Headless CMS platforms are designed to scale horizontally to handle large volumes of content and traffic. They can easily accommodate growing content needs and spikes in traffic without impacting performance or reliability.</li>
+          <li><strong>Future-Proofing:</strong> By decoupling the content management backend from the presentation layer, organizations can future-proof their content infrastructure. They can adapt to new technologies, platforms, and user experiences without the need to migrate or restructure their content management system.</li>
+          <li><strong>Integration with Third-Party Services:</strong> Headless CMS platforms often offer extensive integration capabilities, allowing developers to connect to third-party services for additional functionality such as e-commerce, analytics, marketing automation, or personalization.</li>
+          <li><strong>Developer Experience:</strong> Headless CMS platforms typically provide developer-friendly APIs and SDKs (Software Development Kits) that streamline the process of integrating content into applications. Developers can focus on building engaging user experiences without being constrained by the limitations of a monolithic CMS.</li>
+        </ul>
+        <p>Overall, a headless CMS is used in scenarios where organizations require flexibility, scalability, and multi-channel content delivery capabilities. It empowers developers to create customized, omnichannel experiences while simplifying content management and streamlining workflows for content editors.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What are static site generators and when would they be used (give an example)?',
+    answer: 
+      <>
+        <p>Static site generators (SSGs) are tools that generate static HTML files from templates and content, typically written in markup or a templating language. Unlike traditional dynamic websites, which generate web pages dynamically in response to each user request, static sites serve pre-rendered HTML files to users, resulting in faster load times and improved security.</p>
+        <p><strong>Example:</strong> A personal blog where the content is primarily text-based articles with occasional images and code snippets.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+          <li><strong>Simplicity and Performance:</strong> A static site generator would be used in this scenario to create a lightweight, fast-loading website. Since the blog primarily consists of static content (text articles, images, code snippets), there is no need for server-side processing or database queries. Generating static HTML files allows for faster page loads and better performance, especially for users with slower internet connections or limited bandwidth.</li>
+          <li><strong>Ease of Maintenance:</strong> With a static site generator, content authors can write blog posts using simple markup languages like Markdown or reStructuredText. The generator then converts these plain-text files into HTML pages during the build process. This simplifies the content creation and publishing workflow, as authors can focus on writing content without worrying about complex content management systems or database interactions.</li>
+          <li><strong>Security:</strong> Static sites are inherently more secure than dynamic sites because there is no server-side code execution or database interaction. Since static sites consist only of HTML, CSS, and JavaScript files, there are fewer attack vectors for malicious actors to exploit. This makes static site generators a suitable choice for websites that prioritize security and want to minimize the risk of vulnerabilities.</li>
+          <li><strong>Version Control and Collaboration:</strong> Static site generators often integrate well with version control systems like Git. Content files, templates, and configuration are stored as text files in a Git repository, allowing for easy versioning, collaboration, and rollback of changes. Multiple authors can collaborate on content creation, review changes using pull requests, and maintain a complete history of revisions.</li>
+          <li><strong>Scalability and Reliability:</strong> Static sites are highly scalable and reliable, as they can be served from content delivery networks (CDNs) or simple web servers without the need for complex server configurations or scaling mechanisms. This makes them suitable for websites with fluctuating traffic patterns or those expecting sudden spikes in visitors.</li>
+        </ul>
+        <p>Overall, static site generators are used in scenarios where simplicity, performance, security, and ease of maintenance are paramount. They are particularly well-suited for blogs, documentation sites, portfolios, landing pages, and other content-focused websites that do not require dynamic content generation or server-side processing.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: '',
+    answer: 
+      <>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: '',
+    answer: 
+      <>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: '',
+    answer: 
+      <>
       </>
   },
 ]
