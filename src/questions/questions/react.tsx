@@ -13,7 +13,7 @@ export const reactQuestions: IQuestions[] = [
 				<p>
 					React(aka React.js or ReactJS) is an{" "}
 					<strong>open-source front-end JavaScript library</strong> that is used
-					for building composable user interfaces, especially for single-page
+					for building composable (<em>components that can be selected and assembled in various combinations to satisfy specific user requirements</em>) user interfaces, especially for single-page
 					applications. It is used for handling view layer for web and mobile
 					apps based on components in a declarative approach.{" "}
 				</p>
@@ -280,7 +280,7 @@ class MyPureComponent extends React.PureComponent {
 					from a parent component to a child component.
 				</p>
 				<p>
-					Props in React the following:
+					Props in React do the following:
 				</p>
 				<ol>
 					<li>Pass custom data to your component.</li>
@@ -486,8 +486,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		answer: (
 			<>
 				<p>
-					Your event handlers will receive a React event object. It is also
-					sometimes known as a “synthetic event”.
+				In React, synthetic events are wrappers around native browser events that provide a consistent interface across different browsers. They are created by React to ensure cross-browser compatibility and to abstract away browser inconsistencies. Synthetic events have the same interface as native events, allowing developers to handle them uniformly regardless of the underlying browser. React's synthetic events also have optimizations for performance, such as event pooling, which improves efficiency by reusing event objects. Overall, synthetic events simplify event handling in React applications by providing a unified and efficient way to interact with user input and browser events..
 				</p>
 				<pre>
 					<div className={styles.appCode}>{`
@@ -550,24 +549,24 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		topic: "Intermediate React",
 		level: 1,
 		question:
-			'What is "key" prop and what is the benefit of using it in arrays of elements?',
+			'What is the "key" prop and what is the benefit of using it in arrays of elements?',
 		answer: (
 			<>
 				<p>
 					A <strong>key</strong> is a special attribute you{" "}
 					<strong>should</strong> include when mapping over arrays to render
-					data. <em>Key</em> prop helps React identify which items have changed,
-					are added, or are removed.
+					data. The key prop helps React identify which items have changed,
+					been added, or removed.
 				</p>
 				<p>
-					Keys should be unique among its siblings. Most often we use ID from
-					our data as <em>key</em>:
+					Keys should be unique among their siblings. It is common practice to use an ID value from
+					our data as the key prop:
 				</p>
 				<div className={styles.appCode}>{`
             const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
           `}</div>
 				<p>
-					When you don't have stable IDs for rendered items, using the
+					When you don't have stable IDs for rendered items, in rare cases the
 					item index as a key as a last resort, but is considered an anti-pattern.  A better alternative would be to use a third-party library for generating unique IDs.
 				</p>
 				<p>
@@ -575,22 +574,18 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 				</p>
 				<ol>
 					<li>
-						Using <em>indexes</em> for <em>keys</em> is{" "}
-						<strong>not recommended</strong> if the order of items may change.
+						Using indexes for keys is <strong>not recommended</strong> because the order of items may change.
 						This can negatively impact performance and may cause issues with
-						component state.  For this reason, using indexes as keys should be avoided altogether, because a given use case may change as the application grows.
+						component state.
 					</li>
 					<li>
-						If you extract list item as separate component then apply{" "}
-						<em>keys</em> on list component instead of <strong>li</strong> tag.
+						If you extract list items as separate components, then apply keys on list component instead of {`<li>`} tag.
 					</li>
 					<li>
-						There will be a warning message in the console if the{" "}
-						<strong>key</strong> prop is not present on list items.
+						There will be a warning message in the console if the key prop is not present on list items.
 					</li>
 					<li>
-						The key attribute accepts either string or number and internally
-						convert it as string type.
+						The key attribute accepts either string or number, converting either value to string type.
 					</li>
 				</ol>
 			</>
@@ -604,30 +599,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		question: "What are refs?",
 		answer: (
 			<>
-				<p>
-					<strong>Refs</strong> provide a way to access DOM nodes or React elements
-					created in the render method. They are used to interact with the DOM
-					and React components in several ways, such as focusing on an input
-					field, triggering imperative animations, or integrating with third-party
-					DOM libraries.
-				</p>
-				<p>
-					There are two types of refs: <strong>string refs</strong> and <strong>callback refs</strong>.
-				</p>
-				<p>
-					<strong>String Refs:</strong> (legacy) This is the older way of
-					creating refs. It is not recommended because string refs have problems
-					and are considered legacy. String refs were <strong>removed in React
-					v16</strong>.
-				</p>
-				<p>
-					<strong>Callback Refs:</strong> This is the modern way of creating
-					refs. It is recommended because it is more flexible and has fewer
-					issues than string refs.
-				</p>
-				<p><strong>Note:</strong>  Refs should be avoided because they escape React’s state management and can lead to hard-to-understand
-					code and bugs. In most cases, you should use state and props to manage
-					your application’s state and data flow.
+				<p>In React, refs are a feature that allows access to a DOM element or a class component instance created by a React component. They provide a way to interact with DOM nodes directly without relying on React's virtual DOM. Refs are commonly used for accessing and managing focus, integrating with third-party DOM libraries, and triggering imperative animations or effects. While they can be powerful, it's generally recommended to use refs sparingly and favor React's declarative programming style whenever possible.
 				</p>
 			</>
 		),
@@ -854,10 +826,7 @@ const App = () => {
 		answer: (
 			<>
 				<p>
-					The <em>Shadow DOM</em> is a browser technology designed primarily for
-					scoping variables and CSS in <em>web components</em>. The{" "}
-					<em>Virtual DOM</em> is a concept implemented by libraries in
-					JavaScript on top of browser APIs.
+				The Shadow DOM and Virtual DOM are both concepts used in web development but serve different purposes. The Virtual DOM is a concept used by libraries like React to improve performance by maintaining a lightweight representation of the actual DOM in memory, allowing efficient updates and rendering. On the other hand, the Shadow DOM is a browser technology that encapsulates DOM subtrees in a separate scope, enabling the creation of isolated components with their own styling and behavior. While the Virtual DOM optimizes rendering efficiency, the Shadow DOM focuses on encapsulation and component isolation, enhancing modularity and maintainability in web applications.
 				</p>
 			</>
 		),
@@ -1104,7 +1073,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		question: "How should you think of effect lifecycles?",
 		answer: (
 			<>
-				<p>n React, effect lifecycles are a crucial concept for managing side effects within functional components. They allow you to perform tasks such as data fetching, subscriptions, or DOM manipulation in response to component lifecycle events. Effect lifecycles replace the lifecycle methods (e.g., componentDidMount, componentDidUpdate, componentWillUnmount) used in class components.</p>
+				<p>In React, effect lifecycles are a crucial concept for managing side effects within functional components. They allow you to perform tasks such as data fetching, subscriptions, or DOM manipulation in response to component lifecycle events. Effect lifecycles replace the lifecycle methods (e.g., componentDidMount, componentDidUpdate, componentWillUnmount) used in class components.</p>
 				<p>Effect lifecycles can be thought of as a series of phases that occur during the lifecycle of a component:</p>
 				<ul>
 					<li>
@@ -1690,8 +1659,7 @@ export default App;
 					can handle internal state updates and side effects, and may also
 					manage the state of other child components. Stateful components are
 					typically used for more complex elements that need to handle user
-					interactions, API calls, or other logic. They are class components
-					that extend React.Component.
+					interactions, API calls, or other logic.
 				</p>
 				<p>
 					In general, it is recommended to use stateless components as much as
@@ -1881,7 +1849,7 @@ User.propTypes = {
 					</li>
 					<li>The code complexity increases with inline templating and JSX.</li>
 					<li>
-						Too many smaller components leading to over engineering or
+						Too many smaller components leading to over-engineering or
 						boilerplate.
 					</li>
 				</ol>
@@ -2153,9 +2121,9 @@ function HelloWorldComponent() {
 				<p>The below component won&#39;t display the updated input value:</p>
 				<pre>
 					<div className={styles.appCode}>{`
-const [inputValue, setInputValue] = useState(this.props.inputValue);
+const [inputValue, setInputValue] = useState(props.propValue);
 return (
-  <div>{this.state.inputValue}</div>
+  <div>{inputValue}</div>
   );
           `}</div>
 				</pre>
@@ -2527,7 +2495,7 @@ function MyComponent() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is Redux in React?",
 		answer: (
@@ -2543,7 +2511,7 @@ function MyComponent() {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "In Redux, what is an action?",
 		answer: (
@@ -2630,7 +2598,7 @@ console.log(iterator.next().value);
 					<li><strong>Dispatching Actions:</strong> Components or other parts of the application trigger actions to describe events that occur within the application. For example, a user clicks a button, which triggers an action to update the application state.</li>
 					<li><strong>Dispatcher Registration:</strong> Stores (or sometimes other components) register callback functions with the Dispatcher. These callback functions are responsible for updating the state in response to specific actions.</li>
 					<li><strong>Action Handling:</strong> When an action is dispatched, the Dispatcher receives the action object and forwards it to all registered callback functions (stores). Each store checks whether it needs to respond to the action based on its type. If the store decides to respond, it updates its state accordingly.</li>
-					<li><strong></strong>Unidirectional Data Flow: After the stores update their state in response to the action, they emit change events to notify the views (components) that the state has been updated. Views then retrieve the updated state from the stores and re-render themselves accordingly.</li>
+					<li><strong>Unidirectional Data Flow:</strong> After the stores update their state in response to the action, they emit change events to notify the views (components) that the state has been updated. Views then retrieve the updated state from the stores and re-render themselves accordingly.</li>
 				</ol>
 				<p>The Flux Dispatcher ensures that actions are processed in a predictable order and that changes to the application state are propagated in a consistent manner. It helps to enforce the unidirectional data flow, making it easier to reason about how data flows through the application and how changes are propagated.</p>
 				<p>While the Flux pattern originated with Facebook's Flux architecture, it has influenced many state management solutions in the React ecosystem, such as Redux and Flux implementations provided by libraries like Fluxxor and Alt. However, not all state management solutions in the React ecosystem strictly adhere to the Flux pattern or use a Dispatcher, as Flux is just one of many architectural patterns used in React applications.</p>
@@ -2640,7 +2608,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Name two differences between Redux and Flux",
 		answer: (
@@ -2806,13 +2774,10 @@ console.log(iterator.next().value);
 				</p>
 				<p>It highlights potential problems in an application such as:</p>
 				<ul>
-					<li>Deprecated lifecycle methods</li>
-					<li>Unsafe lifecycle methods</li>
+					<li>Deprecated or unsafe lifecycle methods</li>
 					<li>Legacy string ref API usage</li>
 					<li>Legacy context API usage</li>
 					<li>Unexpected side effects</li>
-					<li>Legacy context API usage</li>
-					<li>Legacy context API usage</li>
 				</ul>
 				<p>While it does not show any visible element in the development mode, nor does it impact the performance in the production mode, it does give warnings.  The StrictMode can be applied to any section of the application, not necessarily to the entire application</p>
 			</>
@@ -2842,15 +2807,19 @@ console.log(iterator.next().value);
 		answer: (
 			<>
 				<p>
-					Yes, web components, encapsulated HTML tags for web development, are
-					versatile, framework-agnostic elements native to HTML, can be use
-					seamlessly in React.
+					Yes, web components can be used seamlessly in React.
 				</p>
 				<p>
-					The web components specification offers a way to create reusable
-					custom HTML elements with three inbuilt technologies: custom elements,
-					shadow DOM and HTML templates.
+				A web component is a reusable and encapsulated building block for web applications, allowing developers to create custom HTML elements with their own functionality, style, and behavior. Web components utilize a set of standardized web platform APIs, including Custom Elements, Shadow DOM, and HTML Templates, enabling seamless integration and interoperability across different web frameworks and libraries.
 				</p>
+				<p>Common examples of web components include:</p>
+				<ul>
+					<li><strong>Custom UI Elements:</strong> Such as buttons, sliders, date pickers, and accordions.</li>
+					<li><strong>Widgets:</strong> Like a weather widget, news ticker, or a calendar.</li>
+					<li><strong>Embeddable Components:</strong> Such as social media share buttons, video players, or maps.</li>
+					<li><strong>Form Controls:</strong> Custom input fields, dropdowns, or validation messages.</li>
+					<li><strong>Data Visualization Components:</strong> Charts, graphs, or dashboards.</li>
+				</ul>
 			</>
 		),
 	},
@@ -2919,7 +2888,7 @@ console.log(iterator.next().value);
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are some options for handling asynchronous calls in Redux?",
 		answer: (
@@ -3032,8 +3001,8 @@ console.log(iterator.next().value);
 		question: "What is render hijacking in React?",
 		answer: (
 			<>
-				<p>Render hijacking in React refers to the technique of intercepting or modifying the rendering process of a component, typically by wrapping the component with a higher-order component (HOC) or using a render prop. The purpose of render hijacking is to inject additional functionality or modify the behavior of the rendered component without directly modifying its source code.</p>
-				<p><strong>NOTE:</strong>  While render hijacking is still technically possible in modern React applications, it's generally not considered a recommended pattern. Instead, modern React applications tend to prefer more composable and declarative patterns using hooks, context, and composition to achieve similar goals while maintaining simplicity, performance, and maintainability.</p>
+				<p>Render hijacking in React refers to the practice of intercepting or modifying the rendering process of a component, typically by manipulating its lifecycle methods or props. This technique is often used to inject additional functionality or alter the rendering behavior of a component without directly modifying its source code. </p>
+				<p><strong>NOTE:</strong>  While render hijacking can be powerful for implementing advanced features or optimizations, it should be used judiciously to avoid unintended side effects or breaking the component's contract.</p>
 			</>
 		),
 	},
@@ -3063,7 +3032,7 @@ console.log(iterator.next().value);
 		question: "How do you specify a default prop value?",
 		answer: (
 			<>
-				<p>If you want to give a prop a default value to fall back on when no value is specified, you can do it with the destructuring by putting = and the default value right after the parameter:</p>
+				<p>If you want to give a prop a default value to fall back on when no value is specified, you can do it the desctructured prop definition by putting = and the default value right after the parameter:</p>
 				<pre>
 					<div className={styles.appCode}>
 						{`
@@ -3159,42 +3128,49 @@ function Avatar({ person, size = 100 }) {
 					<tbody>
 						<tr>
 							<td>
-								<strong>ARCHITECTURE</strong>
+								<strong>Language</strong>
 							</td>
-							<td>Only the View of MVC</td>
-							<td>Complete MVC</td>
+							<td>Primarily uses JavaScript (with JSX for templating).</td>
+							<td>Uses TypeScript, a superset of JavaScript that adds static typing and other features.</td>
 						</tr>
 						<tr>
 							<td>
-								<strong>RENDERING</strong>
+								<strong>Architecture</strong>
 							</td>
-							<td>Server-side rendering</td>
-							<td>Client-side rendering</td>
+							<td>Is a library for building user interfaces, focusing mainly on the view layer.</td>
+							<td>Is a full-fledged framework that provides a more opinionated structure for building applications, including built-in features for routing, HTTP requests, and form handling.</td>
 						</tr>
 						<tr>
 							<td>
-								<strong>DOM</strong>
+								<strong>Rendering</strong>
 							</td>
-							<td>Uses virtual DOM</td>
-							<td>Uses real DOM</td>
+							<td>Uses a virtual DOM to efficiently update the UI by only re-rendering components that have changed.</td>
+							<td>Uses a real DOM with two-way data binding, which can sometimes lead to performance issues in complex applications.</td>
 						</tr>
 						<tr>
 							<td>
-								<strong>DATA BINDING</strong>
+								<strong>Componentization</strong>
 							</td>
-							<td>One-way data binding</td>
-							<td>Two-way data binding</td>
+							<td>Uses a component-based architecture, but components are more lightweight and focused on rendering UI elements.</td>
+							<td>Uses a component-based architecture, but components are more tightly integrated with the framework and come with additional features like dependency injection and lifecycle hooks.</td>
 						</tr>
 						<tr>
 							<td>
-								<strong>DEBUGGING</strong>
+								<strong>Learning Curve</strong>
 							</td>
-							<td>Compile time debugging</td>
-							<td>Runtime debugging</td>
+							<td>Tends to have a simpler learning curve compared to Angular, especially for developers already familiar with JavaScript.</td>
+							<td>Has a steeper learning curve due to its comprehensive feature set and the need to learn TypeScript.</td>
 						</tr>
 						<tr>
 							<td>
-								<strong>AUTHOR</strong>
+								<strong>Community and Ecosystem</strong>
+							</td>
+							<td>Has a large and active community with a vast ecosystem of libraries and tools. </td>
+							<td>Also has a strong community and ecosystem, but it's generally considered smaller than React's.</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Author</strong>
 							</td>
 							<td>Facebook</td>
 							<td>Google</td>
@@ -3207,7 +3183,64 @@ function Avatar({ person, size = 100 }) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Advanced React",
+		level: 2,
+		question: "How is React different from Vue? (5)",
+		answer: (
+			<>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th>React</th>
+							<th>Vue</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> 
+								<strong>Approach to Components</strong>
+							</td>
+							<td>More explicit approach to building components with JSX (JavaScript XML), which embeds HTML-like syntax directly into JavaScript</td>
+							<td>Allows you to define components using templates, which are more similar to traditional HTML.</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Reactivity</strong>
+							</td>
+							<td>Relies on libraries like Redux or the Context API for state management and encourages a more explicit approach to updating the UI.</td>
+							<td>Provides more built-in reactivity out of the box, making it easier to manage state and automatically update the DOM when data changes.</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Learning Curve</strong>
+							</td>
+							<td>Can have a steeper learning curve for beginners due to its reliance on JSX and more manual setup for state management.</td>
+							<td>Has a simpler syntax and more gradual learning curve can make it more accessible for newcomers.</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Ecosystem</strong>
+							</td>
+							<td>Has a larger ecosystem and is commonly used in larger-scale applications with more complex requirements.</td>
+							<td>Has a smaller but growing ecosystem and is often favored for smaller projects or by developers who prefer its simplicity and flexibility.</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>Community and Adoption</strong>
+							</td>
+							<td>Has been around longer and is more widely adopted in the industry, leading to a larger community and more resources available online.</td>
+							<td>Has been gaining popularity rapidly and has a strong community as well.</td>
+						</tr>
+					</tbody>
+				</table>
+			</>
+		),
+	},
+	{
+		rating: 0,
+		subject: 'react',
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is the relationship between MVC and React?",
 		answer: (
@@ -3246,7 +3279,7 @@ function Avatar({ person, size = 100 }) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "Explain Flux",
 		answer: (
@@ -3267,7 +3300,7 @@ function Avatar({ person, size = 100 }) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What are the three principles that Redux follows?",
 		answer: (
@@ -3299,7 +3332,7 @@ function Avatar({ person, size = 100 }) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is “Single source of truth”?",
 		answer: (
@@ -3317,7 +3350,7 @@ function Avatar({ person, size = 100 }) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "How are Actions defined in Redux?",
 		answer: (
@@ -3346,9 +3379,9 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
-		question: "What are Reducers?",
+		question: "What are Reducers in Redux?",
 		answer: (
 			<>
 				<p>
@@ -3365,7 +3398,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Intermediate",
+		topic: "Intermediate React",
 		level: 1,
 		question: "What is a Store in Redux?",
 		answer: (
@@ -3386,7 +3419,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "How is Redux different from Flux?",
 		answer: (
@@ -3431,7 +3464,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "What are the advantages of Redux?",
 		answer: (
@@ -3507,11 +3540,7 @@ function addTodo(text) {
 		answer: (
 			<>
 				<p>
-					A Router is used to define multiple routes and when a user types a
-					specific URL, if this URL matches the path of any ‘route’ defined
-					inside the router, then the user is redirected to that particular
-					route. So basically, we need to add a Router library to our app that
-					allows creating multiple routes with each leading to us a unique view.
+				A router in React is essential for building single-page applications (SPAs) where different views or components need to be rendered based on the URL. It enables navigation within the application by dynamically updating the UI in response to URL changes without causing a full page reload. Additionally, routers provide features like route matching, nested routes, and programmatic navigation, facilitating a structured approach to managing application states and improving the user experience by providing seamless navigation between different parts of the application.
 				</p>
 			</>
 		),
@@ -3548,21 +3577,13 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is the purpose of the mapStateToProps function in Redux?",
 		answer: (
 			<>
 				<p>
-					The mapStateToProps function in Redux is a way for a component to
-					access the current state of the store and update its props
-					accordingly. It does this by taking the current state of the store as
-					an argument and returning an object that maps the state to the props
-					of the component. The returned object is then passed to the component
-					as props, allowing it to access the state and re-render when the state
-					changes. This function is typically defined as a separate function
-					outside of the component and is passed as an argument to the connect
-					function, which is used to connect the component to the store.
+				The <strong>mapStateToProps</strong> function in Redux serves the purpose of connecting the Redux store's state to the props of a React component. It allows components to subscribe to specific parts of the Redux store and receive updates whenever the state changes. By defining what state properties a component needs access to via `mapStateToProps`, it ensures that components only re-render when relevant parts of the state they depend on have been updated, optimizing performance and reducing unnecessary renders.
 				</p>
 			</>
 		),
@@ -3742,7 +3763,7 @@ function addTodo(text) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is the combineReducers function in Redux?",
 		answer: (
@@ -3787,17 +3808,47 @@ function addTodo(text) {
 		answer: (
 			<>
 				<p>
-					Note: Render props are used in modern React, but aren’t very common.
-					For many cases, they have been replaced by custom Hooks.
+				Render props is a pattern in React where a component's prop is a function that returns React elements. Instead of directly rendering JSX inside the component, it delegates the rendering logic to the function passed as a prop. This approach enables greater flexibility and code reuse, allowing components to render different content based on dynamic data or conditions, making them particularly useful for building reusable and composable components.
 				</p>
-				<p>
-					A render prop in React is a technique for conveying component logic.
-					Instead of using a component’s props to communicate data and
-					behaviour, a render prop is a function that a component utilises to
-					select what to render. The “provider” component makes the render prop
-					available, but the “consumer” component is the one that uses it. With
-					this approach, component flexibility and reuse are enhanced.
-				</p>
+				<p>Render props are still considered appropriate in modern React design. While newer patterns like hooks and context API offer alternative ways to achieve similar functionality, render props remain a powerful and flexible tool for component composition and code reuse. They provide a clear separation of concerns between logic and presentation, making components more reusable and easier to understand. Additionally, render props can be particularly useful in scenarios where hooks or context API might not provide the desired level of flexibility or abstraction. Therefore, render props continue to be a valuable pattern in the React ecosystem.</p>
+				<pre><div className={styles.appCode} >{`import React from 'react';
+
+class MouseTracker extends React.Component {
+  state = { x: 0, y: 0 };
+
+  handleMouseMove = (event) => {
+    this.setState({ x: event.clientX, y: event.clientY });
+  };
+
+  render() {
+    return (
+      <div style={{ height: '100vh' }} onMouseMove={this.handleMouseMove}>
+        {/* Pass a function as a prop to render */}
+        {this.props.render(this.state)}
+      </div>
+    );
+  }
+}
+
+// Usage example
+function App() {
+  return (
+    <MouseTracker
+      render={({ x, y }) => (
+        <div>
+          <h1>Mouse Position</h1>
+          <p>X: {x}</p>
+          <p>Y: {y}</p>
+        </div>
+      )}
+    />
+  );
+}
+
+export default App;
+
+				`}</div></pre>
+				<p>In this example, MouseTracker is a component that tracks mouse movements and renders its children using a render prop render. The render prop expects a function that takes the current mouse position as an argument and returns JSX to render. In the App component, we pass a function to the render prop, which displays the current mouse position. This allows MouseTracker to delegate the rendering logic to its children while providing them with the necessary data.</p>
 			</>
 		),
 	},
@@ -3815,7 +3866,7 @@ function addTodo(text) {
 					takes in props and returns a React element. A class component is a
 					JavaScript class that extends React.Component and has a render method
 					that returns a React element.</li>
-					<li><strong>Built in methods vs hooks:</strong> A class component can have has built-in local state and lifecycle methods, while a functional component has state using the useState hook and manages a component's lifecycle using the useEffect hook</li>
+					<li><strong>Built in methods vs hooks:</strong> A class component can have built-in local state and lifecycle methods, while a functional component has state using the useState hook and manages a component's lifecycle using the useEffect hook</li>
 					<li><strong>Modern vs legacy patterns:</strong> Functional components are considered simpler, easier to understand and test, and have better performance than class components. Class components are no longer considered best practice, but are useful to understand because they show up in so much legacy code.</li>
 				</ul>
 			</>
@@ -4110,7 +4161,7 @@ export default Counter;
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question:
 			"What is the difference between a reducer and an action in Redux?",
@@ -4240,7 +4291,7 @@ export default Counter;
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is Thunk?",
 		answer: (
@@ -4313,7 +4364,7 @@ export default Counter;
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "What is a Provider in Redux.",
 		answer: (
@@ -4384,7 +4435,7 @@ export default Counter;
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain the concept of a Middleware in Redux.",
 		answer: (
@@ -4490,7 +4541,7 @@ function ChildComponent(props) {
 	{
 		rating: 0,
 		subject: 'react',
-		topic: "Advanced",
+		topic: "Advanced React",
 		level: 2,
 		question: "Explain the core components of Redux?(4)",
 		answer: (
@@ -4550,9 +4601,9 @@ function ChildComponent(props) {
 		answer: (
 			<>
 				<ul>
-					<li><strong>useEffect</strong> is a function that can be used as an alternative of lifecycle methods such as componentDidMount, componenetWillUnmount, componentDidUpdate in funcitonal components</li>
-					<li><strong>useCallback</strong> can be used when we want to prevent unnecessary renders from the chld components. It helpd to resolve side effects</li>
-					<li><strong>useMemo</strong> is used when we want to re-render on based on cache values as makes the application faster</li>
+					<li><strong>useEffect</strong> is a function that can be used as an alternative to lifecycle methods such as componentDidMount, componenetWillUnmount, componentDidUpdate in funcitonal components</li>
+					<li><strong>useCallback</strong> can be used when we want to prevent unnecessary renders from the child components. It helps to resolve side effects</li>
+					<li><strong>useMemo</strong> is used when we want to re-render based on cache values in order to make the application faster</li>
 				</ul>
 			</>
 		),
