@@ -2528,6 +2528,17 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
         <p>XML (Extensible Markup Language) is a markup language used for storing and transporting data in a structured format. It consists of tags that define the structure and meaning of the data, making it easily readable by both humans and machines. XML is widely used in various applications, including web development, data interchange, configuration files, and document formats, due to its flexibility, extensibility, and platform independence.</p>
       </>
   },
+  {
+    rating: 0,
+    subject: 'frontend',
+    topic: 'Advanced Frontend',
+    level: 2,
+    question: 'What is data binding?',
+    answer: 
+      <>
+        <p>Data binding is a technique used in software engineering to establish a connection between the user interface (UI) and the application logic or data model. It allows changes in one to automatically reflect in the other, simplifying the synchronization of data between the two. This can enhance the responsiveness and interactivity of an application by reducing the need for manual updates or callbacks.</p>
+      </>
+  },
 ]
 
 
