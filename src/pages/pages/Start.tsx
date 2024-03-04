@@ -11,6 +11,7 @@ export const Start = (props: IStartProps) => {
   const { startNewQuiz } = props;
   const [subject, setSubject] = useState<Subject>(
     {
+      Backend: false,
       Frontend: false,
       JavaScript: false,
       React: false,
@@ -32,6 +33,9 @@ export const Start = (props: IStartProps) => {
         <img className={styles.appLogo} src={Logo} alt='quizinator logo' />
           <div className={styles.optionsContainer}>
             <h3>Choose a Subject</h3>
+            <Checkbox
+              labelText="Frontend" updateQuestions={updateQuestions}
+            />
             <Checkbox
               labelText="JavaScript" updateQuestions={updateQuestions}
             />

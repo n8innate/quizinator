@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 
 export interface IQuestions {
   rating: number;
-  subject: 'frontend' | 'javascript' | 'react' | 'restapi' | 'typescript';
+  subject: 'backend' | 'frontend' | 'javascript' | 'react' | 'restapi' | 'typescript';
   topic: string;
   level: 0 | 1 | 2; // 0 = easy, 1 = medium, 2 = hard
   question: string | ReactNode;
@@ -25,6 +25,7 @@ export interface IStartProps {
 }
 
 export type Subject = {
+  Backend: boolean;
   Frontend: boolean;
   JavaScript: boolean;
   React: boolean;

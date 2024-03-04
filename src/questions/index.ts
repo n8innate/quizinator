@@ -1,3 +1,4 @@
+export { backendQuestions } from './questions/backend';
 export { frontendQuestions } from './questions/frontend';
 export { javascriptQuestions } from './questions/javascript';
 export { reactQuestions } from './questions/react';

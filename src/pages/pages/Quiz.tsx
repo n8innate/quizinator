@@ -11,6 +11,9 @@ interface IQuizProps {
   setShowResults: (showResults: boolean) => void;
 }
 
+
+// Todo
+  // Move rater into popup modul that fires on next question 
 export const Quiz = (props: IQuizProps) => {
   const { questions, selectNewQuizOptions, setShowResults } = props;
 	const [questionIdx, setQuestionIdx] = useState(0);
