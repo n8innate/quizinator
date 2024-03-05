@@ -1,7 +1,15 @@
 import { useState } from "react";
 
 import { Quiz, Start } from "./pages/";
-import { frontendQuestions, javascriptQuestions, reactQuestions, typescriptQuestions, restAPIQuestions } from "./questions";
+import {
+  backendQuestions,
+  expressQuestions,
+  frontendQuestions,
+  javascriptQuestions,
+  reactQuestions,
+  typescriptQuestions,
+  restAPIQuestions
+} from "./questions";
 import styles from "./App.module.scss";
 import { IQuestions, Subject } from "./types/types";
 import { Results } from "./pages/pages/Results";
@@ -19,6 +27,12 @@ function App() {
       return;
     })
     const newQuestions = [] as IQuestions[];
+    if (subject["Backend"]) {
+      newQuestions.push(...questionGenerator(backendQuestions, num / _numSubjects));
+    };
+    if (subject["Express"]) {
+      newQuestions.push(...questionGenerator(expressQuestions, num / _numSubjects));
+    };
     if (subject["Frontend"]) {
       newQuestions.push(...questionGenerator(frontendQuestions, num / _numSubjects));
     };
@@ -61,20 +75,27 @@ function App() {
     setShowQuiz(true);
   };
 
-  // console.log('# of TS questions: ', typescriptQuestions.length);
-  // console.log('# of React questions: ', reactQuestions.length);
-  // console.log('React easy questions: ', reactQuestions.filter((question) => question.level === 0).length);
-  // console.log('React medium questions: ', reactQuestions.filter((question) => question.level === 1).length);
-  // console.log('React hard questions: ', reactQuestions.filter((question) => question.level === 2).length);
-  // console.log('# of JS questions: ', javascriptQuestions.length);
-  // console.log('JS easy questions: ', javascriptQuestions.filter((question) => question.level === 0).length);
-  // console.log('JS medium questions: ', javascriptQuestions.filter((question) => question.level === 1).length);
-  // console.log('JS hard questions: ', javascriptQuestions.filter((question) => question.level === 2).length);
+  console.log('# of TS questions: ', typescriptQuestions.length);
+  console.log('TS easy questions: ', typescriptQuestions.filter((question) => question.level === 0).length);
+  console.log('TS medium questions: ', typescriptQuestions.filter((question) => question.level === 1).length);
+  console.log('TS hard questions: ', typescriptQuestions.filter((question) => question.level === 2).length);
+  console.log('# of React questions: ', reactQuestions.length);
+  console.log('React easy questions: ', reactQuestions.filter((question) => question.level === 0).length);
+  console.log('React medium questions: ', reactQuestions.filter((question) => question.level === 1).length);
+  console.log('React hard questions: ', reactQuestions.filter((question) => question.level === 2).length);
+  console.log('# of JS questions: ', javascriptQuestions.length);
+  console.log('JS easy questions: ', javascriptQuestions.filter((question) => question.level === 0).length);
+  console.log('JS medium questions: ', javascriptQuestions.filter((question) => question.level === 1).length);
+  console.log('JS hard questions: ', javascriptQuestions.filter((question) => question.level === 2).length);
   console.log('# of Frontend questions: ', frontendQuestions.length);
   console.log('Frontend easy questions: ', frontendQuestions.filter((question) => question.level === 0).length);
   console.log('Frontend medium questions: ', frontendQuestions.filter((question) => question.level === 1).length);
   console.log('Frontend hard questions: ', frontendQuestions.filter((question) => question.level === 2).length);
-  // console.log('# of REST API questions: ', restAPIQuestions.length);
+  console.log('# of Backend questions: ', backendQuestions.length);
+  console.log('Backend easy questions: ', backendQuestions.filter((question) => question.level === 0).length);
+  console.log('Backend medium questions: ', backendQuestions.filter((question) => question.level === 1).length);
+  console.log('Backend hard questions: ', backendQuestions.filter((question) => question.level === 2).length);
+  console.log('# of REST API questions: ', backendQuestions.length);
 
 	return (
 		<div className={styles.appContainer}>
@@ -86,7 +107,7 @@ function App() {
 					<>
           <Quiz
             selectNewQuizOptions={selectNewQuizOptions}
-            questions={frontendQuestions}
+            questions={backendQuestions}
             // questions={questions}
             setShowResults={setShowResults}
           />
@@ -100,5 +121,3 @@ function App() {
 }
 
 export default App;
-
-// Add to React questions: https://www.dhiwise.com/post/the-complete-guide-to-detect-and-prevent-memory-leaks-in-react-js
