@@ -968,61 +968,133 @@ FROM table_name;
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Intermediate Backend',
+    level: 1,
+    question: 'What is the difference between natural join and cross join?',
     answer: 
       <>
+        <p>Natural join is a type of join that is used to combine rows from two or more tables based on a related column between them. It is typically used to retrieve rows that have matching values in the related column, and to provide a consistent way to manage and control the retrieval of the data.</p>
+        <p>Cross join is a type of join that is used to combine all rows from two or more tables, and to provide a consistent way to manage and control the retrieval of the data.  Produces the cross product or Cartesian product from two tables.</p>
       </>
   },
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'What is a UNIQUE constraint?',
     answer: 
       <>
+        <p>A UNIQUE constraint is used to ensure that all values in a column are unique. It is typically used to enforce the uniqueness of the data in a table, and to provide a consistent way to manage and control the integrity of the data.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+CREATE TABLE table_name (
+  column1 INT UNIQUE,
+  column2 VARCHAR(255)
+);
+        `}</div></pre>
+        <p>UNIQUE constraints are commonly used to enforce business rules and maintain data integrity in a relational database management system.</p>
       </>
   },
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'What is Database Black Box Testing?',
     answer: 
       <>
+        <p>Database black box testing is a type of testing that is used to evaluate the functionality and performance of a database system, without knowing the internal details of the system. It is typically used to test the database from a user's perspective, and to provide a consistent way to manage and control the testing of the system.</p>
+        <p>Database black box testing is commonly used to evaluate the functionality and performance of a database system, and to provide a consistent way to manage and control the testing of the system.</p>
       </>
   },
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'What is a FOREIGN KEY in SQL?',
     answer: 
       <>
+        <p>A FOREIGN KEY is a key used to link two tables together. It is a field in one table that refers to the PRIMARY KEY in another table. It is typically used to enforce referential integrity between the two tables, and to provide a consistent way to manage and control the relationships between the tables.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+CREATE TABLE table1 (
+  id INT PRIMARY KEY
+);
+
+CREATE TABLE table2 (
+  id INT PRIMARY KEY,
+  table1_id INT,
+  FOREIGN KEY (table1_id) REFERENCES table1(id)
+);
+        `}</div></pre>
+        <p>FOREIGN KEY constraints are commonly used to enforce referential integrity and maintain data integrity in a relational database management system.</p>
       </>
   },
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'How to display the current date in SQL?',
     answer: 
       <>
+        <p>The current date can be displayed in SQL using the GETDATE() function. For example:</p>
+        <pre><div className={styles.appCode}>{`
+SELECT GETDATE();
+        `}</div></pre>
+        <p>The GETDATE() function is commonly used to retrieve the current date and time in a relational database management system.</p>
       </>
   },
   {
     rating: 0,
     subject: 'backend',
-    topic: 'Basic Backend',
-    level: 0,
-    question: '',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'How would you find the most expensive queries in an application?',
     answer: 
       <>
+        <p>To find the most expensive queries in an application, you can use a database profiling tool or a performance monitoring tool to analyze the execution time and resource usage of the queries. You can also use the EXPLAIN statement in SQL to analyze the query execution plan and identify potential performance bottlenecks.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+EXPLAIN SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+        `}</div></pre>
+        <p>These tools and techniques are commonly used to analyze and optimize the performance of queries in a relational database management system.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'backend',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'Which sorting algorithm should you use and when?',
+    answer: 
+      <>
+        <p>The choice of sorting algorithm depends on the size of the data, the distribution of the data, and the specific requirements of the application. Some common sorting algorithms include:</p>
+        <ul>
+          <li><strong>Bubble sort:</strong> Simple and easy to implement, but not efficient for large datasets.</li>
+          <li><strong>Selection sort:</strong> Simple and easy to implement, but not efficient for large datasets.</li>
+          <li><strong>Insertion sort:</strong> Simple and efficient for small datasets, but not efficient for large datasets.</li>
+          <li><strong>Merge sort:</strong> Efficient for large datasets, but requires additional memory space.</li>
+          <li><strong>Quick sort:</strong> Efficient for large datasets, but can be unstable and require additional memory space.</li>
+          <li><strong>Heap sort:</strong> Efficient for large datasets, but can be unstable and require additional memory space.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'backend',
+    topic: 'Advanced Backend',
+    level: 2,
+    question: 'Explain the difference between cohesion and coupling?',
+    answer: 
+      <>
+        <p>Cohesion is a measure of how closely related the elements of a module are to each other. It is typically used to evaluate the design and structure of a software system, and to provide a consistent way to manage and control the relationships between the elements.</p>
+        <p>Coupling is a measure of how independent the elements of a module are from each other. It is typically used to evaluate the design and structure of a software system, and to provide a consistent way to manage and control the relationships between the elements.</p>
+        <p>In summary, cohesion and coupling are used to evaluate the design and structure of a software system, and to provide a consistent way to manage and control the relationships between the elements.</p>
       </>
   },
 ]
