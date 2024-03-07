@@ -2352,6 +2352,799 @@ express myapp
         <p>This will create a new directory called myapp with the basic structure and files for a new Express.js application, including the entry point file (app.js), the views directory, the public directory, and other configuration settings.</p>
       </>
   },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What are the types of middleware in Express?',
+    answer: 
+      <>
+        <p>There are several types of middleware in Express.js, such as:</p>
+        <ul>
+          <li><strong>Application-level middleware:</strong> Middleware functions that are bound to the application object and are used to perform common tasks, such as parsing request bodies, handling errors, and serving static files.  These are defined using the app.use() method.</li>
+          <li><strong>Router-level middleware:</strong> Middleware functions that are bound to an instance of the express.Router object and are used to perform common tasks for a specific group of routes, such as authentication, authorization, and logging.</li>
+          <li><strong>Error-handling middleware:</strong> Middleware functions that are used to handle errors and exceptions in the application, such as 404 errors, 500 errors, and other types of errors that occur during the request-response cycle.</li>
+          <li><strong>Third-party middleware:</strong> Middleware functions that are provided by third-party libraries and modules and are used to perform common tasks, such as compression, caching, and security.</li>
+          <li><strong>Built-in middleware:</strong> Middleware functions that are included with the Express.js framework and are used to perform common tasks, such as serving static files, parsing request bodies, and handling errors.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What are some commonly used third-party middleware in Express?',
+    answer: 
+      <>
+        <p>There are several commonly used third-party middleware in Express.js, such as:</p>
+        <ul>
+          <li><strong>cors:</strong> A middleware function for configuring and managing Cross-Origin Resource Sharing (CORS) policies in the application.</li>
+          <li><strong>helmet:</strong> A middleware function for configuring and managing HTTP headers and security policies in the application.</li>
+          <li><strong>compression:</strong> A middleware function for compressing and serving static files and responses in the application.</li>
+          <li><strong>body-parser:</strong> A middleware function for parsing request bodies and populating the req.body object with the parsed data.</li>
+          <li><strong>cookie-parser:</strong> A middleware function for parsing and managing cookies in the application.</li>
+          <li><strong>express-session:</strong> A middleware function for managing user sessions and storing user-specific information in the application.</li>
+          <li><strong>passport:</strong> A middleware function for implementing authentication and access control in the application.</li>
+          <li><strong>express-validator:</strong> A middleware function for validating and sanitizing input in the application.</li>
+          <li><strong>express-jwt:</strong> A middleware function for implementing stateless authentication and authorization in the application.</li>
+          <li><strong>connect-mongo:</strong> A middleware function for managing user sessions and storing user-specific information in a MongoDB database.</li>
+        </ul>
+        <p>These third-party middleware provide a powerful and flexible way to configure and manage the behavior of the application, and they are commonly used for building web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'Describe some security best practices in Express.',
+    answer: 
+      <>
+        <p>There are several security best practices in Express.js that are commonly used to protect web servers, APIs, and other types of network-based applications from security vulnerabilities and malicious attacks, such as:</p>
+        <ul>
+          <li><strong>Input validation:</strong> Validating and sanitizing user input to prevent security vulnerabilities, such as cross-site scripting (XSS), SQL injection, and other types of security threats.</li>
+          <li><strong>Authentication and access control:</strong> Implementing secure and reliable authentication and access control mechanisms to protect sensitive information and manage user sessions.</li>
+          <li><strong>CORS policies:</strong> Configuring and managing Cross-Origin Resource Sharing (CORS) policies to prevent unauthorized access and security vulnerabilities from cross-origin requests.</li>
+          <li><strong>HTTP headers:</strong> Configuring and managing HTTP headers and security policies to prevent security vulnerabilities and protect the application from malicious attacks.</li>
+          <li><strong>Use Helmet middleware:</strong> Using the helmet middleware to configure and manage HTTP headers and security policies to prevent security vulnerabilities and protect the application from malicious attacks.</li>
+          <li><strong>Use HTTPS:</strong> Using HTTPS to encrypt and secure communication between the client and the server to prevent security vulnerabilities and protect the application from malicious attacks.</li>
+          <li><strong>Encryption and hashing:</strong> Encrypting and hashing sensitive information, such as passwords and authentication tokens, to protect it from unauthorized access and security vulnerabilities.</li>
+          <li><strong>Error handling:</strong> Implementing secure and reliable error-handling mechanisms to prevent security vulnerabilities and protect the application from malicious attacks.</li>
+          <li><strong>Logging and monitoring:</strong> Logging and monitoring the behavior of the application to identify and prevent security vulnerabilities and malicious attacks.</li>
+          <li><strong>Dependency management:</strong> Managing and updating dependencies and libraries to prevent security vulnerabilities and protect the application from malicious attacks.</li>
+          <li><strong>Security testing:</strong> Performing security testing and vulnerability assessments to identify and prevent security vulnerabilities and malicious attacks.</li>
+        </ul>
+        <p>These security best practices provide a powerful and flexible way to protect web servers, APIs, and other types of network-based applications from security vulnerabilities and malicious attacks, and they are commonly used for building secure and reliable applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What is the purpose of the express.Router() method?',
+    answer: 
+      <>
+        <p>The express.Router() method in Express.js is used to create modular and mountable route handlers for the application. It provides a powerful and flexible way to define and manage groups of routes, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const router = express.Router();
+
+// Define a route
+router.get('/', (req, res) => {
+  res.send('Hello, world!');
+}
+
+// Mount the router
+app.use('/api', router);
+        `}</div></pre>
+        <p>In this example, we use the express.Router() method to create a new router, define a route for the router, and mount the router to the /api path in the application. express.Router() provides a powerful and flexible way to create and manage groups of routes in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What are the arguments available to an Express route handler function?',
+    answer: 
+      <>
+        <p>The arguments available to an Express route handler function are:</p>
+        <ul>
+          <li><strong>req:</strong> The request object, which contains information about the HTTP request, such as the request method, URL, headers, and body.</li>
+          <li><strong>res:</strong> The response object, which contains methods for sending responses to the client, such as res.send(), res.json(), and res.sendFile().</li>
+          <li><strong>next:</strong> The next function, which is used to pass control to the next middleware function in the request-response cycle. It is commonly used for error handling and flow control.</li>
+        </ul>
+        <p>These arguments provide a powerful and flexible way to handle requests and responses in web servers, APIs, and other types of network-based applications in Node.js, and they allow you to create a structured and organized architecture for the application.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'Describe error handling in Express.',
+    answer: 
+      <>
+        <p>Error handling in Express.js refers to the practice of handling and managing errors and exceptions in the application. It provides a powerful and flexible way to identify and prevent issues and errors, and it allows you to create a secure and reliable architecture for the application.</p>
+        <p>There are several methods for error handling in Express.js, such as:</p>
+        <ul>
+          <li><strong>Using try-catch blocks:</strong> Wrapping code in try-catch blocks to catch and handle errors and exceptions that occur during the request-response cycle.</li>
+          <li><strong>Using the next function:</strong> Passing control to the next middleware function in the request-response cycle using the next function, and handling errors and exceptions in subsequent middleware functions.</li>
+          <li><strong>Using the express error-handling middleware:</strong> Defining error-handling middleware functions to handle errors and exceptions that occur during the request-response cycle, such as 404 errors, 500 errors, and other types of errors.</li>
+          <li><strong>Using the express error object:</strong> Creating and throwing custom error objects to handle errors and exceptions in the application, and providing detailed insights into the behavior of the application.</li>
+          <li><strong>Using the express error handling middleware:</strong> Defining error-handling middleware functions to handle errors and exceptions that occur during the request-response cycle, such as 404 errors, 500 errors, and other types of errors.</li>
+          <li><strong>Using the express error object:</strong> Creating and throwing custom error objects to handle errors and exceptions in the application, and providing detailed insights into the behavior of the application.</li>
+        </ul>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'Explain what dynamic routing is in Express.',
+    answer: 
+      <>
+        <p>Dynamic routing in Express.js refers to the practice of defining and managing routes with dynamic parameters and patterns. It provides a powerful and flexible way to handle requests and responses based on the URL and other request parameters, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Define a dynamic route
+app.get('/users/:id', (req, res) => {
+  res.send('User ID: ' + req.params.id);
+}
+        `}</div></pre>
+        <p>In this example, we use the :id dynamic parameter to define a dynamic route for handling requests with user IDs. Dynamic routing provides a powerful and flexible way to handle requests and responses based on the URL and other request parameters in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'How do you serve static files in Express?',
+    answer: 
+      <>
+        <p>You can serve static files in Express.js by using the express.static() middleware function to serve files from a directory on the server. It provides a powerful and flexible way to serve static files, such as HTML, CSS, and client-side JavaScript, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const path = require('path');
+const app = express();
+
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
+        `}</div></pre>
+        <p>In this example, we use the express.static() middleware function to serve static files from the public directory. express.static() provides a powerful and flexible way to serve static files in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'Explain path.join() in Express.',
+    answer: 
+      <>
+        <p>The path.join() method in Express.js is used to join and resolve file paths in a platform-independent way. It provides a powerful and flexible way to manage and control file paths in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const path = require('path');
+
+// Join and resolve file paths
+const filePath = path.join(__dirname, 'public', 'index.html');
+        `}</div></pre>
+        <p>In this example, we use the path.join() method to join and resolve the file path for the index.html file in the public directory. path.join() provides a powerful and flexible way to manage and control file paths in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'How does Express handle request and response objects?',
+    answer: 
+      <>
+        <p>Express.js handles request and response objects by using middleware functions to process and manage the request-response cycle. It provides a powerful and flexible way to handle requests and responses in web servers, APIs, and other types of network-based applications in Node.js, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Handle requests and responses
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+}
+        `}</div></pre>
+        <p>In this example, we use the app.get() method to handle requests and responses by sending a response with the message "Hello, world!". Express.js provides a powerful and flexible way to handle requests and responses in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What is the difference between req.query and req.params in Express?',
+    answer: 
+      <>
+        <p>The req.query and req.params objects in Express.js are used to access and process request parameters, but they have different characteristics and use cases:</p>
+        <ul>
+          <li><strong>req.query:</strong> The req.query object is used to access and process query parameters in the URL, such as /users?name=John&age=30. It provides a powerful and flexible way to access and process query parameters in web servers, APIs, and other types of network-based applications in Node.js.</li>
+          <li><strong>req.params:</strong> The req.params object is used to access and process route parameters in the URL, such as /users/:id. It provides a powerful and flexible way to access and process route parameters in web servers, APIs, and other types of network-based applications in Node.js.</li>
+        </ul>
+        <p>In summary, req.query and req.params are both used to access and process request parameters in Express.js, but they have different characteristics and use cases. req.query is used to access and process query parameters, while req.params is used to access and process route parameters.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What is the app.locals object in Express?',
+    answer: 
+      <>
+        <p>The app.locals object in Express.js is used to store and access application-level variables and data. It provides a powerful and flexible way to manage and control application-level settings and behavior, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Set application-level variables
+app.locals.title = 'My App';
+app.locals.version = '1.0.0';
+        `}</div></pre>
+        <p>In this example, we use the app.locals object to store application-level variables, such as the title and version of the application. app.locals provides a powerful and flexible way to manage and control application-level settings and behavior in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'Explain 0auth2.0 and its benefits',
+    answer: 
+      <>
+        <p>OAuth 2.0 is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. It provides a powerful and flexible way to manage user authentication and authorization in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>OAuth 2.0 provides several benefits, such as:</p>
+        <ul>
+          <li><strong>Secure and reliable authentication:</strong> OAuth 2.0 provides a secure and reliable way to authenticate users and manage user sessions in web servers, APIs, and other types of network-based applications.</li>
+          <li><strong>Access control and permissions:</strong> OAuth 2.0 provides a powerful and flexible way to manage user access control and permissions, and it allows you to define and enforce fine-grained access policies for the application.</li>
+          <li><strong>Third-party integration:</strong> OAuth 2.0 provides a standard and interoperable way to integrate with third-party services and applications, and it allows you to create a secure and reliable architecture for the application.</li>
+          <li><strong>Scalability and performance:</strong> OAuth 2.0 provides a scalable and high-performance way to manage user authentication and authorization in web servers, APIs, and other types of network-based applications, and it allows you to create a secure and reliable architecture for the application.</li>
+          <li><strong>Standardization and interoperability:</strong> OAuth 2.0 provides a standard and interoperable way to manage user authentication and authorization in web servers, APIs, and other types of network-based applications, and it allows you to create a secure and reliable architecture for the application.</li>
+        </ul>
+        <p>In summary, OAuth 2.0 is an open standard for access delegation, and it provides a powerful and flexible way to manage user authentication and authorization in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'Compare service-oriented architecture (SOA) and microservice architecture (MSA)',
+    answer: 
+      <>
+        <p>Service-Oriented Architecture (SOA) and Microservice Architecture (MSA) are both architectural styles for building distributed systems, but they have different characteristics and use cases:</p>
+        <ul>
+          <li><strong>SOA:</strong> Service-Oriented Architecture (SOA) is an architectural style that structures an application as a collection of loosely coupled services, which communicate with each other using standard protocols and interfaces. It provides a powerful and flexible way to build and manage distributed systems, and it allows you to create a modular and organized architecture for the application.</li>
+          <li><strong>MSA:</strong> Microservice Architecture (MSA) is an architectural style that structures an application as a collection of small, independent services, each with its own data storage and communication mechanism. It provides a powerful and flexible way to build and manage distributed systems, and it allows you to create a scalable and high-performance architecture for the application.</li>
+        </ul>
+        <p>In summary, SOA is focused on loosely coupled services, while MSA is focused on small, independent services.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'What is ACID in database management?',
+    answer: 
+      <>
+        <p>ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durability, and it is a set of properties that guarantee that database transactions are processed reliably and consistently. It provides a powerful and flexible way to manage and control database transactions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>ACID provides several benefits, such as:</p>
+        <ul>
+          <li><strong>Data integrity:</strong> ACID provides a reliable and consistent way to manage and control database transactions, and it allows you to create a secure and reliable architecture for the application.</li>
+          <li><strong>Concurrency control:</strong> ACID provides a powerful and flexible way to manage and control database transactions in web servers, APIs, and other types of network-based applications, and it allows you to create a scalable and high-performance architecture for the application.</li>
+          <li><strong>Recovery and fault tolerance:</strong> ACID provides a reliable and consistent way to manage and control database transactions, and it allows you to create a secure and reliable architecture for the application.</li>
+          <li><strong>Standardization and interoperability:</strong> ACID provides a standard and interoperable way to manage and control database transactions in web servers, APIs, and other types of network-based applications, and it allows you to create a secure and reliable architecture for the application.</li>
+        </ul>
+        <p>In summary, ACID is a set of properties that guarantee that database transactions are processed reliably and consistently, and it provides a powerful and flexible way to manage and control database transactions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'Give an example of how to implement caching in Express and explain when it would be needed.',
+    answer: 
+      <>
+        <p>You can implement caching in Express.js by using the caching middleware function to store and retrieve responses from a cache, such as a memory cache, a file cache, or a distributed cache. It provides a powerful and flexible way to improve the performance and scalability of web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+const cache = require('memory-cache');
+
+// Implement caching middleware
+app.use((req, res, next) => {
+  const key = '__express__' + req.originalUrl || req.url;
+  const cachedResponse = cache.get(key);
+  if (cachedResponse) {
+    res.send(cachedResponse);
+  }
+  else {
+    res.sendResponse = res.send;
+    res.send = (body) => {
+      cache.put(key, body, 10000);
+      res.sendResponse(body);
+    }
+    next();
+  }
+}
+        `}</div></pre>
+        <p>This code implements caching middleware in an Express application using the memory-cache package. Let's break it down:</p>
+        <ol>
+          <li>Require necessary modules:
+            <ul>
+              <li>express: This imports the Express framework.</li>
+              <li>cache: This imports the memory-cache package, which provides a simple in-memory cache implementation.</li>
+            </ul>
+          </li>
+          <li>Implement caching middleware:
+            <ul>
+              <li>This middleware function is executed for every incoming request (app.use()).</li>
+              <li>It first generates a unique cache key based on the request's URL (req.originalUrl or req.url).</li>
+              <li>It then checks if there is a cached response corresponding to the key using cache.get().</li>
+              <li>If a cached response is found, it sends the cached response back to the client immediately using res.send().</li>
+              <li>If no cached response is found, it overrides the res.send() function to store the response body in the cache before sending it to the client. It sets a TTL (time-to-live) of 10 seconds for the cached response.</li>
+              <li>After overriding res.send(), it calls the next() function to proceed to the next middleware in the stack.</li>
+            </ul>
+          </li>
+        </ol>
+        <p>This middleware effectively caches responses for subsequent identical requests, reducing the need to recompute or fetch the same data from the server within the cache TTL (10 seconds in this case).</p>
+        <p>Caching would be needed in an Express application when you want to improve the performance and scalability of the application by reducing the response time and network traffic, and it allows you to create a scalable and high-performance architecture for the application.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'How do you use websocket in Express?',
+    answer: 
+      <>
+        <p>You can use WebSockets in Express.js by using the ws package to create a WebSocket server and handle WebSocket connections. It provides a powerful and flexible way to implement real-time communication and data exchange in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const http = require('http');
+const WebSocket = require('ws');
+const app = express();
+const server = http.createServer(app);
+
+// Create a WebSocket server
+const wss = new WebSocket.Server({ server });
+
+// Handle WebSocket connections
+wss.on('connection', (ws) => {
+  ws.on('message', (message) => {
+    console.log('Received message:', message);
+  }
+}
+        `}</div></pre>
+        <p>In this example, we use the ws package to create a WebSocket server and handle WebSocket connections. wss.on('connection') is used to handle new WebSocket connections, and ws.on('message') is used to handle incoming messages from the client. WebSocket provides a powerful and flexible way to implement real-time communication and data exchange in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'How do you use GraphQL in Express?',
+    answer: 
+      <>
+        <p>You can use GraphQL in Express.js by using the express-graphql package to create a GraphQL server and handle GraphQL queries and mutations. It provides a powerful and flexible way to implement a GraphQL API in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const { graphqlHTTP } = require('express-graphql');
+const { buildSchema } = require('graphql');
+const app = express();
+
+// Define a schema
+const schema = buildSchema(\`
+  type Query {
+    hello: String
+  }
+\`);
+
+// Define resolvers
+const root = {
+  hello: () => 'Hello, world!'
+};
+
+// Create a GraphQL server
+app.use('/graphql', graphqlHTTP({
+  schema: schema,
+  rootValue: root,
+  graphiql: true
+}));
+
+// Start the server
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+}
+        `}</div></pre>
+        <p>In this example, we use the express-graphql package to create a GraphQL server and handle GraphQL queries and mutations. The schema is defined using the buildSchema() function, and resolvers are defined to handle the queries and mutations. express-graphql provides a powerful and flexible way to implement a GraphQL API in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What is a view engine in Express and how do you configure them?',
+    answer: 
+      <>
+        <p>A view engine in Express.js is a template engine that allows you to define and render dynamic HTML content using data from the server. It provides a powerful and flexible way to create and manage views in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>There are several popular view engines for Express.js, such as Pug, EJS, Handlebars, and Mustache. To configure a view engine in an Express application, you can use the app.set() method to set the view engine and the directory where the views are located:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Set the view engine and views directory
+app.set('view engine', 'pug');
+app.set('views', './views');
+        `}</div></pre>
+        <p>In this example, we use the app.set() method to set the view engine to Pug and the views directory to ./views. This configuration allows Express to use the Pug view engine to render dynamic HTML content from the views directory. view engine provides a powerful and flexible way to create and manage views in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'How do you create and manage sessions in Express?',
+    answer: 
+      <>
+        <p>You can create and manage sessions in Express.js by using the express-session package to store and manage user-specific information and data. It provides a powerful and flexible way to manage user sessions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const session = require('express-session');
+const app = express();
+
+// Create and manage sessions
+app.use(session
+  secret: '
+  resave: false,
+  saveUninitialized: true
+}));
+        `}</div></pre>
+        <p>In this example, we use the express-session package to create and manage sessions in an Express application. The session middleware is used to store and manage user-specific information and data, such as user IDs, authentication tokens, and other types of user-related data. express-session provides a powerful and flexible way to manage user sessions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Intermediate Express',
+    level: 1,
+    question: 'What is the res.locals object in Express?',
+    answer: 
+      <>
+        <p>The res.locals object in Express.js is used to store and access response-specific variables and data. It provides a powerful and flexible way to manage and control response-specific settings and behavior, and it allows you to create a structured and organized architecture for the application.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Set response-specific variables
+app.use((req, res, next) => {
+  res.locals.title = 'My App';
+  next();
+}
+        `}</div></pre>
+        <p>In this example, we use the res.locals object to store response-specific variables, such as the title of the application. res.locals provides a powerful and flexible way to manage and control response-specific settings and behavior in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you implement Express middleware for handling complex JSON payloads?',
+    answer: 
+      <>
+        <p>You can implement Express middleware for handling complex JSON payloads by using the express.json() middleware function to parse and process JSON request bodies. It provides a powerful and flexible way to handle complex JSON payloads in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Implement middleware for handling complex JSON payloads
+app.use(express.json());
+        `}</div></pre>
+        <p>In this example, we use the express.json() middleware function to parse and process JSON request bodies in an Express application. express.json() provides a powerful and flexible way to handle complex JSON payloads in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>Another option is the use of body-parser middleware:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+
+// Implement middleware for handling complex JSON payloads
+app.use(bodyParser.json());
+        `}</div></pre>
+        <p>body-parser provides a powerful and flexible way to handle complex JSON payloads in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you manage database transactions in Express with SQL databases?  Give an example.',
+    answer: 
+      <>
+        <p>You can manage database transactions in Express.js with SQL databases by using the node-postgres package to create and manage database connections and transactions. It provides a powerful and flexible way to manage database transactions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const { Pool } = require('pg');
+const app = express();
+
+// Create a database connection pool
+const pool = new Pool({
+  user: 'user',
+  host: 'localhost',
+  database: 'database',
+  password: 'password',
+  port: 5432
+});
+
+// Manage database transactions
+app.get('/users', async (req, res) => {
+  const client = await pool.connect();
+  try {
+    await client.query('BEGIN');
+    const result = await client.query('SELECT * FROM users');
+    await client.query('COMMIT');
+    res.json(result.rows);
+  } catch (error) {
+    await client.query('ROLLBACK');
+    res.status(500).json({ error: error.message });
+  } finally {
+    client.release();
+  }
+});
+        `}</div></pre>
+        <p>In this example, we use the node-postgres package to create and manage database connections and transactions in an Express application. The pool object is used to create a database connection pool, and the client object is used to manage database transactions. node-postgres provides a powerful and flexible way to manage database transactions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'Explain the concept of data pooling in Express and how it is implemented.',
+    answer: 
+      <>
+        <p>In the context of Express.js, data pooling typically refers to connection pooling in database operations. It's a technique used to manage and reuse a collection of database connections, rather than opening and closing individual connections for each database operation. This helps improve the efficiency and performance of database interactions in Node.js applications.</p>
+        <p>Here's how data pooling works in Express:</p>
+        <ol>
+          <li><strong>Connection Pool Creation:</strong> When an Express application starts up, a connection pool is created for the database being used. This pool consists of a predetermined number of database connections, typically based on configuration settings.</li>
+          <li><strong>Connection Acquisition:</strong> When a route or middleware in the Express application needs to perform a database operation, it requests a connection from the pool.</li>
+          <li><strong>Connection Reuse:</strong> The connection pool provides a database connection from its pool of available connections. If there are no available connections, it may create additional connections up to the maximum allowed by the pool configuration.</li>
+          <li><strong>Database Operation:</strong> The route or middleware executes the required database operation using the acquired connection.</li>
+          <li><strong>Connection Release:</strong> After completing the database operation, the connection is released back to the pool for reuse. The connection remains open and available for subsequent requests, avoiding the overhead of establishing a new connection for each operation.</li>
+          <li><strong>Connection Management:</strong> The connection pool manages various aspects of connection lifecycle, such as idle timeouts, maximum connection limits, and error handling.</li>
+        </ol>
+        <p>Using connection pooling in Express applications offers several benefits:</p>
+        <ul>
+          <li><strong>Performance Improvement:</strong> By reusing connections, the overhead of establishing and tearing down connections for each database operation is reduced, leading to faster response times.</li>
+          <li><strong>Resource Efficiency:</strong> Connection pooling helps optimize the utilization of database resources by efficiently managing a fixed number of connections.</li>
+          <li><strong>Scalability:</strong> Connection pooling allows Express applications to handle a larger number of concurrent requests without exhausting database resources.</li>
+        </ul>
+        <p>To implement data pooling in an Express application, developers can use libraries such as pg-pool for PostgreSQL, mysql2 for MySQL, or mssql for Microsoft SQL Server, which provide built-in support for connection pooling. These libraries offer configurable options to fine-tune connection pool behavior based on application requirements and database characteristics.</p>
+        <p>Here is an example of data pooling in Express using the node-postgres package to create and manage database connection pools:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const { Pool } = require('pg');
+const app = express();
+
+// Create a database connection pool
+const pool = new Pool({
+  user: 'user',
+  host: 'localhost',
+  database: 'database',
+  password: 'password',
+  port: 5432
+});
+
+// Manage database transactions
+app.get('/users', async (req, res) => {
+  const client = await pool.connect();
+  try {
+    await client.query('BEGIN');
+    const result = await client.query('SELECT * FROM users');
+    await client.query('COMMIT');
+    res.json(result.rows);
+  } catch (error) {
+    await client.query('ROLLBACK');
+    res.status(500).json({ error: error.message });
+  } finally {
+    client.release();
+  }
+});
+        `}</div></pre>
+        <p>In this example, the pool object is used to create a database connection pool, and the client object is used to manage database transactions.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you manage versioning in Express APIs?',
+    answer: 
+      <>
+        <p>You can manage versioning in Express.js APIs by using versioned routes and middleware to handle different versions of the API. It provides a powerful and flexible way to manage and control API versions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+
+// Versioned routes and middleware
+app.use('/v1', require('./routes/v1'));
+app.use('/v2', require('./routes/v2'));
+        `}</div></pre>
+        <p>In this example, we use versioned routes and middleware to handle different versions of the API. The /v1 and /v2 routes are used to define and manage different versions of the API, and the require() function is used to include the corresponding route files for each version. This provides a powerful and flexible way to manage and control API versions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you implement custom error-handling classes in Express?',
+    answer: 
+      <>
+        <p>You can implement custom error-handling classes in Express.js by creating custom error classes that extend the built-in Error class, and using middleware to handle and manage errors in the application. It provides a powerful and flexible way to handle and manage errors and exceptions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+class CustomError extends Error {
+  constructor(message, status) {
+    super(message);
+    this.name = this.constructor.name;
+    this.status = status || 500;
+    Error.captureStackTrace(this, this
+  }
+}
+
+const errorHandler = (err, req, res, next) => {
+  res.status(err.status || 500).json({ error: err.message });
+}
+
+app.use(errorHandler);
+        `}</div></pre>
+        <p>In this example, we create a custom error class called CustomError that extends the built-in Error class. We also define an errorHandler middleware function to handle and manage errors in the application. Custom error-handling classes provide a powerful and flexible way to handle and manage errors and exceptions in web servers, APIs, and other types of network-based applications in Node.js.</p>
+
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'Can you explain the role of process.env in securing Express applications?',
+    answer: 
+      <>
+        <p>process.env in Express.js is used to access and manage environment variables, and it plays a crucial role in securing applications by providing a way to store and access sensitive information, such as API keys, database credentials, and other types of configuration settings. It provides a powerful and flexible way to manage and control environment-specific settings and behavior in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+const apiKey = process.env.API_KEY;
+        `}</div></pre>
+        <p>In this example, we use process.env to access environment variables, such as the port number and API key. process.env provides a powerful and flexible way to manage and control environment-specific settings and behavior in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you perform efficient logging and monitoring in an Express application?',
+    answer: 
+      <>
+        <p>You can perform efficient logging and monitoring in Express.js applications by using logging middleware and monitoring tools to track and analyze application behavior, performance, and security. It provides a powerful and flexible way to manage and control logging and monitoring in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const morgan = require('morgan');
+const app = express();
+
+// Use logging middleware
+app.use(morgan('combined'));
+        `}</div></pre>
+        <p>In this example, we use the morgan package to implement logging middleware in an Express application. morgan provides a powerful and flexible way to manage and control logging and monitoring in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'What is rate limiting in Express and how do you implement it?',
+    answer: 
+      <>
+        <p>Rate limiting in Express.js is a technique used to control and limit the number of requests that a client can make to the server within a specific time frame. It provides a powerful and flexible way to manage and control request rates in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>You can implement rate limiting in Express.js by using the express-rate-limit package to create and manage rate limiting middleware. It provides a powerful and flexible way to manage and control request rates in web servers, APIs, and other types of network-based applications in Node.js.</p>
+        <p>For example:</p>
+        <pre><div className={styles.appCode}>{`
+const express = require('express');
+const rateLimit = require('express-rate-limit');
+const app = express();
+
+// Implement rate limiting middleware
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100
+});
+app.use(limiter);
+        `}</div></pre>
+        <p>In this example, we use the express-rate-limit package to create and manage rate limiting middleware in an Express application. The limiter object is used to define the rate limiting settings, such as the time window and the maximum number of requests allowed. express-rate-limit provides a powerful and flexible way to manage and control request rates in web servers, APIs, and other types of network-based applications in Node.js.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'What are the challenges and solutions for state management in serverless deployments of Express?',
+    answer: 
+      <>
+        <p>State management in serverless deployments of Express.js can pose several challenges due to the stateless nature of serverless computing. Some of the challenges and their solutions include:</p>
+        <ul>
+          <li><strong>Session Management:</strong> Traditional session management using server-side session storage may not be suitable for serverless deployments. A solution is to use stateless session management techniques such as JSON Web Tokens (JWT) for authentication and authorization, and client-side storage mechanisms like browser cookies or local storage for maintaining user session state.</li>
+          <li><strong>Database Connections:</strong> Managing database connections in a serverless environment can be challenging due to the ephemeral nature of serverless function instances. A solution is to use connection pooling and connection reuse to efficiently manage database connections, and to leverage managed database services that offer serverless-compatible connection management.</li>
+          <li><strong>Application State:</strong> Maintaining application state across serverless function invocations can be complex. A solution is to use external state storage mechanisms such as cloud-based key-value stores, NoSQL databases, or managed caching services to persist and share application state across function invocations.</li>
+          <li><strong>Concurrency and Scaling:</strong> Serverless deployments may face challenges related to concurrent function invocations and scaling. Solutions include optimizing function execution times, leveraging asynchronous processing, and using event-driven architectures to handle concurrent requests and scale resources dynamically based on demand.</li>
+          <li><strong>Logging and Monitoring:</strong> Efficient logging and monitoring in serverless deployments can be challenging due to the distributed and event-driven nature of serverless architectures. Solutions include using centralized logging and monitoring platforms, implementing structured logging, and leveraging cloud provider tools for observability and performance analysis.</li>
+        </ul>
+        <p>Overall, state management in serverless deployments of Express.js requires a shift in architectural patterns and the adoption of stateless and distributed computing paradigms to address the challenges of serverless environments effectively.</p>
+      </>
+  },
+  {
+    rating: 0,
+    subject: 'express',
+    topic: 'Advanced Express',
+    level: 2,
+    question: 'How do you optimize Express applications for SEO?',
+    answer: 
+      <>
+        <p>Optimizing Express.js applications for search engine optimization (SEO) involves several techniques to improve the discoverability and ranking of web content in search engine results. Some strategies for optimizing Express applications for SEO include:</p>
+        <ul>
+          <li><strong>Server-Side Rendering (SSR):</strong> Implementing server-side rendering to generate HTML content on the server and deliver pre-rendered pages to search engine crawlers, improving content indexing and visibility.</li>
+          <li><strong>Structured Data:</strong> Using structured data formats such as JSON-LD to provide search engines with detailed information about content, enabling rich snippets and enhanced search result displays.</li>
+          <li><strong>Metadata Optimization:</strong> Optimizing title tags, meta descriptions, and other metadata to accurately describe page content and improve click-through rates in search results.</li>
+          <li><strong>XML Sitemaps:</strong> Generating XML sitemaps to provide search engines with a comprehensive list of website URLs, facilitating efficient crawling and indexing of web content.</li>
+          <li><strong>Canonical URLs:</strong> Implementing canonical URLs to specify the preferred version of duplicate or similar content, preventing search engine ranking dilution and indexing issues.</li>
+          <li><strong>Page Speed Optimization:</strong> Improving website performance and page load times to enhance user experience and meet search engine ranking criteria, including mobile-friendliness and Core Web Vitals metrics.</li>
+          <li><strong>Mobile Optimization:</strong> Ensuring that web content is optimized for mobile devices, adhering to responsive design principles and mobile usability guidelines for improved search engine rankings.</li>
+          <li><strong>Content Quality and Relevance:</strong> Creating high-quality, relevant, and original content that addresses user search intent and provides valuable information, increasing the likelihood of ranking well in search results.</li>
+          <li><strong>Link Building and Social Signals:</strong> Building high-quality backlinks and social media signals to improve website authority and credibility, positively impacting search engine rankings.</li>
+        </ul>
+        <p>By implementing these SEO strategies and best practices, Express.js applications can enhance their visibility and ranking in search engine results, driving organic traffic and improving overall web presence.</p>
+      </>
+  },
 ]
 
 // {
