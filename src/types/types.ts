@@ -20,8 +20,19 @@ export interface IButtonProps {
   onClick: () => void;
 }
 
+export interface ITotalNumQuestions {
+  Backend: number;
+  Express: number;
+  Frontend: number;
+  JavaScript: number;
+  React: number;
+  "REST API": number;
+  Typescript: number;
+}
+
 export interface IStartProps { 
   startNewQuiz: (subject: Subject, num: number) => void;
+  totalNumQuestions: ITotalNumQuestions;
 }
 
 export type Subject = {

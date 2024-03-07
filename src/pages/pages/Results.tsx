@@ -7,7 +7,7 @@ import styles from "../../App.module.scss";
 import { IQuestions } from "../../types/types";
 
 interface IResultsProps { 
-	questions: IQuestions[];
+	questions: IQuestions[] | undefined;
   selectNewQuizOptions: () => void;
 }
 
@@ -34,7 +34,7 @@ export const Results = (props: IResultsProps) => {
 			<div className={styles.appDashboard}>
 				<img className={styles.appLogo} src={Logo} alt='quizinator logo' />				
 				<h2>Your results</h2>
-				{questions.length > 0 &&
+				{questions && questions.length > 0 &&
 					<>
 					<h3>SCORE: {(findResults(questions).known / findResults(questions).total) * 100}%</h3>
 					<PieChart

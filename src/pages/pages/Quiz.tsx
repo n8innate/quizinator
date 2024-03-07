@@ -6,7 +6,7 @@ import styles from "../../App.module.scss";
 import { IQuestions } from "../../types/types";
 
 interface IQuizProps { 
-  questions: IQuestions[];
+  questions: IQuestions[] | undefined;
   selectNewQuizOptions: () => void;
   setShowResults: (showResults: boolean) => void;
 }
@@ -20,26 +20,25 @@ export const Quiz = (props: IQuizProps) => {
   const [showAnswer, setShowAnswer] = useState(false);
   
   const updateQuestionNumber = (direction: string) => {
-    console.log('updateQuestionNumber', direction, questionIdx, questions.length - 1)
-    if (questionIdx === questions.length - 1) {
+    if (questions && questionIdx === questions.length - 1) {
       console.log('show results');
       setShowResults(true);
       return;
     };
-    if (direction === 'previous') setQuestionIdx(questionIdx > 1 ? questionIdx - 1 : 0);
-    if (direction === 'next') setQuestionIdx(questionIdx < questions.length ? questionIdx + 1 : questions.length -1);
+    if (questions && direction === 'previous') setQuestionIdx(questionIdx > 1 ? questionIdx - 1 : 0);
+    if (questions && direction === 'next') setQuestionIdx(questionIdx < questions.length ? questionIdx + 1 : questions.length -1);
     setShowAnswer(false);
   }
 
   const updatedQuestionRating = (rating: number) => {
-    questions[questionIdx].rating = rating;
+    // questions && questions[questionIdx].rating = rating;
   }
 
 	return (
 		<div className={styles.appContainer}>
 			<div className={styles.appDashboard}>
 				<img className={styles.appLogo} src={Logo} alt='quizinator logo' />				
-        {questionIdx < questions.length &&
+        {questions && questionIdx < questions.length &&
           <>
             <div className={styles.appQuestion}>
               <h2>Question #{questionIdx + 1}</h2>
@@ -60,7 +59,7 @@ export const Quiz = (props: IQuizProps) => {
         }
 				<Button displayText='new quiz' onClick={() => selectNewQuizOptions()} />
 			</div>
-      {questionIdx < questions.length &&
+      {questions && questionIdx < questions.length &&
         <div className={styles.appAnswerContainer}>
 				{!showAnswer && (
 					<>
@@ -73,7 +72,7 @@ export const Quiz = (props: IQuizProps) => {
 						<Loader />
 					</>
 				)}
-				{showAnswer && (
+				{(questions && showAnswer) && (
 					<>
 						<div className={styles.appAnswer}>{questions[questionIdx].answer}</div>
               <Rater updatedQuestionRating={ updatedQuestionRating } />

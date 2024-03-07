@@ -8,7 +8,7 @@ import styles from '../../App.module.scss';
 
 
 export const Start = (props: IStartProps) => {
-  const { startNewQuiz } = props;
+  const { startNewQuiz, totalNumQuestions } = props;
   const [subject, setSubject] = useState<Subject>(
     {
       Backend: false,
@@ -20,11 +20,15 @@ export const Start = (props: IStartProps) => {
       Typescript: false,
     }
   );
-  const [numberOfQuestions, setNumberOfQuestions] = useState(10);
+  const [numberOfQuestions, setNumberOfQuestions] = useState(0);
   
   const updateQuestions = (newSubject: string, checked: boolean) => { 
-    console.log('new Subject: ', newSubject)
-    console.log('checked: ', checked)
+    let newNumQuestions = numberOfQuestions
+    newNumQuestions =  checked
+      ? newNumQuestions + totalNumQuestions[newSubject as keyof typeof totalNumQuestions]
+      : newNumQuestions - totalNumQuestions[newSubject as keyof typeof totalNumQuestions];
+    setNumberOfQuestions(newNumQuestions);
+    console.log('newNumQuestions: ', newNumQuestions)
     setSubject({...subject, [newSubject]: checked})
   }
   
