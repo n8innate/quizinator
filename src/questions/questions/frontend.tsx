@@ -3,7 +3,7 @@ import styles from '../../App.module.scss';
 
 export const frontendQuestions: IQuestions[] = [
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -14,7 +14,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -25,7 +25,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -36,7 +36,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -53,7 +53,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -72,7 +72,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -83,7 +83,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -94,7 +94,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -110,7 +110,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -134,7 +134,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -168,7 +168,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -197,7 +197,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -214,7 +214,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -225,7 +225,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -244,7 +244,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -260,7 +260,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -278,7 +278,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -300,7 +300,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -311,7 +311,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -322,7 +322,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -340,7 +340,7 @@ export const frontendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -358,7 +358,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -376,7 +376,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -412,7 +412,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -423,7 +423,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -439,7 +439,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -450,7 +450,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -461,7 +461,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -477,7 +477,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -488,7 +488,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -500,7 +500,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -511,7 +511,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -532,7 +532,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -545,7 +545,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -557,7 +557,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -568,7 +568,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -579,7 +579,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -590,7 +590,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -601,7 +601,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -620,7 +620,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -635,7 +635,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -654,7 +654,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -665,7 +665,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -682,7 +682,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -694,7 +694,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -705,7 +705,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -716,7 +716,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -727,7 +727,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -744,7 +744,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -766,7 +766,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -779,7 +779,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -790,7 +790,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -806,7 +806,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -825,7 +825,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -851,7 +851,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 2,
@@ -871,7 +871,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -891,7 +891,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -903,7 +903,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 2,
@@ -919,7 +919,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -939,7 +939,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -957,7 +957,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -986,7 +986,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 1,
@@ -998,7 +998,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1011,7 +1011,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1024,7 +1024,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1041,7 +1041,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1065,7 +1065,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1085,7 +1085,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1107,7 +1107,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1127,7 +1127,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1145,7 +1145,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1165,7 +1165,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1178,7 +1178,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1200,7 +1200,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1230,7 +1230,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1250,7 +1250,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1269,7 +1269,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1292,7 +1292,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1311,7 +1311,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1331,7 +1331,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1351,7 +1351,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1377,7 +1377,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1396,7 +1396,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1413,7 +1413,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1430,7 +1430,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1448,7 +1448,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1460,7 +1460,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1478,7 +1478,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1495,7 +1495,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1513,7 +1513,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1530,7 +1530,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1548,7 +1548,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1566,7 +1566,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1588,7 +1588,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1606,7 +1606,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -1618,7 +1618,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -1672,7 +1672,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1684,7 +1684,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1705,7 +1705,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1725,7 +1725,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1746,7 +1746,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1774,7 +1774,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1816,7 +1816,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1832,7 +1832,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1852,7 +1852,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1867,7 +1867,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1894,7 +1894,7 @@ xhttp.onreadystatechange = function() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1928,7 +1928,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -1966,7 +1966,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -1993,7 +1993,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2011,7 +2011,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -2028,7 +2028,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2043,7 +2043,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2059,7 +2059,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2078,7 +2078,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2094,7 +2094,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -2109,7 +2109,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -2124,7 +2124,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 1,
@@ -2158,7 +2158,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -2208,7 +2208,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -2226,7 +2226,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -2278,7 +2278,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -2302,7 +2302,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -2321,7 +2321,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Basic Frontend',
     level: 0,
@@ -2336,7 +2336,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Intermediate Frontend',
     level: 1,
@@ -2355,7 +2355,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2383,7 +2383,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2408,7 +2408,7 @@ gulp.task('default', gulp.parallel('styles', 'scripts'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2430,7 +2430,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2452,7 +2452,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2473,7 +2473,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2495,7 +2495,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2507,7 +2507,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2518,7 +2518,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2529,7 +2529,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'frontend',
     topic: 'Advanced Frontend',
     level: 2,
@@ -2543,7 +2543,7 @@ WebAssembly (Wasm) is a binary instruction format that enables execution of code
 
 
 // {
-//   rating: 0,
+//   rating: null,
 //   subject: 'frontend',
 //   topic: 'Basic Frontend',
 //   level: 0,

@@ -3,7 +3,7 @@ import styles from '../../App.module.scss';
 
 export const restAPIQuestions: IQuestions[] = [
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -14,7 +14,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -25,7 +25,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -36,7 +36,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -47,7 +47,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -68,7 +68,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -79,7 +79,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -90,7 +90,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -101,7 +101,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -112,7 +112,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -123,7 +123,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -134,7 +134,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -145,7 +145,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -156,7 +156,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -167,7 +167,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -189,7 +189,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -200,7 +200,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -211,7 +211,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -228,7 +228,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -258,7 +258,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -269,7 +269,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -280,7 +280,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -291,7 +291,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -304,7 +304,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -326,7 +326,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -337,7 +337,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -349,7 +349,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -367,7 +367,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -385,7 +385,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -396,7 +396,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -407,7 +407,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -424,7 +424,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -435,7 +435,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -446,7 +446,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -457,7 +457,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -468,7 +468,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -479,7 +479,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -490,7 +490,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -505,7 +505,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -522,7 +522,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -533,7 +533,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -544,7 +544,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -555,7 +555,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -575,7 +575,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -589,7 +589,7 @@ export const restAPIQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -614,7 +614,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -625,7 +625,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -646,7 +646,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -665,7 +665,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -686,7 +686,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -704,7 +704,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -721,7 +721,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -733,7 +733,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -744,7 +744,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -802,7 +802,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -813,7 +813,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -824,7 +824,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -835,7 +835,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -846,7 +846,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -857,7 +857,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -868,7 +868,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -879,7 +879,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -941,7 +941,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -983,7 +983,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1037,7 +1037,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1094,7 +1094,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1107,7 +1107,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1123,7 +1123,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1137,7 +1137,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1159,7 +1159,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1170,7 +1170,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1185,7 +1185,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,
@@ -1197,7 +1197,7 @@ file:///home/interviewbit/sampleFile.txt
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'restapi',
     topic: 'Basic REST API',
     level: 0,

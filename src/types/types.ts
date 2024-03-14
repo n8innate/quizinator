@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 
 export interface IQuestions {
-  rating: number;
+  rating: 0 | 1 | 2 | null; // 0 = no clue, 1 = got some, missed some, 2 = knew all of it, null = not rated;
   subject: 'backend' | 'express' |  'frontend' | 'javascript' | 'react' | 'restapi' | 'typescript';
   topic: string;
   level: 0 | 1 | 2; // 0 = easy, 1 = medium, 2 = hard

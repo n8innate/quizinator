@@ -3,7 +3,7 @@ import styles from '../../App.module.scss';
 
 export const backendQuestions: IQuestions[] = [
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -14,7 +14,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -26,7 +26,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -38,7 +38,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -50,7 +50,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -62,7 +62,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -78,7 +78,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -90,7 +90,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -103,7 +103,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -115,7 +115,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -127,7 +127,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -139,7 +139,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -152,7 +152,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -164,7 +164,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -176,7 +176,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -194,7 +194,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -206,7 +206,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -223,7 +223,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -235,7 +235,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -253,7 +253,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -265,7 +265,7 @@ export const backendQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -284,7 +284,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -301,7 +301,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -312,7 +312,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -330,7 +330,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -347,7 +347,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -361,7 +361,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -379,7 +379,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -396,7 +396,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -409,7 +409,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -425,7 +425,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -441,7 +441,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -457,7 +457,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -473,7 +473,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -485,7 +485,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -497,7 +497,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -515,7 +515,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -533,7 +533,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -545,7 +545,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -572,7 +572,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -589,7 +589,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -601,7 +601,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -619,7 +619,7 @@ db.collection('users').findOne({ name: 'Alice' });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -643,7 +643,7 @@ const person = new Person('Alice',
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -662,7 +662,7 @@ const person = new Person('Alice',
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -686,7 +686,7 @@ const deserializedPerson = JSON.parse(serializedPerson);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -717,7 +717,7 @@ protected void finalize() {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -736,7 +736,7 @@ const { Worker } = require('worker_threads');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -748,7 +748,7 @@ const { Worker } = require('worker_threads');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -761,7 +761,7 @@ const { Worker } = require('worker_threads');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -779,7 +779,7 @@ const { Worker } = require('worker_threads');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -791,7 +791,7 @@ const { Worker } = require('worker_threads');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -808,7 +808,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -827,7 +827,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -839,7 +839,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -852,7 +852,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -872,7 +872,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Basic Backend',
     level: 0,
@@ -885,7 +885,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -897,7 +897,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -915,7 +915,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -927,7 +927,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -938,7 +938,7 @@ that spans multiple lines
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -954,7 +954,7 @@ FROM table_name;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -966,7 +966,7 @@ FROM table_name;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Intermediate Backend',
     level: 1,
@@ -978,7 +978,7 @@ FROM table_name;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -997,7 +997,7 @@ CREATE TABLE table_name (
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1009,7 +1009,7 @@ CREATE TABLE table_name (
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1033,7 +1033,7 @@ CREATE TABLE table2 (
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1048,7 +1048,7 @@ SELECT GETDATE();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1066,7 +1066,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1085,7 +1085,7 @@ WHERE condition;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'backend',
     topic: 'Advanced Backend',
     level: 2,
@@ -1100,7 +1100,7 @@ WHERE condition;
 ]
 
 // {
-//   rating: 0,
+//   rating: null,
 //   subject: 'backend',
 //   topic: 'Basic Backend',
 //   level: 0,

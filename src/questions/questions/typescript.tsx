@@ -3,7 +3,7 @@ import styles from '../../App.module.scss';
 
 export const typescriptQuestions: IQuestions[] = [
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -15,7 +15,7 @@ export const typescriptQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -36,7 +36,7 @@ export const typescriptQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -61,7 +61,7 @@ let stridentity = identity<string>('Hello, TypeScript!");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -78,7 +78,7 @@ let stridentity = identity<string>('Hello, TypeScript!");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -89,7 +89,7 @@ let stridentity = identity<string>('Hello, TypeScript!");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -107,7 +107,7 @@ let stridentity = identity<string>('Hello, TypeScript!");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -138,7 +138,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -149,7 +149,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -160,7 +160,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -175,7 +175,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -202,7 +202,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -214,7 +214,7 @@ const instance = new ChildClass(42, "Hello");
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -247,7 +247,7 @@ class MyClass {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -272,7 +272,7 @@ class MyClass {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -298,7 +298,7 @@ class MyClass {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -325,7 +325,7 @@ if (value === null || value === undefined) {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -343,7 +343,7 @@ if (value === null || value === undefined) {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -414,7 +414,7 @@ console.log(myInstance.myProperty); // Output: "Hello, world!"
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -425,7 +425,7 @@ console.log(myInstance.myProperty); // Output: "Hello, world!"
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -449,7 +449,7 @@ console.log(str2); // Hello, TypeScript!
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -483,7 +483,7 @@ function identity(arg) {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -516,7 +516,7 @@ enum Direction {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -534,7 +534,7 @@ enum Direction {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -552,7 +552,7 @@ enum Direction {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -581,7 +581,7 @@ const myConstant: string = "Hello, TypeScript!";
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Core Typescript',
     level: 0,
@@ -622,7 +622,7 @@ console.log(myInstance.publicProperty); // Accessible
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -635,7 +635,7 @@ console.log(myInstance.publicProperty); // Accessible
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -676,7 +676,7 @@ import { MyClass, myFunction, myVariable, MyInterface } from './my-module';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -717,7 +717,7 @@ export interface MyInterface {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -741,7 +741,7 @@ function add(a: any, b: any): any {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'typescript',
     topic: 'Intermediate Typescript',
     level: 1,
@@ -769,7 +769,7 @@ class C implements A, B {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -798,7 +798,7 @@ myEmptyArray.push("TypeScript");
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -829,7 +829,7 @@ myEmptyArray.push("TypeScript");
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -848,7 +848,7 @@ myEmptyArray.push("TypeScript");
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -863,7 +863,7 @@ myEmptyArray.push("TypeScript");
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -896,7 +896,7 @@ myEmptyArray.push("TypeScript");
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -916,7 +916,7 @@ const num3 = +str; // Using the unary plus operator
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -940,7 +940,7 @@ const person = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -971,7 +971,7 @@ function infiniteLoop(): never {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -999,7 +999,7 @@ person.name = "Bob"; // Error: Cannot assign to 'name' because it is a read-only
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1018,7 +1018,7 @@ declare var jQuery: (selector: string) => any;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1036,7 +1036,7 @@ const add = (a: number, b: number): number => a + b;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1056,7 +1056,7 @@ let person: { name: string, age: number } = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1096,7 +1096,7 @@ console.log('X coordinate:' + x + 'Y coordinate: ' + y'); // Output: X coordinat
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1129,7 +1129,7 @@ MyNamespace.myFunction(); // Output: This is my function inside the namespace.
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1150,7 +1150,7 @@ const result = sum(1, 2, 3, 4, 5); // Returns 15
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1192,7 +1192,7 @@ function isEmail(value: any): value is Email {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1216,7 +1216,7 @@ type PersonKeys = keyof Person; // "name" | "age" | "email"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1271,7 +1271,7 @@ if (3 in myArray) {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1298,7 +1298,7 @@ const person = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1328,7 +1328,7 @@ type PartialPerson = Partial<Person>;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1358,7 +1358,7 @@ type RequiredPerson = Required<PartialPerson>;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1400,7 +1400,7 @@ function isEmail(value: any): value is Email {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1434,7 +1434,7 @@ type Shape = Circle | Rectangle;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1469,7 +1469,7 @@ type NullablePerson = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1490,7 +1490,7 @@ type B = Check<number>; // "other"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1516,7 +1516,7 @@ type B = TypeName<string | boolean>; // "string" | "boolean"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1540,7 +1540,7 @@ type B = TypeName<string | boolean>; // "string" | "boolean"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1560,7 +1560,7 @@ type B = TypeName<string | boolean>; // "string" | "boolean"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1591,7 +1591,7 @@ let length = (value as string).length;
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1613,7 +1613,7 @@ type TreeNode<T> = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1633,7 +1633,7 @@ function logMessage(message: string): void {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1658,7 +1658,7 @@ const person3: Person = { name: "Charlie", age: "30" }; // Error: Type 'string' 
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1686,7 +1686,7 @@ printPoint(point); // Output: x: 10, y: 20
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1710,7 +1710,7 @@ console.log(obj[key]); // Output: "value"
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1735,7 +1735,7 @@ function formatDate(date: Date | string): string {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1747,7 +1747,7 @@ function formatDate(date: Date | string): string {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1788,7 +1788,7 @@ class Rectangle extends Shape {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1814,7 +1814,7 @@ printID(true); // Error: Argument of type 'boolean' is not assignable to paramet
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Core Typescript',
   level: 0,
@@ -1851,7 +1851,7 @@ function createLogger(): Logger {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1874,7 +1874,7 @@ console.log(y); // Output: 20
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1896,7 +1896,7 @@ console.log(y); // Output: 20
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1917,7 +1917,7 @@ console.log(y); // Output: 20
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -1943,7 +1943,7 @@ class Document implements Printable {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1968,7 +1968,7 @@ printColor("yellow"); // Error: Argument of type '"yellow"' is not assignable to
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -1993,7 +1993,7 @@ let shirt: Shirt = "yellow small"; // Error: Type '"yellow small"' is not assign
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -2031,7 +2031,7 @@ dog.speak(); // Output: The Fido barks
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -2054,7 +2054,7 @@ let result = add("10", "20"); // Error: Argument of type '"10"' is not assignabl
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Intermediate Typescript',
   level: 1,
@@ -2074,7 +2074,7 @@ let result = add("10", "20"); // Error: Argument of type '"10"' is not assignabl
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2104,7 +2104,7 @@ let person: PersonWithoutEmail = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2131,7 +2131,7 @@ npm install lodash
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2160,7 +2160,7 @@ let person: PartialPerson = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2190,7 +2190,7 @@ greet("Charlie", "Hey", 3); // Output: Hey, Charlie! Time 1 Time 2 Time 3
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2219,7 +2219,7 @@ let person: PersonNameAndEmail = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2253,7 +2253,7 @@ let person: NonNullablePerson = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2282,7 +2282,7 @@ let person: PersonWithoutEmail = {
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2306,7 +2306,7 @@ type Result = ReturnType<typeof add>; // Result is inferred as number
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2336,7 +2336,7 @@ console.log(KeyType); // Output: "string", because all keys of Person are string
       </>
   },
   {
-  rating: 0,   
+  rating: null,   
   subject: 'typescript',
   topic: 'Advanced Typescript',
   level: 2,
@@ -2368,7 +2368,7 @@ console.log(NameOrAge); // Output: "name or age", because all keys of Person are
 ]
 
 // {
-// rating: 0,   
+// rating: null,   
 // subject: 'typescript',
 // topic: 'Intermediate Typescript',
 // level: 1,

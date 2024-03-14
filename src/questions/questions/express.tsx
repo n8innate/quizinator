@@ -3,7 +3,7 @@ import styles from '../../App.module.scss';
 
 export const expressQuestions: IQuestions[] = [
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -19,7 +19,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -30,7 +30,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -48,7 +48,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -59,7 +59,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -70,7 +70,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -81,7 +81,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -92,7 +92,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -103,7 +103,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -114,7 +114,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -125,7 +125,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -136,7 +136,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -147,7 +147,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -158,7 +158,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -178,7 +178,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -197,7 +197,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -213,7 +213,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -224,7 +224,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -247,7 +247,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -265,7 +265,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -287,7 +287,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -304,7 +304,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -315,7 +315,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -326,7 +326,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -346,7 +346,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -357,7 +357,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -368,7 +368,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -385,7 +385,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -416,7 +416,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -441,7 +441,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -499,7 +499,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -530,7 +530,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -553,7 +553,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -583,7 +583,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -604,7 +604,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -625,7 +625,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -644,7 +644,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -665,7 +665,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -686,7 +686,7 @@ export const expressQuestions: IQuestions[] = [
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -717,7 +717,7 @@ console.log(decrypted);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -741,7 +741,7 @@ zlib.deflate(input, (err, buffer) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -784,7 +784,7 @@ server.listen(port, hostname, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -806,7 +806,7 @@ process.stdin.pipe(transform).pipe(process.stdout);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -825,7 +825,7 @@ process.stdin.pipe(transform).pipe(process.stdout);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -865,7 +865,7 @@ app.listen(3000, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -898,7 +898,7 @@ app.use((err, req, res, next) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -923,7 +923,7 @@ fs.open(filePath, flags, (err, fd) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -937,7 +937,7 @@ fs.open(filePath, flags, (err, fd) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -978,7 +978,7 @@ if (cluster.isMaster) {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1008,7 +1008,7 @@ ls.on('close', (code) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1034,7 +1034,7 @@ server.bind(41234);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1054,7 +1054,7 @@ console.log(buf2.toString('utf8'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1077,7 +1077,7 @@ myEmitter.emit('event');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1095,7 +1095,7 @@ myEmitter.emit('event');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1120,7 +1120,7 @@ server.listen(1337, '
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1158,7 +1158,7 @@ queue.push(3);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1172,7 +1172,7 @@ queue.push(3);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1200,7 +1200,7 @@ fs.unlink(filePath, (err) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1228,7 +1228,7 @@ fs.rmdir(dirPath, { recursive: true }, (err) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1248,7 +1248,7 @@ console.log(obj[symbol]);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1297,7 +1297,7 @@ readFileExample('example.txt', (err, data) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1351,7 +1351,7 @@ Task 2
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1376,7 +1376,7 @@ myModule();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1390,7 +1390,7 @@ myModule();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -1403,7 +1403,7 @@ myModule();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1423,7 +1423,7 @@ myModule();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1442,7 +1442,7 @@ myModule();
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1466,7 +1466,7 @@ readable.pipe(gzip).pipe(writable);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced` Express',
     level: 2,
@@ -1486,7 +1486,7 @@ console.log(unicode);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1505,7 +1505,7 @@ console.log(str.charAt(100)); // ''
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1519,7 +1519,7 @@ console.log(str.charAt(100)); // ''
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1547,7 +1547,7 @@ console.log(str.charAt(100)); // ''
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -1560,7 +1560,7 @@ console.log(str.charAt(100)); // ''
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1579,7 +1579,7 @@ console.log(str.charAt(100)); // ''
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1607,7 +1607,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1623,7 +1623,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1639,7 +1639,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1661,7 +1661,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1674,7 +1674,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1687,7 +1687,7 @@ const User = mongoose.model('User', userSchema);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1717,7 +1717,7 @@ mongoose.connect('mongodb://localhost:27017/mydatabase', {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1735,7 +1735,7 @@ process.env.NODE_ENV = 'production';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 1,
@@ -1747,7 +1747,7 @@ process.env.NODE_ENV = 'production';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1765,7 +1765,7 @@ process.env.NODE_ENV = 'production';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1791,7 +1791,7 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1810,7 +1810,7 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1836,7 +1836,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1848,7 +1848,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1868,7 +1868,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1884,7 +1884,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1901,7 +1901,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -1914,7 +1914,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1930,7 +1930,7 @@ assert.deepStrictEqual({ a: 1 }, { a: 1 });
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -1954,7 +1954,7 @@ app.listen(3000, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Basic Express',
     level: 0,
@@ -1974,7 +1974,7 @@ app.listen(3000, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -1992,7 +1992,7 @@ app.listen(3000, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2011,7 +2011,7 @@ API_KEY=abc123
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2040,7 +2040,7 @@ const token
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2063,7 +2063,7 @@ const isMatch = bcrypt.compareSync('password', hashedPassword);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2100,7 +2100,7 @@ module.exports = {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2116,7 +2116,7 @@ module.exports = {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2128,7 +2128,7 @@ module.exports = {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2155,7 +2155,7 @@ app.get('/api/data', cors(), (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2176,7 +2176,7 @@ app.get('/api/data', cors(), (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2202,7 +2202,7 @@ app.set('views', path.join(__dirname, 'views'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2222,7 +2222,7 @@ app.set('views', path.join(__dirname, 'views'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2240,7 +2240,7 @@ app.set('views', path.join(__dirname, 'views'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2266,7 +2266,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2295,7 +2295,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2314,7 +2314,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2333,7 +2333,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermeidate Express',
     level: 1,
@@ -2353,7 +2353,7 @@ express myapp
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2371,7 +2371,7 @@ express myapp
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2395,7 +2395,7 @@ express myapp
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2420,7 +2420,7 @@ express myapp
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2445,7 +2445,7 @@ app.use('/api', router);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2462,7 +2462,7 @@ app.use('/api', router);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2482,7 +2482,7 @@ app.use('/api', router);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2504,7 +2504,7 @@ app.get('/users/:id', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2525,7 +2525,7 @@ app.use(express.static(path.join(__dirname, 'public')));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2544,7 +2544,7 @@ const filePath = path.join(__dirname, 'public', 'index.html');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2566,7 +2566,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2582,7 +2582,7 @@ app.get('/', (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2603,7 +2603,7 @@ app.locals.version = '1.0.0';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2623,7 +2623,7 @@ app.locals.version = '1.0.0';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2639,7 +2639,7 @@ app.locals.version = '1.0.0';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2658,7 +2658,7 @@ app.locals.version = '1.0.0';
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2713,7 +2713,7 @@ app.use((req, res, next) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2743,7 +2743,7 @@ wss.on('connection', (ws) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2786,7 +2786,7 @@ app.listen(3000, () => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2807,7 +2807,7 @@ app.set('views', './views');
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2832,7 +2832,7 @@ app.use(session
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Intermediate Express',
     level: 1,
@@ -2855,7 +2855,7 @@ app.use((req, res, next) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2885,7 +2885,7 @@ app.use(bodyParser.json());
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2928,7 +2928,7 @@ app.get('/users', async (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -2987,7 +2987,7 @@ app.get('/users', async (req, res) => {
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3008,7 +3008,7 @@ app.use('/v2', require('./routes/v2'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3038,7 +3038,7 @@ app.use(errorHandler);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3057,7 +3057,7 @@ const apiKey = process.env.API_KEY;
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3078,7 +3078,7 @@ app.use(morgan('combined'));
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3104,7 +3104,7 @@ app.use(limiter);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3123,7 +3123,7 @@ app.use(limiter);
       </>
   },
   {
-    rating: 0,
+    rating: null,
     subject: 'express',
     topic: 'Advanced Express',
     level: 2,
@@ -3148,7 +3148,7 @@ app.use(limiter);
 ]
 
 // {
-//   rating: 0,
+//   rating: null,
 //   subject: 'express',
 //   topic: 'Basic Express',
 //   level: 0,

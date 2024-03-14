@@ -3,7 +3,7 @@ import styles from "../../App.module.scss";
 
 export const javascriptQuestions: IQuestions[] = [
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -100,7 +100,7 @@ export const javascriptQuestions: IQuestions[] = [
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -171,7 +171,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -188,7 +188,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -254,7 +254,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -319,7 +319,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -339,7 +339,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Basic JavaScript",
 		level: 0,
@@ -361,7 +361,7 @@ var x;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -431,7 +431,7 @@ var obj2 = obj;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -470,7 +470,7 @@ var obj2 = obj;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -504,7 +504,7 @@ var obj2 = obj;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -537,7 +537,7 @@ x()   // Returns "Do something"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -627,7 +627,7 @@ obj2.getFoo();
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -660,7 +660,7 @@ console.log(new Food('cheese', 5).name);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -692,7 +692,7 @@ console.log(min);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -727,7 +727,7 @@ console.log(boundGetX());
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -773,7 +773,7 @@ console.log(globalRegex.test(str));
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -801,7 +801,7 @@ while ((array1 = regex1.exec(str1)) !== null) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -834,7 +834,7 @@ add(3)(4)
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -856,7 +856,7 @@ add(3)(4)
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -894,7 +894,7 @@ add(3)(4)
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -913,7 +913,7 @@ add(3)(4)
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -947,7 +947,7 @@ innerFunc(); // Outputs "I am from outer function"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -978,7 +978,7 @@ innerFunc(); // Outputs "I am from outer function"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1020,7 +1020,7 @@ innerFunc(); // Outputs "I am from outer function"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1040,7 +1040,7 @@ innerFunc(); // Outputs "I am from outer function"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1068,7 +1068,7 @@ innerFunc(); // Outputs "I am from outer function"
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1112,7 +1112,7 @@ memoizedFunc(20); // Cached return
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1142,7 +1142,7 @@ computeSum([7, 8, 9, 99]); // Returns 123
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1177,7 +1177,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1195,7 +1195,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1213,7 +1213,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1231,7 +1231,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1254,7 +1254,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1289,7 +1289,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -1318,7 +1318,7 @@ console.log(person2);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1348,7 +1348,7 @@ console.log(sum(1, 2, 3, 4)); // Output: 10
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1373,7 +1373,7 @@ console.log(arr3); // Output: [1, 2, 3, 4, 5, 6]
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1407,7 +1407,7 @@ console.log(arr3); // Output: [1, 2, 3, 4, 5, 6]
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1451,7 +1451,7 @@ promise.then((value) => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1471,7 +1471,7 @@ promise.then((value) => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -1525,7 +1525,7 @@ console.log(iterator.next()); // {value:2,done:true}
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -1570,7 +1570,7 @@ console.log(weakSet.has(obj)); // Output: false
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1593,7 +1593,7 @@ console.log(weakSet.has(obj)); // Output: false
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -1635,7 +1635,7 @@ console.log(weakMap.get(obj)); // Output: undefined
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1663,7 +1663,7 @@ const {name, age} = person;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Advanced JavaScript",
 		level: 2,
@@ -1694,7 +1694,7 @@ const {name, age} = person;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1716,7 +1716,7 @@ let x = 10;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1744,7 +1744,7 @@ let x = 10;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1763,7 +1763,7 @@ let x = 10;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1818,7 +1818,7 @@ console.log(sequence.next().value); // 3
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: "Intermediate JavaScript",
 		level: 1,
@@ -1855,7 +1855,7 @@ console.log(Object.entries(obj));
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -1869,7 +1869,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -1890,7 +1890,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -1901,7 +1901,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -1917,7 +1917,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -1928,7 +1928,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -1939,7 +1939,7 @@ console.log(Object.entries(obj));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -1960,7 +1960,7 @@ console.log(output);`}
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -1971,7 +1971,7 @@ console.log(output);`}
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -1984,7 +1984,7 @@ console.log(output);`}
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2004,7 +2004,7 @@ document.write(output);`}</div></pre>
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2022,7 +2022,7 @@ document.write(output);`}</div></pre>
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2065,7 +2065,7 @@ console.log(newArr);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2101,7 +2101,7 @@ person2.sayHello();  // Output: Hello, my name is Susan Jones.
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2113,7 +2113,7 @@ person2.sayHello();  // Output: Hello, my name is Susan Jones.
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2124,7 +2124,7 @@ person2.sayHello();  // Output: Hello, my name is Susan Jones.
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2138,7 +2138,7 @@ let elements = document.getElementsByClassName("example");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2158,7 +2158,7 @@ console.log(input.value);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2186,7 +2186,7 @@ console.log(fruits);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2201,7 +2201,7 @@ console.log(result);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2215,7 +2215,7 @@ window.open("http://www.google.com");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2229,7 +2229,7 @@ alert("Hello World!");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2243,7 +2243,7 @@ window.close();
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2257,7 +2257,7 @@ setTimeout(function(){ alert("Hello"); }, 3000);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2271,7 +2271,7 @@ setInterval(function(){ alert("Hello"); }, 3000);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2286,7 +2286,7 @@ clearTimeout(myVar);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2303,7 +2303,7 @@ console.log(isNaN(123));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2330,7 +2330,7 @@ console.log(isNaN(123));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2359,7 +2359,7 @@ console.log(array);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2376,7 +2376,7 @@ console.log(Array.isArray("Hello"));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2393,7 +2393,7 @@ console.log(typeof "Hello");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2419,7 +2419,7 @@ document.cookie = "age=30; expires=Thu, 18 Dec 2023 12:00:00 UTC; domain=example
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2435,7 +2435,7 @@ window.location.href = "http://www.example.com";
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Basic JavaScript',
 		level: 0,
@@ -2454,7 +2454,7 @@ console.log(date);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2483,7 +2483,7 @@ console.log(str);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2508,7 +2508,7 @@ console.log(num);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2528,7 +2528,7 @@ console.log(set);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2547,7 +2547,7 @@ console.log(map);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2559,7 +2559,7 @@ console.log(map);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2571,7 +2571,7 @@ console.log(map);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2584,7 +2584,7 @@ console.log(map);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2607,7 +2607,7 @@ console.log(isNaN(NaN));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2630,7 +2630,7 @@ document.body.removeChild(div);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2655,7 +2655,7 @@ try {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2686,7 +2686,7 @@ fetch("https://api.example.com/data", {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -2710,7 +2710,7 @@ async function fetchData() {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2737,7 +2737,7 @@ script.onerror = function() {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2765,7 +2765,7 @@ link.onerror = function() {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2787,7 +2787,7 @@ image.onerror = function() {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2806,7 +2806,7 @@ console.log(name);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2834,7 +2834,7 @@ button.removeEventListener("click", handleClick);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2858,7 +2858,7 @@ div.style.color = "white";
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2880,7 +2880,7 @@ div.classList.remove("active");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2902,7 +2902,7 @@ div.removeAttribute("data-id");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2926,7 +2926,7 @@ delete obj["age"];
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2964,7 +2964,7 @@ console.log(obj);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -2992,7 +2992,7 @@ console.log(obj3);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3025,7 +3025,7 @@ console.log(entries);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3060,7 +3060,7 @@ console.log(Person.prototype.isPrototypeOf(person));
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3090,7 +3090,7 @@ console.log(obj.toLocaleString());
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3117,7 +3117,7 @@ console.log(obj);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3130,7 +3130,7 @@ console.log(obj);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3143,7 +3143,7 @@ console.log(obj);
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -3175,7 +3175,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3188,7 +3188,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3212,7 +3212,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3237,7 +3237,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3261,7 +3261,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3291,7 +3291,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Intermediate JavaScript',
 		level: 1,
@@ -3304,7 +3304,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3317,7 +3317,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'javascript',
 		topic: 'Advanced JavaScript',
 		level: 2,
@@ -3330,7 +3330,7 @@ for (let i = 0; i < 5; i++) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 	subject: 'javascript', 
 	topic: 'Basic JavaScript',
 		level: 0,
@@ -3357,7 +3357,7 @@ greet("John");
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 	subject: 'javascript', 
 	topic: 'Intermediate JavaScript',
 		level: 0,
@@ -3380,7 +3380,7 @@ console.log(uniqueArr);
 ];
 
 // {
-//   rating: 0,
+//   rating: null,
 // subject: 'javascript', 
 // topic: 'Basic JavaScript',
 //   level: 0,

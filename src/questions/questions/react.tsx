@@ -3,7 +3,7 @@ import { IQuestions } from "../../types/types";
 
 export const reactQuestions: IQuestions[] = [
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -21,7 +21,7 @@ export const reactQuestions: IQuestions[] = [
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -38,7 +38,7 @@ export const reactQuestions: IQuestions[] = [
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -72,7 +72,7 @@ export const reactQuestions: IQuestions[] = [
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -124,7 +124,7 @@ export default function App() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -161,7 +161,7 @@ const element = <Greeting name="John" />;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -215,7 +215,7 @@ class Welcome extends Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -244,7 +244,7 @@ class MyPureComponent extends React.PureComponent {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -266,7 +266,7 @@ class MyPureComponent extends React.PureComponent {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -352,7 +352,7 @@ const ChildComponent = ({name, age}) => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -383,7 +383,7 @@ const ChildComponent = ({name, age}) => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -420,7 +420,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -478,7 +478,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -513,7 +513,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -544,7 +544,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -592,7 +592,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -605,7 +605,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -665,7 +665,7 @@ setObj({ ...obj, x: 10 }); // Correct: creating a new object
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -694,7 +694,7 @@ export const myApp = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -740,7 +740,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -765,7 +765,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -784,7 +784,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 1,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -818,7 +818,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -832,7 +832,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -886,7 +886,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -937,7 +937,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -976,7 +976,7 @@ const App = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -1018,7 +1018,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -1036,7 +1036,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1066,7 +1066,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -1107,7 +1107,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1147,7 +1147,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -1183,7 +1183,7 @@ const newElement = React.cloneElement(element, { className: 'container' });
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1232,7 +1232,7 @@ const Card = ({ children }) => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -1263,7 +1263,7 @@ render() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1286,7 +1286,7 @@ render() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1324,7 +1324,7 @@ const MyComponent = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1379,7 +1379,7 @@ const handleClick = () => {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1422,7 +1422,7 @@ const SomeComponent = lazy(() => import("./IntermediateComponent.js"));
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1453,7 +1453,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1485,7 +1485,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1513,7 +1513,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -1589,7 +1589,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1646,7 +1646,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1719,7 +1719,7 @@ class App extends Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1800,7 +1800,7 @@ User.propTypes = {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1829,7 +1829,7 @@ User.propTypes = {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1857,7 +1857,7 @@ User.propTypes = {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -1939,7 +1939,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -1970,7 +1970,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2005,7 +2005,7 @@ const htmlString = ReactDOMServer.renderToString(<App />);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2039,7 +2039,7 @@ export default MyComponent;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2073,7 +2073,7 @@ function HelloWorldComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2104,7 +2104,7 @@ function HelloWorldComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2140,7 +2140,7 @@ return (
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2180,7 +2180,7 @@ const MyComponent = ({ name, address }) => (
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2209,7 +2209,7 @@ const ComponentB = ({ isDisplay, ...domProps }) => (
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2243,7 +2243,7 @@ export default React.memo(MyComponent);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2264,7 +2264,7 @@ export default React.memo(MyComponent);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2299,7 +2299,7 @@ class MyComponent extends React.Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2317,7 +2317,7 @@ class MyComponent extends React.Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2363,7 +2363,7 @@ class MyComponent extends React.Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2381,7 +2381,7 @@ class MyComponent extends React.Component {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2413,7 +2413,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2455,7 +2455,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2481,7 +2481,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2493,7 +2493,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2509,7 +2509,7 @@ function MyComponent() {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2538,7 +2538,7 @@ store.dispatch(incrementCounter());
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2570,7 +2570,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate - Testing",
 		level: 1,
@@ -2585,7 +2585,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2606,7 +2606,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2630,7 +2630,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2659,7 +2659,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2675,7 +2675,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2690,7 +2690,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2712,7 +2712,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2747,7 +2747,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2762,7 +2762,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2784,7 +2784,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2799,7 +2799,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2824,7 +2824,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2846,7 +2846,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2861,7 +2861,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2886,7 +2886,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2902,7 +2902,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2917,7 +2917,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2932,7 +2932,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -2949,7 +2949,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -2965,7 +2965,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2980,7 +2980,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -2994,7 +2994,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3007,7 +3007,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Core React",
 		level: 0,
@@ -3025,7 +3025,7 @@ console.log(iterator.next().value);
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3046,7 +3046,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3061,7 +3061,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3084,7 +3084,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3110,7 +3110,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3181,7 +3181,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3238,7 +3238,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3277,7 +3277,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3298,7 +3298,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3330,7 +3330,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3348,7 +3348,7 @@ function Avatar({ person, size = 100 }) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3377,7 +3377,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3396,7 +3396,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3417,7 +3417,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3462,7 +3462,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3513,7 +3513,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate Router",
 		level: 1,
@@ -3532,7 +3532,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate Router",
 		level: 1,
@@ -3546,7 +3546,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced Router",
 		level: 2,
@@ -3575,7 +3575,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3589,7 +3589,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3646,7 +3646,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3691,7 +3691,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3761,7 +3761,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3800,7 +3800,7 @@ function addTodo(text) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3853,7 +3853,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3873,7 +3873,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -3948,7 +3948,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3968,7 +3968,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -3991,7 +3991,7 @@ export default App;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4061,7 +4061,7 @@ export default Counter;
 	},
 
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4104,7 +4104,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4159,7 +4159,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4197,7 +4197,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4247,7 +4247,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4289,7 +4289,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4312,7 +4312,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4362,7 +4362,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4387,7 +4387,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4421,7 +4421,7 @@ export default Counter;
 		)
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4433,7 +4433,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4450,7 +4450,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4462,7 +4462,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4482,7 +4482,7 @@ export default Counter;
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4527,7 +4527,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4539,7 +4539,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4556,7 +4556,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4568,7 +4568,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4581,7 +4581,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4593,7 +4593,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4609,7 +4609,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4625,7 +4625,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4642,7 +4642,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4660,7 +4660,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4673,7 +4673,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Advanced React",
 		level: 2,
@@ -4686,7 +4686,7 @@ function ChildComponent(props) {
 		),
 	},
 	{
-	rating: 0,
+	rating: null,
 	subject: 'react',
 	topic: 'Intermediate React',
 	level: 1,
@@ -4708,7 +4708,7 @@ function ChildComponent(props) {
 			</>
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4736,7 +4736,7 @@ const obj = {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4762,7 +4762,7 @@ const obj = {
 		),
 	},
 	{
-		rating: 0,
+		rating: null,
 		subject: 'react',
 		topic: "Intermediate React",
 		level: 1,
@@ -4790,7 +4790,7 @@ function MyComponent({ a, b }) {
 ];
 
 // {
-// rating: 0,
+// rating: null,
 // subject: 'react',
 // topic: 'Core React',
 // level: 0,
