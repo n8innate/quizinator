@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-
 export interface IQuestions {
   rating: 0 | 1 | 2 | null; // 0 = no clue, 1 = got some, missed some, 2 = knew all of it, null = not rated;
   subject: 'backend' | 'express' |  'frontend' | 'javascript' | 'react' | 'restapi' | 'typescript';

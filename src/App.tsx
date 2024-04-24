@@ -166,4 +166,5 @@ export const questionTracker = () => {
   console.log('REST API easy questions: ', restAPIQuestions.filter((question) => question.level === 0).length);
   console.log('REST API medium questions: ', restAPIQuestions.filter((question) => question.level === 1).length);
   console.log('REST API hard questions: ', restAPIQuestions.filter((question) => question.level === 2).length);
- }
+}
+
